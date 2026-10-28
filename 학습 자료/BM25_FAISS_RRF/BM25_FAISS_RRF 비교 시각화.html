@@ -1,0 +1,571 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>하이브리드 검색 실험실</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column; three stacked "lab benches" (keyword / vector / fusion), each colour-coded by method */
+:root {
+  --bg: #F3F5F8;
+  --surface: #FFFFFF;
+  --ink: #18202D;
+  --muted: #5B6677;
+  --line: #DADFE7;
+  --kw: #B97710;
+  --kw-soft: #FCE8BE;
+  --vec: #19758A;
+  --vec-soft: #D3EBF0;
+  --fuse: #883C8E;
+  --fuse-soft: #F2DEF3;
+  --t0: #B97710; --t1: #E2A73A; --t2: #8C5A0B; --t3: #EDC56B;
+  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #10141B; --surface: #18202A; --ink: #E5E9F0; --muted: #98A3B4; --line: #2A3442;
+  --kw: #E9AC42; --kw-soft: #4B3612; --vec: #52B6C8; --vec-soft: #11373F; --fuse: #CC84D1; --fuse-soft: #3A2140;
+  --t0: #E9AC42; --t1: #F5CB72; --t2: #B8801F; --t3: #FFE0A0; color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #10141B; --surface: #18202A; --ink: #E5E9F0; --muted: #98A3B4; --line: #2A3442;
+  --kw: #E9AC42; --kw-soft: #4B3612; --vec: #52B6C8; --vec-soft: #11373F; --fuse: #CC84D1; --fuse-soft: #3A2140;
+  --t0: #E9AC42; --t1: #F5CB72; --t2: #B8801F; --t3: #FFE0A0; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 22px; }
+h1, h2, h3 { margin: 0; line-height: 1.3; text-wrap: balance; }
+h1 { font-size: clamp(26px, 4.4vw, 36px); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 19px; font-weight: 700; }
+h3 { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0.04em; }
+p { margin: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; color: var(--muted); }
+.lede { color: var(--muted); max-width: 64ch; }
+.top { display: flex; flex-direction: column; gap: 12px; }
+.qbar { display: flex; gap: 8px; margin-top: 6px; }
+.qbar input { flex: 1; min-width: 0; font: inherit; font-size: 17px; padding: 12px 14px; border-radius: 10px;
+  border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); }
+.qbar input:focus { outline: none; border-color: var(--ink); }
+button { font: inherit; cursor: pointer; color: inherit; }
+.qbar button { padding: 0 20px; border-radius: 10px; border: 0; background: var(--ink); color: var(--bg); font-weight: 500; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--vec); outline-offset: 2px; }
+.presets { display: flex; flex-wrap: wrap; gap: 8px; }
+.preset { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 5px 12px; font-size: 13px; text-align: left; }
+.preset small { color: var(--muted); margin-left: 6px; }
+.preset[aria-pressed="true"] { border-color: var(--ink); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 14px; border-top: 4px solid var(--m); }
+.step.kw { --m: var(--kw); --ms: var(--kw-soft); }
+.step.vec { --m: var(--vec); --ms: var(--vec-soft); }
+.step.fuse { --m: var(--fuse); --ms: var(--fuse-soft); }
+.step-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.tag { font-family: var(--font-mono); font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 6px; background: var(--ms); color: var(--ink); }
+.step-head h2 { flex: 1; min-width: 200px; }
+.replay { border: 1px solid var(--m); background: transparent; color: var(--ink); border-radius: 8px; padding: 4px 12px; font-size: 13px; }
+.replay:hover { background: var(--ms); }
+.desc { color: var(--muted); max-width: 70ch; font-size: 14px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 13px; }
+.ctl { display: flex; flex-direction: column; gap: 2px; min-width: 200px; flex: 1; max-width: 320px; }
+.ctl label { display: flex; justify-content: space-between; gap: 8px; }
+.ctl label b { font-family: var(--font-mono); font-weight: 500; }
+.ctl input { accent-color: var(--m); width: 100%; }
+.ctl span { color: var(--muted); font-size: 12px; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.formula { font-family: var(--font-mono); font-size: 13px; background: var(--bg); border-radius: 8px; padding: 8px 12px; overflow-x: auto; white-space: nowrap; }
+
+mark { background: var(--kw-soft); color: inherit; border-radius: 3px; padding: 0 2px; box-shadow: inset 0 -2px 0 var(--kw); }
+.chip { font-family: var(--font-mono); font-size: 12px; font-weight: 500; border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; background: var(--bg); justify-self: start; white-space: nowrap; }
+[data-doc].hl .chip, [data-doc].hl { --hl: 1; }
+[data-doc].hl { background: var(--ms, var(--bg)); }
+.dim { opacity: .45; }
+
+/* BM25 */
+.legend { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
+.lg { display: flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 8px; padding: 3px 9px; }
+.lg i { width: 12px; height: 12px; border-radius: 3px; background: var(--c); display: inline-block; }
+.lg em { font-style: normal; color: var(--muted); font-family: var(--font-mono); font-size: 12px; }
+.bmlist, .vlist, .rlist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.bmrow { border-top: 1px solid var(--line); border-radius: 6px; }
+.bmhead { width: 100%; display: grid; grid-template-columns: 24px 40px minmax(0, 1fr) minmax(90px, 28%) 52px; gap: 10px; align-items: center;
+  border: 0; background: transparent; text-align: left; padding: 9px 4px; }
+.rank { font-family: var(--font-mono); color: var(--muted); font-size: 13px; text-align: right; }
+.btitle { min-width: 0; font-size: 14px; }
+.btitle small { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.5; }
+.bar { height: 14px; background: var(--bg); border-radius: 4px; display: flex; gap: 1px; overflow: hidden; }
+.seg { height: 100%; width: 0; background: var(--c); transition: width .7s cubic-bezier(.2,.7,.2,1) var(--d, 0s); }
+.score { font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; font-size: 13px; }
+.bmdetail { padding: 4px 4px 14px 78px; display: flex; flex-direction: column; gap: 8px; font-size: 13px; }
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 13px; min-width: 520px; }
+th, td { padding: 4px 10px; text-align: right; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; }
+th { font-weight: 500; color: var(--muted); font-size: 12px; }
+td { font-family: var(--font-mono); }
+.zero-note { color: var(--muted); font-size: 13px; padding: 10px 4px; border-top: 1px solid var(--line); }
+
+/* Vector */
+.qmap { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; align-items: center; }
+.qm { border: 1px solid var(--line); border-radius: 8px; padding: 2px 8px; }
+.qm b { font-weight: 500; }
+.qm span { color: var(--muted); }
+.qm.miss { border-style: dashed; color: var(--muted); }
+.vgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.mapbox { background: var(--bg); border-radius: 12px; padding: 6px; }
+#map { width: 100%; height: auto; display: block; }
+#map .cl { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; transition: fill .4s, stroke .4s; }
+#map .cl.probed { fill: var(--vec-soft); stroke: var(--vec); }
+#map .cll { fill: var(--muted); font-size: 12px; font-family: var(--font-body); }
+#map .cll.probed { fill: var(--ink); font-weight: 700; }
+#map .dd { fill: var(--surface); stroke: var(--muted); stroke-width: 1.5; transition: fill .3s, stroke .3s, opacity .3s; }
+#map .dd.hit { fill: var(--vec); stroke: var(--vec); }
+#map .dl { fill: var(--ink); font-size: 11px; font-family: var(--font-mono); transition: opacity .3s; }
+#map .off { opacity: .3; }
+#map g.hl .dd { stroke: var(--fuse); stroke-width: 3; }
+#map .ln { stroke: var(--muted); stroke-width: 1; opacity: .5; transition: stroke-dashoffset .45s ease-out, stroke .3s, opacity .3s; }
+#map .ln.top { stroke: var(--vec); stroke-width: 2; opacity: 1; }
+#map .qd { fill: var(--ink); stroke: var(--surface); stroke-width: 2; transform-box: fill-box; transform-origin: center; transition: transform .4s cubic-bezier(.3,1.6,.5,1); }
+#map .ql { fill: var(--ink); font-size: 12px; font-weight: 700; font-family: var(--font-body); }
+#map .rk { fill: var(--vec); font-size: 11px; font-weight: 700; font-family: var(--font-mono); }
+.vrow { display: grid; grid-template-columns: 24px 40px minmax(0, 1fr) 64px; gap: 10px; align-items: center; padding: 7px 4px; border-top: 1px solid var(--line); border-radius: 6px; font-size: 14px; transition: opacity .3s; }
+.vrow .vt { min-width: 0; }
+.vrow .vt small { display: block; color: var(--muted); font-size: 12px; }
+.vbar { height: 5px; background: var(--bg); border-radius: 3px; margin-top: 3px; overflow: hidden; }
+.vbar i { display: block; height: 100%; background: var(--vec); width: var(--w); transition: width .6s; }
+.vrow.top .rank { color: var(--vec); font-weight: 700; }
+.vrow.wait { opacity: .35; }
+.note { font-size: 12.5px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; max-width: 75ch; }
+
+/* RRF */
+.rgrid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, .8fr) minmax(0, 1.6fr); gap: 18px; align-items: start; }
+.col { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.rrow { display: grid; grid-template-columns: 22px 40px minmax(0, 1fr); gap: 8px; align-items: center; padding: 6px 4px; border-top: 1px solid var(--line); font-size: 13.5px; border-radius: 6px; }
+.rrow .t { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { color: var(--muted); font-size: 13px; padding: 6px 4px; border-top: 1px solid var(--line); }
+.stage { position: relative; }
+.frow { position: absolute; left: 0; right: 0; height: 58px; display: grid; grid-template-columns: 22px 40px minmax(0, 1fr) 64px; gap: 8px; align-items: center;
+  padding: 0 6px; border-top: 1px solid var(--line); border-radius: 6px; transition: transform .8s cubic-bezier(.5,0,.2,1), background .3s; }
+.frow .t { min-width: 0; font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.frow .f { display: block; font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.frow .f .a { color: var(--kw); }
+.frow .f .b { color: var(--vec); }
+.frow .rank { color: var(--fuse); font-weight: 700; }
+.status { font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+.insight { background: var(--bg); border-radius: 10px; padding: 12px 14px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.insight b { font-weight: 700; }
+footer { color: var(--muted); font-size: 12.5px; max-width: 75ch; }
+
+@media (max-width: 760px) {
+  .vgrid { grid-template-columns: 1fr; }
+  .rgrid { grid-template-columns: 1fr 1fr; }
+  .rgrid .wide { grid-column: 1 / -1; }
+  .bmhead { grid-template-columns: 22px 40px minmax(0, 1fr) 48px; grid-template-areas: "r c t s" ". bar bar bar"; }
+  .bmhead .rank { grid-area: r; } .bmhead .chip { grid-area: c; } .bmhead .btitle { grid-area: t; } .bmhead .score { grid-area: s; } .bmhead .bar { grid-area: bar; }
+  .bmdetail { padding-left: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .seg, .frow, #map .ln, #map .qd, .vbar i { transition: none !important; }
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">BM25 · FAISS · RRF</p>
+    <h1>하이브리드 검색 실험실</h1>
+    <p class="lede">문서 12개짜리 작은 검색엔진이에요. 검색어를 넣으면 키워드 검색(BM25)과 벡터 검색(FAISS 방식)이 각자 순위를 매기고, RRF가 두 순위를 하나로 합쳐요. 아래 예시 검색어부터 눌러 보세요.</p>
+    <form id="qform" class="qbar" autocomplete="off">
+      <label for="q" class="sr">검색어</label>
+      <input id="q" name="q" type="search" value="자가용 유지 비용 줄이기" placeholder="예: 자동차 연비">
+      <button type="submit">검색</button>
+    </form>
+    <div class="presets" id="presets"></div>
+  </header>
+
+  <section class="step kw" id="s-bm25">
+    <div class="step-head"><span class="tag">검색 A</span><h2>BM25 · 겹치는 단어로 매기는 점수</h2><button class="replay" type="button" data-play="bm25">다시 재생</button></div>
+    <p class="desc">검색어를 단어로 쪼갠 뒤 문서마다 그 단어가 몇 번 나오는지(TF), 얼마나 드문 단어인지(IDF), 문서가 얼마나 긴지를 따져 점수를 더해요. 막대의 마디 하나가 검색어 한 단어의 몫이에요. 행을 누르면 계산 과정이 펼쳐져요.</p>
+    <div class="formula">점수 = Σ IDF(단어) × tf·(k1+1) / ( tf + k1·(1 − b + b·문서길이/평균길이) )</div>
+    <div class="controls">
+      <div class="ctl"><label for="k1">k1 <b id="k1v">1.2</b></label><input id="k1" type="range" min="0.2" max="3" step="0.1" value="1.2"><span>같은 단어가 반복될 때 점수가 얼마나 더 오르는지</span></div>
+      <div class="ctl"><label for="bb">b <b id="bbv">0.75</b></label><input id="bb" type="range" min="0" max="1" step="0.05" value="0.75"><span>긴 문서에 주는 감점의 세기 (0이면 길이 무시)</span></div>
+    </div>
+    <div class="legend" id="bmLegend"></div>
+    <ol class="bmlist" id="bmList"></ol>
+  </section>
+
+  <section class="step vec" id="s-vec">
+    <div class="step-head"><span class="tag">검색 B</span><h2>벡터 검색 · 뜻이 가까운 문서 찾기</h2><button class="replay" type="button" data-play="vec">다시 재생</button></div>
+    <p class="desc">문서와 검색어를 숫자 벡터로 바꾼 뒤 방향이 비슷한 문서를 찾아요. FAISS의 IVF 인덱스처럼 문서를 주제별 클러스터로 미리 묶어 두고, 검색어와 가까운 클러스터 몇 개(nprobe)만 뒤져서 속도를 얻어요.</p>
+    <div class="qmap" id="qmap"></div>
+    <div class="controls">
+      <div class="ctl"><label for="np">nprobe <b id="npv">2</b></label><input id="np" type="range" min="1" max="6" step="1" value="2"><span>뒤져 볼 클러스터 수. 작을수록 빠르지만 정답을 놓칠 수 있어요</span></div>
+    </div>
+    <div class="vgrid">
+      <div class="mapbox"><svg id="map" viewBox="0 0 400 400" role="img" aria-label="문서와 검색어의 벡터 공간 지도"></svg></div>
+      <div class="col"><h3>코사인 유사도 순위</h3><ol class="vlist" id="vList"></ol></div>
+    </div>
+    <p class="note">실제 임베딩은 수백~수천 차원이에요. 여기서는 이해하기 쉽게 6개 주제 축으로 줄였고, 지도는 그 6차원을 평면에 펼친 그림이에요. 순위는 6차원 벡터의 코사인 유사도로 계산해요.</p>
+  </section>
+
+  <section class="step fuse" id="s-rrf">
+    <div class="step-head"><span class="tag">결합</span><h2>RRF · 두 순위를 하나로</h2><button class="replay" type="button" data-play="rrf">다시 재생</button></div>
+    <p class="desc">BM25 점수와 코사인 유사도는 단위가 달라 그냥 더할 수 없어요. RRF는 점수를 버리고 순위만 써서 1/(k+순위)를 더해요. 한쪽에만 나온 문서는 그쪽 몫만 받아요. 문서에 마우스를 올리면 세 목록에서 같은 문서가 함께 표시돼요.</p>
+    <div class="formula">RRF 점수 = <span style="color:var(--kw)">1/(k + BM25 순위)</span> + <span style="color:var(--vec)">1/(k + 벡터 순위)</span></div>
+    <div class="controls">
+      <div class="ctl"><label for="rk">k <b id="rkv">60</b></label><input id="rk" type="range" min="1" max="100" step="1" value="60"><span>작을수록 1~2등에 몰아주고, 클수록 순위 차이를 완만하게 봐요</span></div>
+    </div>
+    <div class="rgrid">
+      <div class="col"><h3>BM25 상위 5</h3><ol class="rlist" id="rBm"></ol></div>
+      <div class="col"><h3>벡터 상위 5</h3><ol class="rlist" id="rVec"></ol></div>
+      <div class="col wide"><h3>RRF 최종 순위 <span class="status" id="rStatus"></span></h3><div class="stage" id="rFuse"></div></div>
+    </div>
+    <div class="insight" id="insight"></div>
+  </section>
+
+  <footer>문서는 모두 예시로 만든 짧은 글이에요. 한국어 조사(은·는·이·가 등)는 간단한 규칙으로 떼어 내서 BM25 단어로 써요. 실제 서비스에서는 형태소 분석기를 쓰는 경우가 많아요.</footer>
+</div>
+
+<script>
+(function () {
+  const CONCEPTS = ['자동차', '돈·금융', '코딩', '여행', '음식', '건강'];
+  const DOCS = [
+    { id: 'D1', title: '하이브리드 자동차 연비 비교', body: '도심 주행에서 연비가 가장 좋은 하이브리드 모델 다섯 대를 실제 주행 기록으로 비교했다.', vec: [1, .2, 0, 0, 0, 0] },
+    { id: 'D2', title: '전기차 충전 요금과 유지비', body: '완속과 급속 충전 요금, 보험료, 정비 비용까지 전기차를 탈 때 드는 돈을 한 번에 정리했다.', vec: [.9, .55, 0, 0, 0, 0] },
+    { id: 'D3', title: '기름값 아끼는 운전 습관', body: '급가속을 줄이고 타이어 공기압을 맞추면 연료 소비가 눈에 띄게 줄어든다.', vec: [.8, .6, 0, 0, 0, 0] },
+    { id: 'D4', title: '파이썬 3.12 설치 오류 해결', body: '윈도우에서 파이썬 3.12 설치 중 경로 오류가 날 때 확인할 설정을 단계별로 안내한다.', vec: [0, 0, 1, 0, 0, 0] },
+    { id: 'D5', title: '파이썬으로 가계부 자동화', body: '카드 내역 파일을 읽어 지출을 분류하는 짧은 파이썬 스크립트를 만든다.', vec: [0, .5, .8, 0, 0, 0] },
+    { id: 'D6', title: '제주도 렌터카 여행 코스', body: '공항에서 렌터카를 빌려 동쪽 해안을 따라 도는 2박 3일 여행 코스를 소개한다.', vec: [.4, 0, 0, 1, 0, 0] },
+    { id: 'D7', title: '저염식 식단으로 혈압 관리', body: '국물 대신 채소 반찬을 늘리는 식단만으로도 혈압 관리에 도움이 된다.', vec: [0, 0, 0, 0, .6, 1] },
+    { id: 'D8', title: '일주일 도시락 반찬 레시피', body: '주말에 미리 만들어 두면 평일 도시락이 편해지는 반찬 레시피 일곱 가지.', vec: [0, 0, 0, 0, 1, .2] },
+    { id: 'D9', title: '적금과 예금 금리 비교', body: '시중 은행 적금과 예금 금리를 기간별로 비교하고 세후 이자를 계산했다.', vec: [0, 1, 0, 0, 0, 0] },
+    { id: 'D10', title: '장거리 운전 후 허리 스트레칭', body: '오래 운전한 뒤 굳은 허리 통증을 풀어 주는 스트레칭 동작 네 가지.', vec: [.4, 0, 0, 0, 0, .9] },
+    { id: 'D11', title: '벡터 데이터베이스 입문', body: '문장을 임베딩으로 바꾸고 비슷한 벡터를 빠르게 찾는 검색 원리를 설명한다.', vec: [0, 0, 1, 0, 0, 0] },
+    { id: 'D12', title: '유럽 기차 여행 예산 짜기', body: '철도 패스 가격과 숙박비를 기준으로 2주 유럽 기차 여행 예산을 세운다.', vec: [0, .4, 0, 1, 0, 0] }
+  ];
+  const PRESETS = [
+    { q: '자동차 연비', note: '둘 다 잘 찾는 경우' },
+    { q: '자가용 유지 비용 줄이기', note: '동의어 · BM25가 약함' },
+    { q: '파이썬 3.12 설치 오류', note: '정확한 용어 · 벡터가 약함' },
+    { q: '허리 아픈 운전', note: '두 주제가 섞인 질문' }
+  ];
+  const PARTICLES = ['에서', '으로', '까지', '부터', '보다', '처럼', '에게', '한테', '은', '는', '이', '가', '을', '를', '에', '의', '로', '와', '과', '도', '만'];
+
+  const norm = (w) => {
+    w = w.toLowerCase().replace(/^\.+|\.+$/g, '');
+    for (const p of PARTICLES) { if (w.endsWith(p) && w.length > p.length) return w.slice(0, -p.length); }
+    return w;
+  };
+  const tokenize = (t) => t.toLowerCase().split(/[^0-9a-z가-힣.]+/).map(w => w.replace(/^\.+|\.+$/g, '')).filter(Boolean).map(norm);
+  const esc = (s) => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const highlight = (text, set) => text.split(/([^0-9A-Za-z가-힣.]+)/).map(part => {
+    if (!part) return '';
+    const n = norm(part.replace(/^\.+|\.+$/g, ''));
+    return set.has(n) && /[0-9A-Za-z가-힣]/.test(part) ? '<mark>' + esc(part) + '</mark>' : esc(part);
+  }).join('');
+
+  // Concept lexicon for the toy embedding
+  const LEX = {};
+  const addLex = (words, w) => { const v = CONCEPTS.map((_, i) => w[i] || 0); words.split(' ').forEach(x => { LEX[norm(x)] = v; }); };
+  addLex('자동차 차 차량 자가용 전기차 하이브리드 중고차 주행 운전 엔진 드라이브 타이어 급가속', [1]);
+  addLex('연비', [.9, .3]);
+  addLex('기름 기름값 주유 연료', [.7, .5]);
+  addLex('충전', [.8, .2]);
+  addLex('렌터카', [.5, 0, 0, .8]);
+  addLex('유지', [.3, .5]);
+  addLex('요금 유지비 비용 절약 돈 예산 금리 적금 예금 가계부 저렴 보험료 이자 지출 가격', [0, 1]);
+  addLex('아끼는 아끼기 줄이기 줄이는', [0, .6]);
+  addLex('파이썬 python 설치 오류 에러 코드 프로그래밍 개발 스크립트 자동화', [0, 0, 1]);
+  addLex('벡터 임베딩 검색 데이터베이스', [0, 0, .9]);
+  addLex('여행 코스 제주도 유럽 기차 휴가 관광 일정 숙박', [0, 0, 0, 1]);
+  addLex('식단 레시피 반찬 도시락 요리 음식 밥', [0, 0, 0, 0, 1]);
+  addLex('저염식', [0, 0, 0, 0, .6, .7]);
+  addLex('혈압 통증 허리 스트레칭 건강 다이어트 아픈 아프다 피로', [0, 0, 0, 0, 0, 1]);
+
+  const docTok = DOCS.map(d => tokenize(d.title + ' ' + d.body));
+  const avgdl = docTok.reduce((a, t) => a + t.length, 0) / DOCS.length;
+  const docById = Object.fromEntries(DOCS.map(d => [d.id, d]));
+  const vlen = (v) => Math.hypot(...v);
+  const cos = (a, b) => { const la = vlen(a), lb = vlen(b); if (!la || !lb) return 0; return a.reduce((s, x, i) => s + x * b[i], 0) / (la * lb); };
+  const argmax = (v) => v.reduce((bi, x, i) => x > v[bi] ? i : bi, 0);
+
+  const state = { query: '자가용 유지 비용 줄이기', k1: 1.2, b: 0.75, nprobe: 2, rk: 60 };
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s) => document.querySelector(s);
+  let bm = null, vr = null;
+
+  /* ---------- BM25 ---------- */
+  function computeBM25() {
+    const N = DOCS.length;
+    const terms = [...new Set(tokenize(state.query))];
+    const df = {}, idf = {};
+    terms.forEach(t => { df[t] = docTok.filter(tk => tk.includes(t)).length; idf[t] = Math.log(1 + (N - df[t] + 0.5) / (df[t] + 0.5)); });
+    const rows = DOCS.map((d, i) => {
+      const toks = docTok[i], dl = toks.length;
+      const lenNorm = 1 - state.b + state.b * dl / avgdl;
+      const parts = terms.map((t, j) => {
+        const tf = toks.filter(x => x === t).length;
+        const c = tf ? idf[t] * tf * (state.k1 + 1) / (tf + state.k1 * lenNorm) : 0;
+        return { t, tf, c, j };
+      });
+      return { d, i, dl, lenNorm, parts, score: parts.reduce((s, p) => s + p.c, 0) };
+    }).sort((a, b) => b.score - a.score || a.i - b.i);
+    return { terms, df, idf, rows };
+  }
+  const openDocs = new Set();
+  const termColor = (j) => 'var(--t' + (j % 4) + ')';
+
+  function renderBM25(animate) {
+    bm = computeBM25();
+    const set = new Set(bm.terms);
+    $('#bmLegend').innerHTML = bm.terms.length ? bm.terms.map((t, j) =>
+      `<span class="lg"><i style="--c:${termColor(j)}"></i>${esc(t)} <em>${bm.df[t] ? `문서 ${bm.df[t]}개 · IDF ${bm.idf[t].toFixed(2)}` : '어느 문서에도 없음'}</em></span>`).join('')
+      : '<span class="lg">검색어를 입력하세요</span>';
+    const max = Math.max(...bm.rows.map(r => r.score), 0.0001);
+    const hits = bm.rows.filter(r => r.score > 0), misses = bm.rows.filter(r => r.score === 0);
+    let html = hits.map((r, k) => {
+      const segs = r.parts.filter(p => p.c > 0).map(p => `<span class="seg" data-w="${(p.c / max * 100).toFixed(2)}" style="--c:${termColor(p.j)};--d:${(k * 0.08).toFixed(2)}s" title="${esc(p.t)}: ${p.c.toFixed(2)}"></span>`).join('');
+      const open = openDocs.has(r.d.id);
+      const detail = `<div class="bmdetail"${open ? '' : ' hidden'}>
+        <div class="tbl"><table><thead><tr><th>단어</th><th>tf (등장 횟수)</th><th>df (등장 문서 수)</th><th>IDF</th><th>길이 보정</th><th>점수 기여</th></tr></thead><tbody>
+        ${r.parts.map(p => `<tr><td>${esc(p.t)}</td><td>${p.tf}</td><td>${bm.df[p.t]}</td><td>${bm.idf[p.t].toFixed(3)}</td><td>${r.lenNorm.toFixed(3)}</td><td>${p.c.toFixed(3)}</td></tr>`).join('')}
+        </tbody></table></div>
+        <p>이 문서는 단어 ${r.dl}개, 평균은 ${avgdl.toFixed(1)}개 → 길이 보정 = 1 − ${state.b} + ${state.b} × ${r.dl}/${avgdl.toFixed(1)} = <span class="mono">${r.lenNorm.toFixed(3)}</span>. 1보다 크면 긴 문서라 감점돼요.</p>
+      </div>`;
+      return `<li class="bmrow" data-doc="${r.d.id}"><button type="button" class="bmhead" aria-expanded="${open}">
+        <span class="rank">${k + 1}</span><span class="chip">${r.d.id}</span>
+        <span class="btitle">${highlight(r.d.title, set)}<small>${highlight(r.d.body, set)}</small></span>
+        <span class="bar">${segs}</span><span class="score">${r.score.toFixed(2)}</span></button>${detail}</li>`;
+    }).join('');
+    if (misses.length) html += `<li class="zero-note">일치하는 단어가 없어 0점인 문서 ${misses.length}개: ${misses.map(r => r.d.id).join(', ')}</li>`;
+    $('#bmList').innerHTML = html;
+    $('#bmList').querySelectorAll('.bmhead').forEach(btn => btn.addEventListener('click', () => {
+      const li = btn.parentElement, id = li.dataset.doc, det = li.querySelector('.bmdetail');
+      const open = det.hidden; det.hidden = !open; btn.setAttribute('aria-expanded', open);
+      open ? openDocs.add(id) : openDocs.delete(id);
+    }));
+    playBM25(animate);
+  }
+  function playBM25(animate = true) {
+    const segs = [...document.querySelectorAll('#bmList .seg')];
+    if (!animate || reduced) { segs.forEach(s => { s.style.transition = 'none'; s.style.width = s.dataset.w + '%'; }); requestAnimationFrame(() => segs.forEach(s => s.style.transition = '')); return; }
+    segs.forEach(s => { s.style.transition = 'none'; s.style.width = '0'; });
+    void document.body.offsetWidth;
+    requestAnimationFrame(() => segs.forEach(s => { s.style.transition = ''; s.style.width = s.dataset.w + '%'; }));
+  }
+
+  /* ---------- Vector / IVF ---------- */
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  const CX = 200, CY = 205, R = 128;
+  const anchors = CONCEPTS.map((_, i) => { const a = (-90 + i * 60) * Math.PI / 180; return [CX + R * Math.cos(a), CY + R * Math.sin(a)]; });
+  const proj = (v, j) => {
+    const s = v.reduce((a, x) => a + x, 0);
+    let x = CX, y = CY;
+    if (s > 0) { x = v.reduce((a, w, i) => a + w * anchors[i][0], 0) / s; y = v.reduce((a, w, i) => a + w * anchors[i][1], 0) / s; }
+    if (j != null) { const ang = j * 2.4 + 0.6; x += Math.cos(ang) * 19; y += Math.sin(ang) * 19; }
+    return [x, y];
+  };
+  const docPos = DOCS.map((d, i) => proj(d.vec, i));
+  const docCluster = DOCS.map(d => argmax(d.vec));
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+  const map = $('#map');
+  const gCl = el('g', {}, map), gLn = el('g', {}, map), gDoc = el('g', {}, map), gQ = el('g', {}, map);
+  const clEls = anchors.map(([x, y], i) => {
+    const c = el('circle', { cx: x, cy: y, r: 50, class: 'cl' }, gCl);
+    const lr = R + 62, a = (-90 + i * 60) * Math.PI / 180;
+    const t = el('text', { x: CX + lr * Math.cos(a), y: CY + lr * Math.sin(a) + 4, 'text-anchor': 'middle', class: 'cll' }, gCl);
+    t.textContent = CONCEPTS[i];
+    return { c, t };
+  });
+  const docEls = DOCS.map((d, i) => {
+    const [x, y] = docPos[i];
+    const g = el('g', { 'data-doc': d.id }, gDoc);
+    const c = el('circle', { cx: x, cy: y, r: 6, class: 'dd' }, g);
+    const t = el('text', { x: x + 9, y: y + 4, class: 'dl' }, g); t.textContent = d.id;
+    const rk = el('text', { x: x - 9, y: y - 8, class: 'rk', 'text-anchor': 'end' }, g);
+    return { g, c, t, rk };
+  });
+  const qDot = el('rect', { width: 14, height: 14, class: 'qd' }, gQ);
+  const qLbl = el('text', { class: 'ql', 'text-anchor': 'middle' }, gQ); qLbl.textContent = '검색어';
+
+  function computeVec() {
+    const toks = tokenize(state.query);
+    const mapping = toks.map(t => ({ t, v: LEX[t] || null }));
+    const q = CONCEPTS.map((_, i) => mapping.reduce((s, m) => s + (m.v ? m.v[i] : 0), 0));
+    const qn = vlen(q);
+    const order = CONCEPTS.map((_, i) => i).sort((a, b) => q[b] - q[a] || a - b);
+    const probed = new Set(order.slice(0, state.nprobe));
+    const rows = DOCS.map((d, i) => ({ d, i, sim: cos(q, d.vec), probed: probed.has(docCluster[i]) }));
+    const ranked = rows.filter(r => r.probed).sort((a, b) => b.sim - a.sim || a.i - b.i);
+    const top = qn ? ranked.filter(r => r.sim > 0).slice(0, 5) : [];
+    return { mapping, q, qn, order, probed, rows, ranked, top };
+  }
+  let vRun = 0;
+  function renderVec(animate) {
+    vr = computeVec();
+    $('#qmap').innerHTML = '<span style="color:var(--muted)">검색어 → 개념:</span>' + (vr.mapping.length ? vr.mapping.map(m => {
+      if (!m.v) return `<span class="qm miss">${esc(m.t)} <span>· 사전에 없음</span></span>`;
+      const parts = m.v.map((w, i) => w > 0 ? CONCEPTS[i] : null).filter(Boolean);
+      return `<span class="qm"><b>${esc(m.t)}</b> <span>→ ${parts.join(' + ')}</span></span>`;
+    }).join('') : '<span class="qm miss">없음</span>');
+    const topRank = new Map(vr.top.map((r, k) => [r.d.id, k + 1]));
+    const listRows = [...vr.ranked, ...vr.rows.filter(r => !r.probed)];
+    $('#vList').innerHTML = vr.qn ? listRows.map(r => {
+      const rk = topRank.get(r.d.id);
+      const right = r.probed ? `<span class="score">${r.sim.toFixed(3)}</span>` : '<span class="score" style="color:var(--muted);font-size:11.5px">건너뜀</span>';
+      return `<li class="vrow${rk ? ' top' : ''}${r.probed ? '' : ' dim'}" data-doc="${r.d.id}" data-i="${r.i}">
+        <span class="rank">${rk || '·'}</span><span class="chip">${r.d.id}</span>
+        <span class="vt">${esc(r.d.title)}${r.probed ? `<span class="vbar"><i style="--w:${Math.max(0, r.sim) * 100}%"></i></span>` : `<small>${CONCEPTS[docCluster[r.i]]} 클러스터 · 탐색 안 함</small>`}</span>${right}</li>`;
+    }).join('') : '<li class="empty">사전에 있는 단어가 없어 검색어 벡터를 만들 수 없어요. 예시 검색어를 눌러 보세요.</li>';
+    playVec(animate);
+  }
+  function playVec(animate = true) {
+    const run = ++vRun;
+    const instant = !animate || reduced;
+    const later = (ms, fn) => instant ? fn() : setTimeout(() => { if (run === vRun) fn(); }, ms);
+    gLn.innerHTML = '';
+    clEls.forEach(({ c, t }) => { c.classList.remove('probed'); t.classList.remove('probed'); });
+    docEls.forEach(({ c, g, rk }) => { c.classList.remove('hit'); g.classList.remove('off'); rk.textContent = ''; });
+    document.querySelectorAll('#vList .vrow').forEach(r => r.classList.toggle('wait', !instant));
+    if (!vr.qn) { qDot.style.transform = 'scale(0)'; qLbl.textContent = ''; return; }
+    const [qx, qy] = proj(vr.q, null);
+    qDot.setAttribute('x', qx - 7); qDot.setAttribute('y', qy - 7);
+    qDot.setAttribute('transform', `rotate(45 ${qx} ${qy})`);
+    qLbl.setAttribute('x', qx); qLbl.setAttribute('y', qy - 14); qLbl.textContent = '검색어';
+    if (!instant) { qDot.style.transition = 'none'; qDot.style.transform = 'scale(0)'; void map.getBoundingClientRect(); qDot.style.transition = ''; }
+    later(30, () => { qDot.style.transform = 'scale(1)'; });
+    const probedOrder = vr.order.slice(0, state.nprobe);
+    probedOrder.forEach((ci, k) => later(450 + k * 320, () => { clEls[ci].c.classList.add('probed'); clEls[ci].t.classList.add('probed'); }));
+    const t0 = 450 + probedOrder.length * 320 + 150;
+    later(t0, () => DOCS.forEach((d, i) => { if (!vr.probed.has(docCluster[i])) docEls[i].g.classList.add('off'); }));
+    const lines = {};
+    vr.ranked.forEach((r, k) => later(t0 + 100 + k * 110, () => {
+      const [x, y] = docPos[r.i];
+      const len = Math.hypot(x - qx, y - qy);
+      const ln = el('line', { x1: qx, y1: qy, x2: x, y2: y, class: 'ln' }, gLn);
+      ln.style.strokeDasharray = len; ln.style.strokeDashoffset = instant ? 0 : len;
+      if (!instant) { void ln.getBoundingClientRect(); requestAnimationFrame(() => { ln.style.strokeDashoffset = 0; }); }
+      lines[r.d.id] = ln;
+    }));
+    const t1 = t0 + 100 + vr.ranked.length * 110 + 350;
+    later(t1, () => {
+      vr.top.forEach((r, k) => { docEls[r.i].c.classList.add('hit'); docEls[r.i].rk.textContent = k + 1; if (lines[r.d.id]) lines[r.d.id].classList.add('top'); });
+      document.querySelectorAll('#vList .vrow').forEach(r => r.classList.remove('wait'));
+    });
+  }
+
+  /* ---------- RRF ---------- */
+  const ROW_H = 58;
+  let rRun = 0;
+  function renderRRF(animate) {
+    const bmTop = bm.rows.filter(r => r.score > 0).slice(0, 5);
+    const vTop = vr.top;
+    const bRank = new Map(bmTop.map((r, k) => [r.d.id, k + 1]));
+    const vRank = new Map(vTop.map((r, k) => [r.d.id, k + 1]));
+    const list = (rows, cls) => rows.length ? rows.map((r, k) => `<li class="rrow" data-doc="${r.d.id}"><span class="rank" style="color:var(${cls})">${k + 1}</span><span class="chip">${r.d.id}</span><span class="t">${esc(r.d.title)}</span></li>`).join('') : '<li class="empty">결과 없음</li>';
+    $('#rBm').innerHTML = list(bmTop, '--kw');
+    $('#rVec').innerHTML = list(vTop, '--vec');
+    // appearance order: interleave the two lists
+    const appear = [];
+    for (let k = 0; k < 5; k++) { [bmTop[k], vTop[k]].forEach(r => { if (r && !appear.includes(r.d.id)) appear.push(r.d.id); }); }
+    const k = state.rk;
+    const fused = appear.map(id => {
+      const a = bRank.get(id), b = vRank.get(id);
+      return { id, a, b, score: (a ? 1 / (k + a) : 0) + (b ? 1 / (k + b) : 0) };
+    });
+    const sorted = [...fused].sort((x, y) => y.score - x.score || appear.indexOf(x.id) - appear.indexOf(y.id));
+    const stage = $('#rFuse');
+    stage.style.height = Math.max(fused.length, 1) * ROW_H + 'px';
+    stage.innerHTML = fused.length ? fused.map(f => {
+      const terms = [f.a ? `<span class="a">1/(${k}+${f.a})</span>` : '', f.b ? `<span class="b">1/(${k}+${f.b})</span>` : ''].filter(Boolean).join(' + ');
+      return `<div class="frow" data-doc="${f.id}" data-id="${f.id}"><span class="rank"></span><span class="chip">${f.id}</span>
+        <span class="t">${esc(docById[f.id].title)}<span class="f">${terms}</span></span><span class="score">${f.score.toFixed(4)}</span></div>`;
+    }).join('') : '<div class="empty">두 검색 모두 결과가 없어요.</div>';
+    stage.dataset.sorted = sorted.map(f => f.id).join(',');
+    stage.dataset.appear = appear.join(',');
+    playRRF(animate);
+
+    // insight
+    const onlyB = bmTop.filter(r => !vRank.has(r.d.id)).map(r => r.d.id);
+    const onlyV = vTop.filter(r => !bRank.has(r.d.id)).map(r => r.d.id);
+    const both = bmTop.filter(r => vRank.has(r.d.id)).map(r => r.d.id);
+    const lines = [];
+    if (sorted.length) lines.push(`<span>최종 1위는 <b>${sorted[0].id} · ${esc(docById[sorted[0].id].title)}</b>예요.</span>`);
+    if (both.length) lines.push(`<span>양쪽 모두에서 상위 5위 안에 든 문서: <b>${both.join(', ')}</b>. 이런 문서가 RRF에서 유리해요.</span>`);
+    if (onlyV.length) lines.push(`<span>벡터 검색만 찾은 문서: <b>${onlyV.join(', ')}</b>. 검색어와 같은 단어는 없지만 뜻이 가까워요.</span>`);
+    if (onlyB.length) lines.push(`<span>BM25만 찾은 문서: <b>${onlyB.join(', ')}</b>. 단어는 겹치지만 벡터 쪽 상위 5위에는 못 들었어요.</span>`);
+    $('#insight').innerHTML = lines.join('') || '<span>검색어를 입력하면 두 검색이 어떻게 다른지 여기에 정리돼요.</span>';
+  }
+  function placeRows(order, instant) {
+    const stage = $('#rFuse');
+    order.forEach((id, idx) => {
+      const row = stage.querySelector(`[data-id="${id}"]`);
+      if (!row) return;
+      if (instant) row.style.transition = 'none';
+      row.style.transform = `translateY(${idx * ROW_H}px)`;
+      row.querySelector('.rank').textContent = idx + 1;
+      if (instant) { void row.offsetWidth; row.style.transition = ''; }
+    });
+  }
+  function playRRF(animate = true) {
+    const run = ++rRun;
+    const stage = $('#rFuse');
+    const sorted = (stage.dataset.sorted || '').split(',').filter(Boolean);
+    const appear = (stage.dataset.appear || '').split(',').filter(Boolean);
+    if (!sorted.length) { $('#rStatus').textContent = ''; return; }
+    if (!animate || reduced) { placeRows(sorted, true); $('#rStatus').textContent = ''; return; }
+    placeRows(appear, true);
+    stage.querySelectorAll('.rank').forEach(r => r.textContent = '·');
+    $('#rStatus').textContent = '· 점수 합산 중';
+    setTimeout(() => { if (run !== rRun) return; placeRows(sorted, false); $('#rStatus').textContent = '· 점수순 정렬'; }, 900);
+    setTimeout(() => { if (run === rRun) $('#rStatus').textContent = ''; }, 2000);
+  }
+
+  /* ---------- wiring ---------- */
+  function runAll(animate) {
+    renderBM25(animate);
+    renderVec(animate);
+    renderRRF(false);
+    if (animate) {
+      const delay = reduced ? 0 : 450 + state.nprobe * 320 + 250 + vr.ranked.length * 110 + 500;
+      const run = rRun;
+      $('#rStatus').textContent = reduced ? '' : '· 두 검색을 기다리는 중';
+      setTimeout(() => { if (run === rRun) playRRF(true); }, delay);
+    }
+  }
+  const presetBox = $('#presets');
+  presetBox.innerHTML = PRESETS.map(p => `<button type="button" class="preset" data-q="${esc(p.q)}" aria-pressed="false">${esc(p.q)}<small>${esc(p.note)}</small></button>`).join('');
+  const syncPresets = () => presetBox.querySelectorAll('.preset').forEach(b => b.setAttribute('aria-pressed', b.dataset.q === state.query));
+  presetBox.addEventListener('click', e => {
+    const b = e.target.closest('.preset'); if (!b) return;
+    state.query = b.dataset.q; $('#q').value = state.query; syncPresets(); runAll(true);
+  });
+  $('#qform').addEventListener('submit', e => { e.preventDefault(); state.query = $('#q').value.trim(); syncPresets(); runAll(true); });
+  const bindRange = (id, key, fmt, after) => {
+    const inp = $('#' + id), out = $('#' + id + 'v');
+    inp.addEventListener('input', () => { state[key] = parseFloat(inp.value); out.textContent = fmt(state[key]); after(); });
+  };
+  bindRange('k1', 'k1', v => v.toFixed(1), () => { renderBM25(false); renderRRF(false); });
+  bindRange('bb', 'b', v => v.toFixed(2), () => { renderBM25(false); renderRRF(false); });
+  bindRange('np', 'nprobe', v => String(v), () => { renderVec(true); renderRRF(false); });
+  bindRange('rk', 'rk', v => String(v), () => { renderRRF(false); });
+  document.querySelectorAll('[data-play]').forEach(b => b.addEventListener('click', () => {
+    const w = b.dataset.play;
+    if (w === 'bm25') playBM25(true); else if (w === 'vec') playVec(true); else playRRF(true);
+  }));
+  // cross-highlight
+  document.addEventListener('mouseover', e => {
+    const t = e.target.closest('[data-doc]');
+    const id = t ? t.dataset.doc : null;
+    document.querySelectorAll('[data-doc].hl').forEach(x => { if (x.dataset.doc !== id) x.classList.remove('hl'); });
+    if (id) document.querySelectorAll(`[data-doc="${id}"]`).forEach(x => x.classList.add('hl'));
+  });
+
+  syncPresets();
+  runAll(true);
+})();
+</script>
+
+</body></html>
