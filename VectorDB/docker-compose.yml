@@ -1,0 +1,16 @@
+services:
+  pgvector:
+    image: pgvector/pgvector:pg17
+    container_name: rag-pgvector
+    environment:
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag        # 내 컴퓨터(127.0.0.1)에서만 접속 가능
+      POSTGRES_DB: rag
+    ports:
+      - "127.0.0.1:${PG_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  pgdata:
