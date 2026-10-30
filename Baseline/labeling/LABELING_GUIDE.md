@@ -29,7 +29,7 @@ LLM 분류기(`QueryClassification.ipynb`)가 낸 라벨이 얼마나 정확한�
 | 라벨 | 정의 | 예시 |
 |---|---|---|
 | **A** 핵심 의료 | 사람의 질병, 증상, 진단, 의학 검사, 약물, 치료와 시술, 해부와 생리, 예방과 감염, 정신질환에 대한 의학 지식이 필요한 질문 | what causes pneumonia / side effects of metformin / what does the pancreas do / symptoms of depression |
-| **B** 의료 인접 | 영양, 식단, 운동, 건강 습관, 일반 웰니스, 건강보험, 의료비, 병원 운영, 동물과 수의학 건강 | how much water should a person drink daily / how much does an MRI cost / what age do you give puppies parvo shots |
+| **B** 의료 인접 | 영양, 식단, 운동, 건강 습관, 일반 웰니스, 식품 안전, 건강보험, 의료비, 병원 운영, 동물과 수의학 건강 | how much water should a person drink daily / how much does an MRI cost / what age do you give puppies parvo shots |
 | **C** 비의료 | 의료 지식이 목적이 아닌 질문. 의료 단어가 들어 있어도 해당 | who invented the MRI machine / where was this doctor born / 의료직 연봉이나 직업 / 단어의 비의료적 의미 |
 | **U** 불확실 | passage를 읽어도 의미를 정할 수 없을 만큼 모호한 질문 | 약어 하나만 있고 passage도 판단에 도움이 안 되는 경우 |
 
