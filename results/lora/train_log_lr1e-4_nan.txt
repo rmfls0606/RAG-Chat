@@ -1,0 +1,100 @@
+Loading pretrained model
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 3706.31it/s]
+Loading datasets
+Training
+Trainable parameters: 0.151% (11.534M/7615.617M)
+Starting training..., iters: 1000
+
+Calculating loss...:   0%|          | 0/25 [00:00<?, ?it/s]
+Calculating loss...:   4%|▍         | 1/25 [00:06<02:42,  6.76s/it]
+Calculating loss...:   8%|▊         | 2/25 [00:12<02:16,  5.94s/it]
+Calculating loss...:  12%|█▏        | 3/25 [00:17<02:06,  5.74s/it]
+Calculating loss...:  16%|█▌        | 4/25 [00:23<02:00,  5.72s/it]
+Calculating loss...:  20%|██        | 5/25 [00:28<01:53,  5.67s/it]
+Calculating loss...:  24%|██▍       | 6/25 [00:34<01:44,  5.51s/it]
+Calculating loss...:  28%|██▊       | 7/25 [00:39<01:41,  5.61s/it]
+Calculating loss...:  32%|███▏      | 8/25 [00:45<01:35,  5.61s/it]
+Calculating loss...:  36%|███▌      | 9/25 [00:51<01:31,  5.75s/it]
+Calculating loss...:  40%|████      | 10/25 [00:57<01:25,  5.71s/it]
+Calculating loss...:  44%|████▍     | 11/25 [01:02<01:20,  5.73s/it]
+Calculating loss...:  48%|████▊     | 12/25 [01:10<01:22,  6.36s/it]
+Calculating loss...:  52%|█████▏    | 13/25 [01:16<01:14,  6.19s/it]
+Calculating loss...:  56%|█████▌    | 14/25 [01:22<01:06,  6.01s/it]
+Calculating loss...:  60%|██████    | 15/25 [01:27<00:59,  5.95s/it]
+Calculating loss...:  64%|██████▍   | 16/25 [01:34<00:55,  6.17s/it]
+Calculating loss...:  68%|██████▊   | 17/25 [01:40<00:47,  5.99s/it]
+Calculating loss...:  72%|███████▏  | 18/25 [01:45<00:39,  5.64s/it]
+Calculating loss...:  76%|███████▌  | 19/25 [01:50<00:33,  5.60s/it]
+Calculating loss...:  80%|████████  | 20/25 [01:56<00:28,  5.65s/it]
+Calculating loss...:  84%|████████▍ | 21/25 [02:01<00:21,  5.40s/it]
+Calculating loss...:  88%|████████▊ | 22/25 [02:05<00:15,  5.08s/it]
+Calculating loss...:  92%|█████████▏| 23/25 [02:11<00:10,  5.29s/it]
+Calculating loss...:  96%|█████████▌| 24/25 [02:15<00:05,  5.07s/it]
+Calculating loss...: 100%|██████████| 25/25 [02:21<00:00,  5.14s/it]
+Calculating loss...: 100%|██████████| 25/25 [02:21<00:00,  5.65s/it]
+Iter 1: Val loss 2.687, Val took 141.146s
+Iter 20: Train loss 1.578, Learning Rate 1.000e-04, It/sec 0.076, Tokens/sec 3.542, Trained Tokens 936, Peak mem 6.822 GB
+Iter 40: Train loss 1.118, Learning Rate 1.000e-04, It/sec 0.070, Tokens/sec 4.382, Trained Tokens 2182, Peak mem 7.082 GB
+Iter 50: Saved adapter weights to /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/adapters.safetensors and /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/0000050_adapters.safetensors.
+Iter 60: Train loss 1.192, Learning Rate 1.000e-04, It/sec 0.061, Tokens/sec 3.485, Trained Tokens 3333, Peak mem 7.082 GB
+Iter 80: Train loss nan, Learning Rate 1.000e-04, It/sec 0.075, Tokens/sec 3.652, Trained Tokens 4305, Peak mem 7.082 GB
+Iter 100: Train loss nan, Learning Rate 1.000e-04, It/sec 0.071, Tokens/sec 3.784, Trained Tokens 5370, Peak mem 7.128 GB
+Iter 100: Saved adapter weights to /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/adapters.safetensors and /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/0000100_adapters.safetensors.
+Iter 120: Train loss nan, Learning Rate 1.000e-04, It/sec 0.073, Tokens/sec 3.767, Trained Tokens 6397, Peak mem 7.128 GB
+Iter 140: Train loss nan, Learning Rate 1.000e-04, It/sec 0.074, Tokens/sec 4.697, Trained Tokens 7658, Peak mem 7.413 GB
+Iter 150: Saved adapter weights to /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/adapters.safetensors and /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/0000150_adapters.safetensors.
+Iter 160: Train loss nan, Learning Rate 1.000e-04, It/sec 0.072, Tokens/sec 4.467, Trained Tokens 8902, Peak mem 7.413 GB
+Iter 180: Train loss nan, Learning Rate 1.000e-04, It/sec 0.080, Tokens/sec 4.074, Trained Tokens 9918, Peak mem 7.413 GB
+
+Calculating loss...:   0%|          | 0/25 [00:00<?, ?it/s]
+Calculating loss...:   4%|▍         | 1/25 [00:05<02:13,  5.56s/it]
+Calculating loss...:   8%|▊         | 2/25 [00:10<02:04,  5.40s/it]
+Calculating loss...:  12%|█▏        | 3/25 [00:17<02:11,  5.98s/it]
+Calculating loss...:  16%|█▌        | 4/25 [00:22<01:57,  5.61s/it]
+Calculating loss...:  20%|██        | 5/25 [00:29<02:02,  6.11s/it]
+Calculating loss...:  24%|██▍       | 6/25 [00:34<01:50,  5.84s/it]
+Calculating loss...:  28%|██▊       | 7/25 [00:41<01:49,  6.06s/it]
+Calculating loss...:  32%|███▏      | 8/25 [00:48<01:47,  6.34s/it]
+Calculating loss...:  36%|███▌      | 9/25 [00:54<01:39,  6.20s/it]
+Calculating loss...:  40%|████      | 10/25 [01:00<01:32,  6.15s/it]
+Calculating loss...:  44%|████▍     | 11/25 [01:06<01:25,  6.11s/it]
+Calculating loss...:  48%|████▊     | 12/25 [01:11<01:13,  5.69s/it]
+Calculating loss...:  52%|█████▏    | 13/25 [01:16<01:09,  5.77s/it]
+Calculating loss...:  56%|█████▌    | 14/25 [01:23<01:05,  5.97s/it]
+Calculating loss...:  60%|██████    | 15/25 [01:29<01:00,  6.06s/it]
+Calculating loss...:  64%|██████▍   | 16/25 [01:35<00:54,  6.10s/it]
+Calculating loss...:  68%|██████▊   | 17/25 [01:42<00:49,  6.15s/it]
+Calculating loss...:  72%|███████▏  | 18/25 [01:48<00:43,  6.27s/it]
+Calculating loss...:  76%|███████▌  | 19/25 [01:55<00:38,  6.43s/it]
+Calculating loss...:  80%|████████  | 20/25 [02:00<00:30,  6.12s/it]
+Calculating loss...:  84%|████████▍ | 21/25 [02:07<00:24,  6.24s/it]
+Calculating loss...:  88%|████████▊ | 22/25 [02:13<00:18,  6.15s/it]
+Calculating loss...:  92%|█████████▏| 23/25 [02:18<00:11,  5.93s/it]
+Calculating loss...:  96%|█████████▌| 24/25 [02:24<00:05,  5.97s/it]
+Calculating loss...: 100%|██████████| 25/25 [02:30<00:00,  5.80s/it]
+Calculating loss...: 100%|██████████| 25/25 [02:30<00:00,  6.01s/it]
+Iter 200: Val loss nan, Val took 150.248s
+Iter 200: Train loss nan, Learning Rate 1.000e-04, It/sec 0.087, Tokens/sec 4.024, Trained Tokens 10848, Peak mem 7.413 GB
+Iter 200: Saved adapter weights to /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/adapters.safetensors and /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/0000200_adapters.safetensors.
+Iter 220: Train loss nan, Learning Rate 1.000e-04, It/sec 0.065, Tokens/sec 3.759, Trained Tokens 12011, Peak mem 7.413 GB
+Iter 240: Train loss nan, Learning Rate 1.000e-04, It/sec 0.075, Tokens/sec 4.131, Trained Tokens 13110, Peak mem 7.413 GB
+Iter 250: Saved adapter weights to /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/adapters.safetensors and /Users/lsm/Desktop/WorkSpace/NLP/RAG-Chat/models/qwen2.5-7b-instruct-rag-lora/0000250_adapters.safetensors.
+Iter 260: Train loss nan, Learning Rate 1.000e-04, It/sec 0.068, Tokens/sec 3.002, Trained Tokens 13989, Peak mem 7.413 GB
+Iter 280: Train loss nan, Learning Rate 1.000e-04, It/sec 0.068, Tokens/sec 3.604, Trained Tokens 15044, Peak mem 7.413 GB
+
+===== 21시 50단계 저장본(NaN 없음)에서 이어서 학습 (51~80단계에서 NaN 발생, 잠자기 중) =====
+Loading pretrained model
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 4385.31it/s]
+Loading datasets
+Training
+Loading fine-tuned weights from models/qwen2.5-7b-instruct-rag-lora/resume_from.safetensors
+Trainable parameters: 0.151% (11.534M/7615.617M)
+Starting training..., iters: 950
+Calculating loss...:   0%|          | 0/25 [00:00<?, ?it/s]Calculating loss...:   4%|▍         | 1/25 [00:07<03:05,  7.71s/it]Calculating loss...:   8%|▊         | 2/25 [00:13<02:27,  6.43s/it]Calculating loss...:  12%|█▏        | 3/25 [00:18<02:11,  5.97s/it]Calculating loss...:  16%|█▌        | 4/25 [00:24<02:03,  5.87s/it]Calculating loss...:  20%|██        | 5/25 [00:30<02:00,  6.05s/it]Calculating loss...:  24%|██▍       | 6/25 [00:36<01:50,  5.84s/it]Calculating loss...:  28%|██▊       | 7/25 [00:42<01:49,  6.11s/it]Calculating loss...:  32%|███▏      | 8/25 [00:48<01:41,  5.94s/it]Calculating loss...:  36%|███▌      | 9/25 [00:54<01:35,  5.99s/it]Calculating loss...:  40%|████      | 10/25 [01:00<01:30,  6.02s/it]Calculating loss...:  44%|████▍     | 11/25 [01:06<01:23,  5.99s/it]Calculating loss...:  48%|████▊     | 12/25 [01:13<01:22,  6.31s/it]Calculating loss...:  52%|█████▏    | 13/25 [01:19<01:13,  6.16s/it]Calculating loss...:  56%|█████▌    | 14/25 [01:24<01:05,  5.97s/it]Calculating loss...:  60%|██████    | 15/25 [01:30<00:59,  5.92s/it]Calculating loss...:  64%|██████▍   | 16/25 [01:37<00:54,  6.06s/it]Calculating loss...:  68%|██████▊   | 17/25 [01:42<00:46,  5.82s/it]Calculating loss...:  72%|███████▏  | 18/25 [01:47<00:39,  5.65s/it]Calculating loss...:  76%|███████▌  | 19/25 [01:53<00:34,  5.71s/it]Calculating loss...:  80%|████████  | 20/25 [01:59<00:29,  5.91s/it]Calculating loss...:  84%|████████▍ | 21/25 [02:05<00:22,  5.72s/it]Calculating loss...:  88%|████████▊ | 22/25 [02:09<00:16,  5.44s/it]Calculating loss...:  92%|█████████▏| 23/25 [02:16<00:11,  5.73s/it]Calculating loss...:  96%|█████████▌| 24/25 [02:21<00:05,  5.49s/it]Calculating loss...: 100%|██████████| 25/25 [02:27<00:00,  5.60s/it]Calculating loss...: 100%|██████████| 25/25 [02:27<00:00,  5.88s/it]
+Iter 1: Val loss 0.724, Val took 147.115s
+Iter 20: Train loss 0.991, Learning Rate 1.000e-04, It/sec 0.075, Tokens/sec 3.529, Trained Tokens 936, Peak mem 6.795 GB
+Iter 40: Train loss nan, Learning Rate 1.000e-04, It/sec 0.073, Tokens/sec 4.523, Trained Tokens 2182, Peak mem 6.966 GB
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
