@@ -34,9 +34,12 @@ def respond(message, history):
     r = rag.ask(message)
     lines = [r["answer"], "", f"_{STATUS_TEXT[r['status']]}_ (관련도 {r['top_score']:.2f} / 기준 {r['threshold']:.2f})"]
     if r["sources"]:
-        lines += ["", "**근거 문서**"]
+        # MS MARCO는 2016~2017년 수집이라 원문 페이지가 지금은 없을 수 있음 → Internet Archive의 사본도 함께 표시 (원문 사이트와 무관한 비공식 사본)
+        lines += ["", "**근거 문서** (원문 링크는 수집 당시 주소라 지금은 없을 수 있습니다. "
+                      "웹 아카이브 사본은 Internet Archive가 저장한 비공식 사본입니다)"]
         for s in r["sources"]:
-            lines.append(f"- **[{s['n']}]** {s['url']}\n  > {s['text'][:300]}{'...' if len(s['text']) > 300 else ''}")
+            lines.append(f"- **[{s['n']}]** [원문]({s['url']}) · [웹 아카이브 사본(2017, 비공식)](https://web.archive.org/web/2017/{s['url']})\n"
+                         f"  > {s['text'][:300]}{'...' if len(s['text']) > 300 else ''}")
     return "\n".join(lines)
 
 
@@ -44,7 +47,8 @@ gr.ChatInterface(
     respond,
     title="의료 정보 RAG 챗봇",
     description=(f"MS MARCO 의료 사이트 문서 {len(rag.passages):,}개에서 근거를 찾아 답합니다 (생성: {rag.model_name}). "
-                 "영어로 질문하세요. 의료 정보 참고용이며 진단·치료를 대신하지 않습니다."),
+                 "영어로 질문하세요. 의료 정보 참고용이며 진단·치료를 대신하지 않습니다. "
+                 "문서는 2016~2017년 자료입니다. 최신 의료 정보는 해당 기관 사이트나 의료진에게 확인하세요."),
     examples=["What are the symptoms of iron deficiency anemia?", "What causes your hands to shake?",
               "what is treatment for jaundice", "Who won the 2010 FIFA World Cup?"],
 ).launch(share=args.share)
