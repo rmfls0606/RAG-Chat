@@ -220,6 +220,7 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,macos
 # 로컬 데이터 (라벨, 캐시)
 data/
-# 로컬 실행 산출물 (임베딩 캐시, 학습 모델)
+# 로컬 실행 산출물 (임베딩 캐시, 학습 모델, sentence-transformers 학습 중간 저장)
 index/
 models/
+checkpoints/
