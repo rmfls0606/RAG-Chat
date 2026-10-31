@@ -1,0 +1,4 @@
+,lab_med_test,lab_med_ext_test,lab_ood_test
+refused,62,119,963
+supported,527,89,36
+unsupported,9,2,1
