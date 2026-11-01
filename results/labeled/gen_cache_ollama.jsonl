@@ -2924,3 +2924,511 @@
 {"key": "b7973e3542ae88b0f21a247ce0ed5c27", "output": "No, whole grain oatmeal is not wheat. Oatmeal is made from whole oats, while wheat is a different grain [1][2]."}
 {"key": "1cdbe53f3397a3e24ab09df33e8dda6a", "output": "Symptoms of iron deficiency anemia may include weakness, fatigue, or lack of stamina, shortness of breath during exercise, headache, trouble concentrating, irritability, dizziness, pale skin, and in severe cases, a craving for nonfood items such as ice, dirt, paint, or starch [1][2][5]."}
 {"key": "8e045ce048cd5006cced2d8efc27ad8b", "output": "Essential tremor is a disorder that causes a rhythmic shaking of the body parts, including hands [1][3]."}
+{"key": "2ce636068ea89566982398ce05718ddf", "output": "The average age of onset for bulimia nervosa is 18 years, but it occurs in children as young as 9 and adults into their mid-40s and older. [1]"}
+{"key": "2dfe5813328e034a15a06064465da609", "output": "Most guys hit puberty sometime from ages 9-14 -- the average age is 12 [1][2]."}
+{"key": "44b4a881fb14ce65fb73d5289e04bf93", "output": "The normal range for a full blood count includes a white blood cell (WBC) count between 4,300 and 10,800 cells per cubic millimeter, a platelet count between 150,000 and 400,000 per microliter, and a red blood cell (RBC) count between 4.2 to 5.9 million cells per cubic millimeter [1][2][5]."}
+{"key": "80e92db710ded04a619d1bf44a1c2951", "output": "Atherosclerosis is caused by a buildup of plaque in the arteries, which can result from factors including smoking, high amounts of certain fats and cholesterol in the blood, and high blood pressure [4]."}
+{"key": "e0fa525b2d129f878f23641225abb7ce", "output": "I cannot answer this question based on the provided documents."}
+{"key": "5294aee399fb2cd1a1acc959f32ab0fd", "output": "The parietal lobe is located near the center of the brain, behind the frontal lobe, in front of the occipital lobe, and above the temporal lobe. [1][2][3][5]"}
+{"key": "0ea70d33b2ec5caf6c5436b1461ce8c4", "output": "Cutting the vagus nerve branch that innervates the stomach would reduce the amount of gastric acid secreted and lessen the chance of recurrence of a gastric ulcer [1][2]."}
+{"key": "50817dbde071498603052ea4464164df", "output": "Swelling of the tongue can occur due to various causes, including tumors that infiltrate the tissues of the tongue, which may be related to cancer [3]. However, a swollen tongue is not typically a specific sign of cancer but can be associated with it in advanced stages [1]."}
+{"key": "10b7cb5e701c976be06edb05b739ac35", "output": "I cannot answer this question based on the provided documents. [2][3][4]"}
+{"key": "252a8d91f34860c7123e25dbc9512ff8", "output": "Yes, hepatitis is classified as an autoimmune disease in the case of autoimmune hepatitis [1][2][3][4][5]."}
+{"key": "b85d13a5f37ba1658eafd0e634c2b87a", "output": "Yes, reactive depression is considered a stress-related mental illness [1]."}
+{"key": "aa451c64caa1147ff2170219af8c728f", "output": "Nearsightedness is also known as myopia [1][2][3][4][5]."}
+{"key": "e0cfd65bc0102d1508e3eb9cd9b4e5cf", "output": "Symptoms of pulmonary fibrosis include cough, shortness of breath or difficulty breathing, and decreased exercise tolerance [1][2][5]."}
+{"key": "b0aff3efcf0f2f64926594cca9b6b67c", "output": "Arteries, particularly pulmonary arteries, carry deoxygenated blood from the heart to the lungs for oxygenation [2][3]."}
+{"key": "9bf79728be7d87fb5fa89c232a31bc8c", "output": "The best tablet to reduce a fever, according to the provided passages, is acetaminophen (Tylenol) [1][2]."}
+{"key": "67b8a4d4568678d162988553d20f3c2c", "output": "A normal platelet count in adults ranges from 150,000 to 450,000 platelets per microliter of blood [2][3][4][5]."}
+{"key": "77be6a75d4b10b43b71525c518edcbaf", "output": "Skin rashes can occur from a variety of diseases including eczema, psoriasis, herpes simplex, lupus, acne, rosacea, and skin cancer [1][2][3][5]."}
+{"key": "8710e1cee2c803c207096f32d5c8e921", "output": "The limit of aspirin dose for antiplatelet therapy can range from 75 mg/day to 325 mg/day [1][2][3][4][5]."}
+{"key": "fb8263e41a07ba6bbef5d5b4a30c7608", "output": "The geographical regions where Lyme disease occurs are determined by the types of ticks that carry the bacteria, such as deer ticks in the Northeast and Midwest, and western black-legged ticks along the Pacific coast, mostly in northern California and Oregon [4][2][3]."}
+{"key": "88adbf1c57cce2e161a2459631e22770", "output": "An echocardiogram test uses high-frequency sound waves to create images of the heart, allowing doctors to assess the heart's structure and function [1][3][5]."}
+{"key": "3b9302ff99bd3e324a109f8fb662008c", "output": "I cannot answer this question based on the provided documents."}
+{"key": "c6be89936603b90bbc66ff0c57aa0c30", "output": "The incubation period for chlamydia may range from days to months, usually about 1 to 3 weeks after sexual contact with an infected person [1][3][4][5]."}
+{"key": "692067d33e497b81bc209d84248f9130", "output": "The chemical structure of Vyvanse is lisdexamfetamine dimesylate [1]."}
+{"key": "cc76a007742b02e0435435c5fecaf3cb", "output": "The normal dosage for digoxin for maintenance is 0.125-0.5 mg daily [2][4]."}
+{"key": "3bdc358c0c3cdb311bcbae892f94ffa0", "output": "I cannot answer this question based on the provided documents. [2][3]"}
+{"key": "3e0e46e5adc9f81d78d8f11547bc69ae", "output": "Trigeminal neuralgia is a chronic pain condition affecting the trigeminal nerve, causing intense, sudden facial pain [1][2][3][4][5]."}
+{"key": "38a720402e18cae6c56e2bf1e0eed539", "output": "The adaptive immune system, specifically through the humoral response, prepares the body to fight off the infection by producing memory cells that can quickly respond if exposed to the same pathogen again [2]."}
+{"key": "a609e05b8be5457820c516eabd1f3973", "output": "Yes, the stomach digests food by secreting acid and enzymes [1][2][3][4], and through the churning action of its muscular walls [1][2][3][4]."}
+{"key": "858e1373f390cb743d91f6aa5631cdb5", "output": "No, schizophrenia is not a delusional disorder. Delusional disorder involves delusions that persist for at least one month without other psychotic symptoms, whereas schizophrenia can include bizarre delusions along with other symptoms like hallucinations and disorganized thinking [2][4]."}
+{"key": "e433e38eaa83e178c5a546ddb36882a4", "output": "You should not use Tessalon Perles for more than 2 weeks unless directed by your doctor [3]."}
+{"key": "09056ed40c0854cb41d2268b2736ab98", "output": "Macrovascular diabetes complications are diseases and conditions of the large blood vessels caused by diabetes. [1][2]"}
+{"key": "732da1f268566cfc7bb4ed4ceec14291", "output": "Hepatitis A, B, and C are caused by three different viruses [1][2][3][4][5]."}
+{"key": "ba8f41fa0cbfff8fd32b30fc814eb088", "output": "A parasitic infection is contamination of one organism with another living organism that then begins to feed off or reside in the initial organism [1], and it occurs when a parasite lives on or in a host and gets its food from or at the expense of its host, potentially making the host sick [2][3]."}
+{"key": "95ef5e8506508c47ad0223cdf4506ace", "output": "Genetic markers show the presence of a predisposition to a disease or condition by indicating specific genetic variations that are often inherited from a parent [1][2][3][4][5]."}
+{"key": "277d25318635b988815116004dcac414", "output": "The urine albumin to creatinine ratio (ACR) is used to screen for kidney disease in people with conditions like diabetes and hypertension [1][2][4][5]. Creatinine in the urine helps correct for urine concentration, allowing for a more accurate determination of albumin loss from the kidneys [2][5]."}
+{"key": "dee16e0dcd07f37692adbfb3ea30fff0", "output": "Botox acts as a neuromuscular blockade of the muscles, temporarily paralyzing them to reduce wrinkles and fine lines on the facial area [1][2][3][4]."}
+{"key": "fc9212bcadc6533d4cd89d009bf06bf4", "output": "I cannot answer this question based on the provided documents. [1][2][3]"}
+{"key": "95c716ab710becd26f95c10fa07634d6", "output": "Children should get the pneumococcal vaccine in a series of shots, with the first usually given when the child is 2 months old [1][4]."}
+{"key": "dfd3b5919804bf713b34e01d02dca806", "output": "A normal ejection fraction range is typically 55-70% [1][2]."}
+{"key": "fdae055253e166fc62973446286bab68", "output": "Sudden weight loss is medically termed as unexplained weight loss [2]."}
+{"key": "9f75c014cba0202a0e25045adcd945bb", "output": "Autoimmune hepatitis is a disease in which the body’s immune system attacks liver cells, causing inflammation of the liver [1][2][3][4][5]."}
+{"key": "2d1987639eb4e88b0eb09fbcb6ad5c5d", "output": "Mastocytosis is a disorder characterized by the abnormal growth of mast cells in the body, which can affect the skin or internal organs such as the liver, spleen, bone marrow, and small intestine. [1][2][3][5]"}
+{"key": "0ebc7cc04878a11ed5363ea4a5e5fde7", "output": "The most common symptoms of inflamed muscles include weakness, swelling, and pain [3]."}
+{"key": "5c5e8a71c2a722863287414e773ef992", "output": "Bullous emphysema suggests the presence of subpleural and interlobular bullae in the lung [1]."}
+{"key": "2eb27812b36cb233732fc638fa245f22", "output": "Common causes of a burning sensation in the tongue include yeast infections like oral thrush [2], and conditions such as black hairy tongue, which can occur due to poor oral hygiene or smoking [1]. Additionally, burning mouth syndrome (BMS) can cause a burning sensation without an apparent reason [4][5]."}
+{"key": "1449e53b3d6ef63f1f040599ba1a43b7", "output": "A heightened sense of smell is a symptom of changes in senses around the time of ovulation [1]."}
+{"key": "c20d1d943f6d79e90ad5a7b3f9db7c81", "output": "Kidney stones are often formed due to a build-up of substances in the body such as calcium, ammonia, uric acid, and cystine [1][2][4][5]."}
+{"key": "1bfa2f7ffb6d265d3f4a6525b1fade65", "output": "A hep A vaccine typically lasts for up to 20 or 30 years and possibly for life [1][2]."}
+{"key": "68cc6a2f4dc0a889239fb579bf022efd", "output": "Langerhans cells help regulate the immune system [1][2]."}
+{"key": "5efc8b4c03223e0fd985960eff1e40f7", "output": "Feline infectious peritonitis (FIP) is a viral disease that occurs worldwide in wild and domestic cats, caused by a type of virus called a coronavirus [1]."}
+{"key": "c60e58f4e0fdf56b85902dd709578135", "output": "Pimples are caused by the sebaceous glands becoming overactive, leading to a blockage in the pores due to dead skin cells and sebum [1][2]."}
+{"key": "7942b4627c0788f3e35035b17f69dc2a", "output": "A raised temperature, or fever, is considered to be above 100.4 degrees F (38 degrees C) [1][2][3][4]."}
+{"key": "a2d198fc738435eadb82b149dae920e8", "output": "The pituitary gland produces hormones such as thyroid-stimulating hormone (TSH) and regulates the production of hormones from other glands like the thyroid, ovaries, testicles, and adrenal glands [1][4]."}
+{"key": "2f5c278c8d09756c9a4f07abe6b09731", "output": "Diabetes treatment options include managing blood sugar levels through diet, exercise, and insulin for type 1 diabetes [1][2][3], while type 2 diabetes can be managed with oral medications like metformin and lifestyle changes [3][5]."}
+{"key": "c8659b675dd9a854d508efcced8fadef", "output": "Lung cancer occurs in the lungs, specifically in the airways or the outer part of the lungs [2]."}
+{"key": "dce5862c0ce440b04437c0c80687b84b", "output": "For a lipid profile test, you typically need to fast for 10–12 hours [2][3][4][5]."}
+{"key": "df97971e85ecd4fbd01c2d618598861e", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "3176923b0a2c47712d3b6c978b5b8be4", "output": "The lungs are located in the back, along with the lungs in the front, inside the rib cage [1]."}
+{"key": "2392548157c3ad799e5cb27371c19abe", "output": "Eye movements are controlled in the pons [2][4] and the motor cortex [1]."}
+{"key": "2e8aca6c2a090b750702b0c094eb9a86", "output": "Bacteria in the urine, if present, is a sign of a urinary tract infection (UTI) [2]."}
+{"key": "c9faec778edfe7ad8087f224a5130b77", "output": "I cannot answer this question based on the provided documents."}
+{"key": "6d2daedc27f269e37b54e76f3dbb273f", "output": "Inside a cyst, there is a thick, sticky, clear, colorless, jellylike material. [1][2][4]"}
+{"key": "13cd0e322405061fca6be5c893edd901", "output": "Inflammatory conditions are a localized protective response resulting from injury or destruction of tissues, serving to destroy, dilute, or wall off both the injurious agent and the injured tissue [1]."}
+{"key": "6b9d9c412649ff80048dcacaadf59e9c", "output": "Common symptoms of neuroblastoma include a lump in the abdomen, neck, or chest; bulging eyes; dark circles around the eyes; bone pain; weakness or paralysis of a body part; and in infants -- swollen stomach and bluish lumps under the skin. [1][2]"}
+{"key": "0baf965018ff8fa21b74fc32f3c4598e", "output": "Delusions in schizophrenia are unshakable beliefs in something untrue, despite overwhelming evidence to the contrary [3]."}
+{"key": "decee3ea19d0a04b1c0b8488553a9835", "output": "Strep throat is contagious for about 2-3 weeks in individuals that do not take antibiotics, but individuals that take antibiotics for strep throat usually are no longer contagious about 24 hours after initiating antibiotic therapy [1][4][5]."}
+{"key": "d87a92d1b83d902a3c093d2748df6168", "output": "Arteries can harden due to the buildup of plaque, which consists of cholesterol, fatty substances, cellular waste products, calcium, and fibrin, over time [3][4][5]."}
+{"key": "bee1d5a949496268f1fd051188f3322e", "output": "The veins are the vessels that carry blood to the heart [1][2][3][5]."}
+{"key": "d73aaec7b23b4a52e6c2cec4dcc58d5e", "output": "Pravastatin is an HMG-CoA reductase inhibitor or statin, used to lower levels of cholesterol and triglycerides in the blood [1][3][4][5]."}
+{"key": "4df91a7e838f866903d54cbc30f19046", "output": "It is bad for the heart to consume foods high in saturated fat, trans fat, and cholesterol [5]. Processed meats, which are often high in sodium and saturated fat, should also be limited [3]."}
+{"key": "3b448318c987983a5967fc6e8c2abbb5", "output": "Codeine is an opioid medicine [1][2][4][5]."}
+{"key": "3b364d753e806f72af002812eda0fc50", "output": "regeneration of liver cells is an example of compensatory growth aimed to replace loss of tissue in an organ [1]."}
+{"key": "e2abe1861d2b6370081dad0f8e2ca727", "output": "Colon cancer that has spread to the liver is also known as metastatic, or stage IV, colon cancer [1][2][3][5]."}
+{"key": "fd7f3518456680fd9786745e16816ce9", "output": "Normal blood count ranges include a white blood cell (WBC) count between 4,300 and 10,800 cells per cubic millimeter [1][2], a red blood cell (RBC) count between 4.2 to 5.9 million cells per cubic millimeter [3], and a platelet count between 150,000 to 400,000 per cubic millimeter [1][5]."}
+{"key": "35fed0bc49578ce70544df2bd3eae6df", "output": "You should feel your baby's first movements, called quickening, between weeks 16 and 25 of your pregnancy. If this is your first pregnancy, you may not feel your baby move until closer to 25 weeks. By the second pregnancy, some women start to feel movements as early as 13 weeks. [1][2][4][5]"}
+{"key": "41ffe64b886a7c1e86f1a64d5ea7dcb7", "output": "Top reasons for having pain in the left heart include myocardial infarction [1][2][3][4] and coronary artery disease [1]."}
+{"key": "c69a5e370d274b918161b44b08e5de87", "output": "Possible causes of restrictive lung disease include conditions like interstitial lung disease, sarcoidosis, obesity, scoliosis, and neuromuscular diseases [1][3]."}
+{"key": "46c26bd478dcf85b1556912de2ccbe85", "output": "A normal systolic blood pressure is 120 or below [1][2][3][4][5]."}
+{"key": "c88f5672474dc414cf85fc17dad247d1", "output": "Signs of rosacea include flushing, persistent redness, bumps and pimples, and visible blood vessels [1][2][3][4][5]."}
+{"key": "acd58e80e70cf924517795da8c10a2d8", "output": "The normal dosage for Lyrica varies depending on the condition being treated. For neuropathic pain associated with spinal cord injury, the recommended dose range is 150 to 600 mg/day [3][5]. For fibromyalgia, it is 300 to 450 mg/day [4]. For other conditions, the recommended dose is 150 to 300 mg/day [1][5]."}
+{"key": "a1d750feb966a53bc18007cade4ef78e", "output": "Pravastatin is prescribed to lower blood cholesterol and triglycerides, and to reduce the risk of stroke, heart attack, and other heart complications in people with diabetes, coronary heart disease, or other risk factors [2][3][4]."}
+{"key": "291b71e41616d3dc25b7555c13ca38e0", "output": "Yes, tuna is good for heart patients as it is a source of omega-3 fatty acids, which may help reduce the risk of heart disease [2][3][5]."}
+{"key": "50bd66bd3bfcb4d5023eec13b11712c6", "output": "When checking blood sugar if you are non-insulin dependent, it is best to do so 1-2 hours after a meal [2][3]."}
+{"key": "fb78e7aa7fce67e7e424de91a7a2fce3", "output": "Colon cancer can develop over an average of 12 years [1][5], but this process can vary, with some cases taking as little as one to five years [1]."}
+{"key": "77007dc28385880316ee559f6a6c1ff4", "output": "Doxycycline is a tetracycline antibiotic used to treat various bacterial infections such as urinary tract infections, acne, gonorrhea, chlamydia, periodontitis, and rosacea [1][2][4][5]."}
+{"key": "3f9633447f5bb80e32f7ced84bde8118", "output": "Back surgery can have varying success rates depending on the type of surgery. Decompression spine surgery for a pinched nerve has a high success rate with about 90% of patients experiencing good relief of leg pain [1][4]. However, surgery to treat low back pain can be more extensive, with a somewhat lower success rate [1][5]."}
+{"key": "059d88d4be6e2075f889608fd1bf6afd", "output": "Peripheral arterial disease (PAD) is a disease that affects the legs [2][3][5]."}
+{"key": "e45e07dcca4b9a362e3d0d9a77882fcd", "output": "The lymph nodes in the groin (femoral or inguinal lymph nodes) may swell from an injury or infection in the foot, leg, groin, or genitals. [1][2][3][4]"}
+{"key": "a49f9cf755593bd2f5795d39227fa9e4", "output": "Blood coming into the aorta is from the left ventricle [2][3][5]."}
+{"key": "e04890581f4898df1ef9aaaf8ff2613b", "output": "Epinephrine is produced by the medulla of the adrenal glands [2][3][4][5]."}
+{"key": "6acecb1b0b52ce4cd577a7393ff66cdf", "output": "The recommended single maximum dose of nalbuphine is 20 mg, with a maximum total daily dose of 160 mg [1]."}
+{"key": "36d2e6eac5723d00c478a93bcd574110", "output": "Red blood cells contain hemoglobin genes [3][4][5]."}
+{"key": "e897f58250155bba5b623a44ae6a8e6d", "output": "Enterobacteriaceae can cause diseases such as Granuloma Inguinale, Klebsiella infections, Proteus infections, Serratia infections, and other enterobacteriaceae infections [1]."}
+{"key": "2ca12f274f1a7fc232d638a735a86271", "output": "The human immunodeficiency virus (HIV) causes the HIV virus [1][2][3][4][5]."}
+{"key": "63e7055d04e20dc29d0fdeea76d6a40f", "output": "Children become overweight and obese for a variety of reasons, including genetic factors, lack of physical activity, and unhealthy eating patterns [1][2][3]."}
+{"key": "7c46f4d39b7f863aea4960c18cef9299", "output": "Lyme disease is an infection caused by the bacterium Borrelia burgdorferi, transmitted through the bite of an infected tick [1][2][3][4][5]."}
+{"key": "a283b5e5d200a155a272dbb0e80f3d85", "output": "Dropsy is an old term for the swelling of soft tissues due to the accumulation of excess water [1]."}
+{"key": "008db26d343f3154534164927fa3a120", "output": "The first symptoms of influenza (flu) virus B often begin to go away after about 2 or 3 days, but in some cases, these symptoms will last 5 days or longer [1][2]."}
+{"key": "6767823604c7a54b37c4070c80c3edfb", "output": "An autosomal recessive disorder means two copies of an abnormal gene must be present in order for the disease or trait to develop [5]."}
+{"key": "08c482619f441cc4ca6bd4b8f0f6a8ef", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "a8bcec13fec9153776bdd488cf8ccc29", "output": "An endometrial cyst, also known as an ovarian endometrioma or an endometrial cyst, is a blood-filled growth that develops on an ovary due to endometrial tissue growing outside the uterus and swelling with blood during menstruation [2][3]."}
+{"key": "775ef2c279f149dc5d7cc9f735f32e39", "output": "Diseases caused by contaminated food include Escherichia coli infections, shigellosis or bacillary dysentery, giardiasis, cryptosporidiosis, norovirus infection, hepatitis A, and salmonelloses, including typhoid fever [1][3][4][5]."}
+{"key": "b9fa67b761a7b76a80048b10d2539a92", "output": "Carl Wernicke first described an illness in 1881 that later became known as Wernicke's encephalopathy [1]."}
+{"key": "d863bd4a6511f5e72239cca1528f8c06", "output": "The choroid of the eye is the layer of blood vessels and connective tissue between the sclera and the retina, part of the uvea [1][3][4]."}
+{"key": "2738b7dd658971f2ef61fc63a6ae20cb", "output": "The normal starting dose of Citalopram for depression is 20 mg daily [1][2][3][4]."}
+{"key": "ec5241dcf7b8269a52f9533f13b7e300", "output": "Regurgitation through a damaged valve occurs when the valve does not close properly and allows blood to flow backward in the heart [1]."}
+{"key": "9dc3da6e34fce8f336deb0baafd0ae80", "output": "Delta hepatitis is caused by the delta hepatitis virus (HDV), which is an RNA virus and occurs in conjunction with hepatitis B infection [1][2][3][4]."}
+{"key": "4118460d01aa582d32b0b64f3610951c", "output": "Joint hypermobility is a condition where joints dislocate easily [4]."}
+{"key": "899cc757618a926d3ced60848d31046e", "output": "Yes, you can get pregnant right after your period as you are moving into your fertility window, and sperm can live up to 5 days. [1][2][3][4]"}
+{"key": "44e95e3dcb0fbe956d78369dc286e21d", "output": "Digestive processes in the small intestine include the use of enzymes from the pancreas and bile from the liver to break down food, as well as peristalsis which moves food through and mixes it with digestive secretions [2][5]."}
+{"key": "3ce26d1b97245cc3b6c8eb77075cf2de", "output": "Symptoms of heart blockage include: 1 Fainting, 2 Dizziness or light-headedness, 3 Fatigue, 4 Shortness of breath [1][2]."}
+{"key": "f392e5459384aee9b00944062220c729", "output": "Symptoms of pneumonia include a cough, often producing discolored mucus, fever, shaking chills, rapid and often shallow breathing [1][2][4][5]."}
+{"key": "d0b64a3c6aeebfd627e7da19dd4d43ed", "output": "Arthritis in the hands may include pain in some or all of the joints, including fingers, wrists, and thumbs; the growth of bony knobs on finger joints; numbness in fingers; and swollen, red, or warm joints. [1]"}
+{"key": "6408dda454b6f821da010645deab2a19", "output": "A retroperitoneal mass is a growth or tumor that develops behind the peritoneum, a membrane covering most of the abdominal organs [1]."}
+{"key": "e6f93744a1748e04350e10d0c5ae0fef", "output": "Foods rich in omega-3s like fish, nuts, and dark green leafy vegetables can help fend off depression [1][2][4]. Foods rich in B vitamins such as beef, pork, chicken, leafy greens, and eggs can also help manage depression symptoms [2][3][5]."}
+{"key": "b272145f595ea2f0249efe7bfb4fed0b", "output": "Symptoms of infective endocarditis may include fever and chills, a new or changed heart murmur, and fatigue [1][5]."}
+{"key": "aab412b7833a1b1eeeb564fbaa9660a9", "output": "A hernia can be located in the abdomen, upper thigh, belly button, or groin regions [2][3][4][5]."}
+{"key": "663945e8163a0cea2ad5c98749f8e2f7", "output": "Gonorrhea is infectious [1][2][3][4][5]."}
+{"key": "2efe0a5e7c473d8d8a9896cac340b990", "output": "The ELISA test is a method that detects and measures antibodies in your blood to determine if you have antibodies related to certain infectious conditions [1][2][3][4]."}
+{"key": "93b419c9b1455c91cf6a344bc7bb2e2d", "output": "I cannot answer this question based on the provided documents."}
+{"key": "5b051faa39f65b3d703957f30b55e4af", "output": "Yes, a child can get chickenpox after the varicella vaccine, but it will usually be a milder form of the disease. [1][2][3][4][5]"}
+{"key": "db74c30a470bf652a89bd6d83877a352", "output": "Blood sugar tests include several different tests that measure the amount of sugar (glucose) in a person's blood [1][2][3][4][5]."}
+{"key": "09987e4eabef485739d7d8d3bc28a407", "output": "A groin pull, or groin strain, results from putting too much stress on muscles in your groin and thigh. If these muscles are tensed too forcefully or too suddenly, they can get over-stretched or torn. [1][2][3]"}
+{"key": "75a8441e57cb6127d4eefc125b652c75", "output": "Fluid in the face can be caused by fluid retention, which may occur due to conditions such as allergic reactions or allergic rhinitis [1][2][3]."}
+{"key": "78a18a93cdd2f79829111ba9c5265cb3", "output": "Inflammatory pelvic disease is an infection and inflammation of the uterus, ovaries, and other female reproductive organs [1][3][5]."}
+{"key": "202cbb6f1d9f91785ec368ebdb9741da", "output": "An EMG study measures the electrical activity of muscles at rest and during contraction [2][3][5]."}
+{"key": "927b50cd1bf9df192890fc20ae8f95f5", "output": "Musculoskeletal pain involves pain in the body's muscles, bones, tendons, and ligaments, often caused by injury, poor posture, repetitive motions, or overuse [1][2][3][4][5]."}
+{"key": "6d05cb61fecb27cda93c90d41797a173", "output": "A comprehensive metabolic panel consists of 14 tests [2][4]."}
+{"key": "eec959a72ddc86f53e0e8a989734145e", "output": "The exact cause of bipolar disorder is unknown, but several factors may be involved, such as biological differences, neurotransmitters, and inherited traits [2][3][5]."}
+{"key": "551fbb4921a9ef2709cf96046b17cd7c", "output": "Joint pain during running can be due to issues above or below the knee, such as hip dysfunction or ankle/foot problems [1]. It can also result from overuse or injury, including torn ligaments or tendons [2][5]."}
+{"key": "d7f0f305801fd1a50966416c7c6f89c8", "output": "Jaundice is a yellowish discoloration of the skin, mucous membranes, and the white of the eyes caused by elevated levels of bilirubin in the blood [1][3]. Jaundice is not a disease but a symptom of underlying conditions such as liver disease or hemolytic blood disorders [2][4]."}
+{"key": "f26548e9bd47dcbe7d897c12c2f2e88c", "output": "STADOL Nasal Spray is an aqueous solution of butorphanol tartrate for administration as a metered spray to the nasal mucosa [1]."}
+{"key": "3345565e32f73abfde08c3e2fb73271d", "output": "I cannot answer this question based on the provided documents."}
+{"key": "aeca4e2c31b8078926d23fbc16e47f41", "output": "Increased respiratory rate can be caused by a variety of factors including exercise or exertion, poor physical condition, stress [1][2], as well as medical conditions such as heart attack, lung disorders, and rapid breathing due to hyperventilation [1][2][5]."}
+{"key": "724ec96498a294a5d5e7f85f9af9eb11", "output": "The symptoms of meningitis include headache, fever, and a stiff neck [1][2][3][4][5]."}
+{"key": "6812fdb61bda320b68b17b0d97e989ae", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "f2b6da9d9427cfa57f2bb2118672d680", "output": "The maximum dose of niacin is 35 mg per day for adults, including pregnant and lactating women, older than 18 years [1][3]."}
+{"key": "b5e9c341ef4f3e01995705bd1f08a28b", "output": "Eye muscles twitch due to factors like fatigue, stress, caffeine, and certain drugs [1][3]."}
+{"key": "d22cbb0d5a238b2202a61274538122ab", "output": "Tetanus vaccines are provided through Td and Tdap vaccines [1][2][3][4][5]."}
+{"key": "319e2f47cf95009060e310744fe670db", "output": "The coronary artery supplies blood to the heart muscle [1][2][3][4][5]."}
+{"key": "12e590b29cc81c635ff223ee56d76d24", "output": "Detachment in the context of these passages refers to the separation of the vitreous humor from the eye wall or retina [2][3][5], and specifically, retinal detachment involves the retina pulling away from the tissue around it [1][4]."}
+{"key": "ae6ed2c7374c03523b96650c537108ff", "output": "HIV RNA refers to the RNA that HIV uses as a blueprint to make more of the virus [2][3]."}
+{"key": "277bee3ebf45e12e99dc9655d78c7d43", "output": "Causes of UTIs in men include prostatitis, epididymitis, orchitis, pyelonephritis, cystitis, urethritis, and urinary catheters [1][2]. Obstruction from any cause, instrumentation of the urinary tract, catheterization, and urologic surgery are also major risk factors [1][2]."}
+{"key": "67d227834ed4de80291da3e2473d6f7b", "output": "White coated tongue is caused by an overgrowth and swelling of the papillae on the tongue, leading to a white coating from debris, bacteria, and dead cells getting lodged between them [1][2][3]. It can also be caused by factors such as poor oral hygiene, dry mouth, certain medications, and other conditions [1][2][5]."}
+{"key": "bf1613f67062146f6d75bf47b1d21caf", "output": "The most effective way to remove tonsil stones permanently is to have your tonsils removed [1][2]. Alternatively, you can try gently pressing them out with a cotton swab or toothbrush, or using a low-pressure water irrigator to wash them out [1][2]."}
+{"key": "8e72a962ce88d7754a1e2bf01a3ccec0", "output": "Vision abnormalities that occur include refractive errors such as nearsightedness, farsightedness, astigmatism, and presbyopia [1][3], as well as coloboma [2] and amblyopia [5]."}
+{"key": "50566ca744a7ca779b7c69b328f50e37", "output": "Lymphoid tissue is the part of the body's immune system that helps protect it from infection and foreign bodies, consisting of structures like lymph nodes, spleen, tonsils, and adenoids [1][3][4][5]."}
+{"key": "5ee0f5b54c80aaa514c9cbc9cc225700", "output": "Huntington's disease is found on chromosome number four [1][2]."}
+{"key": "dc701580f91c2c21773b897859317302", "output": "Swollen ankles and feet are often caused by fluid retention, or oedema [1][2][3][5]."}
+{"key": "311b14510182d485a01e33dfeffb573b", "output": "The submandibular lymph nodes sit between the submandibular salivary glands, which are underneath the tongue, and the mandible, or lower jawbone. [2][4]"}
+{"key": "5f9647084e2e4281ff6fffed365e0e0b", "output": "Side effects of taking carbamazepine include fever, tired feeling, weakness, confusion, pale skin, feeling light-headed or short of breath, easy bruising, unusual bleeding, slow, fast, or pounding heartbeats, dizziness, drowsiness, unsteadiness, vomiting, diarrhea, constipation, stomach pain, confusion, headache, blurred vision, ringing in the ears, dry mouth, swollen tongue, and leg cramps. [1][3]"}
+{"key": "746ec38264cba3a15d044b4c87e6e90b", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "5231d51854b51bd9bd744c71004b254e", "output": "The smell of urine can be affected by various factors including the presence of bacteria (such as in urinary tract infections), dehydration, certain foods (like asparagus), and some medications [1][2][3][4][5]."}
+{"key": "fc7eec55ff64baf9ba40b50c4bbb4097", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "f39835ef178df389ed55973480c24f68", "output": "Knee swelling and stiffness can be caused by a ligament sprain [1], an overuse injury or underlying conditions such as arthritis [2][4]."}
+{"key": "b322d3720d186b661140e1d909a91cad", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "bb45b646da7d6cde8eaaf729e39a85bc", "output": "Cephalexin is used to treat infections caused by bacteria, including upper respiratory infections, ear infections, skin infections, and urinary tract infections [1][2][3][4]."}
+{"key": "9001ad9d1286757dbf614da632b43153", "output": "Signs of your appendix rupturing include pain that worsens if you cough, walk, or make other jarring movements, and the appendix can rupture as quickly as 48 to 72 hours after the onset of symptoms [1][3]."}
+{"key": "45302e2d84a60b6e75cc8a52944a7e19", "output": "Sodium chloride can reduce some types of bacteria [2][3]."}
+{"key": "00eee51f9316dcae637e582aa7d5e0b1", "output": "Dexilant is prescribed for treating gastroesophageal reflux disease or GERD [1][2][3][4][5]."}
+{"key": "241c5e435caba516e01203a39c4d4fff", "output": "A contagious skin infection caused by fungi is ringworm [1][5]."}
+{"key": "9fbfbcb9ff1e7c0ae9a607aba40a0acb", "output": "You may feel a quick, burning pain, a tingling feeling, and a twitching of the muscle each time the electrical pulse is given during a nerve conduction study [1]."}
+{"key": "86b592036328e1db4bbd42286032c8d2", "output": "Atopic skin refers to a condition where the skin becomes extremely itchy and inflamed, causing redness, swelling, vesicle formation, cracking, weeping, crusting, and scaling [2][4]."}
+{"key": "bb17b1cbae757fcb273b4c3b626d6327", "output": "Yes, Meclizine works to prevent and treat nausea, vomiting, and dizziness associated with motion sickness [2][3]."}
+{"key": "0efff8718de09d111b299daac133b6f0", "output": "An abnormally low body temperature (hypothermia) can be serious, even life-threatening, occurring as your body temperature passes below 95 F (35 C) [3]."}
+{"key": "e1411dca78d91267985c4b87a70df722", "output": "Benign paroxysmal positional vertigo (BPPV) is one of the most common causes of vertigo — the sudden sensation that you're spinning or that the inside of your head is spinning. Benign paroxysmal positional vertigo causes brief episodes of mild to intense dizziness. [1][2][3][5]"}
+{"key": "de7f7253e892f2a9a6cbf71357f63285", "output": "The major organs in the respiratory system include the nose, pharynx, larynx, trachea, bronchi, and lungs, which work together to allow gas exchange at the cellular level [1][2][3][4][5]."}
+{"key": "e043f0b2268afc70bf3f57f232c87fb6", "output": "I cannot answer this question based on the provided documents."}
+{"key": "c4493ecd2db69c107500bf5c6a182e76", "output": "Onychomycosis of toenails is a fungal infection that affects the toenails, causing them to thicken, discolor, disfigure, and split [1][2][3][4]."}
+{"key": "9f1d4b9357dc0c3de4280299b2ec0b6d", "output": "Normal creatinine levels in urine are not directly stated in the passages, but they can be inferred to be present and comparable to the blood levels, which are given as 0.5 to 1.1 mg/dL for females and 0.6 to 1.2 mg/dL for males [1][2][3][4][5]."}
+{"key": "9502f4a56cf7879853fafe14cdc07385", "output": "Parathyroid function includes managing calcium, vitamin D, and phosphorus levels in the blood and bones [4][5]."}
+{"key": "3745546c712c9cf57f9c3156cf7ca8a4", "output": "Most adults have a resting heart rate of 60-100 beats per minute (bpm) [1][2][3][4][5]."}
+{"key": "c2db0d7ccff5ff92669a9f927e2c6383", "output": "A positive Hepatitis C antibody test result means you have been infected with the Hepatitis C virus at some point in time [1]."}
+{"key": "f00644a3bf2c9a95a22175662f94999a", "output": "Versed is a brand name for the drug midazolam, which is used to induce drowsiness, relieve anxiety, and prevent memory of events before and during surgeries or certain medical procedures [1][2][3][4]."}
+{"key": "a03185e4f5d82f508d7a5fad54103d44", "output": "The hormones used in digestion include gastrin, secretin, and cholecystokinin (CCK) [1][2]."}
+{"key": "7b0236891bf0791e24fd4750b630755c", "output": "A normal resting heart rate for adults ranges from 60 to 100 beats a minute [1][2][3][4]."}
+{"key": "7024e78738e36f81c6478da80f3f4d0a", "output": "Arthritis is a joint disorder featuring inflammation, where a joint is an area of the body where two different bones meet [1][2][3][5]."}
+{"key": "133bca720f6da0614c6af7a5dbba8e79", "output": "Mumps is contagious for approximately 15 days, with the most contagious period being about 6 days before symptoms start and up to 9 days after they begin [3]."}
+{"key": "c8c320b0caa467959f9a607e544ac6b7", "output": "The symptoms of asbestos-related illnesses include shortness of breath, particularly with physical exertion, a dry cough, and chest pain [1][3]."}
+{"key": "474a439a64c092751349bd40103d0b84", "output": "Yes, staph infection is contagious [2][3]."}
+{"key": "4c0f7e6001089528d2c2d4b24ac0fdfb", "output": "The most common side effects of Naprelan, which contains naproxen (the active ingredient in Aleve), include headache, upset stomach, indigestion/heartburn, nausea, diarrhea, constipation, gas, skin itching or rash, dizziness, drowsiness, insomnia, ringing in your ears, or vision problems. [3][5]"}
+{"key": "c4c284a8c9558c7c09391b8174ec483c", "output": "I cannot answer this question based on the provided documents."}
+{"key": "6cce03e52b319a72d348c1b7b4bb4c3b", "output": "Streptococcus pyogenes, a beta-hemolytic bacterium, is significant due to its ability to cause a wide variety of diseases including strep throat, skin infections, rheumatic fever, and invasive systemic infections [1][2][4]. It is also one of the most common pathogens responsible for cellulitis and can lead to outbreaks in young children [2][4]."}
+{"key": "f57b21489494a8f7757efb6d2e61d8dd", "output": "Alesse is a low-dose birth control pill [1]."}
+{"key": "4a30c565bc287063872f55e267b87aa6", "output": "I cannot answer this question based on the provided documents. [1][2][3]"}
+{"key": "c12e09fd5500a9accac69004d52ed490", "output": "Side effects of Cogentin include blurred vision, drowsiness, dry mouth, and dryness of the nose [1][3]."}
+{"key": "2a83e1656a8e11aeb25109195dfc831e", "output": "Lymph nodes are not always involved in tumor spread, as cancer cells can also travel through the bloodstream to other organs [3][4]."}
+{"key": "1913f1adf3422e08bae42933861e0886", "output": "FLG mutations are associated with IV in Northern European and Japanese populations, and also in a Bangladeshi population [1][3]."}
+{"key": "ff4f081a3334374220c7292adc8ae172", "output": "The optic nerve connects the eye to the brain and carries impulses formed by the retina, which senses light and creates these impulses, dispatching them to the brain for interpretation as images. [1][2][3][4][5]"}
+{"key": "735d90e7389a76630542d012f5b2f358", "output": "Ovulation symptoms can start a day or two before ovulation and continue after it has occurred [1][4]."}
+{"key": "fa358bd646cfa2bfbe89b68f986eceba", "output": "Enterococcus is part of the genus Streptococcus [1][2][3][5]."}
+{"key": "3bbdb3131eedbc24b33523e1369a8d60", "output": "Yes, phosphorus is toxic, particularly when ingested in the form of white or yellow phosphorus, as seen in rat poisons, certain fertilizers, and fireworks [1][3]."}
+{"key": "310580ca743b7afb4e7225fa5c221c7c", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "241e9b0ae598ce6f0198d19926ad5565", "output": "Motor nerve cells, or motor neurons, transmit signals from the brain or spinal cord to muscles or glands [2][5]."}
+{"key": "88d93f8c3a2992469f3a8423785b4d48", "output": "Yes, there are different types of vertigo. There are two main types: peripheral vertigo and central vertigo [2][3]."}
+{"key": "da72f82ecbf81678152eb87070e0fb96", "output": "Yes, it can hurt a baby to be born if they were exposed to alcohol in the womb, as alcohol can cause physical and behavioral problems that may last a lifetime [1][2]."}
+{"key": "c6994509dbdb3e0e02459499a6f1e645", "output": "Necrotizing fasciitis is a severe, rapidly spreading infection that results in the death of tissue (necrosis) in the fascial planes of connective tissue surrounding muscles, nerves, and blood vessels [1][2][4][5]."}
+{"key": "06bd8bd5e808034783f32e8c8fa78ddb", "output": "Infection around the heart, or pericarditis, can be caused by infections, among other factors such as injury, radiation treatment, and chronic diseases [2][4][5]."}
+{"key": "e745dcfaf23a83eda36e17b4c8aa693f", "output": "You should take throat lozenges, acetaminophen, or ibuprofen, and gargle with warm salt water to ease the pain [1][3]."}
+{"key": "f9b08bb9225680842b6aab6a565565c8", "output": "A personality disorder is characterized by a rigid and unhealthy pattern of thinking, functioning, and behaving, causing difficulties in perceiving and relating to situations and people [1][2][5]."}
+{"key": "019dc7251de647eb42e7a9c543246f4f", "output": "Yes, hives are itchy [1][2][4][5]."}
+{"key": "ef524032e6c2229fc3d803f33c0bee15", "output": "The incubation period for pertussis is commonly 7–10 days, with a range of 4–21 days, and rarely may be as long as 42 days [1][2][3][4][5]."}
+{"key": "5dc144096eda2b85a08c2049d3466058", "output": "Bilirubin is a brownish yellow substance found in bile, produced when the liver breaks down old red blood cells [1][2]."}
+{"key": "c7fc507fd751586328e59bd2046b99fb", "output": "I cannot answer this question based on the provided documents."}
+{"key": "c4de81a122a8146d1209706086abefd3", "output": "The normal range for thyroid-stimulating hormone (TSH) in most laboratories is 0.4 to 4.0 mIU/L [1][2][3][4][5]."}
+{"key": "5f0056a2d11fe0d82e0f6cebadc47a3d", "output": "Percodan is used to relieve moderate to moderately severe pain [1]."}
+{"key": "22bcd352d5e057c60b2ee20103230b8d", "output": "A full blood count (FBC) blood test checks the number of red cells, white cells, and platelets in the blood [1][2]."}
+{"key": "4831abc62cee8ea23b6258737169e661", "output": "Squamous cell carcinoma involves the uncontrolled growth of abnormal cells in the skin's outer squamous cells of the epidermis [5]."}
+{"key": "d226d5c84712fc976489b0522481d1d5", "output": "Antidiuretic hormone is released from the pituitary gland at the base of the brain [1][2][3][4][5]."}
+{"key": "0203b33630bb8f9e11d265cdc765bbd2", "output": "A sensory nerve composed of axons from the tibial and common fibular nerves in the posterior leg. [1]"}
+{"key": "f2bfd57d0dd7f94ff6f56b11107f93e1", "output": "Rh positive blood type means your blood has the Rh protein on the surface of red blood cells [1][2][3][4]."}
+{"key": "e883f76bd31b911805a3a5884993a7e1", "output": "Normal pulse oximeter readings for adults range from 95 to 100 percent [1][2][3][4][5]."}
+{"key": "743ef481a0180da542dfad1c0c887515", "output": "Staphylococcus aureus [1][2][3][5] (staph) is a type of bacteria that about 30% of people carry in their noses; most of the time, it does not cause any harm."}
+{"key": "905fc81e099eacf4dd9afb9488c51b94", "output": "An inflamed esophagus, or esophagitis, is inflammation of the esophagus, the muscular tube connecting the throat to the stomach [1][3][4]."}
+{"key": "7bd77162ea48649f0906631b050cc471", "output": "Aneurysm is caused by a weak spot in the wall of a blood vessel, allowing it to widen abnormally or balloon out [3]."}
+{"key": "7fab5cf90aa18b9151c59011eeee21dd", "output": "Pityriasis alba causes slightly scaly, round or oval patches on the skin that look slightly pink and later fade to leave areas that are lighter than the other skin [2]."}
+{"key": "e03ccdee015cd1238e005d2160ab51b6", "output": "Radioiodine destroys the thyroid gland and any other thyroid cells, including cancer cells, that take up iodine, with little effect on the rest of the body [1][3]."}
+{"key": "bc65fb48c9559826e7eca80bf6631274", "output": "A positive fecal occult blood test indicates the detection of blood in your stool samples [2][4]."}
+{"key": "15c038ed8361dd26e588e64836d18417", "output": "Vitamin C is good for colds, as it may reduce the duration and severity of common cold symptoms when taken at the first sign of a cold [1][2]."}
+{"key": "f6e2618478682781be3352b06fee51c9", "output": "Quinine is good for treating malaria caused by Plasmodium falciparum [1][2][3][4]."}
+{"key": "a242516d43c030baed7cf5a5083cadab", "output": "An aneurysm is a weak spot in the wall of a blood vessel that may cause an abnormal bulge [2][3][4]."}
+{"key": "a6491e4ab8c2d060215ef8714a0469a0", "output": "The highest portion of the brain is the cerebrum [1][3]."}
+{"key": "a614642cfc98c26419e91f37996ccb24", "output": "Nerve disease caused by nutrient deficiencies can include conditions such as pernicious anemia [2], megaloblastic anemia [2], and vitamin B12 or folate deficiencies [3][4][5]."}
+{"key": "6cddab204297f4576b5e5ee917eb86fe", "output": "Flagyl is used for treating bacterial infections of the vagina, stomach, skin, joints, and respiratory tract [2]. It is also used to treat abdominal infections, infections of the skin and tissue, bone or joint infections, gynecologic infections, or respiratory infections [1]."}
+{"key": "60f1cf96f7c19ae94fc1874805d0be41", "output": "Intestinal inflammation can be caused by various factors including infection, autoimmune disorders such as inflammatory bowel disease [1], and other conditions like colon cancer or intestinal worm infestation [1]."}
+{"key": "0a7502c567e96f14ced352f74e8e9529", "output": "Diabetic microalbuminuria is a subtle increase in the urinary excretion of the protein albumin, greater than 30 mg and less than 300 mg per day, which is an early sign of diabetic kidney disease [1][2][3][4][5]."}
+{"key": "f40ce6f56047d65f518d9af4191f5e4a", "output": "A major cause of arteriosclerosis is the build-up of fatty deposits on the inner lining of arteries, which can lead to atherosclerosis [1][2][3][5]."}
+{"key": "e7f4c7a8b7c55e3bf436122af955fb4a", "output": "The process of clotting blood, or coagulation, involves the body's response to injury where the blood vessel constricts, platelets adhere and aggregate, and the coagulation cascade is initiated to form a fibrin mesh that immobilizes the blood elements [1][2][5]."}
+{"key": "ba3cc48fcbcf62cd951f5332a26854f1", "output": "To monitor COPD, spirometry is used to measure how much air you can move in and out of your lungs, helping to test for COPD and identify its stage [2][3]."}
+{"key": "7c5a969ca7b5985042bc3894937fb19f", "output": "Inflammation around the heart is medically termed pericarditis [1][2][3]."}
+{"key": "b0563a6189d8a9423337e439215ee832", "output": "A CBC test usually includes: 1 White blood cell (WBC, leukocyte) count. [1][2][3][4][5]"}
+{"key": "5348c2c6c1b589c2834076d3938ca6f6", "output": "A burning sensation of pain is called causalgia [4][5]."}
+{"key": "97fee630373306c155dd2c50399cf3d9", "output": "Increased metabolic rate is related to body temperature, showing an exponential relationship within the temperature range of 16 to 32 degrees C [1]."}
+{"key": "b7ee113c3ba968f902d2ca8ef86a1ad9", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "1861d35745e5f9caefc1edf8e0a13435", "output": "Thalassemia is caused by mutations in the DNA of cells that make hemoglobin, which are passed from parents to children [1][2][3][4][5]."}
+{"key": "8cfabfc55b531741b36e656426f55a45", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "51269258679491ea0dc6624904a74872", "output": "The chickenpox incubation period is seven to 21 days, usually 10 to 21 days after exposure to the herpes varicella-zoster virus [1][5]."}
+{"key": "ad460081364ae73f4937208d4eeec815", "output": "Ambien works by slowing the activity in your brain, which allows for a state of sleep [1]."}
+{"key": "1e0bf9c3f9f2336720da24e3632771aa", "output": "E-cigarettes can be harmful to the lungs, producing tiny particles that users inhale deeply, potentially causing or worsening respiratory diseases [1][2]."}
+{"key": "883c4def1c4338911a7ac9cea3b29e74", "output": "The PPD test is used to determine if someone has developed an immune response to the bacterium that causes tuberculosis (TB) [1][2][3][4][5]."}
+{"key": "5af7e6a2c0a6f03faa104b5b0bfa8c78", "output": "Art therapy can be used to help individuals get in touch with their feelings and use creative expression as an outlet for their emotions [1][2]."}
+{"key": "6eaa25b46632a41d89e55431111b69f0", "output": "Artane (trihexyphenidyl) is used to treat the stiffness, tremors, spasms, and poor muscle control of Parkinson's disease [1]."}
+{"key": "45278dfdbe0c941185d260455c626028", "output": "Treatment for pleurisy usually involves relieving pain and addressing the underlying cause of the condition [1][3]."}
+{"key": "3981867f59fbc279115a72ef9f0608de", "output": "Scalp dermatitis is an inflammation of the scalp that can lead to flaky skin, redness, ulceration, itching, and various other symptoms [1]."}
+{"key": "41c2ece4a96d5f4c93a5f0cff951cf68", "output": "The intestines, including the small intestine, allow nutrients to be absorbed [3][4][5]."}
+{"key": "0922e71ad8184dd2cb0efe94f1738788", "output": "Crohn disease affects the digestive system [1][4]."}
+{"key": "e966526187d9aef496359185a24bfa56", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "137e021abba215ca93c95cb90e075b01", "output": "A blood urea nitrogen (BUN) test measures the amount of nitrogen in your blood that comes from the waste product urea [1][2][3][4][5]."}
+{"key": "39ee77f16cd5784dc3fb97a16a354df8", "output": "The spleen acts as a filter for blood as part of the immune system, recycles old red blood cells, stores platelets and white blood cells, and helps fight certain kinds of bacteria that cause pneumonia and meningitis [1][2][3][4][5]."}
+{"key": "8ef32f8ee62fa638be729f3b3e779be9", "output": "The HbA1C (A1C or glycosylated hemoglobin test) is used to check for diabetes [1][3][4]."}
+{"key": "f91d5fd3475561bde2e708fbf6d65f30", "output": "Irritable Bowel Syndrome is not contagious [1][2][3][4][5]."}
+{"key": "a009c61f0030f34e466aed6a99e56827", "output": "Normal body temperature can range from 97.8 degrees F (36.5 degrees C) to 99 degrees F (37.2 degrees C) for a healthy adult [1][2][4]."}
+{"key": "239f875ad94118e16f60f6ff52ccf764", "output": "I cannot answer this question based on the provided documents."}
+{"key": "5d2ce5a69bfd1784afa1428b0fcc1dba", "output": "Infections, particularly viral infections like the common cold, are the most common causes of swollen lymph nodes [1][2][3][4][5]."}
+{"key": "414e6dba9fadc5e04b93ebd6c566211d", "output": "Antibiotics are prescribed for tonsillitis caused by a bacterial infection, such as strep throat [1][2][3]."}
+{"key": "81668e89a3aa041564904b621d3d7a99", "output": "Gonorrhea can infect the urethra in men [2][5]."}
+{"key": "0bd5746d65a5f340d8e63dc23c35e519", "output": "Shingles is caused by the reactivation of the varicella zoster virus, the same virus that causes chickenpox, after it has become dormant in the body [1][2][3][4][5]."}
+{"key": "80d08e1c618cc57e594dfbf13088b3b8", "output": "The sciatic nerve innervates the lower back and lower extremities, supplying nearly the whole of the skin of the leg, the muscles of the back of the thigh, and those of the leg and foot [1][2][5]."}
+{"key": "f37096fddb0abc8d2d01f374e81fe44f", "output": "Neutrophil granulocytes help the body fight bacterial infections [1][2][3][4]."}
+{"key": "624d7ebf9d21598671740af278813260", "output": "A normal TSH result is generally considered to be in the range of 0.4 to 4.0 mIU/L, though this can vary based on the specific laboratory and test conditions [1][2][3][4][5]."}
+{"key": "d59994f427da76b1cda77babc5c6692d", "output": "Hepatitis B is a potentially serious form of liver inflammation due to infection by the hepatitis B virus (HBV) [1][3][4][5]."}
+{"key": "07d06d127f5b73ff9c723cd32bbdd66f", "output": "Apo Amitriptyline is used to treat symptoms of depression [1][2][3][4][5]."}
+{"key": "a9ea217f53789e245f613a6b8beefbfe", "output": "Alanine aminotransferase (ALT) and aspartate aminotransferase (AST) are found in liver tissues [1][2][3][4][5]."}
+{"key": "433809029b5fe40860c5aa7a07e3b3e3", "output": "Contagious disease is any disease that can be transferred from person to person [1][2]."}
+{"key": "723f0163664b94424d170085ad4b07b2", "output": "Inverted papilloma is a benign, locally aggressive neoplasm that arises in the nasal cavity and paranasal sinuses. [1][4]"}
+{"key": "479454c51c4f8c22d0f1aef93a1b8896", "output": "Plantar warts are hard, grainy growths that usually appear on the heels or balls of your feet, areas that feel the most pressure, and may grow inward beneath a hard, thick layer of skin (callus). They are caused by the human papillomavirus (HPV) entering the body through tiny cuts, breaks, or other weak spots on the bottom of the feet [2][3][4][5]."}
+{"key": "f227903642964aec9100439b43a8f437", "output": "Niacin is a B vitamin (vitamin B3) used in vitamin supplements and in combination with prescription drugs [3][5]."}
+{"key": "cc6bb070d2481a77b538a3ada502cb78", "output": "A boil is a large infection of a hair follicle, the tiny opening in the skin from which a hair grows [1][2][3][4][5]."}
+{"key": "b1deac75ab9df5a8b6469c6ff330b96d", "output": "Gastropathy is a category that includes various diseases affecting the stomach lining, characterized by symptoms such as pain, inflammation, stomach bleeding, or other digestive issues [1][2]."}
+{"key": "e1e51c083f0567eab03ecc3af03180b5", "output": "I cannot answer this question based on the provided documents."}
+{"key": "4f8266c41204cdf49e20f05338d8faae", "output": "Postmenopausal atrophic vaginitis is the thinning of the walls of the vagina caused by decreased estrogen levels [1]."}
+{"key": "cda267232837e227661fe1d9c172cdd1", "output": "I cannot answer this question based on the provided documents."}
+{"key": "3d46be6683a5dd852abb5b1fabbc98cd", "output": "Lymphadenitis, such as mesenteric lymphadenitis, is a condition in which your lymph nodes become inflamed, often due to an intestinal infection [2]."}
+{"key": "56f0d4699f5b594b9e9ce623562a4233", "output": "Shortness of breath has many causes, including heart or lung conditions, pulmonary edema, asthma, cardiac tamponade, and problems with the breathing passages and lungs or the heart or blood vessels [1][2][3][4][5]."}
+{"key": "b693751f6bb1030d77b09e1e3845b8a5", "output": "MDROs are defined as microorganisms, predominantly bacteria, that are resistant to one or more classes of antimicrobial agents [1]."}
+{"key": "1aee134b27b21b97622a7a29ebe741f4", "output": "During contraction, the thin filaments slide past the thick filaments, shortening the sarcomere [1][2]."}
+{"key": "6f01702d03fd766a44a7e1f3a948bccc", "output": "Alcohol withdrawal can include dilated pupils [1]."}
+{"key": "96b7c724c638b0a17526391cf18a6f75", "output": "Papillary thyroid cancer (PTC) is the most common form of well-differentiated thyroid cancer, arising from follicular cells and appearing as an irregular solid or cystic mass or nodule in a normal thyroid parenchyma [1][2]."}
+{"key": "7616b5ccd7e50e6a4f29cc9ef8b53c9d", "output": "Cabergoline is used to treat certain menstrual problems, fertility problems in men and women, and pituitary prolactinomas (tumors of the pituitary gland) [1][2][3][4]."}
+{"key": "7d8d19bb4a7495238d6abaee141f0b74", "output": "It takes about four weeks for small broken bones with simple fractures to heal in small children [1][2][3][5], and about six weeks in teenagers and adults [1][2][3][5]. Larger broken bones, such as those in the thigh, may take six weeks to three months to heal in average healthy adults [1][2][3][5]."}
+{"key": "cbbd214ab5b9e15ac0b65ca56d96600f", "output": "I cannot answer this question based on the provided documents."}
+{"key": "5e17bc5f72409649b4d237b1acd3b571", "output": "Hepatitis A is an inflammation of the liver caused by a virus, the hepatitis A virus (HAV), and varies in severity, running an acute course, generally starting within two to six weeks after contact with the virus, and lasting no longer than two or three months. [1][2][3]"}
+{"key": "513bc01e7ce7c1a1d0d86eb4493ffb59", "output": "The prostate is a gland in men that surrounds the neck of the bladder and the urethra and produces a fluid that becomes part of semen [2][3][4]."}
+{"key": "6e46a74c1b1b5dd687b64c58bf38b0cf", "output": "A normal blood glucose level is lower than 140 mg/dL (7.8 mmol/L), while a blood glucose level between 140 mg/dL and 199 mg/dL (7.8 and 11 mmol/L) is considered impaired glucose tolerance, or prediabetes [1]."}
+{"key": "6ee9adbb4c68606a7536ad00dc4a3219", "output": "Sepsis is the presence in the blood or other tissues of pathogenic microorganisms or their toxins [1][2][3][5]."}
+{"key": "11a0fe170c746b67f044c1a48fac1f7d", "output": "The esophagus is located just posterior to the trachea in the neck and thoracic regions of the body, passing through the esophageal hiatus of the diaphragm on its way to the stomach [1][2][3][5]."}
+{"key": "095d0c8beddbb7f09b7d3eee738a3a2c", "output": "The incubation period for a common cold varies, typically ranging from at least two days to up to a week or two weeks depending on the virus, with an average of one to three days. [1][2][4]"}
+{"key": "bfcd28873075ba7807d1ab071e930c42", "output": "Zoloft is prescribed for depression, obsessive-compulsive disorder, panic attacks, post-traumatic stress disorder, social anxiety disorder, and premenstrual dysphoric disorder [1][2][3][4][5]."}
+{"key": "c991cb44a0aefac881a274458b7685e1", "output": "The endoplasmic reticulum (ER) stores calcium [2][3]."}
+{"key": "766ddf215a28e51274b3352d97bbf5e1", "output": "The muscular system is responsible for movement and the maintenance of posture and body position. [1][2][3][4]"}
+{"key": "bb623a3a4ba8cf42dea4f808810d8269", "output": "The most common causes of rib cage pain are a pulled muscle or bruised ribs. Other causes include broken ribs, injuries to the chest, rib fracture, diseases that affect the bones such as osteoporosis, inflamed lining of the lungs, muscle spasms, and inflamed rib cartilage. [1][2][3][4]"}
+{"key": "6568070bb28aeabefa0f938fbfbd7d4f", "output": "Ventricular ectopy refers to premature heartbeats originating in the ventricles, including ventricular premature contractions (VPCs) [3][4]."}
+{"key": "33197cc69f0d35350e93a8c8077528df", "output": "You can be contagious from a few days up to two weeks or more, depending on which virus is causing your stomach flu [1][2][3][4][5]."}
+{"key": "d159f215831563f922ac4b7dc318cb0e", "output": "The term that means blood in the urine is hematuria [1][2][3][4][5]."}
+{"key": "3bddf22a7fdcd3092154945047711b84", "output": "The placenta provides oxygen and nutrients to your growing baby and removes waste products from your baby's blood [1][5]. It also keeps your unborn baby’s blood supply separate from your own, enabling it to carry out functions that your unborn baby can’t perform for itself [2][3][4]."}
+{"key": "e801dfdcb77bfc335520f84d05e29f68", "output": "Alcohol can affect your sleep for several hours, as its effects may be noticeable for up to six hours before bedtime, and it can disrupt REM sleep, which is crucial for restorative sleep [1]."}
+{"key": "fdac17ef392229396658265322799eea", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "3131715b1e8800299246c14e0446968a", "output": "A relatively small dose of virus or bacteria administered in live attenuated vaccines stimulates an immune response by replicating in the body [3][4][5]. For pure polysaccharide vaccines, they typically stimulate B cells without the assistance of T-helper cells, being T-cell independent [1][3]."}
+{"key": "63f7a88c46f3421f9da3649cf8fb3390", "output": "The subcutaneous layer of skin contains a network of fat and collagen cells [2][3][4][5]."}
+{"key": "507902b689e647be23f41fb218dcd954", "output": "Cerebrospinal fluid (CSF) is a clear, watery liquid that flows around the brain and spinal cord, surrounding and protecting them [1][2][3][5]."}
+{"key": "ca59f81d3f973655ca8d1f5876f22356", "output": "Dopamine is a neurotransmitter, a chemical messenger that helps in the transmission of signals in the brain and other vital areas [1][4][5]."}
+{"key": "ee21647caabb0541db1b1cbf8407785f", "output": "A gastrointestinal stromal tumor (GIST) is a type of cancer found in the digestive tract, typically in the stomach or small intestine [1][2][4][5]."}
+{"key": "5d6b0f1236a8b816ff5f728d3168f4b8", "output": "Children exposed to HIV adults should receive IG (Immunoglobulin) as indicated, particularly for those under 1 year of age and for measles-susceptible pregnant women [2][5]."}
+{"key": "c4ec55b02e76ec8bcea6628d7dd96601", "output": "Laryngitis can be caused by viral infections such as colds or the flu [1][2][4][5], bacterial infections like diphtheria [1][3][5], vocal strain [1][3][5], acid reflux [4][5], irritation from allergens or smoke [4][5], and other conditions such as vocal cord paralysis or tumors [2][3]."}
+{"key": "68c13d7b788433573818c647de69c726", "output": "I cannot answer this question based on the provided documents. [4][5]"}
+{"key": "2fc07e1c8aed65aba433472a9ef1ab58", "output": "Parathyroid hormones are polypeptides containing 84 amino acids that are secreted by the parathyroid glands after processing from larger precursor hormones. [3][4]"}
+{"key": "35ce13717b268564da2d7e6ffcfa575b", "output": "The proteins in gluten that cause coeliac disease are gliadin, found in wheat, barley, rye, and sometimes oats [1][2][3][4][5]."}
+{"key": "50bc0178116828bdc92581914db2deb7", "output": "Charcot-Marie-Tooth Disease (CMT) is a genetic disease of nerves, typically with progressive muscle weakness, particularly in the arms and legs [1][4][5]."}
+{"key": "b585845f34ad6d96e868533839b2be42", "output": "An adult has a fever when their oral temperature is above 100.4°F (38°C) or their rectal or ear temperature is above 101°F (38.3°C) [2][3]."}
+{"key": "48134c6c7d030f0e74bb0f73b937eed6", "output": "The average length of treatment for eating disorders in residential settings is 83 days [1][2]."}
+{"key": "6766bf25cc9b77b2e3d1ef8381f23f79", "output": "I cannot answer this question based on the provided documents. [1]"}
+{"key": "a323bdeff80cc39096e2e2b2978743a8", "output": "Shingles is caused by the reactivation of the varicella zoster virus, which is the same virus that causes chickenpox after it lies dormant in the body and can reactivate years later [1][2][3][4]."}
+{"key": "1952da5a7b4b95f90b7157e547601558", "output": "A creatinine urine test measures the amount of creatinine in your urine and can help your doctor evaluate how well your kidneys filter waste [1]."}
+{"key": "169f08fb39b4cbf1c251027f14c66689", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "974a54311379c2e9662b4a25e220f4a3", "output": "The hamstring muscle is located in the back of the thigh [1][2][3][4][5]."}
+{"key": "491a7ffaac1eb971c52d49b0db17424b", "output": "A balanced carbohydrate: protein diet may be beneficial in the management of Parkinson's disease [1][2]."}
+{"key": "5b4cb44e691cab1533a06ee0745f0f57", "output": "A herniated disc refers to a problem with one of the rubbery cushions (disks) between the individual bones (vertebrae) that stack up to make your spine. This occurs when some of the softer center pushes out through a crack in the tougher exterior. [4][5]"}
+{"key": "2328eed4b6f602c940e41ba9ed3836fb", "output": "Pelvic inflammatory disease (PID) is an infection and inflammation of the upper female genital tract, including the uterus, fallopian tubes, and ovaries [2][4][5]."}
+{"key": "8d266388650347116b6a7dda4cc7c206", "output": "Malaria is caused by the plasmodium parasite [2][3][4][5]."}
+{"key": "9a7179b37baec004e1f6291dbe9fabf9", "output": "An insulin pump helps with the body's glucose regulation system [1][3][4][5]."}
+{"key": "0e7dce21a915430bc55a057c4008228f", "output": "A genetic disorder can be inherited from a parent through a mutation in one or more genes [1][2][3][4][5]."}
+{"key": "aee01b7d59d240346315edf66c19684d", "output": "No, Carisoprodol is not an NSAID. It is a skeletal muscle relaxant that acts on the central nervous system [1][2][3][4]."}
+{"key": "680933d08f9d2112ee23584e5367273d", "output": "Disease that causes inflammation includes inflammatory bowel disease [2][3][4], chronic peptic ulcer [1], rheumatoid arthritis [1], and others like asthma, tuberculosis, and chronic periodontitis [1]."}
+{"key": "c577ea4f5169397ee64509aa67e8bf22", "output": "Garlic supplements are good for conditions related to the heart and blood system, such as high blood pressure, high cholesterol, coronary heart disease, heart attack, and \"hardening of the arteries\" (atherosclerosis) [1][3][4]."}
+{"key": "d2cdf39485aca8e7c70604fec6e4b2c1", "output": "Helicobacter pylori infections are usually harmless, but they're responsible for the majority of ulcers in the stomach and small intestine [4]. For some people, an infection can lead to stomach cancer [1][2][3][5]."}
+{"key": "a318c880be1c86947b079762059b3853", "output": "It may take as long as 6 months for your thyroid hormone levels to become normal [1][2][3]. People with hypothyroidism who take thyroid hormone medicine usually notice improvement in their symptoms in one to two weeks, though it sometimes takes several weeks [4][5]."}
+{"key": "1ff267de36c40503397a63333014c665", "output": "A MCHC test is a test that is carried out to test a person for anemia. The MCHC in a MCHC test stands for Mean Corpuscular Hemoglobin Concentration [1][2][4][5]."}
+{"key": "b85f580f784166c7905f8b14462c2710", "output": "Meloxicam is used to treat pain, inflammation, swelling, and stiffness caused by conditions such as osteoarthritis, rheumatoid arthritis, and juvenile rheumatoid arthritis [1][2][3][4][5]."}
+{"key": "7bdde6e6475e126c175e70940759b0ba", "output": "Tonsils can be caused by both bacterial and viral infections, with the most common bacterial cause being Streptococcus pyogenes (group A streptococcus) [1][2][3][4][5]."}
+{"key": "afdb549ce8cbdc40defd940f0c9a7fca", "output": "Hepatitis A affects the liver [1][2][3]."}
+{"key": "863354d4f4b9b97344f9ef647a6487cd", "output": "You should receive a tetanus shot every 10 years after the initial series, or sooner if you have a puncture wound and it's been more than five years since your last tetanus shot [1][2][3][4]."}
+{"key": "f3df17e3381a13e549e6972468406735", "output": "Chickens can carry Salmonella [3][4], and their droppings can contain harmful germs like E. coli [1], which can be transferred to humans. Additionally, chickens can carry Chlamydia psittaci, the cause of avian chlamydiosis or parrot fever, though transmission to humans is rare [5]."}
+{"key": "5b2e438cc0c265e2bdd88e8e0adf8ce2", "output": "Thyroid stimulating hormone (TSH) promotes the growth of the thyroid gland and stimulates it to produce more thyroid hormones [1][3][4]."}
+{"key": "c7de5087bcc2dce94f045528068d2ffc", "output": "Olfactory hairs, or modified cilia projecting from olfactory cells, are involved in detecting odors in the nasal cavity [1]."}
+{"key": "ad21d54c56861d46d6884721632db7f0", "output": "B cells or B lymphocytes can contribute to inflammatory reactions and are crucial to immune defenses, but they do not directly cause disease; rather, they play a role in the immune system. I cannot answer this question based on the provided documents. [2][4]"}
+{"key": "18fdf31ceebe7701d64ac7edf135225c", "output": "In anatomy, eccentric means a type of muscle contraction that occurs as the muscle fibers lengthen, such as when a weight is lowered through a range of motion [2][3][4]."}
+{"key": "668939da3c3e3f71920afb4be744698e", "output": "The heart, a part of the cardiovascular system, can produce hormones such as atrial natriuretic peptide (ANP) [1]."}
+{"key": "59adc9d4bc0c6378f71374f97f0ce7f7", "output": "I cannot answer this question based on the provided documents."}
+{"key": "7bcd45f8da128c3108af035f55fdd5bc", "output": "Different types of bacterial toxins include exotoxins, which are produced by bacteria and can diffuse into the surroundings, and endotoxins, which are released when bacteria break down [4][5]."}
+{"key": "984bfb430ad6598cc85af38451c10027", "output": "If the visual cortex is damaged, it may lead to oscillating vision or oscillopsia [1]."}
+{"key": "265e6217951f5913b59dde6d4e6c5e4b", "output": "The incubation period for genital warts caused by HPV is probably three weeks to months [2]."}
+{"key": "afbe96aacde176b27c9adc04eb7f2a8b", "output": "Mosquitoes carry diseases such as malaria [1][4], dengue fever [5], and mosquito-borne viruses including West Nile, La Crosse, St. Louis, western equine, and eastern equine encephalitis [2][3]."}
+{"key": "6e1bed09e13dc1c1fe99073f88daf1ab", "output": "The parathyroid glands regulate calcium levels [1][2][3][4]."}
+{"key": "f09a454b2e27f67975e941ab72cb9f5e", "output": "The primary somatosensory cortex is responsible for the conscious perception of touch, pressure, pain, temperature, position, movement, and vibration, arising from the muscles, joints, skin, and fascia [1]."}
+{"key": "932f873f501cc5cda7a67907093e6bb6", "output": "The thyroid gland is responsible for making, storing, and releasing thyroid hormones that have a large impact on your health by being involved in many important cell functions, including growth of the body and brain, release of other important hormones, and even how energized you feel [1][3][4]."}
+{"key": "a919ccd47dc87b1f874efc21a62eada7", "output": "Stomach cramps with bloating are often caused by trapped wind and can be treated with over-the-counter products such as buscopan or mebeverine [2]."}
+{"key": "f605720832f09c2b4b76ca2db4faf8cb", "output": "Smooth muscle is responsible for contractions of the digestive tract and arteries [1][2][3][4][5]."}
+{"key": "3f1144eb5dd6f8cb1f251ae5443849e7", "output": "The endoplasmic reticulum in an animal cell is involved in the synthesis, folding, and transport of proteins [2][3]."}
+{"key": "109e8b31aec30a920b6b66a0b0a7b990", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "1309ffbe9df7c6f374af6ab0186ca5f2", "output": "The nephron, being the structural and functional unit of the kidney, is mainly responsible for forming urine through processes such as filtration, reabsorption, and secretion [1][4][5]."}
+{"key": "301df2632e830a0a910f1ae71056b2e2", "output": "The link between alveoli and capillaries is a shared membrane through which oxygen and carbon dioxide can move freely, facilitating gas exchange [2][4][5]."}
+{"key": "6bb868b3b98a609ef7c6bc35bdebbc1b", "output": "Glutamate functions as an excitatory amino acid that activates other neurons in the brain by binding to specific glutamate receptors [1]."}
+{"key": "76c51fa47d82a1ff74ac0020ec3c86d8", "output": "Measles, Influenza A, Hepatitis B, and Viral Hepatitis are contagious infectious diseases [1][2][3][4]."}
+{"key": "e6d1bcc5dca2eb730b905d57dfb48dc0", "output": "Electroconvulsive therapy (ECT) is used to treat severe depression and other psychiatric or neurological conditions such as Parkinson's disease or schizophrenia [1][2][3][4][5]."}
+{"key": "56b5c51ed95a9ed43f4ae0583d0d7e25", "output": "The timeframe for when an hCG result will be negative is dependent on the initial hCG level at the time of the miscarriage, but generally, it can take anywhere from 9 to 35 days, with a median of 19 days [2]."}
+{"key": "40e52058718b28cb9229de34dacc7ad2", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "3d2afaee0af2a92c8655c6577f68f9a6", "output": "Cognitive therapists believe that psychological problems result from distorted attitudes and ways of thinking [2][3][5]."}
+{"key": "09fb99882c7e75da8eb832c89af25b36", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "9b8f1056dbbc243294f79369e81b453f", "output": "The pancreas secretes a substance, insulin, that regulates glucose [1][2][3][4][5]."}
+{"key": "f684f81f5eb5e8186cc1c6d9f8e0ffff", "output": "Peristalsis is the wormlike movement by which the alimentary canal or other tubular organs propel their contents, consisting of a wave of contraction passing along the tube [1][2]. In the esophagus, peristalsis pushes food through and into the stomach [3][4]."}
+{"key": "31af1eb60b42ea5374e6402b0577e8dc", "output": "Alveoli are located at the end of the terminal bronchiole in small clusters called alveolar sacs [2][5]. Their primary function is to facilitate the exchange of oxygen and carbon dioxide between the air in the lungs and the blood in the capillaries [1][4]."}
+{"key": "1f644280cb49b67f7ff29d6804a7e735", "output": "Hydroxychloroquine is prescribed for lupus to initially treat the condition with a dose of 400 mg (=310 mg base) once or twice daily, which may be continued for several weeks or months depending on the patient's response, and then maintained at a smaller dose of 200 mg to 400 mg (=155 mg to 310 mg base) daily [2][4]."}
+{"key": "64f633ca5c14d1a5f5513c023fe868f0", "output": "Intestinal epithelial cells perform functions such as protection, secretion, absorption, and sensory reception [2][4][5]."}
+{"key": "07ea443f65daae81b169d46f45ee9a01", "output": "Yes, DNA repairs itself through a series of processes controlled by special genes and enzymes [1][4][5]."}
+{"key": "aef5a326d7c215af52e694bdae2b1fb5", "output": "Diseases caused by viruses include chickenpox, AIDS, and common colds [3]. Examples of viral illnesses range from the common cold to AIDS [4]."}
+{"key": "0d3e26ea82c5d2257a3272110bd847f0", "output": "The cerebellum is known as the infratentorial or back of the brain [2]."}
+{"key": "0033565d4468cce99d7d4ab4611a8f07", "output": "The lymphatic vessels function to drain fluid from the bloodstream into the tissues, aiding in the clearance of waste materials, toxins, and infective organisms from the tissues [1][3][4]."}
+{"key": "68bad8c9be1e441704dbfe51b3056dc1", "output": "Hydrocodone can be detected in urine for 48 hours or longer [1][4]."}
+{"key": "81912ed51aa41b4b8a85541b851e58d9", "output": "The parathyroid gland regulates the amount of calcium in the blood by secreting parathyroid hormone (PTH) [1][2][3][4][5]."}
+{"key": "762ec02325b88817addb10886fe955dd", "output": "Prostaglandins are hormone-like substances that participate in various body functions such as the contraction and relaxation of smooth muscle, the dilation and constriction of blood vessels, control of blood pressure, and modulation of inflammation [1][2][3]."}
+{"key": "c692d5cc019c7182ae7ad0e76a9975e6", "output": "I cannot answer this question based on the provided documents."}
+{"key": "c3fc70a07caab022796446fcc34ce0ef", "output": "I cannot answer this question based on the provided documents. [2][3]"}
+{"key": "d30433ab019050d62f708ff146d6c295", "output": "The valves are called tissue valves, aortic valve, tricuspid valve, mitral valve, and atrioventricular valves [1][2][3][4][5]."}
+{"key": "1bdaec8192b75db38223ccd5186feb62", "output": "The site selected for injection is cleaned with an alcohol swab, the skin is allowed to air dry, the practitioner spreads out the skin of the selected site to isolate the muscle, and the needle is inserted into the muscle at about a 90 degree angle. [3][4]"}
+{"key": "5e15d55b3c669340b95b602cbcdccbbf", "output": "Food that contains toxins can be contaminated by bacteria, viruses, environmental toxins, or naturally occurring poisons within the food itself, such as those found in certain mushrooms or seafood [1][3]."}
+{"key": "69ab13fa2448c01a1282aca8e1039bea", "output": "Specific immunity is attributable to the production of antibody and of specific immune T lymphocytes (responsible for cell-mediated immunity), following exposure to an antigen [1][2][3][4][5]."}
+{"key": "26335086b6d7379885ca5c3c2c19a4bf", "output": "Depending on the test and the place where you are tested, results come back within a few minutes to a few weeks. [2][3]"}
+{"key": "ec03a4bbb42a67699cbd8489e8e752ef", "output": "Implantation in pregnancy occurs 8 to 10 days after ovulation, which is 4 to 6 days before a missed period would occur [2][3]."}
+{"key": "55ce056cefbba5f706a1345a26721c35", "output": "A sinus tract is a congenital sinus tract extending from the surface of the body, between the bodies of two adjacent lumbar vertebrae, to the spinal canal. [2][3]"}
+{"key": "04d44232a2575d81448b312f7a145fec", "output": "You can find out your STD results by visiting the National HIV and STD Resources website to find a local testing site, calling CDC-INFO at 800-232-4636 or 888-232-6348 (TDD), or calling your state HIV/AIDS hotline to find a testing site. Results for antibody tests often come back within a few minutes to a few weeks, depending on the test and the place where you are tested. [1][2][3]"}
+{"key": "f512d657ad64196262b1c505afca7a4f", "output": "People on dialysis treatment can live between 5 to 7 years, though some individuals may live longer [1][2][3]."}
+{"key": "9bb1a58ae46a9a3e359176d163a644e1", "output": "I cannot answer this question based on the provided documents. [4]"}
+{"key": "6a63bac0c84b6a29a8be2c7dc2f1ae88", "output": "Four characteristics define skeletal muscle tissue cells: they are voluntary, striated, not branched, and multinucleated [1][2]. Four characteristics define cardiac muscle tissue cells: they are involuntary and intrinsically controlled, striated, branched, and single nucleated [3][4]."}
+{"key": "61a9316ce307c42e8dda8e9e6dfe75b0", "output": "Tramadol is a narcotic-like pain reliever [1][2][5]."}
+{"key": "86a6c09d89dde402c0709be60566f9b6", "output": "Enteroendocrine cells of the stomach produce multiple regulatory molecules that control physiological and homeostatic functions, particularly postprandial secretion and motility [2]."}
+{"key": "a14304d2f6c07016429d02f06fe2644d", "output": "Chromosome translocation is a type of chromosomal abnormality in which a chromosome breaks and a portion of it reattaches to a different chromosome. [2]"}
+{"key": "dd3e0e20de68c94f881957c39a9a2f8f", "output": "The primary function of capillaries in the circulatory system is the exchange of materials between the blood and tissue cells. [1][2][3][4][5]"}
+{"key": "7e9d99560e035bac3ffa3c4820d3d2fe", "output": "The average kidney receives approximately 20% of the cardiac output [1][2]."}
+{"key": "e8fa470537736ee0ff0b334e47eaa6b1", "output": "When the triceps brachii muscle contracts, it produces the extension and retraction of the forearm [3][4]."}
+{"key": "331b1e4701c2ac21e368230a3c59198b", "output": "The most common disease of the skeletal system is osteoporosis [1]."}
+{"key": "fc168c724baafbf2f65ea00700623d8e", "output": "Elastic fibres in arteries, such as those found in the walls of large arteries like the aorta, help to expand and accommodate the large volume of blood pumped into the abdomen by the heart [3]."}
+{"key": "73d54981322827a8b8bd92122443f83f", "output": "The cerebral cortex is located in the cerebral hemisphere [3][5]."}
+{"key": "477e19b5e5217a0f87549eb3c6d6b7f7", "output": "No, Candida is a fungal infection [1][2][3][4][5]."}
+{"key": "7a360be5475b42498c5896c851a7e39b", "output": "Insulin is the hormone responsible for decreasing blood glucose levels [1][2]."}
+{"key": "dac85438f28ab22f3d988665cb02cb5f", "output": "Urea is excreted through the kidneys, which filter it from the blood and release it into the urine. [1][2][3][5]"}
+{"key": "b2f7c8ffb823b12427cf05f04d2001a5", "output": "CBD is good for treating epilepsy, anxiety, schizophrenia, and addiction [1][5]."}
+{"key": "cf1cd12a3de5fea22b8cb8c907c3c3cf", "output": "The 8th cranial nerve carries hearing and equilibrium sensory information to the brain [1][2]."}
+{"key": "e8744360eae0959f84fe83855d5cbff2", "output": "Innate immunity occurs immediately, recognizing a problem, while adaptive immunity happens later, relying on the coordination and expansion of specific adaptive immune cells [1][2][3][4][5]."}
+{"key": "5d70a237e0a3acad5c9fb973bf436ef3", "output": "Inoculation refers to the process by which a person becomes immune, or protected, against a disease, often through the administration of a vaccine [2][3]."}
+{"key": "ea27447c4d782c5fc79a6632f86be94b", "output": "The folds in the mitochondria membranes, known as cristae, extend into the interior (or matrix) of the organelle [1]."}
+{"key": "c355de373de2bc4a19434e6a47614627", "output": "I cannot answer this question based on the provided documents."}
+{"key": "82bcfcd20098477d646f9658a9aa25b4", "output": "Normal GFR for a person with one kidney would be adjusted, typically between 110 to 140 ml/min, as the remaining kidney would need to compensate for the loss [1][4]."}
+{"key": "a812bc82c3109525ec849ba9cf2b64dc", "output": "The lymphatic tissue observed throughout the digestive tract, such as Peyer’s patches, monitors intestinal bacteria populations and prevents the growth of pathogenic bacteria in the intestines [5]."}
+{"key": "4e65a19c89cbb4d58a37b0126213656e", "output": "Recovery time from rotator cuff surgery generally takes from six months to one year [2]."}
+{"key": "a331dc5c3fec8bd3067a8b641493467b", "output": "Antipsychotic medications work by blocking dopamine receptors in the brain [1][2][4]."}
+{"key": "f52ae494415dcd6f311b21522d36fdb8", "output": "The IVIG treatment cost over 5 years is estimated to be $124,065 [1][2][3]."}
+{"key": "9d0c1cb6e22eb4ff1e37aacbd867c6e1", "output": "The glands, controlled by the nervous system and chemical receptors, help maintain the body’s homeostasis [1][2][3][4]."}
+{"key": "6749e5a977db530128bb68530f8c08c0", "output": "I cannot answer this question based on the provided documents."}
+{"key": "575a223d9c30c9304d54e1a471512c09", "output": "Acromegaly is associated with the pituitary gland [2][3][5]."}
+{"key": "f7a3cf1edc81ba7257ffd64a2e5604ec", "output": "The alveolar structure is closely related to its function as these tiny air sacs facilitate the primary exchange of carbon dioxide and oxygen between the air in the lungs and the blood in the capillaries [1][3][4]."}
+{"key": "1c4c13885e7c187f91afedb888c7914d", "output": "The cerebrum controls initiation and coordination of movement [1][2][4]."}
+{"key": "38f98a33d6618d46330707dd060e202c", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "5fc617a83dc71ac8228fe2e12cf6b4dd", "output": "Our human body systems include the immune and lymphatic systems, which provide defense against pathogens and manage lymph, blood, and lipids [1][2]; and the muscular system, which is responsible for movement, posture maintenance, and the transport of substances within the body [3][4][5]."}
+{"key": "d7f2ba62719fadcb196be8e26cbf06e4", "output": "the structure where urine is formed is the renal corpuscles and the convoluted parts of the renal tubules [2][3]."}
+{"key": "7af8fbd762d12811c48bd532519a0b8b", "output": "Peristalsis moves food through the gastrointestinal tract [1][2][3][5]."}
+{"key": "571da09feffd9186e09b8e3de9f8d88d", "output": "Hormones are produced in the brain, specifically in the Hypothalamus gland and the Pituitary gland [1][2][3]."}
+{"key": "202d03a52fd7e7a63f7d604366345215", "output": "A stretch reflex, also known as myotatic reflex, is a tonic contraction of the muscles in response to a stretching force due to stimulation of muscle proprioceptors [1]."}
+{"key": "ff67d8322bca9f543c49cdd4fa3ec35f", "output": "Homeostasis is important for cells as well as for an entire organism because it maintains the stability and constancy needed for proper function [1][2][3][4][5]."}
+{"key": "be7c54cf61524de03be54a19ae458391", "output": "Bordetella bronchiseptica in dogs can cause symptoms such as runny nose, sneezing, mild cough, and low-grade fever [2]."}
+{"key": "01fcb3ff968f91034174477eecdf38e7", "output": "I cannot answer this question based on the provided documents. [2][3][4]"}
+{"key": "dbbc175c765dd4da3d95e13b0a3461d1", "output": "The liver performs many essential functions related to digestion, metabolism, immunity, and the storage of nutrients within the body [1][2][3][4][5]."}
+{"key": "5ea99f597e305ead26504f7ece6e1267", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "06c61491335f9c82093b4c1620524215", "output": "Antibodies are important in the humoral immune response [2][3]."}
+{"key": "ffc61ad1ac911c3fce21a00c40781b96", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "f7f8d76166296b16fc3c973a241ff6a2", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "ca6c4eeb22dcabdeaa224a64ccbfd1f7", "output": "The hippocampus is involved in memory, particularly in the storage of long-term memory and declarative memory [1][2][3][4][5]."}
+{"key": "36a963d87f7a015ad8d87306a6f7b38f", "output": "Epinephrine narrows peripheral blood vessels [1][2][3]."}
+{"key": "a72d8f5f278b9b52106cc9d98c501671", "output": "The central sulcus separates the frontal and parietal lobes [1][4][5]."}
+{"key": "b06190649aa50a6289f396a7be104fda", "output": "Nerve cells, or neurons, function by transmitting and receiving electrochemical messages. [1][2][3]"}
+{"key": "f5307ba13f0ee7a69243e5b08f4b7a2b", "output": "White blood cells are formed in the red bone marrow in specific regions, and some are produced in lymphoid tissue [1][3]."}
+{"key": "f80b2c66366bb9ab85354b6bec142e92", "output": "The optic nerve ends at the visual centers of the brain [2][3]."}
+{"key": "df1d3750909cd48d171bc6edec8edc53", "output": "Skeletal muscles allow for movement through the contractions of muscle fibers, which in turn cause bones to move at joints [1][3]."}
+{"key": "26c9dd99c490758ccefb3859d2be02d3", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "963106867a45474cc020f74218d611f1", "output": "After the 8th week, your baby is called a fetus instead of an embryo. [1][3][4][5]"}
+{"key": "21f61ac24bb25fc6b06cd057d5dfb38b", "output": "The deltoid muscle is responsible for the brunt of all arm rotation and allows a person to keep carried objects at a safer distance from the body. It also stops dislocation and injury to the humerus when carrying heavy loads [1]."}
+{"key": "dd9d94043bb135c6c6004b53b9b2dd6f", "output": "Intercalated discs are specialized intercellular attachments in cardiac muscle cells that comprise gap junctions, fascia adherens, and occasionally desmosomes [1]."}
+{"key": "2460962ce5bb358cff09e70b2b69d389", "output": "A normal lymphocyte count for adults is 1000 - 4800 cells per microliter of blood [1][2][3][4][5]."}
+{"key": "36bab35e493bc88c18e7856dda901b2d", "output": "Mitochondria convert the energy from food into a form that cells can use [1][2][3][5]."}
+{"key": "23b55dbf59f99d79a5efec6a95144bc5", "output": "Cilia function to sweep away fluids and particles in the respiratory tract [3], and also aid in the locomotion of some single-celled organisms [1]."}
+{"key": "a9763f8aaf46154e686fb82a3b79e6f4", "output": "Frozen or undercooked food [2]. Food tainted by a person with hepatitis A, especially raw shellfish, fruits, vegetables, and undercooked foods [1]."}
+{"key": "e56d6129f2162fda1d7afed79467d4a8", "output": "Yes, estrogen can cause anxiety. Estrogen levels dropping during perimenopause and menopause can lead to symptoms like anxiety, fears, and mood swings [1]."}
+{"key": "ff2f1b968d46e5c56ba7d12a00a790c0", "output": "The cerebral cortex controls higher brain functions such as language, memory, and consciousness [1][4][5]."}
+{"key": "f61122c3a41334f7d402542b119b0f76", "output": "You can usually determine the gender of your baby by 20 weeks [1][2][3][5]."}
+{"key": "a46633711a557283f3d6569f04df3d2b", "output": "Types of non-keratinized epithelium include tissue that lines the esophagus [1][2][3][4][5]."}
+{"key": "2f3cc980b9fe29092f35e2f7d7367bc9", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "56aabec827a8121034504f7291ab631f", "output": "I cannot answer this question based on the provided documents. [1][3]"}
+{"key": "9ce4301009726c8d38f5c894c4753c01", "output": "The abdominopelvic cavity, located below the diaphragm, contains organs such as the stomach, pancreas, liver, bladder, kidneys, intestines, and reproductive organs [3]. The thoracic cavity, located above the diaphragm, contains the heart, lungs, trachea, esophagus, large blood vessels, and nerves [2][5]."}
+{"key": "9124c109a7e410e0149df9f275f35dd4", "output": "Disease caused by bacteria pathogens includes various illnesses such as pneumonia, ear infections, and meningitis [3][4]."}
+{"key": "e3b93236333ed642ce03a85c9a8c0c8a", "output": "A major function of the lymphatic system is to return excess interstitial fluid to the blood [4]."}
+{"key": "d8b67d999ba5cce35c9ff0e5ccc65d2c", "output": "Ionizing radiation has enough energy to form ions by removing electrons from atoms and molecules [1][2]."}
+{"key": "de2288ecf706f07f59d28baf65d1c680", "output": "The releasing hormones or inhibiting hormones are released by the neurosecretory nuclei of the hypothalamus into the blood [1]."}
+{"key": "c6f34f82766f430c7d269df942d5bac6", "output": "The functions of neurotransmitters in the human brain include roles in movement, memory, pleasurable reward, behavior and cognition, and attention [1]."}
+{"key": "fb96c7eee6976c3edb52b4cb685ac7a6", "output": "A field clinical engineer is involved in managing the calibration, maintenance, repair, user training, and decommissioning of medical devices in health-care facilities [2]."}
+{"key": "c25880ff790ad3f69539cbb8b714c769", "output": "Oxidative phosphorylation occurs in the mitochondria [3][5]."}
+{"key": "482f136fd958e2283055e9a9cf382190", "output": "I cannot answer this question based on the provided documents. [1][2][3]"}
+{"key": "aface82860511d64f2aef370181462ac", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "14616bf91937d0989c59ec16c1145a2e", "output": "Time off in lieu of overtime means holiday/annual leave time taken instead of pay for extra hours worked [1][2]."}
+{"key": "4b2c608f4d2845710a5ac242151cc636", "output": "Permanent joints are those that are immovable, such as certain fixed joints where segments of bone are fused together in the skull [2][5]."}
+{"key": "76cf872ddc5e57f5e7e6548e842989dc", "output": "Coffee and energy drinks both contain caffeine [1][2][3]."}
+{"key": "421c08a19e44cf149acf453aa70a7d24", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "b29ee364e323bef26c1c989761313ecc", "output": "I cannot answer this question based on the provided documents."}
+{"key": "129aa1468606ab6f77b71c06790edb3c", "output": "Sugars include sucrose and other disaccharides like maltose, lactose, as well as simple sugars or monosaccharides such as pentoses and hexoses [1]."}
+{"key": "bc2f8af24fa7afd247290d3dbd5c8210", "output": "I cannot answer this question based on the provided documents. [4][5]"}
+{"key": "d4813f6405965f5bb29b7161e426cd88", "output": "I cannot answer this question based on the provided documents."}
+{"key": "4152b2be8659acee1c149b2cb9b16411", "output": "I cannot answer this question based on the provided documents."}
+{"key": "0aefef05becfe9368d4ea27944595abb", "output": "Catfish are often found in muddy rivers, lakes, and on beaches in tropical, subtropical, and temperate waters. [1]"}
+{"key": "b2a9440750ae9ab16b214c46b10701ea", "output": "Lean refers to muscle, which is part of lean body mass [1][2]."}
+{"key": "be78ca73f1061540967a982c0cf990ce", "output": "I cannot answer this question based on the provided documents. [1]"}
+{"key": "6a21fc996497cc72e7f980dbf5888583", "output": "I cannot answer this question based on the provided documents."}
+{"key": "2eb06de8fc8e6331f166ff6cfed900e4", "output": "Management and leadership may involve similar outlooks, skills, and behaviors, but they can differ in their specific focus and application [1]."}
+{"key": "324b5f76b676bf38c78d4cb83dc923ee", "output": "Transcription does not require DNA polymerase [1][2][3]."}
+{"key": "605e4dc6270b8a4e5c7f9e79b1f71e45", "output": "The phospholipid bilayer forms a stable barrier between the inside and outside of the cell [2]."}
+{"key": "ee23d3665574cbf450db8e42e4207138", "output": "I cannot answer this question based on the provided documents."}
+{"key": "172e7fd936bb247e254fee54facd83c6", "output": "Refraction is the bending of light as it passes through one object to another [1]."}
+{"key": "89cf7c66c53b4bcdb925275687fb2f9e", "output": "Sodium chloride is the chemical name for salt. [1][2][3][4][5]"}
+{"key": "d66919b20fb7247e7ee67ccd9ca0c34f", "output": "Mercury testing may be ordered when a person has signs and symptoms suggesting excessive exposure to mercury [1][4]."}
+{"key": "a06f882f172e0934a94c12d6468fd32f", "output": "I cannot answer this question based on the provided documents."}
+{"key": "f43ecbe12be042d6cd10ce09d333c4b9", "output": "Glutathione is called GSH because it is a tripeptide containing glutamic acid, cysteine, and glycine [3][5]."}
+{"key": "69367412d8637eea0bae7a1ea16779c2", "output": "Yes, goat cheese contains lactose [1][2][3]."}
+{"key": "22b6bf900ef45fbcdfd281be0cfa5c6c", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "8c6091e9c8e2393c396ddc31e6e54685", "output": "For men, the average time to walk a mile is between 11:43 - 14:44 minutes, and for women, it is between 13:09 - 16:04 minutes [1]."}
+{"key": "446c0a1a37d7c22e7e35889a4ea941e9", "output": "I cannot answer this question based on the provided documents."}
+{"key": "d90319d054793c41b74a580ba6d70eb9", "output": "Calcium carbonate is commonly known as calcium carbonate [1][2]."}
+{"key": "99979cce16a415ab3f5dfdc6ca49e07d", "output": "I cannot answer this question based on the provided documents."}
+{"key": "67b3a7d143a5866b679cbfe9991536c7", "output": "TB is a disease caused by a germ called Mycobacterium tuberculosis that is spread from person to person through the air. [1][2][3][5]"}
+{"key": "af253a2aa0148e51e173cb7b08ecfab3", "output": "I cannot answer this question based on the provided documents."}
+{"key": "706df99f37cd834fb94978933dcb7084", "output": "Wing can refer to a wing-like process, such as in nematodes [2][3], or a structure that is shaped like a wing, like the ala of the sacrum [5]."}
+{"key": "2a9dc4e810ee5e7778de1b0ff382df4e", "output": "I cannot answer this question based on the provided documents. [1][2][3][4]"}
+{"key": "7df564932497386a2357b53b7b36124f", "output": "I cannot answer this question based on the provided documents."}
+{"key": "33d9e85ab7657d831d86ac43660974d5", "output": "Oleoresin is the active ingredient in pepper spray, which makes the eyes tearful and causes pain and swelling of the eyes and mucous membranes [1]."}
+{"key": "8c139319effd2cfa854d2f3534c69353", "output": "Electrical conductivity shows the ability of a material to conduct electricity [1][2][3]."}
+{"key": "df5afc1441ff803348537245dd4ab6c5", "output": "Absinthe is an old French liqueur prepared from wormwood [1][2][3]."}
+{"key": "b14f0b49f4f6608f4e51a87ca7cd184d", "output": "Flatworms, or platyhelminths, are one of the three main groups of helminths that are human parasites [2][3][5]."}
+{"key": "3372d077604a924ed3c5f332774277a5", "output": "It takes 2-2.5 years to earn a Master of Physical Therapy degree [1], and at least 2 years for an occupational therapy assistant [2][4]."}
+{"key": "f42ecced224d7dd1ad9118ac03b41037", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "6e09ec4dbaf091485ab5d2012bcb6cfc", "output": "A dwarf is a person of abnormally short stature, generally defined as an adult height of 4 feet 10 inches (147 cm) or less, resulting from a genetic or medical condition [1][2][3][4][5]."}
+{"key": "c76aa4143fd92aae8bccb41633f52d15", "output": "The substrate of the enzyme amylase is starch [2][3][4][5]."}
+{"key": "a4df9f02e0134b36cb79b6eb95631697", "output": "Cruciferous vegetables include arugula, broccoli, Brussels sprouts, cabbage, cauliflower, and kale [1][2]."}
+{"key": "04f476204a3f608bcee4886b270d0f20", "output": "The skin is composed of three layers, but two basic tissues that are part of these layers are the epidermis and dermis [2][3][4]."}
+{"key": "eacd3b90fa38f29640a7da2ba545fcf9", "output": "A ventricular septal defect (VSD) is a defect in the septum between the right and left ventricle, which is a hole in the wall that separates the two lower chambers of the heart. [1][2][3][4][5]"}
+{"key": "32fdf184d6b8f3721fc85eaf4360bee9", "output": "A single bond is a covalent bond between two atoms or radicals formed by the sharing of a pair of electrons. [1]"}
+{"key": "4b2339803a0589336d3ba7e8e6f059a2", "output": "I cannot answer this question based on the provided documents. [1][2][3][4][5]"}
+{"key": "e7c971045782e3ade1f59d6e8d5aa9a6", "output": "The scientific name of an organism includes the genus and species name [1]."}
+{"key": "507873b07c4a6dc037ed8bb99fb324c5", "output": "Titanium is used in the manufacture of anterior interbody cages for spinal fusion [5], and as a pigment to make foods appear whiter [1]."}
+{"key": "b2eb29ae4b1e8e41fcfd83509f2f477b", "output": "The one part of a nucleotide that differs between DNA and RNA is the base, specifically with thymine (T) in DNA being replaced by uracil (U) in RNA [3][5]."}
+{"key": "815ed31c25a5eca4b9f15db20491fcca", "output": "covalent bonds in DNA are made of the sharing of a pair of electrons between atoms, forming either phosphodiester bonds or hydrogen bonds between base pairs [1][3][4][5]."}
+{"key": "f95e3da68ec88a0244a4c265d0bcb198", "output": "No, whole grain oatmeal is not wheat. Oatmeal is made from whole oats or oatmeal, which are part of the oat grain, not wheat [2][3]."}
+{"key": "5fc56821ab57ab1698e661029cbe664e", "output": "Your hands may shake due to essential tremor, which is the most common of all movement disorders and can affect the hands and arms among other body parts [4][5]."}
