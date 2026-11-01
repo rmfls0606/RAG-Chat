@@ -1,8 +1,9 @@
 """의료 정보 RAG 챗봇 (노트북 없이 실행).
 
 저장된 DB(index/medical_db/, LabeledBaseline.ipynb 3-1에서 저장)를 불러와
-질문 → BM25 + Dense 검색 → RRF → Rerank → 거절 게이트 → Qwen 답변(근거 번호 [n]) → 인용 검증
+질문 → (오타 교정) → BM25 + Dense 검색 → RRF → Rerank → 거절 게이트 → Qwen 답변(근거 번호 [n]) → 인용 검증
 순서로 답합니다. 검색·프롬프트·검증 코드는 LabeledBaseline.ipynb와 같습니다.
+오타 교정은 노트북에 없는 앱 전용 단계이며 symspellpy가 필요합니다 (pip install symspellpy).
 
 생성 모델
 - "ollama": Ollama의 qwen2.5:7b-instruct (원본 Qwen, 4bit). 먼저 `brew services start ollama`
@@ -11,7 +12,7 @@
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import numpy as np
@@ -96,6 +97,40 @@ def validate_answer(answer, texts):
     return status, sorted(kept), sorted(set(cited) - kept)
 
 
+class SpellFixer:
+    """질문의 오타 교정 (irus → virus). 사전 = symspellpy 영어 사전 + DB 문서에 MIN_COUNT번 이상 나온 단어(의학 용어 포함).
+    사전에 없는 단어만 가장 가까운 단어로 바꾸고, 전부 대문자인 단어(FIFA, CMOS 같은 약어)는 그대로 둠.
+    약 이름·고유명사를 잘못 고칠 수 있으므로, 실제로 쓸지는 MedicalRAG.ask에서 검색 점수로 판단함"""
+    MIN_COUNT = 3
+
+    def __init__(self, texts):
+        from importlib.resources import files
+        from symspellpy import SymSpell
+        self.sym = SymSpell(max_dictionary_edit_distance=2)
+        self.sym.load_dictionary(str(files("symspellpy") / "frequency_dictionary_en_82_765.txt"), 0, 1)
+        counts = Counter(w for t in texts for w in re.findall(r"[a-z]+", t.lower()))
+        for w, c in counts.items():
+            if c >= self.MIN_COUNT and len(w) > 1:
+                self.sym.create_dictionary_entry(w, c)
+
+    def correct(self, query):
+        """→ (고친 질문, [(원래 단어, 고친 단어), ...])"""
+        from symspellpy import Verbosity
+        changes = []
+
+        def fix(m):
+            w = m.group(0)
+            if len(w) < 4 or w.isupper() or w.lower() in self.sym.words:
+                return w
+            s = self.sym.lookup(w.lower(), Verbosity.TOP, max_edit_distance=1 if len(w) < 7 else 2)
+            if not s:
+                return w
+            changes.append((w, s[0].term))
+            return s[0].term
+
+        return re.sub(r"[A-Za-z]+", fix, query), changes
+
+
 def build_messages(query, texts):
     ctx = "\n\n".join(f"[{i}] {t}" for i, t in enumerate(texts, 1))
     return [{"role": "system", "content": SYSTEM_CITE},
@@ -116,6 +151,7 @@ class MedicalRAG:
         self.embedder = SentenceTransformer(self.cfg["embed_model"], device=device)
         self.reranker = CrossEncoder(self.cfg["rerank_model"], device=device, max_length=512)
         self.threshold = self.cfg["threshold"]
+        self.speller = SpellFixer(self.passages)
 
         self.generator = generator
         if generator == "ollama":
@@ -161,11 +197,25 @@ class MedicalRAG:
         prompt = self.tok.apply_chat_template(messages, add_generation_prompt=True)
         return generate(self.llm, self.tok, prompt=prompt, max_tokens=MAX_NEW_TOKENS).strip()
 
-    def ask(self, query):
-        """→ {"answer", "status", "top_score", "threshold", "sources": [{"n", "url", "text", "score"}], "dropped"}"""
+    def retrieve_with_spell(self, query):
+        """오타를 고친 질문으로도 검색해, rerank 1위 점수가 더 높을 때만 고친 질문을 씀.
+        → (검색에 쓴 질문, 고친 단어 목록 또는 [], pid 리스트, 점수 리스트)"""
         ids, scores = self.retrieve(query)
+        fixed, changes = self.speller.correct(query)
+        if changes:
+            ids2, scores2 = self.retrieve(fixed)
+            if scores2[0] > scores[0]:
+                return fixed, changes, ids2, scores2
+        return query, [], ids, scores
+
+    def ask(self, query):
+        """→ {"answer", "status", "top_score", "threshold", "sources": [{"n", "url", "text", "score"}], "dropped",
+              "spell_fixes": [(원래 단어, 고친 단어)]}"""
+        original = query
+        query, fixes, ids, scores = self.retrieve_with_spell(query)
         ids, scores = ids[:self.cfg["k_ctx"]], scores[:self.cfg["k_ctx"]]
-        out = {"query": query, "top_score": scores[0], "threshold": self.threshold, "sources": [], "dropped": []}
+        out = {"query": original, "searched_query": query, "spell_fixes": fixes,
+               "top_score": scores[0], "threshold": self.threshold, "sources": [], "dropped": []}
         if scores[0] < self.threshold:   # 거절 게이트: 관련 의료 문서가 없음
             return {**out, "answer": REFUSAL, "status": "low_score"}
         texts = [self.passages[p] for p in ids]

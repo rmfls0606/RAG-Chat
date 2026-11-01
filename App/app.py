@@ -32,7 +32,11 @@ rag = MedicalRAG(generator=args.generator, adapter_path=args.adapter)
 
 def respond(message, history):
     r = rag.ask(message)
-    lines = [r["answer"], "", f"_{STATUS_TEXT[r['status']]}_ (관련도 {r['top_score']:.2f} / 기준 {r['threshold']:.2f})"]
+    lines = []
+    if r["spell_fixes"]:
+        fixes = ", ".join(f"{a} → **{b}**" for a, b in r["spell_fixes"])
+        lines += [f"🔎 오타로 보여 고쳐서 검색했습니다: {fixes} (검색한 질문: _{r['searched_query']}_)", ""]
+    lines += [r["answer"], "", f"_{STATUS_TEXT[r['status']]}_ (관련도 {r['top_score']:.2f} / 기준 {r['threshold']:.2f})"]
     if r["sources"]:
         # MS MARCO는 2016~2017년 수집이라 원문 페이지가 지금은 없을 수 있음 → Internet Archive의 사본도 함께 표시 (원문 사이트와 무관한 비공식 사본)
         lines += ["", "**근거 문서** (원문 링크는 수집 당시 주소라 지금은 없을 수 있습니다. "
