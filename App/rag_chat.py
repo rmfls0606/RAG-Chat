@@ -3,7 +3,8 @@
 저장된 DB(index/medical_db/, LabeledBaseline.ipynb 3-1에서 저장)를 불러와
 질문 → (오타 교정) → BM25 + Dense 검색 → RRF → Rerank → 거절 게이트 → Qwen 답변(근거 번호 [n]) → 인용 검증
 순서로 답합니다. 검색·프롬프트·검증 코드는 LabeledBaseline.ipynb와 같습니다.
-오타 교정은 노트북에 없는 앱 전용 단계이며 symspellpy가 필요합니다 (pip install symspellpy).
+오타 교정과 되묻기(답을 못 할 때 문서로 답할 수 있는 질문 제안)는 노트북에 없는 앱 전용 단계입니다.
+오타 교정에는 symspellpy가 필요합니다 (pip install symspellpy).
 
 생성 모델
 - "ollama": Ollama의 qwen2.5:7b-instruct (원본 Qwen, 4bit). 먼저 `brew services start ollama`
@@ -44,6 +45,14 @@ Rules:
 2. Answer in one or two complete sentences that restate the subject of the question.
 3. End each sentence with the numbers of the passages that support it, like [1] or [2][3].
 4. If the passages do not contain the answer, reply exactly: {REFUSAL}"""
+
+# 되묻기: 답을 못 할 때 문서로 답할 수 있는 질문을 제안해 사용자가 고르게 함 (노트북에 없는 앱 전용 단계)
+CLARIFY_MARGIN = 1.0   # 관련도가 [기준 - 1.0, 기준)이면 바로 거절하지 않고 되물음. train(url_ood_tune)에서 비의료 질문의 3.8%만 이 구간
+NONE_REPLY = "NONE"
+SYSTEM_SUGGEST = f"""A user asked a medical information assistant a question, but the provided passages do not directly answer it. The question may be vague, misspelled, or phrased differently from the passages.
+Suggest up to 3 questions that the passages DO answer and that are as close as possible to what the user wanted to know.
+Write one question per line, in English, without numbering or any other text.
+Only if the user's question is not about health or medicine, or the passages are about a completely different topic, reply exactly: {NONE_REPLY}"""
 
 CITE_RE = re.compile(r"\[(\d+)\]")
 CITE_GROUP_RE = re.compile(r"((?:\s*\[\d+\])+)")
@@ -137,6 +146,12 @@ def build_messages(query, texts):
             {"role": "user", "content": f"Passages:\n{ctx}\n\nQuestion: {query}\nAnswer:"}]
 
 
+def build_suggest_messages(query, texts):
+    ctx = "\n\n".join(f"[{i}] {t}" for i, t in enumerate(texts, 1))
+    return [{"role": "system", "content": SYSTEM_SUGGEST},
+            {"role": "user", "content": f"Passages:\n{ctx}\n\nUser question: {query}\nSuggested questions:"}]
+
+
 class MedicalRAG:
     def __init__(self, db_dir=DB_DIR, generator="ollama", adapter_path=None):
         self.cfg = json.loads((db_dir / "config.json").read_text())
@@ -208,18 +223,37 @@ class MedicalRAG:
                 return fixed, changes, ids2, scores2
         return query, [], ids, scores
 
+    def suggest(self, query, texts):
+        """문서로 답할 수 있는 질문을 LLM이 최대 3개 제안. 제안을 다시 검색해 게이트를 통과하는 것만 남김"""
+        reply = self.generate(build_suggest_messages(query, texts))
+        out, seen = [], {"".join(_tokens(query))}
+        for line in reply.splitlines():
+            s = re.sub(r"^\s*(?:\d+[.)]|[-*•])\s*", "", line).strip()
+            key = "".join(_tokens(s))   # 대소문자·문장부호만 다른 질문은 같은 질문으로 봄
+            if not key or s == NONE_REPLY or key in seen:
+                continue
+            seen.add(key)
+            if self.retrieve_with_spell(s)[3][0] >= self.threshold:
+                out.append(s)
+        return out[:3]
+
     def ask(self, query):
         """→ {"answer", "status", "top_score", "threshold", "sources": [{"n", "url", "text", "score"}], "dropped",
-              "spell_fixes": [(원래 단어, 고친 단어)]}"""
+              "spell_fixes": [(원래 단어, 고친 단어)], "suggestions": [되물을 질문]}"""
         original = query
         query, fixes, ids, scores = self.retrieve_with_spell(query)
         ids, scores = ids[:self.cfg["k_ctx"]], scores[:self.cfg["k_ctx"]]
-        out = {"query": original, "searched_query": query, "spell_fixes": fixes,
+        out = {"query": original, "searched_query": query, "spell_fixes": fixes, "suggestions": [],
                "top_score": scores[0], "threshold": self.threshold, "sources": [], "dropped": []}
-        if scores[0] < self.threshold:   # 거절 게이트: 관련 의료 문서가 없음
-            return {**out, "answer": REFUSAL, "status": "low_score"}
         texts = [self.passages[p] for p in ids]
+        if scores[0] < self.threshold:   # 거절 게이트: 관련 의료 문서가 없음. 기준 바로 아래면 되물음
+            sugg = self.suggest(query, texts) if scores[0] >= self.threshold - CLARIFY_MARGIN else []
+            return {**out, "answer": REFUSAL, "status": "clarify" if sugg else "low_score", "suggestions": sugg}
         answer = self.generate(build_messages(query, texts))
+        if is_refusal(answer):   # 관련 문서는 있는데 답이 없다고 함 → 되물음
+            sugg = self.suggest(query, texts)
+            if sugg:
+                return {**out, "answer": answer, "status": "clarify", "suggestions": sugg}
         status, cited, dropped = validate_answer(answer, texts)
         # 근거로 확인된 인용만 표시. 하나도 없으면 넘긴 passage 전체를 참고로 표시
         show = cited or ([] if is_refusal(answer) else list(range(1, len(ids) + 1)))
