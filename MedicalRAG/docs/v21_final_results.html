@@ -164,6 +164,11 @@ a { color: var(--accent); }
       <p>프롬프트 3종은 차이가 없었습니다(±0.5점). 재정렬 점수로 거절 기준을 올리면 안전성은 오르지만 정답률이 같이 떨어졌습니다.</p>
       <p class="take">→ 비슷한 안전성(.83)을 점수 기준으로 얻으면 정답률 .678, DPO로 얻으면 .770. 거절은 점수로 자르기보다 모델이 배우는 편이 낫다.</p>
     </div></div>
+    <div class="step"><span class="no">19</span><div>
+      <h3>DPO 모델에는 점수 기준을 낮춰도 되나</h3>
+      <p>DPO 모델의 모든 답에 거절 기준 18가지를 대 보고, "진짜 답 없음 거절률을 08 기준 수준으로 지키면서 정답률 최고"인 규칙을 검증으로 골랐습니다.</p>
+      <p class="take">→ 고른 기준 4.72는 시험 정답률 .772로 4.92(.770)와 사실상 같음. 기준을 없애면 .782지만 진짜 답 없음 거절이 .804 → .587. 최종은 4.92 유지.</p>
+    </div></div>
   </div>
 </section>
 
@@ -216,12 +221,12 @@ a { color: var(--accent); }
 <section>
   <h2>남은 과제</h2>
   <ul class="plain">
-    <li><b>"녹슨 못 주사"처럼 짧은 구어 질문의 잘못 거절:</b> MiniLM 점수 하나로 거절을 정해서 생김. 거절 신호를 앙상블 점수와 함께 쓰거나 DPO 모델에 맡기는 쪽을 검증해야 함.</li>
+    <li><b>"녹슨 못 주사"처럼 짧은 구어 질문의 잘못 거절:</b> 재정렬 점수가 3.9로 낮아 LLM 전에 거절됨. 19에서 기준을 낮춰 봤지만 이득이 없어서, 구어 표현을 의학 용어로 잇는 검색 개선(쿼리 확장, 구어체 평가셋)이 필요함.</li>
     <li><b>분야 밖 질문:</b> DB에 건강 외 문단(약 9.8만 개)이 섞여 있어 "호주 수도"에 답함. 분야 밖 거절률 .84. 도메인 판정은 손실이 커서 뺐고, 건강 사이트 비율 같은 가벼운 신호를 시험해 볼 만함.</li>
     <li><b>남은 오답의 주원인은 검색:</b> 정답 문단이 상위 10에 들어오는 비율 .776. 멘토링 피드백대로 구어체·multi-hop 평가셋을 만들어 검색을 따로 개선해야 함.</li>
     <li><b>"의료 질문 다 답하기"까지:</b> DB가 MS MARCO 문단뿐이라 없는 내용은 답할 수 없음. MedQuAD 등 DB 확장이 다음 단계.</li>
   </ul>
-  <p class="muted">노트북: <code>1_colab_notebooks/v2.1/14~18</code>, 최종 챗봇 <code>08f_final_chatbot_v21.ipynb</code> (설정 <code>rag_msmarco/health/final/final_config.json</code>). 결과 요약: <code>2_results/generation_v21/</code>.</p>
+  <p class="muted">노트북: <code>1_colab_notebooks/v2.1/14~19</code>, 최종 챗봇 <code>08f_final_chatbot_v21.ipynb</code> (설정 <code>rag_msmarco/health/final/final_config.json</code>). 결과 요약: <code>2_results/generation_v21/</code>.</p>
 </section>
 
 </div>
