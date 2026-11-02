@@ -1,0 +1,27 @@
+﻿query,pool,label_codex,label_llm,note
+what is computed tomography imaging,med_url,A,C,
+normal resting pulse rate,med_url,A,B,
+safe internal temperature for prime rib,no_med,B,C,단순 굽기 정도보다 안전한 섭취를 위한 조리 온도를 묻는 식생활·위생 질문으로 판단.
+what are the mammary glands of the female,med_url,A,B,동물도 언급되지만 여성의 유선과 인체 해부를 묻는 것으로 판단.
+where are your deltoids muscles located,med_url,A,B,
+how long is turkey lunch meat good for in the fridge,no_med,B,C,식품의 안전한 보관·섭취 기간을 묻는 식생활·위생 질문으로 판단.
+what is omentum,med_url,A,C,
+hypnotic ability psychology definition,med_url,A,C,passage가 해리성 장애 치료와 최면 상태를 설명하므로 임상 심리 개념으로 판단.
+what is dust from mites,med_url,A,C,문구가 불완전하지만 passage의 집먼지진드기 알레르기 맥락으로 해석.
+different types of salivary glands,med_url,A,B,
+is wild celery edible,no_med,B,C,식물의 식용 가능성을 묻는 섭취 안전 관련 질문으로 판단.
+what is the recommended intake of sugar per day for a diab,med_url,A,B,"잘린 diab는 passage상 당뇨병으로 해석; 일반 영양이 아닌 질환 관리 식이 권고이므로 A, time_sensitive=true."
+the innermost wall of the uterus is called,med_url,A,C,
+where is endometrial ablation performed,med_url,A,B,where는 기관이나 신체 부위 모두 가능하나 passage의 자궁내막 설명을 따라 시술 부위 질문으로 판단.
+what kinds of things do humans detect through pheromones,med_url,A,C,사람의 감각과 생리적 반응을 묻는 질문으로 인체 생리 A.
+is menstruation the normal condition for humans,med_url,A,B,
+can a person with a green card get disability,no_med,B,C,장애 급여 수급 자격을 묻는 건강 관련 보장제도 질문으로 B; 의료 지침 의존 질문은 아님.
+what does the fovea do,med_url,A,B,
+what is nmr and mri,med_url,A,C,passage는 NMR 물리 현상에 치우치지만 질문에는 MRI 검사 개념도 포함되어 A.
+what is chinese medicine,med_url,A,C,질병과 치료를 설명하는 의학 체계의 정의를 묻는 것으로 A; 효능 인정 여부와는 별개.
+is chlorophyll bad for humans,med_url,A,B,passage의 약용 사용 맥락에 따라 약용 물질의 인체 유해성 질문으로 A.
+how is carbon monoxide administered,med_url,U,C,일산화탄소의 투여를 뜻하는지 발생·노출을 뜻하는지 불명확하고 passage로도 질문 의도를 확정하기 어려움.
+what is hyssop good for,med_url,A,B,passage가 구체적인 질환·증상에 대한 약용 효능을 설명하므로 일반 웰니스보다 의료 A.
+what is a chard in drugs,med_url,A,B,문구가 불명확하지만 passage의 당뇨병 약용 식물 맥락으로 해석; 동물 실험 자체를 묻는 질문은 아님.
+what is a poultice,no_med,A,B,말의 치료도 언급되지만 사람의 통증·상처에 쓰는 치료법 정의를 포함하므로 A.
+what is palmitate in milk,med_url,B,C,단순 요리 재료보다 우유의 비타민 A 영양 강화 성분의 역할을 묻는 것으로 B.

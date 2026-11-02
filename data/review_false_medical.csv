@@ -1,0 +1,64 @@
+﻿split,query_id,label,pool,query,번역,분류,제안,판단,추천
+train,22726,B,med_url,should i get my cat allergy tested?,고양이 알레르기 검사를 받아야 하나 (사람인지 고양이인지 모호),동물,애매,제외,제외
+train,37734,B,med_url,what to do for a dog bite,개에게 물렸을 때 대처 (사람 응급처치일 수 있음),동물,애매,유지,유지
+train,77767,B,no_med,what is the body temperature of mammals,포유류 체온,동물,애매,제외,제외
+validation,12142,A,no_med,what is ractopamine,락토파민(가축 사료첨가제)이란,동물,애매,제외,제외
+train,86954,A,med_url,diseases caused by protozoa in animals,동물의 원충성 질병,동물,애매,제외,제외
+validation,17125,A,no_med,what is the function of the liver in mammals,포유류 간의 기능,동물,애매,유지,유지
+validation,16480,B,no_med,Are Palm Trees Poisonous,야자수는 독성이 있나,식물,애매,제외,제외
+validation,15189,B,no_med,is foxtail fern poisonous,폭스테일 고사리는 독성이 있나,식물,애매,제외,제외
+train,77965,B,med_url,is the snake plant poisonous,산세베리아는 독성이 있나,식물,애매,제외,제외
+train,61978,B,med_url,pork temperature cooked,돼지고기 익힘 온도,요리·보관,애매,제외,제외
+train,35942,B,no_med,how to fry food without oil,기름 없이 튀기는 법,요리·보관,애매,제외,제외
+validation,10996,B,no_med,how to healthy season baked salmon,구운 연어 건강하게 양념하는 법,요리·보관,애매,제외,제외
+validation,11683,B,no_med,how does freezing affect the nutrients in food,냉동이 음식 영양소에 미치는 영향,영양,애매,유지,유지
+validation,12123,B,no_med,how many calories are in a pint of shrimp fried rice,새우볶음밥 1파인트 칼로리,영양,애매,제외,제외
+validation,13605,B,no_med,how many grams of carbohydrates in a medium potato,중간 크기 감자 탄수화물 g,영양,애매,유지,유지
+train,28973,B,med_url,what food items are nutrient dense,영양 밀도가 높은 식품,영양,애매,유지,유지
+validation,12637,B,med_url,mediterranean diet what type of residents are on this food,지중해식 식단은 어느 지역 사람들이 먹나,영양,애매,제외,제외
+train,98621,B,med_url,is there a type of flour for gluten intolerance,글루텐 불내증용 밀가루가 있나,영양,애매,유지,유지
+train,48992,B,med_url,does paraffin wax remove hair,파라핀 왁스로 제모되나,미용,애매,제외,제외
+validation,16061,B,no_med,what are the best scales for body weight,가장 좋은 체중계,생활,애매,제외,제외
+validation,17232,B,no_med,what is pupil distance in eyeglass prescription,안경 처방전의 동공거리(PD)란,생활,애매,제외,제외
+validation,15087,B,no_med,how many times are you supposed to be able to bench press your weight,자기 체중 벤치프레스를 몇 번 할 수 있어야 하나,운동,애매,제외,제외
+validation,14658,B,no_med,average cost of coolsculpting procedure,쿨스컬프팅 시술 평균 비용,비용,애매,유지,제외
+train,67471,B,med_url,average cost of microdermabrasion treatment,미세박피 시술 평균 비용,비용,애매,유지,제외
+validation,16451,B,no_med,average daily cost of hospital stay,하루 입원 평균 비용,비용,애매,유지,제외
+validation,10569,B,no_med,cost of neograft,네오그라프트(모발이식) 비용,비용,애매,유지,제외
+validation,17016,B,no_med,does medicare pay hearing aids,메디케어가 보청기를 보장하나,비용,애매,제외,제외
+validation,15047,B,no_med,how much do crutches cost,목발 가격,비용,애매,유지,제외
+validation,12680,B,no_med,how much does a doctor's office visit cost without insurance,보험 없이 병원 진료 비용,비용,애매,제외,제외
+validation,9811,B,no_med,how much does an mri cost in dallas,댈러스 MRI 비용,비용,애매,유지,제외
+train,34624,B,no_med,how much does medicare pay for hospice per day,메디케어 호스피스 일당 지급액,비용,애매,제외,제외
+train,90948,B,med_url,mri singapore cost,싱가포르 MRI 비용,비용,애매,유지,제외
+train,91627,B,med_url,much does genetic testing cost,유전자 검사 비용,비용,애매,유지,제외
+validation,16786,B,no_med,what's the average cost for a crown,치아 크라운 평균 비용,비용,애매,유지,제외
+validation,19056,B,no_med,mnsure cost,MNsure(미네소타 건강보험 거래소) 비용,비용,애매,제외,제외
+validation,14104,B,no_med,average health insurance rates,건강보험료 평균,비용,애매,유지,제외
+validation,11983,B,no_med,what is an average amount to spend on health insurance a month,월 건강보험료 평균 지출,비용,애매,유지,제외
+validation,11380,B,no_med,how to figure out how many tablets to compound,조제할 정제 개수 계산법,약학,애매,유지,유지
+train,29337,B,med_url,when was the flu discovered,독감은 언제 발견되었나,역사,애매,유지,제외
+validation,17548,B,no_med,how to improve iq,IQ 높이는 법,기타,애매,제외,제외
+validation,17310,B,med_url,how many years do you sleep in a lifetime,평생 몇 년을 자나,기타,애매,제외,제외
+validation,11281,B,no_med,how long does it take to burn alive,산 채로 타 죽는 데 걸리는 시간,기타,애매,제외,제외
+validation,13451,B,no_med,how many health careers are there,보건의료 직업은 몇 가지인가,직업,애매,제외,제외
+train,68380,B,med_url,how to become anesthesiologist nurse assistant,마취 간호조무사 되는 법,직업,애매,제외,제외
+train,35240,B,med_url,why should helmets be wear while riding a bike,자전거 탈 때 헬멧을 써야 하는 이유,안전,애매,유지,유지
+validation,16954,B,no_med,does social media have an affect on teenagers,소셜미디어가 10대에 영향을 주나,기타,애매,제외,제외
+validation,11253,B,no_med,bad effect of watching tv,TV 시청의 악영향,기타,애매,제외,제외
+validation,12507,C,med_url,celebrities who have or had cancer,암 투병 유명인,인물,애매,해당없음,해당없음(C)
+validation,15775,A,no_med,how many football players have cte,CTE를 앓는 미식축구 선수 수,인물,애매,제외,제외
+train,99139,A,med_url,company that has ebola vaccine,에볼라 백신 보유 회사,기업,애매,제외,제외
+validation,19194,A,no_med,what is the characteristic of ionising radiations,전리방사선의 특성,물리,애매,유지,유지
+validation,10786,A,no_med,what does the endoplasmic reticulum do in an animal cell,동물세포에서 소포체의 역할,생물학,애매,제외,제외
+validation,18144,A,no_med,what is the function of rRNA during translation,번역 과정에서 rRNA의 기능,생물학,애매,제외,제외
+validation,9705,A,no_med,where is energy located in the atp molecule,ATP 분자에서 에너지는 어디에 저장되나,생물학,애매,제외,제외
+validation,14957,A,no_med,what do the folds in the mitochondria membranes do,미토콘드리아 막 주름의 역할,생물학,애매,제외,제외
+validation,18458,A,no_med,what is the function of mitochondria,미토콘드리아의 기능,생물학,애매,제외,제외
+validation,9847,A,no_med,temperature effect on cellular respiration,온도가 세포호흡에 미치는 영향,생물학,애매,제외,제외
+validation,12346,A,no_med,is aspm human specific,ASPM 유전자는 인간 특이적인가,생물학,애매,제외,제외
+validation,12223,A,no_med,dna definition bitesize,DNA 정의(BBC Bitesize),생물학,애매,제외,제외
+validation,11625,A,no_med,does dna repair itself,DNA는 스스로 복구되나,생물학,애매,제외,제외
+validation,15224,A,no_med,what is the role of plasmids in antibiotic resistance,항생제 내성에서 플라스미드의 역할,생물학,애매,유지,유지
+validation,16713,A,no_med,what is the purpose of blood agar plate?,혈액 한천 배지의 용도,생물학,애매,유지,유지
+validation,18017,A,no_med,importance of biochemical tests in identification of bacteria,세균 동정에서 생화학 검사의 중요성,생물학,애매,유지,유지
