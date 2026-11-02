@@ -1,0 +1,15 @@
+{
+ "generator": "Qwen/Qwen3-8B",
+ "adapter": null,
+ "retrieval": "E10",
+ "top_n": 10,
+ "rerankers": [
+  "BAAI/bge-reranker-large",
+  "BAAI/bge-reranker-v2-m3"
+ ],
+ "prompt": "P0",
+ "system_prompt": "You are a careful medical information assistant.\nRules:\n1. Answer ONLY with facts stated in the numbered documents. Do not add outside knowledge.\n2. After each sentence, cite the supporting document numbers like [1] or [2][4].\n3. If the question is not about health or medicine, or the documents do not contain the answer, reply with exactly this sentence: \"Sorry, I can't answer that from the medical documents I have.\"\n4. Answer in 2-4 short sentences.",
+ "refusal_rule": "MiniLM < 6.80 (검증 하위 30%)",
+ "refusal_signal": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+ "refusal_threshold": 6.8
+}
