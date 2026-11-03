@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <g id="title" data-pptx-bounds="64 48 1152 84">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">정답률은 지키고, 지어낸 답은 줄였다</text>
+  </g>
+  <g id="kpi-accuracy" data-pptx-bounds="52 170 532 360">
+    <rect x="64" y="180" width="140" height="44" rx="22" fill="#E4572E" fill-opacity="0.12"/>
+    <text x="88" y="210" font-size="24" font-weight="bold" fill="#E4572E">최종 챗봇</text>
+    <text x="60" y="380" font-size="128" font-weight="bold" fill="#E4572E">.770</text>
+    <text x="64" y="440" font-size="32" font-weight="bold" fill="#1C2630">시험 정답률</text>
+    <text x="64" y="486" font-size="24" fill="#5B6B78">첫 RAG .736 · LLM만 .618</text>
+  </g>
+  <g id="kpi-refusal" data-pptx-bounds="620 150 596 214">
+    <rect x="620" y="150" width="596" height="214" rx="20" fill="#F2F5F7"/>
+    <text x="656" y="250" font-size="88" font-weight="bold" fill="#0B4F6C">.804</text>
+    <text x="656" y="302" font-size="32" fill="#1C2630">진짜 답 없는 질문 거절률</text>
+    <text x="656" y="342" font-size="24" fill="#5B6B78">DPO 전 .652</text>
+  </g>
+  <g id="kpi-hallucination" data-pptx-bounds="620 388 596 214">
+    <rect x="620" y="388" width="596" height="214" rx="20" fill="#F2F5F7"/>
+    <text x="656" y="488" font-size="88" font-weight="bold" fill="#0B4F6C">35% → 20%</text>
+    <text x="656" y="540" font-size="32" fill="#1C2630">지어낸 답 비율</text>
+    <text x="656" y="580" font-size="24" fill="#5B6B78">답 없는 질문에 답을 지어낸 비율</text>
+  </g>
+  <g id="source" data-pptx-bounds="64 640 1152 40">
+    <text x="64" y="664" font-size="18" fill="#5B6B78">출처: 시험셋 답 있는 건강 질문 500 · 진짜 답 없는 질문 46 · LLM 심판 Qwen2.5-14B (사람 판정과 일치 .88)</text>
+  </g>
+</svg>

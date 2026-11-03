@@ -1,0 +1,20 @@
+{
+  "stage": "stage1",
+  "lang": "ko",
+  "primary_language": "ko-KR",
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "ko",
+    "default_mode": "free_design",
+    "explicit_workspace_roots": []
+  },
+  "recommend": { "canvas": "ppt169" },
+  "audience": { "value": "멋사 NLP 6기 수강생·멘토·강사. RAG와 LLM 기초는 알지만 이 프로젝트의 세부 실험(01~19)은 처음 보는 사람들" },
+  "communication_intent": { "value": "최종 결과를 먼저 보고하고, 어떤 판단과 실패를 거쳐 그 결과에 이르렀는지(평가 방식 교체, 검색 앙상블, 생성 모델 교체, DPO) 설명한 뒤, 남은 한계와 다음 단계를 공유한다" },
+  "audience_outcome": { "value": "청중이 최종 챗봇 구성과 성능(시험 정답률 .770, 진짜 답 없는 질문 거절률 .804)을 이해하고, F1 대신 LLM 심판을 쓴 이유와 DPO를 채택한 근거를 납득하며, 남은 병목이 검색이라는 점에 동의한다" },
+  "core_message": { "value": "근거로만 답하고 모르면 거절하는 의료 챗봇: 검색 앙상블 + Qwen3-8B + DPO로 정답률을 지키면서(.736 → .770) 지어낸 답을 35%에서 20%로 줄였다. 남은 오답의 주원인은 검색이다" },
+  "delivery_context": { "value": "주: 발표자가 진행하는 최종 프로젝트 발표(약 15~20분)와 챗봇 데모. 부: 발표 후 팀 저장소·공유 자료로 따로 읽힘" },
+  "artifact_afterlife": { "value": "팀 프로젝트 결과 기록과 개인 포트폴리오 자료" },
+  "content_divergence": { "value": "" }
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "index": 1,
+    "filename": "image-1-1.jpeg",
+    "original_filename": "image-1-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-1-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 1,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 2,
+    "filename": "image-2-1.jpeg",
+    "original_filename": "image-2-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-2-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 2,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 3,
+    "filename": "image-3-1.jpeg",
+    "original_filename": "image-3-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-3-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 3,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 4,
+    "filename": "image-4-1.jpeg",
+    "original_filename": "image-4-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-4-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 4,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 5,
+    "filename": "image-5-1.jpeg",
+    "original_filename": "image-5-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-5-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 5,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 6,
+    "filename": "image-6-1.jpeg",
+    "original_filename": "image-6-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-6-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 6,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 7,
+    "filename": "image-7-1.jpeg",
+    "original_filename": "image-7-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-7-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 7,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 8,
+    "filename": "image-8-1.jpeg",
+    "original_filename": "image-8-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-8-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 8,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 9,
+    "filename": "image-9-1.jpeg",
+    "original_filename": "image-9-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-9-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 9,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 10,
+    "filename": "image-10-1.jpeg",
+    "original_filename": "image-10-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-10-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 10,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 11,
+    "filename": "image-11-1.jpeg",
+    "original_filename": "image-11-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-11-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 11,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  },
+  {
+    "index": 12,
+    "filename": "image-12-1.jpeg",
+    "original_filename": "image-12-1.jpeg",
+    "asset_kind": "bitmap",
+    "svg_renderable": true,
+    "pptx_native_supported": true,
+    "source_kind": "pptx_picture",
+    "source_ext": ".jpg",
+    "source_target": "ppt/media/image-12-1.jpeg",
+    "content_type": "image/jpeg",
+    "display_left_emu": 0,
+    "display_top_emu": 0,
+    "display_width_emu": 9144000,
+    "display_height_emu": 5143500,
+    "display_width_in": 10.0,
+    "display_height_in": 5.625,
+    "display_ratio": 1.777778,
+    "pixel_width": 2560,
+    "pixel_height": 1440,
+    "pixel_ratio": 1.777778,
+    "occurrences": [
+      {
+        "slide_index": 12,
+        "shape_name": "Image 0",
+        "display_left_emu": 0,
+        "display_top_emu": 0,
+        "display_width_emu": 9144000,
+        "display_height_emu": 5143500,
+        "display_width_in": 10.0,
+        "display_height_in": 5.625,
+        "display_ratio": 1.777778
+      }
+    ],
+    "usage_count": 1,
+    "display_ratio_variants": [
+      1.777778
+    ],
+    "source_namespace": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정"
+  }
+]

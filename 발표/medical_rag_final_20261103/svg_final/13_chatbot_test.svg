@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="title" data-pptx-bounds="64 58 1152 80">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">일상 표현 10개 중 8개 정답</text>
+  </g>
+  <g id="score" data-pptx-bounds="56 160 440 330">
+    <text x="60" y="320" font-size="128" font-weight="bold" fill="#0B4F6C">8<tspan fill="#7B97AB">/10</tspan></text>
+    <text x="64" y="384" font-size="32" fill="#1C2630">영어 일상 표현 질문</text>
+    <rect x="64" y="420" width="112" height="48" rx="24" fill="#0B4F6C" />
+    <text x="120" y="452" font-size="24" fill="#FFFFFF" text-anchor="middle">정답 8</text>
+    <rect x="188" y="420" width="112" height="48" rx="24" fill="#D5DEE4" />
+    <text x="244" y="452" font-size="24" fill="#1C2630" text-anchor="middle">부분 1</text>
+    <rect x="312" y="420" width="160" height="48" rx="24" fill="#E4572E" />
+    <text x="392" y="452" font-size="24" fill="#FFFFFF" text-anchor="middle">오거절 1</text>
+  </g>
+  <g id="korean-note" data-pptx-bounds="56 520 440 100">
+    <text font-size="24" fill="#5B6B78" x="64" y="556">한국어는 영어로 번역해 검색하고</text><text font-size="24" fill="#5B6B78" x="64" y="590">답을 다시 번역 · 응답 약 5초 (A100)</text></g>
+  <g id="case-tinnitus" data-pptx-bounds="520 152 696 112">
+    <rect x="520" y="156" width="696" height="104" rx="20" fill="#F2F5F7" />
+    
+  <g transform="translate(548, 190) scale(1.5)" fill="none" stroke="#0B4F6C" stroke-width="2">
+    <path d="M5 12l5 5l10 -10" />
+  </g>
+    <text x="604" y="198" font-size="24" fill="#1C2630">"ringing sound in ears that won't go away"</text>
+    <text x="604" y="236" font-size="24" font-weight="bold" fill="#0B4F6C">→ tinnitus (이명)</text>
+  </g>
+  <g id="case-thyroid" data-pptx-bounds="520 272 696 112">
+    <rect x="520" y="276" width="696" height="104" rx="20" fill="#F2F5F7" />
+    
+  <g transform="translate(548, 310) scale(1.5)" fill="none" stroke="#0B4F6C" stroke-width="2">
+    <path d="M5 12l5 5l10 -10" />
+  </g>
+    <text x="604" y="318" font-size="24" fill="#1C2630">"the butterfly shaped gland … is too slow"</text>
+    <text x="604" y="356" font-size="24" font-weight="bold" fill="#0B4F6C">→ hypothyroidism (갑상선기능저하)</text>
+  </g>
+  <g id="case-nail" data-pptx-bounds="520 392 696 112">
+    <rect x="520" y="396" width="696" height="104" rx="20" fill="#E4572E" fill-opacity="0.1" />
+    
+  <g transform="translate(548, 430) scale(1.5)" fill="none" stroke="#E4572E" stroke-width="2">
+    <path d="M18 6l-12 12" />
+    <path d="M6 6l12 12" />
+  </g>
+    <text x="604" y="438" font-size="24" fill="#1C2630">"shot you get after stepping on a rusty nail"</text>
+    <text x="604" y="476" font-size="24" font-weight="bold" fill="#E4572E">→ 오거절 · Reranker 점수 3.9 &lt; 4.92</text>
+  </g>
+  <g id="case-korean" data-pptx-bounds="520 512 696 112">
+    <rect x="520" y="516" width="696" height="104" rx="20" fill="#F2F5F7" />
+    
+  <g transform="translate(548, 550) scale(1.5)" fill="none" stroke="#0B4F6C" stroke-width="2">
+    <path d="M9 6.371c0 4.418 -2.239 6.629 -5 6.629" />
+    <path d="M4 6.371h7" />
+    <path d="M5 9c0 2.144 2.252 3.908 6 4" />
+    <path d="M12 20l4 -9l4 9" />
+    <path d="M19.1 18h-6.2" />
+    <path d="M6.694 3l.793 .582" />
+  </g>
+    <text x="604" y="558" font-size="24" fill="#1C2630">"위궤양을 일으키는 세균이 뭐야?"</text>
+    <text x="604" y="596" font-size="24" font-weight="bold" fill="#0B4F6C">→ 헬리코박터 파일로리 (번역 경유)</text>
+  </g>
+  <g id="source" data-pptx-bounds="64 646 1152 36">
+    <text x="64" y="668" font-size="18" fill="#5B6B78">최종 설정 챗봇 테스트 · 영어 일상 표현 10개 + 한국어 3개 · 응답 시간은 A100 기준</text>
+  </g>
+</svg>
