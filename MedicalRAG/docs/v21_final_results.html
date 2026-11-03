@@ -63,7 +63,7 @@ code { font-family: var(--f-mono); font-size: 13px; background: var(--accent-sof
 
 /* 막대 (시험 정답률, 0~1 같은 축) */
 .bars { display: flex; flex-direction: column; gap: 8px; }
-.bar-row { display: grid; grid-template-columns: minmax(0, 15em) 1fr 3.5em; align-items: center; gap: 10px; }
+.bar-row { display: grid; grid-template-columns: 14rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 10px; }
 .bar-row .name { font-size: 13px; color: var(--ink-2); overflow-wrap: anywhere; }
 .bar-track { position: relative; height: 18px; border-left: 1px solid var(--line); }
 .bar-fill { height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; }
@@ -71,9 +71,10 @@ code { font-family: var(--f-mono); font-size: 13px; background: var(--accent-sof
 .bar-row.final .name { color: var(--ink); font-weight: 600; }
 .bar-row .val { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: 13px; text-align: right; }
 .bar-row:hover .bar-fill, .bar-row:focus-within .bar-fill { filter: brightness(.92); }
-.axis { display: grid; grid-template-columns: minmax(0, 15em) 1fr 3.5em; gap: 10px; font-size: 11px; color: var(--ink-3); }
+.axis { display: grid; grid-template-columns: 14rem minmax(0, 1fr) 3.5rem; gap: 10px; font-size: 11px; color: var(--ink-3); }
+.axis .ticks span { width: 0; display: flex; justify-content: center; white-space: nowrap; }
 .axis .ticks { display: flex; justify-content: space-between; font-family: var(--f-mono); }
-@media (max-width: 560px) { .bar-row, .axis { grid-template-columns: minmax(0, 8.5em) 1fr 3em; } }
+@media (max-width: 560px) { .bar-row, .axis { grid-template-columns: 8rem minmax(0, 1fr) 3rem; } }
 
 /* 표 */
 .tbl { overflow-x: auto; }
