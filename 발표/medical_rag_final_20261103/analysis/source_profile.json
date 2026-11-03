@@ -1,0 +1,273 @@
+{
+  "schema": "pptx_intake_index.v1",
+  "deck_count": 1,
+  "decks": [
+    {
+      "schema": "pptx_intake_profile.v1",
+      "stem": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정",
+      "source_pptx": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/sources/MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.pptx",
+      "slide_count": 12,
+      "usage_contract": {
+        "standard_generation": "Use identity and slide-library fields as source facts and recommendation candidates only; do not preserve original page count, order, or coordinates unless the user selected the beautify profile.",
+        "beautify": "Promote source text, page order, page count, colors, fonts, and font sizes into locked constraints after user confirmation."
+      },
+      "artifacts": {
+        "identity": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.identity.json",
+        "slide_library": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.slide_library.json"
+      },
+      "canvas": {
+        "width_px": 960,
+        "height_px": 540,
+        "aspect": 1.7778
+      },
+      "identity": {
+        "theme_palette": {
+          "background": "#FFFFFF",
+          "background_alt": "#E7E6E6",
+          "text": "#000000",
+          "text_alt": "#44546A",
+          "hyperlink": "#0563C1",
+          "accent1": "#4472C4",
+          "accent2": "#ED7D31",
+          "accent3": "#A5A5A5",
+          "accent4": "#FFC000",
+          "accent5": "#5B9BD5",
+          "accent6": "#70AD47",
+          "primary": "#4472C4"
+        },
+        "theme_fonts": {
+          "title": {
+            "latin": "Calibri Light",
+            "scripts": {
+              "Jpan": "游ゴシック Light",
+              "Hang": "맑은 고딕",
+              "Hans": "等线 Light",
+              "Hant": "新細明體"
+            }
+          },
+          "body": {
+            "latin": "Calibri",
+            "scripts": {
+              "Jpan": "游ゴシック",
+              "Hang": "맑은 고딕",
+              "Hans": "等线",
+              "Hant": "新細明體"
+            }
+          }
+        },
+        "theme_sizes": {
+          "title": 44.0,
+          "body": 32.0,
+          "body_levels": [
+            32.0,
+            28.0,
+            24.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ]
+        },
+        "observed_colors": [
+          {
+            "value": "#6E6E73",
+            "count": 141
+          },
+          {
+            "value": "#1D1D1F",
+            "count": 75
+          },
+          {
+            "value": "#F5F5F7",
+            "count": 57
+          },
+          {
+            "value": "#E5E5EA",
+            "count": 24
+          },
+          {
+            "value": "#FFFFFF",
+            "count": 16
+          },
+          {
+            "value": "#0071E3",
+            "count": 15
+          },
+          {
+            "value": "#F56300",
+            "count": 11
+          },
+          {
+            "value": "#E6E6E9",
+            "count": 1
+          }
+        ],
+        "observed_fonts": {
+          "latin": [
+            {
+              "value": "Pretendard",
+              "count": 244
+            },
+            {
+              "value": "JetBrains Mono",
+              "count": 23
+            }
+          ],
+          "ea": [
+            {
+              "value": "Pretendard",
+              "count": 244
+            },
+            {
+              "value": "JetBrains Mono",
+              "count": 23
+            }
+          ]
+        },
+        "observed_sizes_pt": [
+          {
+            "value": 7.5,
+            "count": 47,
+            "chars": 1146
+          },
+          {
+            "value": 6.5,
+            "count": 55,
+            "chars": 966
+          },
+          {
+            "value": 8.5,
+            "count": 37,
+            "chars": 726
+          },
+          {
+            "value": 8.0,
+            "count": 42,
+            "chars": 357
+          },
+          {
+            "value": 6.0,
+            "count": 19,
+            "chars": 350
+          },
+          {
+            "value": 9.5,
+            "count": 16,
+            "chars": 343
+          },
+          {
+            "value": 20.0,
+            "count": 9,
+            "chars": 274
+          },
+          {
+            "value": 7.0,
+            "count": 9,
+            "chars": 166
+          }
+        ],
+        "layout_sizes_pt": []
+      },
+      "structure": {
+        "canvas_px": {
+          "width": 960,
+          "height": 540
+        },
+        "page_types": [
+          {
+            "slide_index": 1,
+            "page_type": "cover_candidate",
+            "slot_count": 9,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 2,
+            "page_type": "content_candidate",
+            "slot_count": 10,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 3,
+            "page_type": "content_candidate",
+            "slot_count": 18,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 4,
+            "page_type": "content_candidate",
+            "slot_count": 27,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 5,
+            "page_type": "content_candidate",
+            "slot_count": 23,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 6,
+            "page_type": "content_candidate",
+            "slot_count": 34,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 7,
+            "page_type": "content_candidate",
+            "slot_count": 35,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 8,
+            "page_type": "content_candidate",
+            "slot_count": 25,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 9,
+            "page_type": "content_candidate",
+            "slot_count": 13,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 10,
+            "page_type": "content_candidate",
+            "slot_count": 14,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 11,
+            "page_type": "content_candidate",
+            "slot_count": 17,
+            "diagram_count": 0
+          },
+          {
+            "slide_index": 12,
+            "page_type": "ending_candidate",
+            "slot_count": 15,
+            "diagram_count": 0
+          }
+        ]
+      },
+      "tables": {
+        "table_count": 0,
+        "tables": []
+      },
+      "charts": {
+        "chart_count": 0,
+        "series_count": 0,
+        "multi_plot_chart_count": 0,
+        "charts": []
+      },
+      "diagrams": {
+        "diagram_count": 0,
+        "text_item_count": 0,
+        "unreadable_count": 0,
+        "warning_count": 0,
+        "slides_with_diagrams": [],
+        "diagrams": []
+      }
+    }
+  ]
+}

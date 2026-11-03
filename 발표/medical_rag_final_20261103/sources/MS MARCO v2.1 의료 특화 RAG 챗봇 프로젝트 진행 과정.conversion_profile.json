@@ -1,0 +1,28 @@
+{
+  "schema": "ppt-master.source_to_md.profile.v1",
+  "converter": "ppt_to_md.py",
+  "conversion_type": "pptx",
+  "source": {
+    "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.pptx",
+    "name": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.pptx",
+    "suffix": ".pptx",
+    "kind": "file",
+    "exists": true,
+    "size_bytes": 516291
+  },
+  "outputs": {
+    "markdown": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.md",
+    "asset_dir": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정_files",
+    "image_manifest": "MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정_files/image_manifest.json",
+    "image_count": 12
+  },
+  "markdown": {
+    "line_count": 614,
+    "char_count": 8136,
+    "heading_count": 25,
+    "table_count": 0,
+    "image_ref_count": 12,
+    "link_count": 0
+  },
+  "warnings": []
+}

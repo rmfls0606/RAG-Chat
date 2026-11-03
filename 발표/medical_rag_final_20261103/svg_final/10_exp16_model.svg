@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <g id="exp-progress" data-pptx-bounds="888 20 332 36" font-size="18" font-weight="bold" text-anchor="middle">
+    <rect x="892" y="24" width="52" height="32" rx="16" fill="#D5DEE4" />
+    <text x="918" y="46" fill="#5B6B78">14</text>
+    <rect x="952" y="24" width="52" height="32" rx="16" fill="#D5DEE4" />
+    <text x="978" y="46" fill="#5B6B78">15</text>
+    <rect x="1012" y="24" width="52" height="32" rx="16" fill="#0B4F6C" />
+    <text x="1038" y="46" fill="#FFFFFF">16</text>
+    <rect x="1072" y="24" width="52" height="32" rx="16" fill="#D5DEE4" />
+    <text x="1098" y="46" fill="#5B6B78">17</text>
+    <rect x="1132" y="24" width="84" height="32" rx="16" fill="#D5DEE4" />
+    <text x="1174" y="46" fill="#5B6B78">18·19</text>
+  </g>
+  <g id="title" data-pptx-bounds="64 58 1152 80">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">가장 큰 개선은 LLM 교체</text>
+  </g>
+  <g id="system-accuracy" data-pptx-bounds="32 140 924 470" data-pptx-replace-with="chart" data-pptx-fallback-sha256="df8bddf83049e6ef6847aabae03ee4d3bc268525c51cfe5caadaa7431253fd45">
+    <metadata type="application/json">{"name": "system-accuracy", "x": 32, "y": 140, "width": 924, "height": 470, "type": "bar", "categories": ["LLM 단독 (Qwen2.5-7B)", "06 문장형 LoRA", "15 SFT v2", "08 Baseline RAG", "앙상블 + Qwen2.5-14B", "앙상블 + Qwen3-8B + DPO (최종)", "앙상블 + Qwen3-8B", "앙상블 + Qwen3-14B"], "series": [{"name": "Test 정답률", "values": [0.618, 0.45, 0.724, 0.736, 0.76, 0.77, 0.782, 0.79], "point_colors": ["#7B97AB", "#7B97AB", "#7B97AB", "#7B97AB", "#7B97AB", "#E4572E", "#0B4F6C", "#0B4F6C"]}], "plot_area": {"x": 452, "y": 150, "width": 500, "height": 450}, "gap_width": 56, "axes": {"category": {"position": "left", "tick_marks": "none"}, "value": {"visible": false, "minimum": 0, "maximum": 1, "major_gridlines": false}}, "notes": [{"text": ".618"}, {"text": ".450"}, {"text": ".724"}, {"text": ".736"}, {"text": ".760"}, {"text": ".770"}, {"text": ".782"}, {"text": ".790"}], "style": {"font_family": "Malgun Gothic", "axis_font_size": 24, "note_font_size": 24, "text_color": "#1C2630", "axis_color": "#D5DEE4"}}</metadata>
+    <g id="system-accuracy-chartArea">
+      <line id="axis-category" x1="452" y1="150" x2="452" y2="600" stroke="#D5DEE4" stroke-width="2" />
+      
+      <text x="440" y="186.12" font-size="24" fill="#1C2630" text-anchor="end">LLM 단독 (Qwen2.5-7B)</text>
+      <rect x="452" y="160.12" width="309.0" height="36" fill="#7B97AB" />
+      <text x="771.0" y="186.12" font-size="24" font-weight="bold" fill="#1C2630">.618</text>
+      <text x="440" y="242.38" font-size="24" fill="#1C2630" text-anchor="end">06 문장형 LoRA</text>
+      <rect x="452" y="216.38" width="225.0" height="36" fill="#7B97AB" />
+      <text x="687.0" y="242.38" font-size="24" font-weight="bold" fill="#1C2630">.450</text>
+      <text x="440" y="298.62" font-size="24" fill="#1C2630" text-anchor="end">15 SFT v2</text>
+      <rect x="452" y="272.62" width="362.0" height="36" fill="#7B97AB" />
+      <text x="824.0" y="298.62" font-size="24" font-weight="bold" fill="#1C2630">.724</text>
+      <text x="440" y="354.88" font-size="24" fill="#1C2630" text-anchor="end">08 Baseline RAG</text>
+      <rect x="452" y="328.88" width="368.0" height="36" fill="#7B97AB" />
+      <text x="830.0" y="354.88" font-size="24" font-weight="bold" fill="#1C2630">.736</text>
+      <text x="440" y="411.12" font-size="24" fill="#1C2630" text-anchor="end">앙상블 + Qwen2.5-14B</text>
+      <rect x="452" y="385.12" width="380.0" height="36" fill="#7B97AB" />
+      <text x="842.0" y="411.12" font-size="24" font-weight="bold" fill="#1C2630">.760</text>
+      <text x="440" y="467.38" font-size="24" fill="#1C2630" text-anchor="end">앙상블 + Qwen3-8B + DPO (최종)</text>
+      <rect x="452" y="441.38" width="385.0" height="36" fill="#E4572E" />
+      <text x="847.0" y="467.38" font-size="24" font-weight="bold" fill="#1C2630">.770</text>
+      <text x="440" y="523.62" font-size="24" fill="#1C2630" text-anchor="end">앙상블 + Qwen3-8B</text>
+      <rect x="452" y="497.62" width="391.0" height="36" fill="#0B4F6C" />
+      <text x="853.0" y="523.62" font-size="24" font-weight="bold" fill="#1C2630">.782</text>
+      <text x="440" y="579.88" font-size="24" fill="#1C2630" text-anchor="end">앙상블 + Qwen3-14B</text>
+      <rect x="452" y="553.88" width="395.0" height="36" fill="#0B4F6C" />
+      <text x="857.0" y="579.88" font-size="24" font-weight="bold" fill="#1C2630">.790</text>
+    </g>
+  </g>
+  <g id="callout-gain" data-pptx-bounds="962 190 262 300">
+    <rect x="972" y="194" width="244" height="292" rx="20" fill="#F2F5F7" />
+    <text x="996" y="290" font-size="88" font-weight="bold" fill="#0B4F6C">+4.6</text>
+    <text font-size="24" fill="#1C2630" x="996" y="340">Baseline 대비 (점)</text><text font-size="24" fill="#1C2630" x="996" y="374">Qwen2.5 → Qwen3</text><text x="996" y="448" font-size="18" fill="#5B6B78">95% CI +0.8 ~ +8.2</text>
+  </g>
+  <g id="source" data-pptx-bounds="64 622 1152 70">
+    <text font-size="18" fill="#5B6B78" x="64" y="644">EXP 16 · Reranker 앙상블로 Recall@5 .628 → .654, Recall@10 .776 · 같은 계열에서 모델 크기만 키우면 +2점</text><text font-size="18" fill="#5B6B78" x="64" y="674">Qwen3-14B(.790)는 Validation에서 8B와 동점(.795)이라 더 가벼운 8B 선택 · Test set 건강 질문 500</text></g>
+</svg>

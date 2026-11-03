@@ -1,0 +1,446 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "early",
+  "target": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "59afb532169f385bfcb3c506f5fe7d3b5fc49e4bd56b8bc524f06551fca5ce6f",
+    "file_count": 5,
+    "files": [
+      {
+        "file": "01_cover.svg",
+        "sha256": "0cdbb4cc8461b9334edcef6365e725d67378daab6bf590dc769e1247ec42da8c"
+      },
+      {
+        "file": "02_final_result.svg",
+        "sha256": "e140ea3df1c7e952ddc021f4d60a099e791a8534b6ccc83f4b655748d298ae95"
+      },
+      {
+        "file": "03_goal_data.svg",
+        "sha256": "902dcf067654783f10fe1ce116a5a7e384c5c273918f4cdd1335905e620aea1b"
+      },
+      {
+        "file": "04_pipeline.svg",
+        "sha256": "5ece7ec20a3f8903913b24d2b58873020f935c4799d6efc880e1389374f08aa8"
+      },
+      {
+        "file": "05_experiment_map.svg",
+        "sha256": "0e81edfa67b66fbb32f31f4746ef9604e623f4ffb9161bed23a371c4a7f39e36"
+      }
+    ]
+  },
+  "summary": {
+    "total": 5,
+    "passed": 2,
+    "warnings": 3,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 3,
+      "issues": [
+        {
+          "file": "01_cover.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): cover-kicker:fill None -> '#FFFFFF'; rect[10]:fill '#FFFFFF' -> None; text[11]:fill '#FFFFFF' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "02_final_result.svg",
+          "message": "<text> (x=60, y=380; text='.770') exceeds <g id=\"kpi-accuracy\"> data-pptx-bounds on the horizontal axis: content (60.0, 271.2)-(373.4, 424.8), container (64.0, 170.0)-(584.0, 530.0), overflow horizontal 0.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈78.4 px per Latin char at 128px incl. headroom; ≈6 chars fit in 520 px"
+        },
+        {
+          "file": "04_pipeline.svg",
+          "message": "<text> (x=499, y=330; text='앙상블 재정렬') exceeds <g id=\"step-rerank\"> data-pptx-bounds on the horizontal axis: content (391.9, 302.8)-(606.1, 341.2), container (394.0, 186.0)-(644.0, 376.0), overflow horizontal 0.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈35.7 px per CJK char at 32px incl. headroom; ≈7 chars fit in 250 px"
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#073A50": [
+        "01_cover.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 5,
+    "totals": {
+      "text_elements": 60,
+      "image_placements": 0,
+      "icons": 3,
+      "svg_geometry_elements": 32,
+      "preset_shapes": 6,
+      "page_frame_elements": 2,
+      "marker_uses": 6,
+      "inline_emphasis_runs": 2,
+      "gradient_uses": 1,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 1,
+      "presets": 1,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 1,
+      "gradient_uses": 1,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 8,
+    "geometry_elements": {
+      "circle": 2,
+      "ellipse": 0,
+      "line": 6,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 24
+    },
+    "preset_names": {
+      "chevron": 5,
+      "homePlate": 1
+    },
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_cover.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/01_cover.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): cover-kicker:fill None -> '#FFFFFF'; rect[10]:fill '#FFFFFF' -> None; text[11]:fill '#FFFFFF' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 4,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 3,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 4,
+        "tspan_elements": 1,
+        "contextual_values": {
+          "colors": [
+            "#073A50"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0cdbb4cc8461b9334edcef6365e725d67378daab6bf590dc769e1247ec42da8c"
+    },
+    {
+      "file": "02_final_result.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/02_final_result.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "<text> (x=60, y=380; text='.770') exceeds <g id=\"kpi-accuracy\"> data-pptx-bounds on the horizontal axis: content (60.0, 271.2)-(373.4, 424.8), container (64.0, 170.0)-(584.0, 530.0), overflow horizontal 0.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈78.4 px per Latin char at 128px incl. headroom; ≈6 chars fit in 520 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 12,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 12,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "e140ea3df1c7e952ddc021f4d60a099e791a8534b6ccc83f4b655748d298ae95"
+    },
+    {
+      "file": "03_goal_data.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/03_goal_data.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "902dcf067654783f10fe1ce116a5a7e384c5c273918f4cdd1335905e620aea1b"
+    },
+    {
+      "file": "04_pipeline.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/04_pipeline.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "<text> (x=499, y=330; text='앙상블 재정렬') exceeds <g id=\"step-rerank\"> data-pptx-bounds on the horizontal axis: content (391.9, 302.8)-(606.1, 341.2), container (394.0, 186.0)-(644.0, 376.0), overflow horizontal 0.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈35.7 px per CJK char at 32px incl. headroom; ≈7 chars fit in 250 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 6
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 8
+      },
+      "passed": true,
+      "source_sha256": "5ece7ec20a3f8903913b24d2b58873020f935c4799d6efc880e1389374f08aa8"
+    },
+    {
+      "file": "05_experiment_map.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/05_experiment_map.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 6,
+            "preset_names": {
+              "chevron": 5,
+              "homePlate": 1
+            },
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 6
+      },
+      "passed": true,
+      "source_sha256": "0e81edfa67b66fbb32f31f4746ef9604e623f4ffb9161bed23a371c4a7f39e36"
+    }
+  ]
+}

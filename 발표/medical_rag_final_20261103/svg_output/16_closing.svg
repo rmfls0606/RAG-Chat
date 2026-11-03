@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="ending">
+  <defs>
+    <linearGradient id="closeField" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B4F6C"/>
+      <stop offset="100%" stop-color="#073A50"/>
+    </linearGradient>
+  </defs>
+  <rect id="close-bg" x="0" y="0" width="1280" height="720" fill="url(#closeField)"/>
+  <circle id="close-disc" data-pptx-role="decoration" cx="1130" cy="600" r="430" fill="#FFFFFF" fill-opacity="0.06"/>
+  <g id="title" data-pptx-bounds="56 70 900 250" font-weight="bold">
+    <text x="64" y="170" font-size="88" fill="#FFFFFF">평가를 바로잡자,<tspan x="64" dy="110" fill="#E4572E">진짜 개선이 보였다</tspan></text>
+  </g>
+  <g id="lesson-metric" data-pptx-bounds="64 370 540 116">
+    <rect x="64" y="374" width="540" height="108" rx="20" fill="#FFFFFF" fill-opacity="0.1"/>
+    <circle cx="112" cy="428" r="24" fill="#E4572E"/>
+    <text x="112" y="437" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="152" y="420" font-size="32" font-weight="bold" fill="#FFFFFF">지표가 틀리면 개선도 틀린다<tspan x="152" dy="36" font-size="24" font-weight="normal" fill-opacity="0.75">F1 → LLM-as-a-Judge</tspan></text>
+  </g>
+  <g id="lesson-model" data-pptx-bounds="676 370 540 116">
+    <rect x="676" y="374" width="540" height="108" rx="20" fill="#FFFFFF" fill-opacity="0.1"/>
+    <circle cx="724" cy="428" r="24" fill="#E4572E"/>
+    <text x="724" y="437" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="764" y="420" font-size="32" font-weight="bold" fill="#FFFFFF">최대 개선: LLM 교체<tspan x="764" dy="36" font-size="24" font-weight="normal" fill-opacity="0.75">Qwen2.5 → Qwen3, +4.6점</tspan></text>
+  </g>
+  <g id="lesson-safety" data-pptx-bounds="64 498 540 116">
+    <rect x="64" y="502" width="540" height="108" rx="20" fill="#FFFFFF" fill-opacity="0.1"/>
+    <circle cx="112" cy="556" r="24" fill="#E4572E"/>
+    <text x="112" y="565" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="152" y="548" font-size="32" font-weight="bold" fill="#FFFFFF">안전성은 DPO가 낫다<tspan x="152" dy="36" font-size="24" font-weight="normal" fill-opacity="0.75">정답률 .770 vs Threshold .678</tspan></text>
+  </g>
+  <g id="lesson-retrieval" data-pptx-bounds="676 498 540 116">
+    <rect x="676" y="502" width="540" height="108" rx="20" fill="#FFFFFF" fill-opacity="0.1"/>
+    <circle cx="724" cy="556" r="24" fill="#E4572E"/>
+    <text x="724" y="565" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="764" y="548" font-size="32" font-weight="bold" fill="#FFFFFF">다음 병목은 Retriever<tspan x="764" dy="36" font-size="24" font-weight="normal" fill-opacity="0.75">Recall@10 .776</tspan></text>
+  </g>
+  <g id="thanks" data-pptx-bounds="56 636 600 52">
+    <text x="64" y="670" font-size="24" fill="#FFFFFF" fill-opacity="0.8">감사합니다 · Q&amp;A</text>
+  </g>
+</svg>

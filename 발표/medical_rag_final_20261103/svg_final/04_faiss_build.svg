@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <line id="build-spine" data-pptx-role="decoration" x1="100" y1="194" x2="100" y2="562" stroke="#D5DEE4" stroke-width="3" />
+  <g id="title" data-pptx-bounds="64 48 1152 84">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">FAISS DB는 이렇게 만들었다</text>
+  </g>
+  <g id="build-step-1" data-pptx-bounds="64 156 724 92">
+    <circle cx="100" cy="194" r="22" fill="#0B4F6C" />
+    <text x="100" y="202" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text font-weight="bold" font-size="32" fill="#1C2630" x="140" y="204">데이터 받기</text><text font-weight="normal" font-size="24" fill="#5B6B78" x="140" y="238">MS MARCO v2.1 · train 808,731 / dev 101,093</text></g>
+  <g id="build-step-2" data-pptx-bounds="64 248 724 92">
+    <circle cx="100" cy="286" r="22" fill="#0B4F6C" />
+    <text x="100" y="294" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text font-weight="bold" font-size="32" fill="#1C2630" x="140" y="296">건강 질문 고르기</text><text font-weight="normal" font-size="24" fill="#5B6B78" x="140" y="330">Passage 10개 중 2개 이상이 의료 사이트 33곳 출처</text></g>
+  <g id="build-step-3" data-pptx-bounds="64 340 724 92">
+    <circle cx="100" cy="378" r="22" fill="#0B4F6C" />
+    <text x="100" y="386" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text font-weight="bold" font-size="32" fill="#1C2630" x="140" y="388">Passage 모으기</text><text font-weight="normal" font-size="24" fill="#5B6B78" x="140" y="422">같은 내용은 하나만 남기고 pid를 0부터 → 459,067개</text></g>
+  <g id="build-step-4" data-pptx-bounds="64 432 724 92">
+    <circle cx="100" cy="470" r="22" fill="#0B4F6C" />
+    <text x="100" y="478" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text font-weight="bold" font-size="32" fill="#1C2630" x="140" y="480">임베딩</text><text font-weight="normal" font-size="24" fill="#5B6B78" x="140" y="514">bge-base-en-v1.5 · 768차원 · float16 · 벡터 정규화</text></g>
+  <g id="build-step-5" data-pptx-bounds="64 524 724 92">
+    <circle cx="100" cy="562" r="22" fill="#E4572E" />
+    <text x="100" y="570" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text font-weight="bold" font-size="32" fill="#1C2630" x="140" y="572">FAISS 인덱스</text><text font-weight="normal" font-size="24" fill="#5B6B78" x="140" y="606">IndexFlatIP 저장 · 질문에 접두어 붙여 Top-100 검색</text></g>
+  <g id="why-flatip" data-pptx-bounds="808 152 412 468">
+    <rect x="812" y="156" width="404" height="460" rx="20" fill="#F2F5F7" />
+    
+  <g transform="translate(844, 188) scale(1.66667)" fill="none" stroke="#0B4F6C" stroke-width="2">
+    <path d="M4 6a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+    <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+    <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+  </g>
+    <text x="896" y="220" font-size="32" font-weight="bold" fill="#1C2630">왜 IndexFlatIP?</text>
+    <text font-size="24" fill="#1C2630" x="844" y="278">근사 검색 없이 전부 비교</text><text font-size="24" fill="#1C2630" x="844" y="312">46만 개 정도면 충분히 빠르고</text><text font-size="24" fill="#1C2630" x="844" y="346">결과가 정확함</text><line x1="844" y1="384" x2="1184" y2="384" stroke="#D5DEE4" stroke-width="1" />
+    <text x="844" y="430" font-size="24" fill="#5B6B78">Dense Recall@10</text>
+    <text x="840" y="520" font-size="88" font-weight="bold" fill="#0B4F6C">.688</text>
+    <text x="844" y="572" font-size="24" fill="#5B6B78">BM25 .406 · Test set 500</text>
+  </g>
+  <g id="source" data-pptx-bounds="64 640 1152 40">
+    <text x="64" y="664" font-size="18" fill="#5B6B78">02_health_embedding.ipynb · Colab A100 · 결과 파일은 Google Drive rag_msmarco/health/ 에 저장</text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <g id="exp-progress" data-pptx-bounds="888 20 332 36" font-size="18" font-weight="bold" text-anchor="middle">
+    <rect x="892" y="24" width="52" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="918" y="46" fill="#5B6B78">14</text>
+    <rect x="952" y="24" width="52" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="978" y="46" fill="#5B6B78">15</text>
+    <rect x="1012" y="24" width="52" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="1038" y="46" fill="#5B6B78">16</text>
+    <rect x="1072" y="24" width="52" height="32" rx="16" fill="#0B4F6C"/>
+    <text x="1098" y="46" fill="#FFFFFF">17</text>
+    <rect x="1132" y="24" width="84" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="1174" y="46" fill="#5B6B78">18·19</text>
+  </g>
+  <g id="title" data-pptx-bounds="64 58 1152 80">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">DPO로 지어낸 답을 줄였다</text>
+  </g>
+  <g id="hero-refusal" data-pptx-bounds="56 170 760 264">
+    <text x="64" y="220" font-size="32" font-weight="bold" fill="#1C2630">진짜 답 없는 질문 거절률</text>
+    <text x="64" y="380" font-size="88" font-weight="bold" fill="#7B97AB">.652</text>
+    <text x="300" y="380" font-size="88" fill="#5B6B78">→</text>
+    <text x="400" y="380" font-size="128" font-weight="bold" fill="#0B4F6C">.804</text>
+  </g>
+  <g id="accuracy-card" data-pptx-bounds="840 166 376 248">
+    <rect x="840" y="170" width="376" height="240" rx="20" fill="#F2F5F7"/>
+    <text x="872" y="224" font-size="24" fill="#5B6B78">시험 정답률</text>
+    <text x="872" y="300" font-size="44" font-weight="bold" fill="#1C2630">.782 → .770</text>
+    <text x="872" y="352" font-size="24" fill="#5B6B78">-1.2점 · 유의하지 않음</text>
+  </g>
+  <g id="method" data-pptx-bounds="64 460 1152 150">
+    <rect x="64" y="464" width="1152" height="142" rx="20" fill="#0B4F6C" fill-opacity="0.06"/>
+    <text x="96" y="522" font-size="32" fill="#1C2630">심판이 고른 <tspan font-weight="bold" fill="#0B4F6C">좋은 답 vs 오답·지어낸 답·잘못 거절</tspan> 224쌍</text>
+    <text x="96" y="572" font-size="24" fill="#5B6B78">LoRA r16 · 직접 구현 · 지어낸 답 35% → 20%</text>
+  </g>
+</svg>

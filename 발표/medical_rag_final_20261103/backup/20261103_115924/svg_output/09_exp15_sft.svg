@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <g id="exp-progress" data-pptx-bounds="888 20 332 36" font-size="18" font-weight="bold" text-anchor="middle">
+    <rect x="892" y="24" width="52" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="918" y="46" fill="#5B6B78">14</text>
+    <rect x="952" y="24" width="52" height="32" rx="16" fill="#0B4F6C"/>
+    <text x="978" y="46" fill="#FFFFFF">15</text>
+    <rect x="1012" y="24" width="52" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="1038" y="46" fill="#5B6B78">16</text>
+    <rect x="1072" y="24" width="52" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="1098" y="46" fill="#5B6B78">17</text>
+    <rect x="1132" y="24" width="84" height="32" rx="16" fill="#D5DEE4"/>
+    <text x="1174" y="46" fill="#5B6B78">18·19</text>
+  </g>
+  <g id="title" data-pptx-bounds="64 58 1152 80">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">거절을 잘못 가르쳤다</text>
+  </g>
+  <g id="hero-change" data-pptx-bounds="160 226 960 174">
+    <text x="640" y="350" font-size="128" font-weight="bold" fill="#0B4F6C" text-anchor="middle"><tspan fill="#7B97AB">.450</tspan> → .724</text>
+  </g>
+  <g id="cause" data-pptx-bounds="140 410 1000 110">
+    <text x="640" y="450" font-size="32" fill="#1C2630" text-anchor="middle">정답 Passage가 Top-5 밖이라 거절로 학습한 714개 중<tspan x="640" dy="50"><tspan fill="#E4572E" font-weight="bold">500개(70%)</tspan>는 실제로 답할 수 있었다</tspan></text>
+  </g>
+  <g id="limit" data-pptx-bounds="140 560 1000 50">
+    <text x="640" y="594" font-size="24" fill="#5B6B78" text-anchor="middle">다만 Baseline .736은 넘지 못함 — 모델이 만든 답으로 다시 학습한 한계</text>
+  </g>
+</svg>

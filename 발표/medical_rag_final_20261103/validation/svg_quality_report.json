@@ -1,0 +1,1137 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "210dec6840d4311728546c210671f8f76d6fc619e3bdb9ae6ba5dd7e4dbaeb1e",
+    "file_count": 16,
+    "files": [
+      {
+        "file": "01_cover.svg",
+        "sha256": "6896f01e635d65bf56019e0c183744b6886ad918d2a0fa53931ae88ef00c3a48"
+      },
+      {
+        "file": "02_final_result.svg",
+        "sha256": "5deddb12ca73d9ed03ed5828e8d84acde3732c598216d47be5e52e4e67959883"
+      },
+      {
+        "file": "03_goal_data.svg",
+        "sha256": "906e8de3eee1096e7e9dc60a139a7f7b74ae4f800031367955db78f7f99d8b2f"
+      },
+      {
+        "file": "04_faiss_build.svg",
+        "sha256": "3a02358d282df0af534303144a017f8f6fe01eb53d2df374cc7d9693a8a467e3"
+      },
+      {
+        "file": "05_data_structure.svg",
+        "sha256": "9572e8ca968880b4a2c10b9b25458b62602db83c2b943729af679d97e448b952"
+      },
+      {
+        "file": "06_pipeline.svg",
+        "sha256": "c9c302842b03f08c4b5efa34c54f0ded83974394d9fe93d3254cc98e272e2d87"
+      },
+      {
+        "file": "07_experiment_map.svg",
+        "sha256": "29589547604ffeab293f84fbba7cd7205c32b3ec183552e542a372d0db62f611"
+      },
+      {
+        "file": "08_exp14_judge.svg",
+        "sha256": "23e904b7ceff33c4a5014b2b7e69026467d327b9b87f2b1a81d900364b8a914c"
+      },
+      {
+        "file": "09_exp15_sft.svg",
+        "sha256": "7084168b1252fe94e6e17e248a00bef9753633aa6cb3900e2295f8f6d8f6c5b4"
+      },
+      {
+        "file": "10_exp16_model.svg",
+        "sha256": "15d0622b3b9109f299797ed00c0e706da3151cfa2257d081c54294d835d9bc9a"
+      },
+      {
+        "file": "11_exp17_dpo.svg",
+        "sha256": "75e3a1530cb3de45c09dc2a0e605a9794f8b5941b3d2856874b71a62109d7b3d"
+      },
+      {
+        "file": "12_exp18_tradeoff.svg",
+        "sha256": "50c22607a941330015fa0cb72462e577963ec12bd177593480f6527b7919f349"
+      },
+      {
+        "file": "13_chatbot_test.svg",
+        "sha256": "2a289dc4c1e228338e1c4f1b8395c4c4096eb1d7edbee7f47b73d3be4747889f"
+      },
+      {
+        "file": "14_demo.svg",
+        "sha256": "e632159fdc9cb74dfb44a529d5326a5aa9e8bf3b5e1f42c9783bb92fe19acf82"
+      },
+      {
+        "file": "15_limits.svg",
+        "sha256": "4df22a8fc321d737a7fe35c8227d30d0f50fa3a2ef07c3dae5b391e4a60627f6"
+      },
+      {
+        "file": "16_closing.svg",
+        "sha256": "27256974ee2d1c23e35af851e58bf839075f8106346dc032e9b3ab1c2d3d13ba"
+      }
+    ]
+  },
+  "summary": {
+    "total": 16,
+    "passed": 14,
+    "warnings": 2,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 2,
+      "issues": [
+        {
+          "file": "01_cover.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): cover-kicker:fill None -> '#FFFFFF'; rect[10]:fill '#FFFFFF' -> None; text[11]:fill '#FFFFFF' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "05_data_structure.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (1 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): tspan[39]:fill '#FFFFFF' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#073A50": [
+        "01_cover.svg",
+        "14_demo.svg",
+        "16_closing.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 16,
+    "totals": {
+      "text_elements": 258,
+      "image_placements": 0,
+      "icons": 13,
+      "svg_geometry_elements": 130,
+      "preset_shapes": 7,
+      "page_frame_elements": 5,
+      "marker_uses": 7,
+      "inline_emphasis_runs": 12,
+      "gradient_uses": 3,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 5,
+      "presets": 2,
+      "charts": 1,
+      "tables": 1,
+      "formulas": 0,
+      "inline_emphasis_runs": 7,
+      "gradient_uses": 3,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 10,
+    "geometry_elements": {
+      "circle": 13,
+      "ellipse": 0,
+      "line": 15,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 102
+    },
+    "preset_names": {
+      "chevron": 5,
+      "homePlate": 1,
+      "rightArrow": 1
+    },
+    "native_objects": {
+      "chart": 1,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 1
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_cover.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/01_cover.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): cover-kicker:fill None -> '#FFFFFF'; rect[10]:fill '#FFFFFF' -> None; text[11]:fill '#FFFFFF' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 4,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 3,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 2,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 4,
+        "tspan_elements": 1,
+        "contextual_values": {
+          "colors": [
+            "#073A50"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "6896f01e635d65bf56019e0c183744b6886ad918d2a0fa53931ae88ef00c3a48"
+    },
+    {
+      "file": "02_final_result.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/02_final_result.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 12,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 12,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "5deddb12ca73d9ed03ed5828e8d84acde3732c598216d47be5e52e4e67959883"
+    },
+    {
+      "file": "03_goal_data.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/03_goal_data.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 0
+      },
+      "passed": true,
+      "source_sha256": "906e8de3eee1096e7e9dc60a139a7f7b74ae4f800031367955db78f7f99d8b2f"
+    },
+    {
+      "file": "04_faiss_build.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/04_faiss_build.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 17,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 17,
+        "tspan_elements": 7
+      },
+      "passed": true,
+      "source_sha256": "3a02358d282df0af534303144a017f8f6fe01eb53d2df374cc7d9693a8a467e3"
+    },
+    {
+      "file": "05_data_structure.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/05_data_structure.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (1 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): tspan[39]:fill '#FFFFFF' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 32,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 10,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 1
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 32,
+        "tspan_elements": 5
+      },
+      "passed": true,
+      "source_sha256": "9572e8ca968880b4a2c10b9b25458b62602db83c2b943729af679d97e448b952"
+    },
+    {
+      "file": "06_pipeline.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/06_pipeline.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 6
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 8
+      },
+      "passed": true,
+      "source_sha256": "c9c302842b03f08c4b5efa34c54f0ded83974394d9fe93d3254cc98e272e2d87"
+    },
+    {
+      "file": "07_experiment_map.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/07_experiment_map.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 6,
+            "preset_names": {
+              "chevron": 5,
+              "homePlate": 1
+            },
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 6
+      },
+      "passed": true,
+      "source_sha256": "29589547604ffeab293f84fbba7cd7205c32b3ec183552e542a372d0db62f611"
+    },
+    {
+      "file": "08_exp14_judge.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/08_exp14_judge.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 1,
+            "preset_names": {
+              "rightArrow": 1
+            },
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "23e904b7ceff33c4a5014b2b7e69026467d327b9b87f2b1a81d900364b8a914c"
+    },
+    {
+      "file": "09_exp15_sft.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/09_exp15_sft.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 9,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 9,
+        "tspan_elements": 3
+      },
+      "passed": true,
+      "source_sha256": "7084168b1252fe94e6e17e248a00bef9753633aa6cb3900e2295f8f6d8f6c5b4"
+    },
+    {
+      "file": "10_exp16_model.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/10_exp16_model.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 26,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 15,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 1,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 26,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "15d0622b3b9109f299797ed00c0e706da3151cfa2257d081c54294d835d9bc9a"
+    },
+    {
+      "file": "11_exp17_dpo.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/11_exp17_dpo.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "75e3a1530cb3de45c09dc2a0e605a9794f8b5941b3d2856874b71a62109d7b3d"
+    },
+    {
+      "file": "12_exp18_tradeoff.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/12_exp18_tradeoff.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 33,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 7,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 33,
+        "tspan_elements": 3
+      },
+      "passed": true,
+      "source_sha256": "50c22607a941330015fa0cb72462e577963ec12bd177593480f6527b7919f349"
+    },
+    {
+      "file": "13_chatbot_test.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/13_chatbot_test.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 16,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 16,
+        "tspan_elements": 2
+      },
+      "passed": true,
+      "source_sha256": "2a289dc4c1e228338e1c4f1b8395c4c4096eb1d7edbee7f47b73d3be4747889f"
+    },
+    {
+      "file": "14_demo.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/14_demo.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 9,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 1,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 9,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#073A50"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "e632159fdc9cb74dfb44a529d5326a5aa9e8bf3b5e1f42c9783bb92fe19acf82"
+    },
+    {
+      "file": "15_limits.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/15_limits.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 13,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 13,
+        "tspan_elements": 3
+      },
+      "passed": true,
+      "source_sha256": "4df22a8fc321d737a7fe35c8227d30d0f50fa3a2ef07c3dae5b391e4a60627f6"
+    },
+    {
+      "file": "16_closing.svg",
+      "path": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/svg_output/16_closing.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 10,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Malgun Gothic, Arial, sans-serif"
+        ],
+        "text_elements": 10,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#073A50"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "27256974ee2d1c23e35af851e58bf839075f8106346dc032e9b3ab1c2d3d13ba"
+    }
+  ]
+}
