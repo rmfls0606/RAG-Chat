@@ -1,0 +1,233 @@
+<title>의료 RAG 최종 결과 (v2.1)</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 한 열 보고서 — 위에서 결론, 아래로 실험 순서(14→18)와 근거 표, 마지막에 챗봇 테스트 */
+:root {
+  --bg: #f6f7f8;
+  --surface: #ffffff;
+  --ink: #17202a;
+  --ink-2: #4a5663;
+  --ink-3: #7b8794;
+  --line: #dde2e7;
+  --accent: #0f6e76;      /* 임상 청록: 최종 조합 강조 */
+  --accent-soft: #e2f1f2;
+  --bar: #b9c3cc;         /* 비교 대상 막대 */
+  --good: #1e7a46;
+  --warn: #a8620a;
+  --bad: #b3261e;
+  --f-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161b; --surface: #182027; --ink: #e8edf1; --ink-2: #b2bdc7; --ink-3: #85919c;
+    --line: #2b3640; --accent: #4fb8c0; --accent-soft: #173238; --bar: #4a5662;
+    --good: #5cc28a; --warn: #e0a24a; --bad: #f08079; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161b; --surface: #182027; --ink: #e8edf1; --ink-2: #b2bdc7; --ink-3: #85919c;
+  --line: #2b3640; --accent: #4fb8c0; --accent-soft: #173238; --bar: #4a5662;
+  --good: #5cc28a; --warn: #e0a24a; --bad: #f08079; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 64px;
+}
+.wrap { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; line-height: 1.3; }
+h1 { font-size: 28px; font-weight: 700; }
+h2 { font-size: 20px; font-weight: 700; }
+h3 { font-size: 16px; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font-size: 12px; letter-spacing: .06em; color: var(--ink-3); font-weight: 600; }
+.lede { color: var(--ink-2); font-size: 16px; }
+section { display: flex; flex-direction: column; gap: 14px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+code { font-family: var(--f-mono); font-size: 13px; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+.muted { color: var(--ink-3); font-size: 13px; }
+
+/* 결론 */
+.verdict { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.verdict > div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.verdict .big { font-family: var(--f-mono); font-size: 30px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.verdict .big.accent { color: var(--accent); }
+.verdict .lbl { font-size: 13px; color: var(--ink-2); }
+@media (max-width: 640px) { .verdict { grid-template-columns: 1fr; } }
+
+/* 막대 (시험 정답률, 0~1 같은 축) */
+.bars { display: flex; flex-direction: column; gap: 8px; }
+.bar-row { display: grid; grid-template-columns: 14rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 10px; }
+.bar-row .name { font-size: 13px; color: var(--ink-2); overflow-wrap: anywhere; }
+.bar-track { position: relative; height: 18px; border-left: 1px solid var(--line); }
+.bar-fill { height: 100%; background: var(--bar); border-radius: 0 4px 4px 0; }
+.bar-row.final .bar-fill { background: var(--accent); }
+.bar-row.final .name { color: var(--ink); font-weight: 600; }
+.bar-row .val { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: 13px; text-align: right; }
+.bar-row:hover .bar-fill, .bar-row:focus-within .bar-fill { filter: brightness(.92); }
+.axis { display: grid; grid-template-columns: 14rem minmax(0, 1fr) 3.5rem; gap: 10px; font-size: 11px; color: var(--ink-3); }
+.axis .ticks span { width: 0; display: flex; justify-content: center; white-space: nowrap; }
+.axis .ticks { display: flex; justify-content: space-between; font-family: var(--f-mono); }
+@media (max-width: 560px) { .bar-row, .axis { grid-template-columns: 8rem minmax(0, 1fr) 3rem; } }
+
+/* 표 */
+.tbl { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--ink-2); font-size: 12.5px; white-space: nowrap; }
+td.n, th.n { text-align: right; font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.hl td { background: var(--accent-soft); }
+.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.pill.good { color: var(--good); } .pill.warn { color: var(--warn); } .pill.bad { color: var(--bad); }
+
+/* 실험 순서 */
+.steps { display: flex; flex-direction: column; gap: 12px; counter-reset: s; }
+.step { display: grid; grid-template-columns: 3.2em 1fr; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.step .no { font-family: var(--f-mono); font-size: 13px; color: var(--accent); font-weight: 500; padding-top: 2px; }
+.step > div { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.step p { color: var(--ink-2); font-size: 14px; }
+.step .take { color: var(--ink); font-size: 14px; }
+
+ul.plain { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; max-width: 70ch; }
+ul.plain li { color: var(--ink-2); }
+ul.plain li b { color: var(--ink); }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+  <div class="eyebrow">멋사 NLP 6기 · 프로젝트 02 지식 기반 QA · MS MARCO v2.1 건강 분야 · 2026-11-03</div>
+  <h1>의료 RAG 최종 결과 (v2.1)</h1>
+  <p class="lede">11/02 밤~11/03 새벽에 돌린 14~18 실험과 최종 챗봇 테스트 정리입니다. 모든 정답률은 같은 LLM 심판(Qwen2.5-14B, 사람 판정과 맞음/오답 일치 0.88)으로 쟀고, 설정은 검증셋(200)으로 고른 뒤 시험셋(답 있는 건강 질문 500)에 한 번 보고했습니다.</p>
+</header>
+
+<section>
+  <h2>결론</h2>
+  <div class="verdict">
+    <div><span class="lbl">시험 정답률 · 최종 조합</span><span class="big accent num">.782</span><span class="muted">08 첫 RAG .736 대비 +4.6점 (95% CI +0.8 ~ +8.2)</span></div>
+    <div><span class="lbl">RAG 없이 LLM만 (B0)</span><span class="big num">.618</span><span class="muted">문서 검색으로 +16.4점</span></div>
+    <div><span class="lbl">진짜 답 없는 질문 거절률 · DPO</span><span class="big accent num">.804</span><span class="muted">DPO 전 .652. 지어낸 답 35% → 20%</span></div>
+  </div>
+  <p>최종 챗봇은 <b>앙상블 재정렬(bge-reranker-large + v2-m3) 상위 10 문단 + Qwen3-8B + DPO LoRA</b>입니다. 정답률을 가장 많이 올린 것은 생성 모델 교체(Qwen2.5 → Qwen3)였고, DPO는 정답률을 거의 유지하면서(-1.2점, 유의하지 않음) 지어낸 답을 줄였습니다.</p>
+</section>
+
+<section>
+  <h2>시험 정답률 (답 있는 건강 질문 500, 심판 2점 비율)</h2>
+  <div class="panel">
+    <div class="bars" role="img" aria-label="시스템별 시험 정답률 막대. 0에서 1 사이 같은 축.">
+      <div class="bar-row" title="B0: 검색 없이 Qwen2.5-7B"><span class="name">B0 · LLM만 (Qwen2.5-7B)</span><div class="bar-track"><div class="bar-fill" style="width:61.8%"></div></div><span class="val">.618</span></div>
+      <div class="bar-row" title="06 문장형 LoRA: F1은 가장 높았지만 심판 기준 최저"><span class="name">06 문장형 LoRA</span><div class="bar-track"><div class="bar-fill" style="width:45%"></div></div><span class="val">.450</span></div>
+      <div class="bar-row" title="15 SFT v2: 원본과 통계적으로 같음"><span class="name">15 SFT v2 (7B)</span><div class="bar-track"><div class="bar-fill" style="width:72.4%"></div></div><span class="val">.724</span></div>
+      <div class="bar-row" title="08: MiniLM 상위 5 + Qwen2.5-7B"><span class="name">08 첫 RAG (MiniLM 5 + 7B)</span><div class="bar-track"><div class="bar-fill" style="width:73.6%"></div></div><span class="val">.736</span></div>
+      <div class="bar-row" title="16: 앙상블 10 + Qwen2.5-14B"><span class="name">앙상블 10 + Qwen2.5-14B</span><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div><span class="val">.760</span></div>
+      <div class="bar-row" title="17: 최종 챗봇 설정"><span class="name">앙상블 10 + Qwen3-8B + DPO</span><div class="bar-track"><div class="bar-fill" style="width:77%"></div></div><span class="val">.770</span></div>
+      <div class="bar-row final" title="16: 검증으로 고른 최고 조합"><span class="name">앙상블 10 + Qwen3-8B</span><div class="bar-track"><div class="bar-fill" style="width:78.2%"></div></div><span class="val">.782</span></div>
+      <div class="bar-row" title="16: 검증에서 Qwen3-8B와 동점, 더 무거워서 선택 안 함"><span class="name">앙상블 10 + Qwen3-14B</span><div class="bar-track"><div class="bar-fill" style="width:79%"></div></div><span class="val">.790</span></div>
+    </div>
+    <div class="axis" aria-hidden="true"><span></span><div class="ticks"><span>0</span><span>.25</span><span>.50</span><span>.75</span><span>1</span></div><span></span></div>
+    <p class="muted">Qwen3-14B는 시험에서 조금 더 높지만 검증(.795)에서 Qwen3-8B와 동점이라, 고르는 규칙대로 가벼운 8B를 택했습니다. Phi-4(다른 계열) 심판으로 다시 채점해도 순위가 같았습니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>실험 순서와 배운 점</h2>
+  <div class="steps">
+    <div class="step"><span class="no">14</span><div>
+      <h3>평가 고치기: F1 → LLM 심판</h3>
+      <p>F1은 단어 겹침만 봐서, 짧은 답을 내는 06 LoRA가 F1 최고(.349)였습니다. 14B 심판으로 다시 재니 정답률은 원본 .736 vs LoRA .450으로 뒤집혔습니다.</p>
+      <p class="take">→ 이후 모든 실험을 심판 정답률로 비교. 심판-사람 일치 .88 (40개).</p>
+    </div></div>
+    <div class="step"><span class="no">15</span><div>
+      <h3>SFT v2: 06의 원인 고치기</h3>
+      <p>06은 "정답 문단이 상위 5개 밖"인 질문을 거절로 학습했습니다. 심판으로 확인하니 그런 714개 중 500개(70%)는 실제로 답할 수 있었습니다. 원본 답 중 심판이 고른 좋은 답으로 다시 학습했습니다.</p>
+      <p class="take">→ .450 → .724로 복구했지만 원본(.736)은 못 넘음 (자기 증류의 한계).</p>
+    </div></div>
+    <div class="step"><span class="no">16</span><div>
+      <h3>검색 × 생성 모델 비교</h3>
+      <p>재정렬 앙상블로 정답 문단 포함률이 상위 5 기준 .628 → .654, 상위 10에서 .776. 생성 모델은 Qwen2.5-7B / 14B / Qwen3-8B / 14B를 같은 문단으로 비교했습니다.</p>
+      <p class="take">→ 생성 모델 교체가 가장 큰 개선 (+4.6점, CI가 0 위). 같은 계열 크기 키우기(7B→14B)는 +2점.</p>
+    </div></div>
+    <div class="step"><span class="no">17</span><div>
+      <h3>DPO: 나쁜 답을 피하도록 학습</h3>
+      <p>심판이 고른 "좋은 답 vs 오답·지어낸 답·잘못 거절" 224쌍으로 Qwen3-8B에 DPO(직접 구현, LoRA r16)를 했습니다.</p>
+      <p class="take">→ 진짜 답 없는 질문 거절 .652 → .804, 정답률 .782 → .770 (차이 유의하지 않음).</p>
+    </div></div>
+    <div class="step"><span class="no">18</span><div>
+      <h3>프롬프트·거절 기준 조정</h3>
+      <p>프롬프트 3종은 차이가 없었습니다(±0.5점). 재정렬 점수로 거절 기준을 올리면 안전성은 오르지만 정답률이 같이 떨어졌습니다.</p>
+      <p class="take">→ 비슷한 안전성(.83)을 점수 기준으로 얻으면 정답률 .678, DPO로 얻으면 .770. 거절은 점수로 자르기보다 모델이 배우는 편이 낫다.</p>
+    </div></div>
+    <div class="step"><span class="no">19</span><div>
+      <h3>DPO 모델에는 점수 기준을 낮춰도 되나</h3>
+      <p>DPO 모델의 모든 답에 거절 기준 18가지를 대 보고, "진짜 답 없음 거절률을 08 기준 수준으로 지키면서 정답률 최고"인 규칙을 검증으로 골랐습니다.</p>
+      <p class="take">→ 고른 기준 4.72는 시험 정답률 .772로 4.92(.770)와 사실상 같음. 기준을 없애면 .782지만 진짜 답 없음 거절이 .804 → .587. 최종은 4.92 유지.</p>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <h2>안전성과 정답률 교환 (시험 650)</h2>
+  <div class="panel tbl">
+    <table>
+      <thead><tr><th>설정</th><th class="n">정답률</th><th class="n">잘못 거절</th><th class="n">진짜 답 없음 거절</th><th>판단</th></tr></thead>
+      <tbody>
+        <tr><td>Qwen3-8B + 08 거절 기준 (MiniLM &lt; 4.92)</td><td class="n">.786</td><td class="n">.046</td><td class="n">.652</td><td><span class="pill warn">지어낸 답 35%</span></td></tr>
+        <tr><td>Qwen3-8B + 거절 기준 올림 (MiniLM &lt; 6.80, 18 자동 선택)</td><td class="n">.678</td><td class="n">.184</td><td class="n">.826</td><td><span class="pill bad">정답 손실 큼</span></td></tr>
+        <tr class="hl"><td><b>Qwen3-8B + DPO + 08 거절 기준 (최종)</b></td><td class="n">.770</td><td class="n">.078</td><td class="n">.804</td><td><span class="pill good">채택</span></td></tr>
+        <tr><td>+ 도메인 판정 ("건강 질문인가?" 먼저 물음)</td><td class="n">.626</td><td class="n">—</td><td class="n">—</td><td><span class="pill bad">정답 72개 손실 → 제거</span></td></tr>
+      </tbody>
+    </table>
+    <p class="muted">"진짜 답 없음"은 MS MARCO가 답 없음으로 표시한 질문 중 심판이 "가져온 문단에 답이 없다"고 본 것만 셉니다. MS MARCO 답 없음 100개 중 실제로 문단에 답이 없는 건 46개뿐이었습니다. 도메인 판정은 "how long are mri scans", "is hydrochlorothiazide a blood thinner" 같은 의료 질문까지 걸러서 뺐습니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>챗봇 테스트 (최종 설정, 일상 표현 질문)</h2>
+  <div class="panel tbl">
+    <table id="chat">
+      <thead><tr><th>질문</th><th>기대</th><th>결과</th><th class="n">초</th></tr></thead>
+      <tbody>
+        <tr><td>why does my face turn red and itchy after drinking alcohol</td><td>알코올 불내증</td><td><span class="pill warn">부분</span> 혈관 확장·안면 홍조만, 불내증 언급 없음</td><td class="n">10.0</td></tr>
+        <tr><td>what is it called when your blood sugar is too high all the time</td><td>고혈당·당뇨</td><td><span class="pill good">정답</span> hyperglycemia</td><td class="n">3.7</td></tr>
+        <tr><td>the pill doctors give to thin your blood after a heart attack</td><td>항혈소판제</td><td><span class="pill good">정답</span> 클로피도그렐(Plavix), 아스피린</td><td class="n">5.5</td></tr>
+        <tr><td>condition where you stop breathing for a few seconds while sleeping</td><td>수면무호흡</td><td><span class="pill good">정답</span> sleep apnea</td><td class="n">5.0</td></tr>
+        <tr><td>when the butterfly shaped gland in your neck is too slow</td><td>갑상선기능저하</td><td><span class="pill good">정답</span> hypothyroidism</td><td class="n">5.5</td></tr>
+        <tr><td>the bacteria that causes stomach ulcers</td><td>헬리코박터</td><td><span class="pill good">정답</span> H. pylori</td><td class="n">6.7</td></tr>
+        <tr><td>ringing sound in ears that won't go away</td><td>이명</td><td><span class="pill good">정답</span> tinnitus</td><td class="n">5.8</td></tr>
+        <tr><td>bone disease where bones become weak and break easily in old women</td><td>골다공증</td><td><span class="pill good">정답</span> osteoporosis</td><td class="n">6.4</td></tr>
+        <tr><td>virus that causes cold sores around the mouth</td><td>HSV-1</td><td><span class="pill good">정답</span> herpes simplex (HSV-1)</td><td class="n">5.4</td></tr>
+        <tr><td>shot you get after stepping on a rusty nail</td><td>파상풍</td><td><span class="pill bad">잘못 거절</span> 재정렬 점수 3.9 &lt; 4.92</td><td class="n">0.5</td></tr>
+        <tr><td>what vaccine do you need after a dirty wound or stepping on a nail</td><td>파상풍</td><td><span class="pill good">정답</span> 5년 넘었으면 추가 접종 (mayoclinic)</td><td class="n">6.2</td></tr>
+        <tr><td>can drinking coke every day cause dementia</td><td>거절</td><td><span class="pill good">거절</span> 관련 문서 없음 (점수 0.77)</td><td class="n">0.3</td></tr>
+        <tr><td>is it safe to take ibuprofen and acetaminophen together</td><td>답변</td><td><span class="pill good">정답</span> 함께 복용 가능, 위·신장 부작용 주의</td><td class="n">5.9</td></tr>
+        <tr><td>what is the capital of australia</td><td>거절</td><td><span class="pill bad">답함</span> DB에 건강 외 문단도 있음</td><td class="n">1.6</td></tr>
+        <tr><td>how do i make kimchi</td><td>거절</td><td><span class="pill good">거절</span></td><td class="n">0.4</td></tr>
+        <tr><td>술 마시면 얼굴이 빨개지는 이유가 뭐야?</td><td>알코올 불내증</td><td><span class="pill good">정답</span> 혈관 팽창 + 아시아계에 흔한 유전 요인 (번역 경유)</td><td class="n">14.3</td></tr>
+        <tr><td>위궤양을 일으키는 세균이 뭐야?</td><td>헬리코박터</td><td><span class="pill good">정답</span> 헬리코박터 파일로리 (번역 경유)</td><td class="n">7.7</td></tr>
+        <tr><td>녹슨 못을 밟으면 무슨 주사를 맞아야 해?</td><td>파상풍</td><td><span class="pill bad">잘못 거절</span> 점수 3.78 &lt; 4.92</td><td class="n">1.4</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">영어 일상 표현 10개 중 정답 8, 부분 1, 잘못 거절 1. 한국어는 질문을 영어로 번역해 검색하고 답을 다시 번역합니다. 응답 시간은 A100 기준이며, 첫 질문은 모델 준비 시간이 더해졌습니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>남은 과제</h2>
+  <ul class="plain">
+    <li><b>"녹슨 못 주사"처럼 짧은 구어 질문의 잘못 거절:</b> 재정렬 점수가 3.9로 낮아 LLM 전에 거절됨. 19에서 기준을 낮춰 봤지만 이득이 없어서, 구어 표현을 의학 용어로 잇는 검색 개선(쿼리 확장, 구어체 평가셋)이 필요함.</li>
+    <li><b>분야 밖 질문:</b> DB에 건강 외 문단(약 9.8만 개)이 섞여 있어 "호주 수도"에 답함. 분야 밖 거절률 .84. 도메인 판정은 손실이 커서 뺐고, 건강 사이트 비율 같은 가벼운 신호를 시험해 볼 만함.</li>
+    <li><b>남은 오답의 주원인은 검색:</b> 정답 문단이 상위 10에 들어오는 비율 .776. 멘토링 피드백대로 구어체·multi-hop 평가셋을 만들어 검색을 따로 개선해야 함.</li>
+    <li><b>"의료 질문 다 답하기"까지:</b> DB가 MS MARCO 문단뿐이라 없는 내용은 답할 수 없음. MedQuAD 등 DB 확장이 다음 단계.</li>
+  </ul>
+  <p class="muted">노트북: <code>1_colab_notebooks/v2.1/14~19</code>, 최종 챗봇 <code>08f_final_chatbot_v21.ipynb</code> (설정 <code>rag_msmarco/health/final/final_config.json</code>). 결과 요약: <code>2_results/generation_v21/</code>.</p>
+</section>
+
+</div>
