@@ -3,69 +3,83 @@
 
 ## canvas
 - viewBox: 0 0 1280 720
-- format: ppt169
+- format: PPT 16:9
 
 ## communication
 - primary_language: ko-KR
-- audience: 멋사 NLP 6기 수강생·멘토·강사 (RAG 기초는 알지만 이 프로젝트 실험은 처음 봄)
-- objective: 최종 결과를 먼저 보고하고 평가 교체·검색 앙상블·생성 모델 교체·DPO의 판단 과정과 남은 한계를 설명해, 청중이 .770 / .804 성능과 LLM 심판·DPO의 근거를 납득하고 남은 병목이 검색임에 동의하게 한다
-- core_message: 검색 앙상블 + Qwen3-8B + DPO로 정답률을 지키면서(.736 → .770) 지어낸 답을 35%에서 20%로 줄였고, 남은 오답의 주원인은 검색이다
-- consumption_mode: presentation
+- audience: 멋사 NLP 6기 강사·멘토와 동료 수강생 (RAG 기본 개념은 알지만 이 프로젝트 세부는 처음 봄)
+- objective: 의료 RAG 챗봇의 최종 파이프라인을 검색·생성 단계로 설명하고 LLM 심판 지표로 각 개선(특히 DPO)을 증명해, 청중이 정답률 .618 → .770과 지어낸 답 35% → 20%를 믿을 만한 숫자로 납득하게 한다
+- core_message: 믿을 수 있는 지표를 먼저 세웠기 때문에, 근거 안에서만 답하는 의료 챗봇을 정답률을 지키면서 더 안전하게(DPO) 만들 수 있었다
+- consumption_mode: balanced
 
 ## mode
-- mode: showcase
+- mode: custom
+- mode_references: instructional, pyramid
+- mode_behavior: 파이프라인을 앞에서 뒤로 걸어가며 설명하는 교육형 흐름에 결론형 제목을 붙인다. 검색 단계(①1차 검색 ②재정렬 ③검색 거절)와 생성 단계(④생성 ⑤DPO)를 순서대로 다루고, 지표 파트는 심판을 먼저 정의한 뒤 신뢰성 근거를 보인다. 단계마다 무엇을 했나 → 어떤 지표로 쟀나 → 얼마나 좋아졌나를 같은 순서로 반복한다.
 
 ## visual_style
 - visual_style: soft-rounded
 
 ## colors
-- background: #FFFFFF
-- secondary_bg: #F2F5F7
-- primary: #0B4F6C
-- accent: #E4572E
-- secondary_accent: #7B97AB
-- body_text: #1C2630
-- secondary_text: #5B6B78
-- divider: #D5DEE4
+- background: #FCFCFB
+- secondary_bg: #EEF4FC
+- primary: #12355B
+- accent: #2A78D6
+- secondary_accent: #EB6834
+- body_text: #1F2328
+- secondary_text: #52514E
+- divider: #E2E1DC
+- muted: #C3C2B7
 
 ## typography
-- font_family: Malgun Gothic, Arial, sans-serif
-- title_family: Malgun Gothic, Arial, sans-serif
-- body_family: Malgun Gothic, Arial, sans-serif
-- body: 32
-- title: 56
-- subtitle: 44
-- annotation: 24
-- cover_title: 88
-- display: 128
-- footnote: 18
+- font_family: Pretendard, sans-serif
+- title_family: Pretendard, sans-serif
+- body_family: Pretendard, sans-serif
+- body: 24
+- title: 42
+- subtitle: 32
+- annotation: 18
+- lead: 28
+- cover_title: 64
+- hero_number: 72
+- footnote: 15
 
 ## icons
-- library: tabler-outline
-- stroke_width: 2
-- inventory: search, database, filter, message-chatbot, brain, shield-check, scale, alert-triangle, x, check, language, clock, file-text, target, flask, chart-bar, route, player-play, gavel, books, arrows-sort, ban
+- library: tabler-filled
+- inventory: tabler-filled/database, tabler-filled/search, tabler-filled/filter, tabler-filled/sort-descending-2, tabler-filled/shield-check, tabler-filled/message-chatbot, tabler-filled/scale, tabler-filled/chart-dots, tabler-filled/check, tabler-filled/x, tabler-filled/alert-triangle, tabler-filled/bulb, tabler-filled/file-text, tabler-filled/user, tabler-filled/flask, tabler-filled/gauge, tabler-filled/circle-check, tabler-filled/circle-x, tabler-filled/medical-cross, tabler-filled/list-check, tabler-filled/stack-2, tabler-filled/award, tabler-filled/thumb-down
+
+## images
+- p02: images/01_progress.png | source=user | crop=no-crop
+- p06: images/02_retrieval.png | source=user | crop=no-crop
+- p07: images/03_generator_ci.png | source=user | crop=no-crop
+- p09a: images/04_dpo.png | source=user | crop=no-crop
+- p09b: images/05_tradeoff.png | source=user | crop=no-crop
+- p10: images/06_f1_vs_judge.png | source=user | crop=no-crop
+- p12b: images/07_cross_judge.png | source=user | crop=no-crop
+- p11: images/08_judge_flow.png | source=user | crop=no-crop
+- p12a: images/09_judge_vs_human.png | source=user | crop=no-crop
 
 ## page_rhythm
 - P01: anchor
-- P02: anchor
+- P02: dense
 - P03: dense
-- P04: dense
+- P04: anchor
 - P05: dense
 - P06: dense
-- P07: anchor
+- P07: dense
 - P08: dense
-- P09: breathing
+- P09: dense
 - P10: dense
-- P11: breathing
+- P11: dense
 - P12: dense
 - P13: dense
-- P14: breathing
-- P15: dense
-- P16: anchor
+- P14: anchor
 
 ## page_visualizations
-- P10: chart/horizontal_bar_chart
-- P12: table/metric_table
+- P05: table/metric_table
+- P08: table/record_table
+- P10: table/record_table
+- P13: table/record_table
 
 ## pptx_structure
 - mode: flat

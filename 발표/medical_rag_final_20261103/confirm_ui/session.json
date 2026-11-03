@@ -7,16 +7,16 @@
   "recommendation_stage": "stage2",
   "recommendation_stage_number": 2,
   "recommendation_file": "recommendations.stage2.json",
-  "recommendation_version": "d60e5c31c4fcb23a328917e3f410a06f78e785b35edc42476a33549ff243f18b",
+  "recommendation_version": "0608426d57acc78cc1b062c6db7660fd40949fef8b46360cb46207a97e3925ee",
   "recommendation_error": null,
   "result_stage": "final",
   "result_stage_number": 2,
-  "result_version": "b4a822c0d307fd8b5c0f186e60ffdb6b73c1305b2c8bf8e747c7e0b5bd8741fe",
+  "result_version": "1dbcd9cc772019f4b77609de2dcc8058429cd8921fafa455ca818ba43efdced6",
   "server_port": 5050,
   "event": "final-submitted",
-  "template_selection_version": "fd9abeeb20bf6cf8825c95d92b248cb3900420a4c53eaf70c80764f2ee367c18",
+  "template_selection_version": "28ba5b1711e317688ce1a6965a2cfd98844e5d86bb8d75ccdf0afb77e22a37d9",
   "template_install_version": null,
   "template_status": "ready",
   "template_error": null,
-  "updated_at": "2026-11-03T11:13:23"
+  "updated_at": "2026-11-03T20:42:14"
 }

@@ -1,1 +1,0 @@
-최종 파이프라인입니다. 한국어 질문은 먼저 영어로 번역합니다. Retriever는 bge-base로 Top-100 Passage를 찾고, Reranker는 bge-reranker-large와 v2-m3 앙상블로 Top-10을 고릅니다. 여기서 MiniLM Reranker 최고점이 Threshold 4.92보다 낮으면 근거가 약하다고 보고, LLM을 부르지 않고 바로 거절합니다. 통과한 질문만 Generator인 Qwen3-8B + DPO LoRA가 답하고, 답의 문장마다 근거 Passage 번호를 인용으로 답니다.

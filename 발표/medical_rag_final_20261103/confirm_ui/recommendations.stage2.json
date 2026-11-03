@@ -1,107 +1,116 @@
 {
   "stage": "stage2",
   "lang": "ko",
-  "selection_sha256": "802b2ce216d5673596eb8952aaaf3253b3f618db3616ff81ed7f88546fee464d",
+  "selection_sha256": "dd61ae5e5f672740b9747f326f6550e5cbefda187b8aae3ecb3ff28ef16a028d",
   "recommend": {
     "delivery_purpose": "balanced",
     "mode": "custom",
     "visual_style": "custom",
     "image_strategy": "custom",
-    "image_usage": ["none"],
+    "image_usage": ["provided"],
     "generation_mode": "continuous"
   },
-  "page_count": { "value": "13-15" },
-  "image_notes": { "value": "실물로 보여 줄 대상(제품·장소·인물)이 없고, 핵심 증거는 숫자·표·파이프라인 구조라서 사진이나 AI 이미지 없이 도형·차트·표로 그립니다. 챗봇 데모는 발표 중 실제로 시연합니다. Gradio 챗봇 화면 캡처가 있으면 '제공 이미지'로 바꿔 데모 페이지에 넣을 수 있습니다." },
+  "page_count": { "value": "13-14" },
+  "image_notes": { "value": "제공된 지표 그래프 9장(단계별 정답률, 검색 지표, 생성 모델 CI, DPO 전후, 안전성-정답률 교환, F1 vs 심판, 교차 심판, 심판 채점 과정, 심판 vs 사람)을 해당 슬라이드의 주 증거로 그대로 사용합니다. 그래프 안의 숫자와 라벨은 자르지 않습니다. AI 이미지와 웹 이미지는 쓰지 않고, 파이프라인 도식·거절 흐름·DPO 선호 쌍 같은 구조는 PPT 도형으로 직접 그립니다." },
   "proactive_speaker_notes": { "value": true },
   "proactive_custom_animations": { "value": false },
   "proactive_narration_audio": { "value": false },
   "refine_spec": { "value": false },
   "design_spec_depth": { "value": "brief" },
   "design_directions": {
-    "selected": 0,
+    "selected": 1,
     "candidates": [
       {
-        "id": "verified-ledger",
-        "name": "검증 노트",
-        "note": "흰 바탕에 격자와 가는 선, 숫자가 주인공인 데이터 리포트. 결론을 먼저 보여 주고 실험을 하나씩 근거로 쌓습니다.",
+        "id": "evidence-report",
+        "name": "증거 리포트",
+        "note": "경제지 데이터 기사처럼, 슬라이드 제목이 곧 결론이고 그 아래 그래프가 증거로 받치는 구성입니다.",
         "mode": "custom",
-        "mode_behavior": "표지 다음에 최종 결과(.770 / .804 / 지어낸 답 35%→20%)를 먼저 보여 주고, 이어지는 실험 페이지는 '무엇을 바꿨나 → 숫자가 어떻게 움직였나 → 배운 점'의 결론형 제목으로 근거를 쌓는다. 실험 순서(평가 교체 → SFT → 검색·생성 → DPO → 거절 기준)는 하나의 진행 막대로 이어 보여 주고, 마지막은 남은 병목(검색)과 다음 단계로 닫는다.",
+        "mode_behavior": "결론 먼저: 모든 본문 슬라이드 제목은 주제어가 아니라 발견한 결론 문장(예: '앙상블 재정렬로 MRR@10 +0.030, 유의')으로 쓰고, 한 줄 요약 → 그래프·표 증거 → 출처 줄 순서로 내려갑니다. 파이프라인 순서(데이터 → 검색 → 생성 → 지표)는 유지하되 각 단계는 '무엇을 바꿨고 지표가 얼마나 움직였나'를 답합니다.",
         "visual_style": "custom",
-        "visual_style_behavior": "흰 바탕에 보이는 12열 격자, 직각 모서리, 1px 구분선을 쓰고 장식은 두지 않는다. 페이지마다 큰 숫자 하나나 차트 하나가 중심이며, 표는 가는 가로선만 쓰고 핵심 행만 강조색으로 칠한다. 모든 데이터 페이지 아래에 출처 줄(노트북 번호·평가셋 크기)을 둔다. 그림자·그라데이션은 쓰지 않는다.",
+        "visual_style_behavior": "밝은 종이색 바탕에 다단 그리드를 쓰고, 그래프를 페이지의 척추로 두어 레이아웃이 그래프를 감쌉니다. 헤어라인 구분선과 하단 출처 줄, 큰 수치 하나(hero number)를 세로 단 전체 크기로 둡니다. 장식은 강조선 하나 정도이고 카드 그림자 없이 평면입니다. 숫자는 의미로만 색을 씁니다(파랑 = 최종·채택, 주황 = 비교 대상).",
+        "visual_style_references": ["data-journalism"],
+        "mode_references": ["pyramid"],
         "icons": "tabler-outline",
-        "color": { "name": "청록 + 신호 주황", "palette": {
-          "background": "#FFFFFF", "secondary_bg": "#F2F5F7",
-          "primary": "#0B4F6C", "accent": "#E4572E",
-          "secondary_accent": "#7B97AB", "body_text": "#1C2630"
+        "color": { "name": "신문 종이 + 데이터 블루", "palette": {
+          "background": "#FCFCFB", "secondary_bg": "#F1F0EC",
+          "primary": "#13294B", "accent": "#2A78D6",
+          "secondary_accent": "#EB6834", "body_text": "#1F2328"
         } },
         "typography": {
-          "name": "맑은 고딕 + Arial",
-          "heading": { "primary": "Malgun Gothic", "english": "Arial", "css": "sans-serif" },
-          "body": { "primary": "Malgun Gothic", "english": "Arial", "css": "sans-serif" },
-          "body_size": 24
-        },
-        "image_strategy": {
-          "name": "격자 도식",
-          "rendering": "custom",
-          "visual": "격자에 맞춘 평면 도형과 단일 굵기 선으로 만든 추상 도식",
-          "mood": "엄격하고 차분한, 연구 보고서 부록의 도판 같은 느낌",
-          "behavior": "minimalist-swiss의 격자 정렬과 넓은 여백, 평면 색면 하나와 가는 강조선만 쓴다. 질감·그림자·원근 없이 덱의 청록을 큰 면으로, 주황을 작은 점이나 선 하나로만 쓴다."
-        }
-      },
-      {
-        "id": "lab-journal",
-        "name": "실험 일지",
-        "note": "따뜻한 종이색 바탕에 명조 제목, 잡지 같은 단과 괘선. 실패에서 해결까지 이야기로 풀어 갑니다.",
-        "mode": "custom",
-        "mode_behavior": "도입에서 최종 숫자를 짧게 예고한 뒤, 'F1이 우리를 속였다' 같은 전환점 제목으로 실험 순서를 이야기처럼 따라간다(상황 → 문제 → 시도 → 결과). 페이지마다 실패와 그다음 결정을 짝지어 보여 주고, 중반에 DPO로 안전성과 정답률을 같이 잡은 장면에서 해소한 뒤, 남은 과제로 다음 장을 연다.",
-        "visual_style": "custom",
-        "visual_style_behavior": "종이색 바탕에 비대칭 2단 구성, 세로 괘선과 상단 키커(EXP 14 같은 실험 번호), 큰 실험 번호를 문단 머리글자처럼 쓴다. 인용 상자에 배운 점을 담고, 카드 대신 괘선으로 영역을 나눈다. 그림자 없이 평면에 가깝다.",
-        "icons": "phosphor-duotone",
-        "color": { "name": "남색 + 벽돌색", "palette": {
-          "background": "#FAF8F4", "secondary_bg": "#EFEAE2",
-          "primary": "#1F3A5F", "accent": "#B8462E",
-          "secondary_accent": "#7A8B6F", "body_text": "#22252A"
-        } },
-        "typography": {
-          "name": "바탕 제목 + 맑은 고딕 본문",
+          "name": "바탕 제목 + 맑은 고딕 본문 (대비)",
           "heading": { "primary": "Batang", "english": "Cambria", "css": "serif" },
-          "body": { "primary": "Malgun Gothic", "english": "Arial", "css": "sans-serif" },
+          "body": { "primary": "Malgun Gothic", "english": "Segoe UI", "css": "sans-serif" },
           "body_size": 24
         },
         "image_strategy": {
-          "name": "잡지 해설 도판",
+          "name": "에디토리얼 인포그래픽",
           "rendering": "custom",
-          "visual": "단 구성과 괘선, 단순한 막대·도형으로 만든 잡지풍 해설 그림",
-          "mood": "주간지 과학 섹션의 해설 일러스트처럼 지적이고 절제된 느낌",
-          "behavior": "editorial 렌더링의 단 구성과 정제된 괘선, 남색 큰 면과 벽돌색 강조선 하나를 쓰고 5~8% 종이 질감만 더한다. 그림자 없이 평면 겹침으로 깊이를 낸다."
+          "visual": "잡지 데이터 면처럼 절제된 블록과 가는 규칙선",
+          "mood": "경제지 롱리드 기사의 해설 그래픽처럼 차분하고 신뢰감 있음",
+          "behavior": "editorial 렌더링의 가는 규칙선, 평면 블록, 한 가지 강조색 원칙을 그대로 따릅니다. 덱의 남색을 주 블록, 종이색을 바탕, 데이터 블루를 강조 하나로 씁니다. 그림자 없이 평면이며 아주 옅은 종이 질감만 허용합니다.",
+          "rendering_references": ["editorial"]
         }
       },
       {
-        "id": "dark-lab",
-        "name": "다크 랩",
-        "note": "어두운 화면에 빛나는 강조색과 큰 숫자. 적은 글자로 결과와 데모를 강하게 보여 줍니다.",
+        "id": "pipeline-rail",
+        "name": "파이프라인 레일",
+        "note": "모든 슬라이드 상단에 '검색 ①②③ → 생성 ④⑤' 레일이 흐르고, 지금 설명하는 단계가 켜집니다. 단계 구분이 한눈에 보이고 그래프 배경색과도 맞춘 안입니다.",
         "mode": "custom",
-        "mode_behavior": "결론을 먼저 말하되 페이지마다 핵심 숫자 하나와 짧은 문장만 화면에 두고, 설명은 발표자 노트로 넘긴다. 파이프라인은 노드와 연결선으로 한 장에 보여 주고, 실험은 '전/후' 숫자 쌍으로 요약하며, 데모 페이지를 크게 비워 시연으로 넘어간다.",
+        "mode_behavior": "파이프라인을 앞에서 뒤로 걸어가며 설명하는 교육형 흐름에, 각 단계 슬라이드는 결론형 제목을 붙입니다. 표지 → 결과 요약 → 데이터 → 전체 도식 다음, 검색 단계(①1차 검색 ②재정렬 ③검색 거절)와 생성 단계(④생성 ⑤DPO)를 순서대로 다루고, 지표 파트에서는 '심판이란 무엇인가'를 먼저 정의한 뒤 신뢰성 근거를 보입니다. 단계마다 '무엇을 했나 → 어떤 지표로 쟀나 → 얼마나 좋아졌나'를 같은 순서로 반복해 청중이 비교하기 쉽게 합니다.",
         "visual_style": "custom",
-        "visual_style_behavior": "짙은 남색 바탕에 고운 격자, 노드·연결선으로 파이프라인을 그리고, 핵심 숫자만 청록 빛 강조와 은은한 외곽 발광으로 띄운다. 라벨은 고정폭 글꼴과 넓은 자간, 모서리는 직각이나 아주 작은 둥글림. 그라데이션은 같은 색 안에서만 쓴다.",
-        "icons": "tabler-outline",
-        "color": { "name": "다크 네이비 + 청록 발광", "palette": {
-          "background": "#0E1621", "secondary_bg": "#172333",
-          "primary": "#3FC1C9", "accent": "#F5B342",
-          "secondary_accent": "#6E89A8", "body_text": "#E6EDF3"
+        "visual_style_behavior": "그래프와 같은 거의 흰 바탕(#FCFCFB) 위에 엄격한 12단 그리드와 넓은 여백을 둡니다. 상단 파이프라인 레일은 얇은 선과 둥근 점(노드)으로 그리고, 현재 단계 노드만 데이터 블루로 채웁니다. 검색 단계와 생성 단계는 아주 옅은 파랑 면(검색)과 옅은 회색 면(생성) 띠로 구역을 나눕니다. 핵심 수치는 큰 숫자로 왼쪽 정렬, 설명 카드는 살짝 둥근 모서리(반경 12)에 그림자 없이 옅은 면색만 씁니다.",
+        "visual_style_references": ["swiss-minimal", "soft-rounded"],
+        "mode_references": ["instructional", "pyramid"],
+        "icons": "tabler-filled",
+        "color": { "name": "그래프 매칭 블루", "palette": {
+          "background": "#FCFCFB", "secondary_bg": "#EEF4FC",
+          "primary": "#12355B", "accent": "#2A78D6",
+          "secondary_accent": "#EB6834", "body_text": "#1F2328"
         } },
         "typography": {
-          "name": "맑은 고딕 + Segoe UI",
+          "name": "맑은 고딕 단일 (조화)",
           "heading": { "primary": "Malgun Gothic", "english": "Segoe UI", "css": "sans-serif" },
           "body": { "primary": "Malgun Gothic", "english": "Segoe UI", "css": "sans-serif" },
           "body_size": 24
         },
         "image_strategy": {
+          "name": "그리드 미니멀",
+          "rendering": "custom",
+          "visual": "모듈 그리드 위의 몇 개 안 되는 정확한 기하 도형",
+          "mood": "스위스 포스터나 교통 노선도처럼 정돈되고 길 찾기 쉬움",
+          "behavior": "minimalist-swiss의 그리드 정렬, 단일 굵기 선, 그림자 없는 평면을 따르고, 덱의 남색을 큰 블록 하나, 거의 흰색을 바탕, 데이터 블루를 선 하나나 점 하나로만 씁니다. 노선도처럼 점과 선으로 흐름을 보여 주는 구성을 선호합니다.",
+          "rendering_references": ["minimalist-swiss"]
+        }
+      },
+      {
+        "id": "dark-lab",
+        "name": "다크 랩",
+        "note": "어두운 화면에 빛나는 강조색으로 기술 발표 느낌을 냅니다. 그래프는 밝은 모니터 화면처럼 액자에 넣어 보여 줍니다.",
+        "mode": "custom",
+        "mode_behavior": "결론 먼저: 각 본문 슬라이드는 큰 결론 수치(예: .804, +4.6점)를 중앙에 띄우고 그 근거 그래프와 한 줄 해석을 붙입니다. 파이프라인 순서는 유지하되 슬라이드마다 하나의 수치가 주인공이 되도록 덜어냅니다.",
+        "visual_style": "custom",
+        "visual_style_behavior": "짙은 남색 바탕에 가는 발광 선과 노드 연결선으로 파이프라인을 그리고, 라벨과 수치는 고정폭 글꼴로 씁니다. 활성 노드와 핵심 수치만 밝은 파랑으로 빛나게 하고 나머지는 낮은 대비로 둡니다. 밝은 배경의 그래프 PNG는 얇은 테두리의 '모니터 화면' 패널에 넣어 어두운 바탕과 분리합니다.",
+        "visual_style_references": ["dark-tech"],
+        "mode_references": ["pyramid"],
+        "icons": "tabler-outline",
+        "color": { "name": "다크 네이비 + 발광 블루", "palette": {
+          "background": "#0F1724", "secondary_bg": "#18233A",
+          "primary": "#3987E5", "accent": "#5AA2F0",
+          "secondary_accent": "#EB6834", "body_text": "#E6EAF0"
+        } },
+        "typography": {
+          "name": "맑은 고딕 + Consolas (대비)",
+          "heading": { "primary": "Malgun Gothic", "english": "Segoe UI", "css": "sans-serif" },
+          "body": { "primary": "Malgun Gothic", "english": "Consolas", "css": "monospace" },
+          "body_size": 24
+        },
+        "image_strategy": {
           "name": "대시보드 화면",
           "rendering": "custom",
-          "visual": "어두운 바탕 위의 정돈된 UI 카드와 양식화된 차트 요소",
-          "mood": "모니터링 대시보드를 들여다보는 듯한 정밀하고 현대적인 느낌",
-          "behavior": "digital-dashboard의 카드형 구성과 양식화된 차트 요소를 어두운 바탕에 옮기고, 청록을 주 요소, 호박색을 초점 하나에만 쓴다. 그림자 대신 얇은 발광 선으로 층을 나눈다."
+          "visual": "분석 대시보드 스크린샷처럼 정돈된 카드와 차트 요소",
+          "mood": "데이터 제품 데모 화면처럼 세련되고 기술적임",
+          "behavior": "digital-dashboard 렌더링의 둥근 카드, 얇은 차트 선, 초점 수치 하나만 강조하는 원칙을 따릅니다. 어두운 덱 바탕에 맞춰 카드 면은 짙은 남색, 강조는 발광 블루 하나로 제한합니다.",
+          "rendering_references": ["digital-dashboard"]
         }
       }
     ]
