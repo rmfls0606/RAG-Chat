@@ -8,7 +8,7 @@
   </g>
   <g id="cover-subtitle" data-pptx-bounds="64 384 720 116">
     <text x="64" y="420" font-size="28" fill="#C9DAF0">MS MARCO v2.1 건강 분야 · 최종 파이프라인과 지표</text>
-    <text x="64" y="476" font-size="24" font-weight="bold" fill="#FFFFFF">지표를 먼저 세우고, 그 지표로 개선을 증명했다</text>
+    <text x="64" y="476" font-size="24" font-weight="bold" fill="#FFFFFF">지표를 먼저 세우고 그 지표로 개선을 증명했다</text>
   </g>
   <g id="cover-metrics" data-pptx-bounds="808 196 408 304">
     <rect x="808" y="196" width="408" height="304" rx="12" fill="#FFFFFF" fill-opacity="0.07"/>

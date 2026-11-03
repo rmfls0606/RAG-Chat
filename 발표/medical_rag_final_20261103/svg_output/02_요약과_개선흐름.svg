@@ -3,7 +3,7 @@
   <g id="header" data-pptx-bounds="64 36 1152 140">
     <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">개요 · 한 줄 요약</text>
     <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">검색과 DPO로 정답률 .618 → .770</text>
-    <text x="64" y="162" font-size="24" fill="#52514E">지어낸 답은 35% → 20% · 검색된 의료 문단 안에서만 답하고, 근거가 없으면 거절하는 챗봇</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">지어낸 답은 35% → 20% · 검색된 의료 문단 안에서만 답하고 근거가 없으면 거절하는 챗봇</text>
   </g>
   <g id="progress-chart" data-pptx-bounds="64 196 720 360">
     <image href="../images/01_progress.png" x="64" y="196" width="720" height="360" preserveAspectRatio="xMidYMid meet"/>
@@ -40,6 +40,6 @@
   </g>
   <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
     <text x="64" y="694">출처: docs/v21_final_results.md · 시험 정답률 = LLM 심판 2점 비율</text>
-    <text x="1216" y="694" text-anchor="end">02 / 14</text>
+    <text x="1216" y="694" text-anchor="end">02 / 15</text>
   </g>
 </svg>

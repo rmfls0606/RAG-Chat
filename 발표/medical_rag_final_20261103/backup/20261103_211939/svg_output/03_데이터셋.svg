@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#2A78D6"/>
+    </marker>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="header" data-pptx-bounds="64 36 1152 140">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">개요 · 데이터</text>
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">데이터 — 건강 질문 선별, 문단 46만 개, 평가 650문항</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">MS MARCO 실제 검색 질문 중 의료가 13.1%로 가장 많아 의료 분야를 골랐다 (2위 날씨·여행 3.9%)</text>
+  </g>
+  <g id="source-card" data-pptx-bounds="64 196 400 448">
+    <rect x="64" y="196" width="400" height="448" rx="12" fill="#EEF4FC"/>
+    <text x="92" y="238" font-size="24" font-weight="bold" fill="#12355B">MS MARCO QnA v2.1</text>
+    <text x="92" y="276" font-size="18" fill="#1F2328">Bing 실제 검색 질문<tspan x="92" dy="28">+ 질문마다 웹 문단 10개</tspan><tspan x="92" dy="28">+ 사람이 쓴 정답</tspan></text>
+    <rect x="92" y="352" width="344" height="112" rx="12" fill="#FFFFFF"/>
+    <text x="112" y="384" font-size="18" font-weight="bold" fill="#2A78D6">건강 질문 판정 규칙</text>
+    <text x="112" y="414" font-size="18" fill="#1F2328">문단 10개 중 의료 사이트 33곳<tspan x="112" dy="28">출처가 2개 이상이면 건강 질문</tspan></text>
+    <text x="92" y="510" font-size="15" fill="#52514E">건강 질문 / 전체</text>
+    <text x="92" y="546" font-size="24" fill="#1F2328"><tspan font-weight="bold">train</tspan> 119,659 / 808,731</text>
+    <text x="92" y="584" font-size="24" fill="#1F2328"><tspan font-weight="bold">dev</tspan> 13,494 / 101,093</text>
+    <text x="92" y="616" font-size="15" fill="#52514E">한계: 사이트 기준이라 오분류 가능</text>
+  </g>
+  <g id="split-links" data-pptx-bounds="464 300 64 240">
+    <line x1="466" y1="420" x2="524" y2="306" stroke="#2A78D6" stroke-width="2" marker-end="url(#arrowHead)"/>
+    <line x1="466" y1="420" x2="524" y2="534" stroke="#2A78D6" stroke-width="2" marker-end="url(#arrowHead)"/>
+  </g>
+  <g id="db-card" data-pptx-bounds="528 196 688 216">
+    <rect x="528" y="196" width="688" height="216" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <text x="556" y="236" font-size="24" font-weight="bold" fill="#12355B">검색 DB · 문단 <tspan fill="#2A78D6">459,067</tspan>개<tspan font-size="18" font-weight="normal" fill="#52514E">  중복 25,666개 제거</tspan></text>
+    <g id="db-dev-health">
+      <text x="556" y="294" font-size="28" font-weight="bold" fill="#1F2328">131,143</text>
+      <text x="556" y="324" font-size="18" fill="#1F2328">dev 건강 질문 문단</text>
+      <text x="556" y="350" font-size="15" fill="#52514E">평가 정답 문단이 여기에</text>
+    </g>
+    <g id="db-train-health">
+      <text x="776" y="294" font-size="28" font-weight="bold" fill="#1F2328">229,697</text>
+      <text x="776" y="324" font-size="18" fill="#1F2328">train 건강 질문 문단</text>
+      <text x="776" y="350" font-size="15" fill="#52514E">DB를 키워 검색을 어렵게</text>
+    </g>
+    <g id="db-dev-other">
+      <text x="996" y="294" font-size="28" font-weight="bold" fill="#1F2328">98,227</text>
+      <text x="996" y="324" font-size="18" fill="#1F2328">dev 일반 질문 문단</text>
+      <text x="996" y="350" font-size="15" fill="#52514E">방해 문단 (분야 밖)</text>
+    </g>
+    <text x="556" y="392" font-size="15" fill="#52514E">의료 사이트 문단만 남기지 않음 (평가 정답 문단 중 40%뿐) · 청킹 없음</text>
+  </g>
+  <g id="eval-card" data-pptx-bounds="528 428 688 216">
+    <rect x="528" y="428" width="688" height="216" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <text x="556" y="468" font-size="24" font-weight="bold" fill="#12355B">평가셋 · 시험 <tspan fill="#2A78D6">650</tspan>문항<tspan font-size="18" font-weight="normal" fill="#52514E">  + 검증 300 (답 있음 200 + 답 없음 100)</tspan></text>
+    <g id="eval-answerable">
+      <text x="556" y="526" font-size="28" font-weight="bold" fill="#1F2328">500</text>
+      <text x="556" y="556" font-size="18" fill="#1F2328">건강 · 답 있음</text>
+      <text x="556" y="582" font-size="15" fill="#52514E">검색 지표 · 정답률</text>
+    </g>
+    <g id="eval-noanswer">
+      <text x="776" y="526" font-size="28" font-weight="bold" fill="#1F2328">100</text>
+      <text x="776" y="556" font-size="18" fill="#1F2328">건강 · 답 없음</text>
+      <text x="776" y="582" font-size="15" fill="#52514E">지어내지 않고 거절하는가</text>
+    </g>
+    <g id="eval-out">
+      <text x="996" y="526" font-size="28" font-weight="bold" fill="#1F2328">50</text>
+      <text x="996" y="556" font-size="18" fill="#1F2328">분야 밖</text>
+      <text x="996" y="582" font-size="15" fill="#52514E">분야 밖 질문 거절</text>
+    </g>
+    <rect x="556" y="598" width="632" height="32" rx="8" fill="#EEF4FC"/>
+    <text x="572" y="620" font-size="15" font-weight="bold" fill="#12355B">설정은 검증셋으로 고르고, 시험셋은 마지막에 한 번만 보고 → 시험셋 과적합 방지</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: final_v21/01_DB_임베딩 노트북 · docs/decisions.md</text>
+    <text x="1216" y="694" text-anchor="end">03 / 15</text>
+  </g>
+</svg>

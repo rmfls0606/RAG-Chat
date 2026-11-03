@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#12355B">생성 단계 · ⑤ DPO로 좋아진 성능</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#12355B"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#FFFFFF">5</text>
+      <text x="1036" y="51" fill="#52514E">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" fill="#12355B">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">정답률은 지키고, 지어낸 답은 35% → 20%</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">검색 단계 거절 기준(4.92)은 그대로 두고 생성 단계에 DPO만 추가한 결과 (시험 650)</text>
+  </g>
+  <g id="dpo-chart" data-pptx-bounds="64 196 720 448">
+    <image href="../images/04_dpo.png" x="64" y="196" width="720" height="360" preserveAspectRatio="xMidYMid meet"/>
+    <text x="64" y="590" font-size="18" fill="#52514E">늘어난 거절은 모두 생성 단계에서 DPO가 만든 몫</text>
+    <text x="64" y="624" font-size="18" font-weight="bold" fill="#12355B">대신 무엇을 내줬나 → 다음 장에서 트레이드오프 판단</text>
+  </g>
+  <g id="gain-card" data-pptx-bounds="808 196 408 136">
+    <rect x="808" y="196" width="408" height="136" rx="12" fill="#EEF4FC"/>
+    <rect x="808" y="196" width="6" height="136" fill="#2A78D6"/>
+    <text x="832" y="232" font-size="18" font-weight="bold" fill="#2A78D6">좋아짐</text>
+    <text x="832" y="266" font-size="18" fill="#1F2328">진짜 답 없음 거절 <tspan font-weight="bold">.652 → .804</tspan><tspan x="832" dy="30">근거 충실도 .919 → .933</tspan></text>
+  </g>
+  <g id="keep-card" data-pptx-bounds="808 352 408 136">
+    <rect x="808" y="352" width="408" height="136" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <rect x="808" y="352" width="6" height="136" fill="#12355B"/>
+    <text x="832" y="388" font-size="18" font-weight="bold" fill="#12355B">지킴</text>
+    <text x="832" y="422" font-size="18" fill="#1F2328">정답률 <tspan font-weight="bold">.782 → .770</tspan> (−1.2점)<tspan x="832" dy="30" fill="#52514E">95% CI −3.8 ~ +1.4 → 유의하지 않음</tspan></text>
+  </g>
+  <g id="cost-card" data-pptx-bounds="808 508 408 136">
+    <rect x="808" y="508" width="408" height="136" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <rect x="808" y="508" width="6" height="136" fill="#EB6834"/>
+    <text x="832" y="544" font-size="18" font-weight="bold" fill="#EB6834">대가</text>
+    <text x="832" y="578" font-size="18" fill="#1F2328">잘못 거절 <tspan font-weight="bold">.046 → .078</tspan> (+3.2점)<tspan x="832" dy="30" fill="#52514E">실제론 답 있는 54개 답변률 .830 유지</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: docs/refusal_flow_dpo.md · results/generation/17_dpo_summary.md · 진짜 답 없음 = 심판도 "문단에 답 없음"으로 본 46개</text>
+    <text x="1216" y="694" text-anchor="end">09 / 15</text>
+  </g>
+</svg>

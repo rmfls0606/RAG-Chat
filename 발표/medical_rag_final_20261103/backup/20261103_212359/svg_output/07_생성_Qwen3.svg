@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#12355B">생성 단계 · ④ 생성</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#12355B"/>
+    <circle cx="960" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#FFFFFF">4</text>
+      <text x="960" y="51" fill="#52514E">5</text>
+      <text x="1036" y="51" fill="#52514E">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" fill="#12355B">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">가장 큰 개선은 모델 세대 교체 — Qwen3-8B +4.6점</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">검색은 앙상블 Top-10으로 고정하고 생성 모델만 바꿔 08 첫 RAG(.736)와 비교</text>
+  </g>
+  <g id="prompt-rules" data-pptx-bounds="64 192 1152 56">
+    <text x="64" y="226" font-size="18" font-weight="bold" fill="#12355B">프롬프트 규칙</text>
+    <g font-size="18" fill="#1F2328" text-anchor="middle">
+      <rect x="196" y="200" width="232" height="40" rx="20" fill="#EEF4FC"/>
+      <text x="312" y="226">문서에 있는 사실로만 답함</text>
+      <rect x="444" y="200" width="232" height="40" rx="20" fill="#EEF4FC"/>
+      <text x="560" y="226">문장마다 [1] 출처 번호</text>
+      <rect x="692" y="200" width="300" height="40" rx="20" fill="#EEF4FC"/>
+      <text x="842" y="226">답이 없거나 분야 밖이면 거절 문장</text>
+      <rect x="1008" y="200" width="208" height="40" rx="20" fill="#EEF4FC"/>
+      <text x="1112" y="226">2~4문장으로 짧게</text>
+    </g>
+  </g>
+  <g id="generator-chart" data-pptx-bounds="64 268 800 360">
+    <image href="../images/03_generator_ci.png" x="64" y="268" width="800" height="360" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="generator-takeaways" data-pptx-bounds="888 268 328 376">
+    <rect x="888" y="268" width="328" height="184" rx="12" fill="#EEF4FC"/>
+    <text x="912" y="304" font-size="22" font-weight="bold" fill="#12355B">세대 교체가 최대 개선</text>
+    <text x="912" y="340" font-size="18" fill="#1F2328">Qwen2.5 → Qwen3: <tspan font-weight="bold" fill="#2A78D6">+4.6점</tspan><tspan x="912" dy="26">95% CI가 0을 넘어 유의</tspan><tspan x="912" dy="34" fill="#52514E">같은 계열 크기 키우기는 +2점,</tspan><tspan x="912" dy="26" fill="#52514E">유의하지 않음</tspan></text>
+    <rect x="888" y="468" width="328" height="176" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <text x="912" y="504" font-size="22" font-weight="bold" fill="#12355B">왜 14B가 아니라 8B?</text>
+    <text x="912" y="540" font-size="18" fill="#1F2328">검증 정답률 Qwen3-8B .795<tspan x="912" dy="26">= Qwen3-14B .795 (동점)</tspan><tspan x="912" dy="34" fill="#52514E">미리 정한 규칙대로</tspan><tspan x="912" dy="26" fill="#52514E">가벼운 8B를 선택</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: results/generation/16_gen_compare_summary.md · 점 = 차이, 선 = 95% 부트스트랩 CI</text>
+    <text x="1216" y="694" text-anchor="end">07 / 15</text>
+  </g>
+</svg>

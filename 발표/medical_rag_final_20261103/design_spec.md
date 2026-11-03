@@ -7,7 +7,7 @@
 | --- | --- |
 | Project Name | medical_rag_final_20261103 |
 | Canvas Format | ppt169 (1280 × 720) |
-| Page Count | 14 |
+| Page Count | 15 |
 | Primary Language | ko-KR |
 | Target Audience | 멋사 NLP 6기 강사·멘토와 동료 수강생. RAG·임베딩·LLM 기본 개념은 알지만 이 프로젝트의 세부 실험과 지표 설계는 처음 봄 |
 | Communication Intent | MS MARCO 건강 분야 RAG 챗봇의 최종 파이프라인을 검색 단계와 생성 단계로 나눠 설명하고, 지표를 어떻게 세우고(LLM 심판) 그 지표로 각 개선을 어떻게 증명했는지 보고한다. 직접 학습한 DPO가 왜 필요했고 무엇을 개선했는지를 강조하며, 남은 한계를 솔직하게 밝힌다. |
@@ -16,7 +16,7 @@
 | Delivery Context | 주 용도: 발표자가 진행하는 15분 프로젝트 최종 발표 (현장 프로젝션). 부 용도: 발표 후 공유되는 결과 자료 |
 | Artifact Afterlife | 프로젝트 결과 기록과 포트폴리오 자료로 보관 |
 | Reading Mode | balanced |
-| Content Strategy | balanced default — source md(presentation_final_pipeline.md)의 12장 구성과 수치를 유지하고, 표지와 결론 장을 더해 14장으로 재구성 |
+| Content Strategy | balanced default — source md(presentation_final_pipeline.md)의 12장 구성과 수치를 유지하고, 표지·결론 장과 DPO 트레이드오프 장을 더해 15장으로 재구성 |
 | Design Style | 파이프라인 레일 — custom mode + soft-rounded visual style, 그래프 매칭 블루 |
 | AI Image Acquisition Path | not applicable |
 | Generation Mode | continuous |
@@ -93,7 +93,7 @@
 
 - **Hierarchy direction**: 상단 레일 → 결론형 제목 → 큰 수치 또는 그래프 → 짧은 해석 → 하단 출처 줄
 - **Composition tendency**: 그래프가 있는 장은 그래프를 페이지 폭의 55–65%로 크게 두고 옆이나 아래에 2–3줄 해석 카드; 개념 장은 둥근 카드 2–3개 또는 흐름 도식
-- **Cross-page continuity**: 본문 장(P04–P13) 상단 레일은 같은 위치·크기를 유지하고 활성 노드만 바뀐다. 출처 줄 위치와 형식은 모든 본문 장에서 동일
+- **Cross-page continuity**: 본문 장(P04–P14) 상단 레일은 같은 위치·크기를 유지하고 활성 노드만 바뀐다. 출처 줄 위치와 형식은 모든 본문 장에서 동일
 - **Spacing posture**: variable by page rhythm — 그래프 장은 dense, 표지·결론은 open
 - **Spacing anchors**: page margin 64 px · block gap 24 px · column gutter 32 px · corner radius 12 px · body leading 36 px
 
@@ -133,8 +133,9 @@
 | --- | --- | --- | --- |
 | P05 | table | metric_table | 검색 방법별 Recall·MRR 수치 비교 |
 | P08 | table | record_table | DPO 선호 쌍 3종의 좋은 답·나쁜 답·쌍 수 |
-| P10 | table | record_table | 검색·생성 지표 정의 |
-| P13 | table | record_table | 챗봇 테스트 질문별 결과와 응답 시간 |
+| P10 | table | comparison_matrix | DPO 트레이드오프 설정 4가지 비교 |
+| P11 | table | record_table | 검색·생성 지표 정의 |
+| P14 | table | record_table | 챗봇 테스트 질문별 결과와 응답 시간 |
 
 ## VIII. Image Resource List
 
@@ -143,7 +144,7 @@
 | 01_progress.png | 2000×1000 | 2.00 | 단계별 시험 정답률 | Chart | 페이지 주 증거로 크게, 옆에 해석 카드 | no-crop | user | Existing | 실험 단계별 시험 정답률 가로 막대, 최종만 파랑 | none | local |
 | 02_retrieval.png | 2000×1000 | 2.00 | 검색 단계 Recall@10·MRR@10 | Chart | 왼쪽 큰 그래프 + 오른쪽 거절 기준 카드 | no-crop | user | Existing | BM25→dense→MiniLM→앙상블 묶음 막대 | none | local |
 | 03_generator_ci.png | 2000×900 | 2.22 | 생성 모델 교체 효과와 95% CI | Chart | 페이지 폭 그래프 + 아래 해석 줄 | no-crop | user | Existing | 08 대비 정답률 차이 점과 신뢰구간 선 | none | local |
-| 04_dpo.png | 2000×1000 | 2.00 | DPO 전후 4개 지표 | Chart | 두 그래프 나란히 중 왼쪽 | no-crop | user | Existing | 진짜 답 없음 거절률·근거 충실도·정답률·잘못 거절 묶음 막대 | none | local |
+| 04_dpo.png | 2000×1000 | 2.00 | DPO 전후 4개 지표 | Chart | 페이지 왼쪽 큰 그래프 | no-crop | user | Existing | 진짜 답 없음 거절률·근거 충실도·정답률·잘못 거절 묶음 막대 | none | local |
 | 05_tradeoff.png | 2000×1100 | 1.82 | 안전성과 정답률 교환 | Chart | 두 그래프 나란히 중 오른쪽 | no-crop | user | Existing | 4가지 설정의 정답률 × 거절률 산점, 최종만 파랑 | none | local |
 | 06_f1_vs_judge.png | 2000×840 | 2.38 | F1과 심판 정답률 순위 역전 | Chart | 아래쪽 넓은 증거 띠 | no-crop | user | Existing | 08 RAG vs 06 LoRA 두 패널 막대 | none | local |
 | 07_cross_judge.png | 2000×1100 | 1.82 | 교차 심판 순위 동일 | Chart | 두 그래프 나란히 중 오른쪽 | no-crop | user | Existing | Qwen 심판 vs Phi-4 심판 검증 정답률 | none | local |
@@ -240,17 +241,29 @@
 
 #### Slide 09 - ⑤ DPO로 좋아진 성능
 
-- **Audience move**: DPO 효과를 모름 → 무엇이 좋아지고 무엇을 지켰고 대가가 무엇인지, 다른 방법보다 나은 이유를 앎
-- **Relationships**: DPO 전 vs 후 contrast(좋아짐/지킴/대가 membership); 3가지 안전성 확보 방법 contrast
-- **Composition**: 두 그래프 나란히, 아래 좋아짐·지킴·대가 3칸 요약 띠
-- **Title**: 정답률은 지키고 지어낸 답은 35% → 20%
-- **Content**: 좋아짐: 진짜 답 없음 거절률 .652 → .804(+15.2점), 근거 충실도 .919 → .933 · 지킴: 정답률 .782 → .770(−1.2점, 95% CI −3.8 ~ +1.4, 유의하지 않음), 문단에 답 있는 질문 답변률 .830 그대로 · 대가: 잘못 거절 .046 → .078 · 같은 안전성을 검색 기준으로 얻으면 정답률 .678, DPO로 얻으면 .770 · 검색 단계는 명백히 관련 없는 질문을 빠르게, DPO는 문단은 있는데 답이 없는 경우를 거름
-- **Images**: 04_dpo.png, 05_tradeoff.png (나란히, 왼쪽 전후 비교 → 오른쪽 교환 관계)
+- **Audience move**: DPO 효과를 모름 → 무엇이 좋아지고 무엇을 지켰고 대가가 무엇인지 앎
+- **Relationships**: DPO 전 vs 후 contrast(좋아짐/지킴/대가 membership)
+- **Composition**: 왼쪽 큰 전후 비교 그래프, 오른쪽 좋아짐·지킴·대가 카드 세로 배치
+- **Title**: 정답률은 지키고, 지어낸 답은 35% → 20%
+- **Content**: 검색 기준 4.92는 그대로, 생성 단계에 DPO만 추가 · 좋아짐: 진짜 답 없음 거절률 .652 → .804, 근거 충실도 .919 → .933 · 지킴: 정답률 .782 → .770(−1.2점, 95% CI −3.8 ~ +1.4, 유의하지 않음) · 대가: 잘못 거절 .046 → .078, 실제론 답 있는 54개 답변률 .830 유지 · 늘어난 거절은 모두 생성 단계 몫 · 다음 장에서 트레이드오프 판단
+- **Images**: 04_dpo.png
+- **page_rhythm**: dense
+
+#### Slide 10 - ⑤ DPO 트레이드오프 판단
+
+- **Audience move**: DPO의 대가만 앎 → 안전성과 정답률·잘못 거절 사이에서 대안을 비교하고 어떤 기준으로 DPO를 골랐는지 앎
+- **Relationships**: 4가지 설정 contrast(정답률 × 진짜 답 없음 거절률); 판단 기준 3개 membership
+- **Composition**: 왼쪽 교환 그래프, 오른쪽 설정 비교 표, 아래 판단 기준 3칸
+- **Title**: DPO는 트레이드오프를 따져서 골랐다
+- **Content**: 같은 시험 650에서 4가지 설정 비교 · 검색 기준만 6.80: 정답률 .678 / 거절 .826 → 정답 손실 큼 · DPO만(검색 거절 없음): .782 / .587 → 지어낸 답 증가 · DPO + 기준 4.72: .772 / .804 → 4.92와 차이 없음 · 최종 DPO + 4.92: .770 / .804 → 채택 · 판단 기준: 정답률은 지킨다(−1.2점, CI가 0 포함) / 잘못 거절 +3.2점은 감수하고 지어낸 답 35% → 20% / 거절 쌍 30% 이하로 학습 데이터부터 과잉 거절 방지
+- **Visualization**: dpo-tradeoff (table, 설정 × 정답률/거절률/판단)
+- **Native-ready**: dpo-tradeoff=yes
+- **Images**: 05_tradeoff.png
 - **page_rhythm**: dense
 
 ### Part 4: 지표
 
-#### Slide 10 - 지표 — 무엇을 재고, 왜 F1을 버렸나
+#### Slide 11 - 지표 — 무엇을 재고, 왜 F1을 버렸나
 
 - **Audience move**: 어떤 지표로 쟀는지 모름 → 검색·생성 지표 정의와 F1을 버린 이유를 앎
 - **Relationships**: 지표 membership(검색 2 / 생성 3); F1 순위 vs 심판 순위 contrast(역전)
@@ -262,7 +275,7 @@
 - **Images**: 06_f1_vs_judge.png
 - **page_rhythm**: dense
 
-#### Slide 11 - 지표 — 심판(LLM-as-a-Judge)이란
+#### Slide 12 - 지표 — 심판(LLM-as-a-Judge)이란
 
 - **Audience move**: 심판이 무엇인지 모름 → 누가, 무엇을 받아, 어떤 기준으로, 어떻게 점수를 읽는지 앎
 - **Relationships**: 입력 → 심판 → 첫 토큰 확률 → 점수 판정 order; 정답 점수 vs 근거 충실도 contrast
@@ -272,7 +285,7 @@
 - **Images**: 08_judge_flow.png
 - **page_rhythm**: dense
 
-#### Slide 12 - 지표 — 이 숫자를 믿을 수 있는 이유
+#### Slide 13 - 지표 — 이 숫자를 믿을 수 있는 이유
 
 - **Audience move**: 심판 숫자를 의심함 → 사람과의 비교, 교차 심판, 실험 설계 장치로 숫자를 신뢰함
 - **Relationships**: 신뢰 장치 membership(심판 vs 사람, 교차 심판, 검증-시험 분리, CI, 같은 조건); 심판은 깐깐한 쪽으로만 틀림 → 정답률이 부풀려지지 않음 link
@@ -284,7 +297,7 @@
 
 ### Part 5: 테스트와 결론
 
-#### Slide 13 - 챗봇 테스트와 한계
+#### Slide 14 - 챗봇 테스트와 한계
 
 - **Audience move**: 실제 동작과 한계를 모름 → 일상 표현 질문 결과와 남은 과제를 앎
 - **Relationships**: 테스트 질문 6개 membership(정답/거절/잘못 거절/분야 밖 통과); 한계 3개 membership(검색/DB/분야 밖)
@@ -295,7 +308,7 @@
 - **Native-ready**: chatbot-test=yes
 - **page_rhythm**: dense
 
-#### Slide 14 - 결론
+#### Slide 15 - 결론
 
 - **Audience move**: 개별 결과를 들음 → 핵심 메시지 하나와 세 가지 근거 수치를 기억함
 - **Relationships**: 지표 먼저 → 검색 개선 → DPO 안전성 order(원인 → 결과)

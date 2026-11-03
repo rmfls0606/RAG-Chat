@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">검색 단계 · ② 재정렬 + ③ 검색 거절</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#2A78D6"/>
+    <circle cx="848" cy="46" r="11" fill="#2A78D6"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#FFFFFF">2</text>
+      <text x="848" y="51" fill="#FFFFFF">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#52514E">5</text>
+      <text x="1036" y="51" fill="#52514E">지표</text>
+      <text x="808" y="78" fill="#2A78D6">검색</text>
+      <text x="940" y="78" font-weight="normal" fill="#52514E">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">앙상블 재정렬로 MRR@10 +0.030, 유의</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">그래도 관련 문단이 없으면 ③에서 LLM을 부르기 전에 거절한다</text>
+  </g>
+  <g id="retrieval-chart" data-pptx-bounds="64 196 640 320">
+    <image href="../images/02_retrieval.png" x="64" y="196" width="640" height="320" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="top10-gain" data-pptx-bounds="64 532 640 112">
+    <rect x="64" y="532" width="640" height="112" rx="12" fill="#EEF4FC"/>
+    <text x="88" y="568" font-size="18" fill="#52514E">생성 단계로 넘기는 문단 5 → 10개: 정답 문단 포함률</text>
+    <text x="88" y="620" font-weight="bold" fill="#2A78D6"><tspan font-size="28" fill="#52514E">.654 → </tspan><tspan font-size="42">.776</tspan></text>
+  </g>
+  <g id="rerank-card" data-pptx-bounds="736 196 480 232">
+    <rect x="736" y="196" width="480" height="232" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <use data-icon="tabler-filled/sort-descending-2" x="760" y="214" width="28" height="28" fill="#2A78D6"/>
+    <text x="800" y="236" font-size="24" font-weight="bold" fill="#12355B">② 재정렬</text>
+    <g font-size="18" fill="#1F2328">
+      <text x="760" y="276">크로스인코더: 질문과 문단을 함께 넣어 관련도 채점</text>
+      <text x="760" y="306">후보 100개에만 적용 · 6종 + 앙상블을 검증으로 선택</text>
+      <text x="760" y="346" font-weight="bold">MiniLM 대비 MRR@10 <tspan fill="#2A78D6">+0.030</tspan></text>
+      <text x="760" y="374" fill="#52514E">95% CI [+0.008, +0.050] → 유의</text>
+      <text x="760" y="410" fill="#52514E">의료 특화 MedCPT가 오히려 최하위 (MRR@10 .234)</text>
+    </g>
+  </g>
+  <g id="gate-card" data-pptx-bounds="736 444 480 200">
+    <rect x="736" y="444" width="480" height="200" rx="12" fill="#FFFFFF" stroke="#EB6834" stroke-width="2"/>
+    <use data-icon="tabler-filled/shield-check" x="760" y="462" width="28" height="28" fill="#EB6834"/>
+    <text x="800" y="484" font-size="24" font-weight="bold" fill="#12355B">③ 검색 단계 거절</text>
+    <g font-size="18" fill="#1F2328">
+      <text x="760" y="524" font-weight="bold">MiniLM 최고점 &lt; 4.92 → LLM 없이 거절</text>
+      <text x="760" y="554">기준 = 검증셋 답 있는 질문 점수의 하위 5%</text>
+      <text x="760" y="582" fill="#52514E">→ 답 있는 질문을 잘못 거절하는 비율 약 5%</text>
+      <text x="760" y="620" fill="#52514E">구분력 AUC: 답 없음 .804 · 분야 밖 .917</text>
+    </g>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: results/retrieval/11_rerank_compare_v21.md · docs/refusal_flow_dpo.md</text>
+    <text x="1216" y="694" text-anchor="end">06 / 14</text>
+  </g>
+</svg>
