@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">전체 파이프라인 · 챗봇 테스트와 한계</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#2A78D6" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#2A78D6"/>
+    <circle cx="808" cy="46" r="11" fill="#2A78D6"/>
+    <circle cx="848" cy="46" r="11" fill="#2A78D6"/>
+    <circle cx="920" cy="46" r="11" fill="#12355B"/>
+    <circle cx="960" cy="46" r="11" fill="#12355B"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#FFFFFF">1</text>
+      <text x="808" y="51" fill="#FFFFFF">2</text>
+      <text x="848" y="51" fill="#FFFFFF">3</text>
+      <text x="920" y="51" fill="#FFFFFF">4</text>
+      <text x="960" y="51" fill="#FFFFFF">5</text>
+      <text x="1036" y="51" fill="#52514E">지표</text>
+      <text x="808" y="78" fill="#2A78D6">검색</text>
+      <text x="940" y="78" fill="#12355B">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">일상 표현 10개 중 8개 정답 — 남은 숙제는 검색</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">최종 설정으로 일상 표현 질문을 테스트 · 한국어는 영어로 번역해 검색하고 답을 다시 번역</text>
+  </g>
+  <g id="chatbot-test" data-pptx-replace-with="table" data-pptx-bounds="64 196 716 304" data-pptx-fallback-sha256="0953e0850e1197b2d448ba7fad4a81dbe2e67ab77a1d0eef741e93f2aa90cf78">
+    <metadata type="application/json">{"schema": "ppt-master.semantic-table.v2", "name": "chatbot-test", "x": 64, "y": 196, "width": 716, "height": 304, "header_rows": 1, "column_widths": [420, 236, 60], "row_heights": [40, 44, 44, 44, 44, 44, 44], "style": {"font_family": "Pretendard", "font_size": 18, "band_row": false, "body_text": "#1F2328", "header_text": "#12355B", "valign": "middle"}, "defaults": {"cell": {"borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "solid", "color": "#E2E1DC", "width": 1}}}}, "cell_styles": {"head": {"bold": true, "color": "#12355B", "borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "solid", "color": "#12355B", "width": 2}}}, "ok": {"bold": true, "color": "#2A78D6"}, "bad": {"bold": true, "color": "#EB6834"}}, "columns": [{"text": "질문 (일상 표현)", "cell_style": "head", "align": "l"}, {"text": "결과", "cell_style": "head", "align": "l"}, {"text": "초", "cell_style": "head", "align": "r"}], "rows": [[{"text": "blood sugar is too high all the time", "align": "l"}, {"text": "정답 · hyperglycemia", "cell_style": "ok", "align": "l"}, {"text": "3.7", "align": "r"}], [{"text": "ringing sound in ears that won't go away", "align": "l"}, {"text": "정답 · tinnitus", "cell_style": "ok", "align": "l"}, {"text": "5.8", "align": "r"}], [{"text": "위궤양을 일으키는 세균이 뭐야?", "align": "l"}, {"text": "정답 · 헬리코박터 (번역)", "cell_style": "ok", "align": "l"}, {"text": "7.7", "align": "r"}], [{"text": "can drinking coke every day cause dementia", "align": "l"}, {"text": "거절 · 관련 문서 없음", "align": "l"}, {"text": "0.3", "align": "r"}], [{"text": "shot you get after stepping on a rusty nail", "align": "l"}, {"text": "잘못 거절 · 점수 3.9 &lt; 4.92", "cell_style": "bad", "align": "l"}, {"text": "0.5", "align": "r"}], [{"text": "what is the capital of australia", "align": "l"}, {"text": "답함 · 분야 밖인데 통과", "cell_style": "bad", "align": "l"}, {"text": "1.6", "align": "r"}]]}</metadata>
+    <line x1="64" y1="236" x2="780" y2="236" stroke="#12355B" stroke-width="2"/>
+    <line x1="64" y1="280" x2="780" y2="280" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="324" x2="780" y2="324" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="368" x2="780" y2="368" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="412" x2="780" y2="412" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="456" x2="780" y2="456" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="500" x2="780" y2="500" stroke="#E2E1DC" stroke-width="1"/>
+    <g font-size="18" font-weight="bold" fill="#12355B">
+      <text x="80" y="222">질문 (일상 표현)</text>
+      <text x="500" y="222">결과</text>
+      <text x="764" y="222" text-anchor="end">초</text>
+    </g>
+    <g font-size="18" fill="#1F2328">
+      <text x="80" y="264">blood sugar is too high all the time</text>
+      <text x="500" y="264" font-weight="bold" fill="#2A78D6">정답 · hyperglycemia</text>
+      <text x="764" y="264" text-anchor="end">3.7</text>
+      <text x="80" y="308">ringing sound in ears that won't go away</text>
+      <text x="500" y="308" font-weight="bold" fill="#2A78D6">정답 · tinnitus</text>
+      <text x="764" y="308" text-anchor="end">5.8</text>
+      <text x="80" y="352">위궤양을 일으키는 세균이 뭐야?</text>
+      <text x="500" y="352" font-weight="bold" fill="#2A78D6">정답 · 헬리코박터 (번역)</text>
+      <text x="764" y="352" text-anchor="end">7.7</text>
+      <text x="80" y="396">can drinking coke every day cause dementia</text>
+      <text x="500" y="396">거절 · 관련 문서 없음</text>
+      <text x="764" y="396" text-anchor="end">0.3</text>
+      <text x="80" y="440">shot you get after stepping on a rusty nail</text>
+      <text x="500" y="440" font-weight="bold" fill="#EB6834">잘못 거절 · 점수 3.9 &lt; 4.92</text>
+      <text x="764" y="440" text-anchor="end">0.5</text>
+      <text x="80" y="484">what is the capital of australia</text>
+      <text x="500" y="484" font-weight="bold" fill="#EB6834">답함 · 분야 밖인데 통과</text>
+      <text x="764" y="484" text-anchor="end">1.6</text>
+    </g>
+  </g>
+  <g id="test-summary" data-pptx-bounds="64 524 716 120">
+    <rect x="64" y="524" width="716" height="120" rx="12" fill="#EEF4FC"/>
+    <text x="88" y="562" font-size="18" fill="#52514E">영어 일상 표현 10개 (A100 기준 응답 3~10초, 거절은 1초 안쪽)</text>
+    <text x="88" y="614" font-size="28" font-weight="bold" fill="#1F2328">정답 <tspan fill="#2A78D6">8</tspan> · 부분 1 · 잘못 거절 <tspan fill="#EB6834">1</tspan></text>
+  </g>
+  <g id="limit-search" data-pptx-bounds="812 196 404 140">
+    <rect x="812" y="196" width="404" height="140" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <use data-icon="tabler-filled/search" x="832" y="214" width="26" height="26" fill="#2A78D6"/>
+    <text x="868" y="234" font-size="22" font-weight="bold" fill="#12355B">검색 — 남은 오답의 주원인</text>
+    <text x="832" y="272" font-size="18" fill="#1F2328">Top-10 정답 포함률 .776 (상한 .890)<tspan x="832" dy="28" fill="#52514E">짧은 구어 질문은 잘못 거절</tspan><tspan x="832" dy="28" fill="#52514E">→ 쿼리 확장 · 구어체 평가셋</tspan></text>
+  </g>
+  <g id="limit-db" data-pptx-bounds="812 352 404 124">
+    <rect x="812" y="352" width="404" height="124" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <use data-icon="tabler-filled/database" x="832" y="370" width="26" height="26" fill="#2A78D6"/>
+    <text x="868" y="390" font-size="22" font-weight="bold" fill="#12355B">DB — MS MARCO 문단뿐</text>
+    <text x="832" y="428" font-size="18" fill="#1F2328">없는 내용은 답할 수 없음<tspan x="832" dy="28" fill="#52514E">→ MedQuAD 등으로 확장 (Vector DB 검토)</tspan></text>
+  </g>
+  <g id="limit-domain" data-pptx-bounds="812 492 404 152">
+    <rect x="812" y="492" width="404" height="152" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <use data-icon="tabler-filled/alert-triangle" x="832" y="510" width="26" height="26" fill="#EB6834"/>
+    <text x="868" y="530" font-size="22" font-weight="bold" fill="#12355B">분야 밖 — 거절률 .84</text>
+    <text x="832" y="568" font-size="18" fill="#1F2328">건강 외 문단 약 9.8만 개가 섞여 있음<tspan x="832" dy="28" fill="#52514E">도메인 판정은 정답 손실이 커서 끔</tspan><tspan x="832" dy="28" fill="#52514E">(켜면 정답률 .770 → .626)</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: docs/v21_final_results.md · 질문은 일부를 줄여 표기</text>
+    <text x="1216" y="694" text-anchor="end">13 / 14</text>
+  </g>
+</svg>

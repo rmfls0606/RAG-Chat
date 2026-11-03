@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "pages": {
+    "02_요약과_개선흐름.svg": {
+      "edits": [
+        {
+          "element_id": "_edit_22",
+          "attrs": {
+            "x": "856",
+            "y": "526"
+          },
+          "changes": [
+            {
+              "kind": "attr",
+              "key": "x",
+              "old": "856",
+              "new": "856"
+            },
+            {
+              "kind": "attr",
+              "key": "y",
+              "old": "526",
+              "new": "526"
+            }
+          ]
+        }
+      ],
+      "digest": "c2bdde2d23f7e0a380b2ab5cc26ac047c1e8957d6ca164c20b369dc00626c508"
+    }
+  }
+}

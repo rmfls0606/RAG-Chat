@@ -52,12 +52,12 @@
 - p02: images/01_progress.png | source=user | crop=no-crop
 - p06: images/02_retrieval.png | source=user | crop=no-crop
 - p07: images/03_generator_ci.png | source=user | crop=no-crop
-- p09a: images/04_dpo.png | source=user | crop=no-crop
-- p09b: images/05_tradeoff.png | source=user | crop=no-crop
-- p10: images/06_f1_vs_judge.png | source=user | crop=no-crop
-- p12b: images/07_cross_judge.png | source=user | crop=no-crop
-- p11: images/08_judge_flow.png | source=user | crop=no-crop
-- p12a: images/09_judge_vs_human.png | source=user | crop=no-crop
+- p09: images/04_dpo.png | source=user | crop=no-crop
+- p10: images/05_tradeoff.png | source=user | crop=no-crop
+- p11: images/06_f1_vs_judge.png | source=user | crop=no-crop
+- p13b: images/07_cross_judge.png | source=user | crop=no-crop
+- p12: images/08_judge_flow.png | source=user | crop=no-crop
+- p13a: images/09_judge_vs_human.png | source=user | crop=no-crop
 
 ## page_rhythm
 - P01: anchor
@@ -73,13 +73,15 @@
 - P11: dense
 - P12: dense
 - P13: dense
-- P14: anchor
+- P14: dense
+- P15: anchor
 
 ## page_visualizations
 - P05: table/metric_table
 - P08: table/record_table
-- P10: table/record_table
-- P13: table/record_table
+- P10: table/comparison_matrix
+- P11: table/record_table
+- P14: table/record_table
 
 ## pptx_structure
 - mode: flat

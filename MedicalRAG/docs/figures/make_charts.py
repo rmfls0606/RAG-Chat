@@ -160,35 +160,30 @@ ax.axis('off')
 
 
 def box(x, y, w, h, title, body, fill=SURF, edge=GRID):
-    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle='round,pad=0.02,rounding_size=0.12', fc=fill, ec=edge, lw=1.5))
-    ax.text(x + 0.18, y + h - 0.3, title, fontsize=13, fontweight='bold', color=INK, va='top')
-    ax.text(x + 0.18, y + h - 0.8, body, fontsize=11.5, color=INK2, va='top', linespacing=1.6)
+    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle='round,pad=0.02,rounding_size=0.12', fc=fill, ec=edge, lw=2))
+    ax.text(x + 0.2, y + h - 0.3, title, fontsize=19, fontweight='bold', color=INK, va='top')
+    ax.text(x + 0.2, y + h - 1.0, body, fontsize=17, color=INK2, va='top', linespacing=1.5)
 
 
 def arrow(x1, x2, y):
-    ax.annotate('', (x2, y), (x1, y), arrowprops=dict(arrowstyle='-|>', color=INK2, lw=1.5, mutation_scale=16))
+    ax.annotate('', (x2, y), (x1, y), arrowprops=dict(arrowstyle='-|>', color=INK2, lw=2, mutation_scale=22))
 
 
-box(0.1, 0.6, 3.0, 3.8, '① 심판에게 주는 것',
-    '질문\n  what kind of bacteria is in\n  a kidney infection\n참고 정답 (MS MARCO)\n  E.coli bacteria\n챗봇 답\n  Kidney infections are usually\n  caused by E. coli [1].')
-arrow(3.15, 3.55, 2.5)
-box(3.6, 0.6, 2.9, 3.8, '② 심판 Qwen2.5-14B',
-    '기준표 (시스템 프롬프트)\n2 = 핵심 사실이 맞음\n     (표현 달라도 OK)\n1 = 일부만 맞음\n0 = 틀림 / 무관\n\n"숫자 하나로만 답하라"', fill=LIGHT, edge=BLUE)
-arrow(6.55, 6.95, 2.5)
-box(7.0, 0.6, 2.7, 3.8, '③ 첫 토큰 확률', '문장을 쓰게 하지 않고\n0·1·2가 나올 확률만 읽음')
-probs = [.03, .12, .85]
-for i, pv in enumerate(probs):
-    yy = 2.25 - i * 0.55
-    ax.text(7.25, yy, f'{i}', fontsize=12, color=INK, va='center')
-    ax.add_patch(FancyBboxPatch((7.55, yy - 0.15), 1.6 * pv + 0.02, 0.3, boxstyle='round,pad=0,rounding_size=0.05',
+box(0.05, 0.55, 3.0, 4.0, '① 입력', '질문\n  bacteria in kidney\n  infection?\n참고 정답\n  E.coli bacteria\n챗봇 답\n  usually E. coli [1]')
+arrow(3.1, 3.5, 2.55)
+box(3.55, 0.55, 2.95, 4.0, '② 심판 14B', '기준표\n2 = 핵심 사실 맞음\n1 = 일부만 맞음\n0 = 틀림 / 무관\n\n숫자 하나로만 답하게', fill=LIGHT, edge=BLUE)
+arrow(6.55, 6.95, 2.55)
+box(7.0, 0.55, 2.75, 4.0, '③ 첫 토큰 확률', '0·1·2가 나올\n확률만 읽음')
+for i, pv in enumerate([.03, .12, .85]):
+    yy = 2.45 - i * 0.62
+    ax.text(7.25, yy, f'{i}', fontsize=18, color=INK, va='center')
+    ax.add_patch(FancyBboxPatch((7.6, yy - 0.18), 1.45 * pv + 0.02, 0.36, boxstyle='round,pad=0,rounding_size=0.05',
                                 fc=BLUE if i == 2 else GRAY, ec='none'))
-    ax.text(7.6 + 1.6 * pv + 0.08, yy, f'{pv:.2f}'.lstrip('0'), fontsize=11, color=INK, va='center')
-arrow(9.75, 10.15, 2.5)
-box(10.2, 0.6, 2.7, 3.8, '④ 점수 → 판정',
-    '정답 점수\n= P(1) + 2 × P(2)\n= .12 + 2 × .85 = 1.82\n\n1.5 이상 → 정답\n\n거절한 답은 심판 없이 0점')
-ax.text(0.1, 4.85, '심판이 정답 점수를 매기는 과정', fontsize=16, fontweight='bold', color=INK)
-ax.text(0.1, 0.15, '근거 충실도도 같은 방식: 문단 + 챗봇 답만 주고 "모든 사실이 문단에 있나?" → P(1)   ·   챗봇 답과 확률 값은 설명용 예시',
-        fontsize=11, color=INK2)
+    ax.text(7.66 + 1.45 * pv + 0.08, yy, f'{pv:.2f}'.lstrip('0'), fontsize=16, color=INK, va='center')
+arrow(9.8, 10.2, 2.55)
+box(10.25, 0.55, 2.7, 4.0, '④ 판정', 'P(1) + 2×P(2)\n= .12 + 2×.85\n= 1.82\n\n1.5 이상 → 정답')
+ax.text(0.05, 4.85, '심판이 정답 점수를 매기는 과정', fontsize=21, fontweight='bold', color=INK)
+ax.text(0.05, 0.12, '근거 충실도도 같은 방식 (문단 + 챗봇 답 → P(1)) · 챗봇 답과 확률 값은 설명용 예시', fontsize=15, color=INK2)
 save(fig, '08_judge_flow.png')
 
 # 9. 심판 vs 사람 (40개) 혼동 행렬

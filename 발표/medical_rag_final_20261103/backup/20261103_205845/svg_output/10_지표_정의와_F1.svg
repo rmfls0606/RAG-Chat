@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">지표 · 무엇을 재고, 왜 F1을 버렸나</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#2A78D6"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#52514E">5</text>
+      <text x="1036" y="51" fill="#FFFFFF">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" font-weight="normal" fill="#52514E">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">F1로는 1등이던 LoRA가 실제론 꼴찌</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">그래서 단어 겹침(F1) 대신 LLM 심판의 정답률로 모든 실험을 다시 비교했다</text>
+  </g>
+  <g id="metric-definitions" data-pptx-replace-with="table" data-pptx-bounds="64 196 1152 192" data-pptx-fallback-sha256="7bc8cf077aa7ba3901feb52cbd1d3d86280603d735a9231a6fdf66dc07ab1f67">
+    <metadata type="application/json">{"schema": "ppt-master.semantic-table.v2", "name": "metric-definitions", "x": 64, "y": 196, "width": 1152, "height": 192, "header_rows": 1, "column_widths": [96, 300, 756], "row_heights": [32, 32, 32, 32, 32, 32], "style": {"font_family": "Pretendard", "font_size": 18, "band_row": false, "body_text": "#1F2328", "header_text": "#12355B", "valign": "middle"}, "defaults": {"cell": {"borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "solid", "color": "#E2E1DC", "width": 1}}}}, "cell_styles": {"head": {"bold": true, "color": "#12355B", "borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "solid", "color": "#12355B", "width": 2}}}, "search": {"bold": true, "color": "#2A78D6"}, "gen": {"bold": true, "color": "#12355B"}}, "columns": [{"text": "구분", "cell_style": "head", "align": "l"}, {"text": "지표", "cell_style": "head", "align": "l"}, {"text": "정의", "cell_style": "head", "align": "l"}], "rows": [[{"text": "검색", "cell_style": "search", "align": "l"}, {"text": "Recall@k", "bold": true, "align": "l"}, {"text": "상위 k개 안에 정답 문단이 있는 질문 비율", "align": "l"}], [{"text": "검색", "cell_style": "search", "align": "l"}, {"text": "MRR@10", "bold": true, "align": "l"}, {"text": "첫 정답 문단 순위의 역수 평균 (MS MARCO 공식 지표)", "align": "l"}], [{"text": "생성", "cell_style": "gen", "align": "l"}, {"text": "정답률", "bold": true, "align": "l"}, {"text": "LLM 심판이 2점(정답)을 준 답의 비율, 거절은 0점", "align": "l"}], [{"text": "생성", "cell_style": "gen", "align": "l"}, {"text": "근거 충실도", "bold": true, "align": "l"}, {"text": "거절하지 않은 답 중 모든 사실이 문단에 있는 비율", "align": "l"}], [{"text": "생성", "cell_style": "gen", "align": "l"}, {"text": "잘못 거절 / 답 없음 거절률", "bold": true, "align": "l"}, {"text": "답 있는 질문을 거절한 비율 / 답 없는 질문을 거절한 비율", "align": "l"}]]}</metadata>
+    <line x1="64" y1="228" x2="1216" y2="228" stroke="#12355B" stroke-width="2"/>
+    <line x1="64" y1="260" x2="1216" y2="260" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="292" x2="1216" y2="292" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="324" x2="1216" y2="324" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="356" x2="1216" y2="356" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="64" y1="388" x2="1216" y2="388" stroke="#E2E1DC" stroke-width="1"/>
+    <g font-size="18" font-weight="bold" fill="#12355B">
+      <text x="80" y="218">구분</text>
+      <text x="176" y="218">지표</text>
+      <text x="476" y="218">정의</text>
+    </g>
+    <g font-size="18" fill="#1F2328">
+      <text x="80" y="250" font-weight="bold" fill="#2A78D6">검색</text>
+      <text x="176" y="250" font-weight="bold">Recall@k</text>
+      <text x="476" y="250">상위 k개 안에 정답 문단이 있는 질문 비율</text>
+      <text x="80" y="282" font-weight="bold" fill="#2A78D6">검색</text>
+      <text x="176" y="282" font-weight="bold">MRR@10</text>
+      <text x="476" y="282">첫 정답 문단 순위의 역수 평균 (MS MARCO 공식 지표)</text>
+      <text x="80" y="314" font-weight="bold" fill="#12355B">생성</text>
+      <text x="176" y="314" font-weight="bold">정답률</text>
+      <text x="476" y="314">LLM 심판이 2점(정답)을 준 답의 비율, 거절은 0점</text>
+      <text x="80" y="346" font-weight="bold" fill="#12355B">생성</text>
+      <text x="176" y="346" font-weight="bold">근거 충실도</text>
+      <text x="476" y="346">거절하지 않은 답 중 모든 사실이 문단에 있는 비율</text>
+      <text x="80" y="378" font-weight="bold" fill="#12355B">생성</text>
+      <text x="176" y="378" font-weight="bold">잘못 거절 / 답 없음 거절률</text>
+      <text x="476" y="378">답 있는 질문을 거절한 비율 / 답 없는 질문을 거절한 비율</text>
+    </g>
+  </g>
+  <g id="f1-chart" data-pptx-bounds="64 400 600 248">
+    <image href="../images/06_f1_vs_judge.png" x="64" y="400" width="590" height="248" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="f1-takeaway" data-pptx-bounds="680 400 536 244">
+    <rect x="680" y="400" width="536" height="244" rx="12" fill="#EEF4FC"/>
+    <text x="704" y="448" font-size="22" font-weight="bold" fill="#12355B">F1은 단어 겹침만 본다</text>
+    <text x="704" y="494" font-size="18" fill="#1F2328">짧게 답하는 LoRA가 F1 1등 (<tspan font-weight="bold">.349</tspan> vs .282)<tspan x="704" dy="30">심판 정답률은 <tspan font-weight="bold" fill="#EB6834">.450</tspan> vs <tspan font-weight="bold" fill="#2A78D6">.736</tspan></tspan><tspan x="704" dy="30" fill="#52514E">실제 정답은 크게 줄어듦</tspan><tspan x="704" dy="46" font-weight="bold" fill="#12355B">→ 지표를 바꾸자 '개선'처럼 보였던</tspan><tspan x="704" dy="28" font-weight="bold" fill="#12355B">실험이 폐기됨</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: results/generation/14_judge_eval_summary.md · 시험 500 (답 있는 건강 질문)</text>
+    <text x="1216" y="694" text-anchor="end">10 / 14</text>
+  </g>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#12355B">생성 단계 · ⑤ DPO — 유일하게 직접 학습한 모델</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#12355B"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#FFFFFF">5</text>
+      <text x="1036" y="51" fill="#52514E">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" fill="#12355B">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">답이 없으면 지어낸다 — 그래서 DPO만 직접 학습</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">진짜 답 없는 질문의 35%에서 Qwen3-8B가 문단에 없는 내용을 지어내 답함</text>
+  </g>
+  <g id="failed-tries" data-pptx-bounds="64 196 536 448">
+    <text x="64" y="224" font-size="18" font-weight="bold" fill="#52514E">먼저 시도했지만 실패한 방법 (시험 정답률)</text>
+    <g id="try-lora">
+      <rect x="64" y="240" width="536" height="88" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+      <text x="88" y="276" font-size="22" font-weight="bold" fill="#1F2328">06 문장형 LoRA</text>
+      <text x="576" y="278" font-size="28" font-weight="bold" fill="#EB6834" text-anchor="end">.450</text>
+      <text x="88" y="308" font-size="18" fill="#52514E">답할 수 있는 질문까지 거절하도록 배움</text>
+    </g>
+    <g id="try-sft">
+      <rect x="64" y="340" width="536" height="88" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+      <text x="88" y="376" font-size="22" font-weight="bold" fill="#1F2328">15 SFT 재학습</text>
+      <text x="576" y="378" font-size="28" font-weight="bold" fill="#EB6834" text-anchor="end">.724</text>
+      <text x="88" y="408" font-size="18" fill="#52514E">좋은 답을 따라 하기만 해서 원본(.736)에서 멈춤</text>
+    </g>
+    <g id="try-threshold">
+      <rect x="64" y="440" width="536" height="88" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+      <text x="88" y="476" font-size="22" font-weight="bold" fill="#1F2328">18 거절 기준 4.92 → 6.80</text>
+      <text x="576" y="478" font-size="28" font-weight="bold" fill="#EB6834" text-anchor="end">.678</text>
+      <text x="88" y="508" font-size="18" fill="#52514E">지어낸 답은 줄지만 답할 질문까지 거절</text>
+    </g>
+    <rect x="64" y="544" width="536" height="100" rx="12" fill="#EEF4FC"/>
+    <text x="88" y="582" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#52514E">SFT</tspan>  좋은 답을 따라 하기</text>
+    <text x="88" y="620" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#2A78D6">DPO</tspan>  좋은 답과 나쁜 답을 비교해 <tspan font-weight="bold">나쁜 답을 피하기</tspan></text>
+  </g>
+<g id="p08-to-dpo" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="604 392 24 40" fill="#2A78D6" stroke="none">
+<path d="M 604 402 L 616 402 L 616 392 L 628 412 L 616 432 L 616 422 L 604 422 Z"/>
+</g>
+  <g id="dpo-method-title" data-pptx-bounds="632 196 584 36">
+    <text x="632" y="224" font-size="18" font-weight="bold" fill="#2A78D6">DPO 학습 방법 — 선호 쌍 224개</text>
+  </g>
+<g id="p08-step-1" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="632 240 188 48" data-pptx-av-adj="val 25000" fill="#12355B" stroke="none">
+<path d="M 632 240 L 808 240 L 820 264 L 808 288 L 632 288 L 644 264 Z"/>
+</g>
+<g id="p08-step-2" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="814 240 188 48" data-pptx-av-adj="val 25000" fill="#12355B" stroke="none">
+<path d="M 814 240 L 990 240 L 1002 264 L 990 288 L 814 288 L 826 264 Z"/>
+</g>
+<g id="p08-step-3" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="996 240 188 48" data-pptx-av-adj="val 25000" fill="#2A78D6" stroke="none">
+<path d="M 996 240 L 1172 240 L 1184 264 L 1172 288 L 996 288 L 1008 264 Z"/>
+</g>
+  <g id="dpo-step-labels" data-pptx-bounds="648 248 528 32" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    <text x="728" y="270">① 답 3개 생성</text>
+    <text x="910" y="270">② 14B 심판 채점</text>
+    <text x="1092" y="270">③ 좋은/나쁜 짝</text>
+  </g>
+  <g id="dpo-pairs" data-pptx-replace-with="table" data-pptx-bounds="632 308 584 220" data-pptx-fallback-sha256="9d82a20924a7a891c90fe3b56b4f60e25944966bb1fbc8ed7e502a1bc868adb9">
+    <metadata type="application/json">{"schema": "ppt-master.semantic-table.v2", "name": "dpo-pairs", "x": 632, "y": 308, "width": 584, "height": 220, "header_rows": 1, "column_widths": [196, 156, 156, 76], "row_heights": [48, 44, 44, 44, 40], "style": {"font_family": "Pretendard", "font_size": 18, "band_row": false, "body_text": "#1F2328", "header_text": "#12355B", "valign": "middle"}, "defaults": {"cell": {"borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "solid", "color": "#E2E1DC", "width": 1}}}}, "cell_styles": {"head": {"bold": true, "color": "#12355B", "borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "solid", "color": "#12355B", "width": 2}}}, "total": {"bold": true, "borders": {"left": {"style": "none"}, "right": {"style": "none"}, "top": {"style": "none"}, "bottom": {"style": "none"}}}}, "columns": [{"text": "경우", "cell_style": "head", "align": "l"}, {"text": "좋은 답", "cell_style": "head", "align": "l"}, {"text": "나쁜 답", "cell_style": "head", "align": "l"}, {"text": "쌍", "cell_style": "head", "align": "r"}], "rows": [[{"text": "답 있는 질문", "align": "l"}, {"text": "정답·근거 충실", "align": "l"}, {"text": "오답·근거 없음", "align": "l"}, {"text": "137", "align": "r"}], [{"text": "문단에 답 없음", "align": "l"}, {"text": "거절", "align": "l", "bold": true, "color": "#2A78D6"}, {"text": "지어낸 답", "align": "l", "bold": true, "color": "#EB6834"}, {"text": "67", "align": "r"}], [{"text": "라벨 오류 (답 있음)", "align": "l"}, {"text": "근거 충실한 답", "align": "l"}, {"text": "근거 없는 답", "align": "l"}, {"text": "20", "align": "r"}], [{"text": "합계", "cell_style": "total", "align": "l"}, {"text": "", "cell_style": "total"}, {"text": "", "cell_style": "total"}, {"text": "224", "cell_style": "total", "align": "r", "color": "#2A78D6"}]]}</metadata>
+    <line x1="632" y1="356" x2="1216" y2="356" stroke="#12355B" stroke-width="2"/>
+    <line x1="632" y1="400" x2="1216" y2="400" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="632" y1="444" x2="1216" y2="444" stroke="#E2E1DC" stroke-width="1"/>
+    <line x1="632" y1="488" x2="1216" y2="488" stroke="#E2E1DC" stroke-width="1"/>
+    <g font-size="18" font-weight="bold" fill="#12355B">
+      <text x="648" y="338">경우</text>
+      <text x="844" y="338">좋은 답</text>
+      <text x="1000" y="338">나쁜 답</text>
+      <text x="1200" y="338" text-anchor="end">쌍</text>
+    </g>
+    <g font-size="18" fill="#1F2328">
+      <text x="648" y="384">답 있는 질문</text>
+      <text x="844" y="384">정답·근거 충실</text>
+      <text x="1000" y="384">오답·근거 없음</text>
+      <text x="1200" y="384" text-anchor="end">137</text>
+      <text x="648" y="428">문단에 답 없음</text>
+      <text x="844" y="428" font-weight="bold" fill="#2A78D6">거절</text>
+      <text x="1000" y="428" font-weight="bold" fill="#EB6834">지어낸 답</text>
+      <text x="1200" y="428" text-anchor="end">67</text>
+      <text x="648" y="472">라벨 오류 (답 있음)</text>
+      <text x="844" y="472">근거 충실한 답</text>
+      <text x="1000" y="472">근거 없는 답</text>
+      <text x="1200" y="472" text-anchor="end">20</text>
+      <text x="648" y="514" font-weight="bold">합계</text>
+      <text x="1200" y="514" font-weight="bold" fill="#2A78D6" text-anchor="end">224</text>
+    </g>
+  </g>
+  <g id="dpo-config" data-pptx-bounds="632 544 584 100">
+    <rect x="632" y="544" width="584" height="100" rx="12" fill="#EEF4FC"/>
+    <text x="656" y="582" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#12355B">거절 쌍은 30% 이하</tspan>로 제한 → 06의 과잉 거절을 반복하지 않게</text>
+    <text x="656" y="620" font-size="18" fill="#52514E">LoRA r16 · β 0.1 · 1 epoch · 참조 모델 = LoRA 끈 Qwen3-8B</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: docs/refusal_flow_dpo.md · docs/v21_final_results.md · TRL 없이 DPO 손실 직접 구현</text>
+    <text x="1216" y="694" text-anchor="end">08 / 14</text>
+  </g>
+</svg>

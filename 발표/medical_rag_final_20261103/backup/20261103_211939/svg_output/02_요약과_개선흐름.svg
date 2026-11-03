@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="header" data-pptx-bounds="64 36 1152 140">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">개요 · 한 줄 요약</text>
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">검색과 DPO로 정답률 .618 → .770</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">지어낸 답은 35% → 20% · 검색된 의료 문단 안에서만 답하고, 근거가 없으면 거절하는 챗봇</text>
+  </g>
+  <g id="progress-chart" data-pptx-bounds="64 196 720 360">
+    <image href="../images/01_progress.png" x="64" y="196" width="720" height="360" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="progress-points" data-pptx-bounds="816 196 400 372">
+    <g id="point-1">
+      <circle cx="830" cy="226" r="14" fill="#C3C2B7"/>
+      <text x="830" y="232" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+      <text x="856" y="234" font-size="24" font-weight="bold" fill="#1F2328">검색 추가 <tspan fill="#2A78D6">+11.8점</tspan></text>
+      <text x="856" y="262" font-size="18" fill="#52514E">LLM만 .618 → 첫 RAG(08) .736</text>
+    </g>
+    <g id="point-2">
+      <circle cx="830" cy="314" r="14" fill="#C3C2B7"/>
+      <text x="830" y="320" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">2</text>
+      <text x="856" y="322" font-size="24" font-weight="bold" fill="#1F2328">06·15 학습은 폐기</text>
+      <text x="856" y="350" font-size="18" fill="#52514E">원본(.736)을 못 넘음 (.450 / .724)</text>
+    </g>
+    <g id="point-3">
+      <circle cx="830" cy="402" r="14" fill="#C3C2B7"/>
+      <text x="830" y="408" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">3</text>
+      <text x="856" y="410" font-size="24" font-weight="bold" fill="#1F2328">모델 교체 <tspan fill="#2A78D6">+4.6점</tspan>, 유의</text>
+      <text x="856" y="438" font-size="18" fill="#52514E">앙상블 Top-10 + Qwen3-8B → .782</text>
+    </g>
+    <g id="point-4">
+      <circle cx="830" cy="490" r="14" fill="#2A78D6"/>
+      <text x="830" y="496" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">4</text>
+      <text x="856" y="498" font-size="24" font-weight="bold" fill="#1F2328">DPO: 지어낸 답 <tspan fill="#2A78D6">35% → 20%</tspan></text>
+      <text x="856" y="526" font-size="18" fill="#52514E">정답률 .770 유지 (차이 유의하지 않음)</text>
+    </g>
+  </g>
+  <g id="dropped" data-pptx-bounds="64 584 1152 56">
+    <rect x="64" y="584" width="1152" height="56" rx="12" fill="#EEF4FC"/>
+    <text x="88" y="618" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#12355B">이득이 없어 뺀 것  </tspan>Hybrid(RRF) · 쿼리 재작성/HyDE · LLM 거절 판정 · 도메인 판정 · 프롬프트·거절 기준 조정</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: docs/v21_final_results.md · 시험 정답률 = LLM 심판 2점 비율</text>
+    <text x="1216" y="694" text-anchor="end">02 / 15</text>
+  </g>
+</svg>

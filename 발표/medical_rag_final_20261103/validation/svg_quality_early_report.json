@@ -1,0 +1,523 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "early",
+  "target": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "d6684a24774788812131b63ededb1230ceeeeab1f7d0ab73c32a4c121a64226e",
+    "file_count": 5,
+    "files": [
+      {
+        "file": "01_표지.svg",
+        "sha256": "5a50b76958577bc981fc4c3984b9d93cf1a38ec45eb4db9bf335537946a3eaa8"
+      },
+      {
+        "file": "02_요약과_개선흐름.svg",
+        "sha256": "c2bdde2d23f7e0a380b2ab5cc26ac047c1e8957d6ca164c20b369dc00626c508"
+      },
+      {
+        "file": "03_데이터셋.svg",
+        "sha256": "74a6068a02fc8f61bf1d36fa0f63e769378dfe61fcddf4df473f2fef3167f9ad"
+      },
+      {
+        "file": "04_최종_파이프라인.svg",
+        "sha256": "552fd4be0034985030b9ba40f16cad229d19933d2dc7fba822caa9df8a58650b"
+      },
+      {
+        "file": "05_1차검색_FAISS.svg",
+        "sha256": "755343c37c5f4872fa6417078f5fcbb8b3377e4e76b2e32fbced30ba3f6ecf67"
+      }
+    ]
+  },
+  "summary": {
+    "total": 5,
+    "passed": 0,
+    "warnings": 5,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 11,
+      "issues": [
+        {
+          "file": "01_표지.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "02_요약과_개선흐름.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "03_데이터셋.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): split-links:stroke None -> '#2A78D6'; split-links:stroke-width None -> '2'; line[27]:stroke '#2A78D6' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "03_데이터셋.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "04_최종_파이프라인.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "04_최종_파이프라인.svg",
+          "message": "<text> (x=112, y=342; text='한국어면 번역') exceeds <g id=\"question\"> data-pptx-bounds on the horizontal axis: content (62.1, 329.2)-(161.9, 347.2), container (64.0, 236.0)-(160.0, 356.0), overflow horizontal 1.9%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈16.6 px per CJK char at 15px incl. headroom; ≈5 chars fit in 96 px"
+        },
+        {
+          "file": "04_최종_파이프라인.svg",
+          "message": "<text> (x=1170, y=342; text='문장마다 [n]') exceeds <g id=\"answer\"> data-pptx-bounds on the horizontal axis: content (1122.9, 329.2)-(1217.1, 347.2), container (1124.0, 236.0)-(1216.0, 356.0), overflow horizontal 1.2%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈13.5 px per mixed char at 15px incl. headroom; ≈6 chars fit in 92 px"
+        },
+        {
+          "file": "04_최종_파이프라인.svg",
+          "message": "<text> (x=644, y=410; text='거절 · LLM 호출 안 함 (1초 …') exceeds <g id=\"reject-search\"> data-pptx-bounds on the horizontal axis: content (522.6, 397.2)-(765.4, 415.2), container (532.0, 316.0)-(756.0, 428.0), overflow horizontal 4.2%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.2 px per mixed char at 15px incl. headroom; ≈14 chars fit in 224 px"
+        },
+        {
+          "file": "05_1차검색_FAISS.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "05_1차검색_FAISS.svg",
+          "message": "<text> (x=64, y=120; text='dense가 BM25의 2배, RRF…') exceeds <g id=\"header\"> data-pptx-bounds on the vertical axis: content (64.0, 84.3)-(1020.9, 134.7), container (64.0, 88.0)-(1216.0, 176.0), overflow horizontal 0.0%, vertical 4.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text"
+        },
+        {
+          "file": "05_1차검색_FAISS.svg",
+          "message": "<text> (x=664, y=458; text='RRF 제외 순위만으로 합침: Σ 1…') exceeds <g id=\"retrieval-notes\"> data-pptx-bounds on the horizontal axis: content (664.0, 442.7)-(1237.8, 492.3), container (640.0, 424.0)-(1216.0, 644.0), overflow horizontal 3.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.5 px per mixed char at 18px incl. headroom; ≈37 chars fit in 576 px"
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#9DBCE6": [
+        "01_표지.svg"
+      ],
+      "#C9DAF0": [
+        "01_표지.svg"
+      ],
+      "#FFFFFF": [
+        "01_표지.svg",
+        "02_요약과_개선흐름.svg",
+        "03_데이터셋.svg",
+        "04_최종_파이프라인.svg",
+        "05_1차검색_FAISS.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 5,
+    "totals": {
+      "text_elements": 155,
+      "image_placements": 1,
+      "icons": 1,
+      "svg_geometry_elements": 60,
+      "preset_shapes": 5,
+      "page_frame_elements": 7,
+      "marker_uses": 4,
+      "inline_emphasis_runs": 21,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 1,
+      "icons": 1,
+      "presets": 1,
+      "charts": 0,
+      "tables": 1,
+      "formulas": 0,
+      "inline_emphasis_runs": 5,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 13,
+    "geometry_elements": {
+      "circle": 17,
+      "ellipse": 0,
+      "line": 12,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 31
+    },
+    "preset_names": {
+      "chevron": 5
+    },
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 1
+    },
+    "image_page_max_frame_share_range": [
+      0.2812,
+      0.2812
+    ]
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_표지.svg",
+      "path": "svg_output/01_표지.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#9DBCE6",
+            "#C9DAF0",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "5a50b76958577bc981fc4c3984b9d93cf1a38ec45eb4db9bf335537946a3eaa8"
+    },
+    {
+      "file": "02_요약과_개선흐름.svg",
+      "path": "svg_output/02_요약과_개선흐름.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 1,
+            "files": [
+              "01_progress.png"
+            ],
+            "max_frame_share": 0.2812
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 4,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 4,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "c2bdde2d23f7e0a380b2ab5cc26ac047c1e8957d6ca164c20b369dc00626c508"
+    },
+    {
+      "file": "03_데이터셋.svg",
+      "path": "svg_output/03_데이터셋.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): split-links:stroke None -> '#2A78D6'; split-links:stroke-width None -> '2'; line[27]:stroke '#2A78D6' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 35,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 6,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 2
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 35,
+        "tspan_elements": 9,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "74a6068a02fc8f61bf1d36fa0f63e769378dfe61fcddf4df473f2fef3167f9ad"
+    },
+    {
+      "file": "04_최종_파이프라인.svg",
+      "path": "svg_output/04_최종_파이프라인.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif",
+        "<text> (x=112, y=342; text='한국어면 번역') exceeds <g id=\"question\"> data-pptx-bounds on the horizontal axis: content (62.1, 329.2)-(161.9, 347.2), container (64.0, 236.0)-(160.0, 356.0), overflow horizontal 1.9%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈16.6 px per CJK char at 15px incl. headroom; ≈5 chars fit in 96 px",
+        "<text> (x=1170, y=342; text='문장마다 [n]') exceeds <g id=\"answer\"> data-pptx-bounds on the horizontal axis: content (1122.9, 329.2)-(1217.1, 347.2), container (1124.0, 236.0)-(1216.0, 356.0), overflow horizontal 1.2%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈13.5 px per mixed char at 15px incl. headroom; ≈6 chars fit in 92 px",
+        "<text> (x=644, y=410; text='거절 · LLM 호출 안 함 (1초 …') exceeds <g id=\"reject-search\"> data-pptx-bounds on the horizontal axis: content (522.6, 397.2)-(765.4, 415.2), container (532.0, 316.0)-(756.0, 428.0), overflow horizontal 4.2%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.2 px per mixed char at 15px incl. headroom; ≈14 chars fit in 224 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 40,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 13,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 5,
+            "preset_names": {
+              "chevron": 5
+            },
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 2
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 40,
+        "tspan_elements": 3,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "552fd4be0034985030b9ba40f16cad229d19933d2dc7fba822caa9df8a58650b"
+    },
+    {
+      "file": "05_1차검색_FAISS.svg",
+      "path": "svg_output/05_1차검색_FAISS.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif",
+        "<text> (x=64, y=120; text='dense가 BM25의 2배, RRF…') exceeds <g id=\"header\"> data-pptx-bounds on the vertical axis: content (64.0, 84.3)-(1020.9, 134.7), container (64.0, 88.0)-(1216.0, 176.0), overflow horizontal 0.0%, vertical 4.2% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text",
+        "<text> (x=664, y=458; text='RRF 제외 순위만으로 합침: Σ 1…') exceeds <g id=\"retrieval-notes\"> data-pptx-bounds on the horizontal axis: content (664.0, 442.7)-(1237.8, 492.3), container (640.0, 424.0)-(1216.0, 644.0), overflow horizontal 3.8%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈15.5 px per mixed char at 18px incl. headroom; ≈37 chars fit in 576 px"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 47,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 8,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 47,
+        "tspan_elements": 8,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "755343c37c5f4872fa6417078f5fcbb8b3377e4e76b2e32fbced30ba3f6ecf67"
+    }
+  ]
+}

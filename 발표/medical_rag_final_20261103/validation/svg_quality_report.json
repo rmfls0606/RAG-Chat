@@ -1,0 +1,1266 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "618c26397c1c365cc0b1c08f2d9f3b0493e59c41a41270704c2cca5c3c8b6969",
+    "file_count": 15,
+    "files": [
+      {
+        "file": "01_표지.svg",
+        "sha256": "fdd6a9cfec4cb5356fd4ae25bf8912981840a2d2a93b3c9133d9770c3958317d"
+      },
+      {
+        "file": "02_요약과_개선흐름.svg",
+        "sha256": "c671278561b4b01cfc1a1898703cc8d6d5e62d63b456e656c5d5209fd9b7888f"
+      },
+      {
+        "file": "03_데이터셋.svg",
+        "sha256": "cc08bbd750591f785fdb42acaeec1c69d74e9b314763ceb3439aeb1d56b4cf71"
+      },
+      {
+        "file": "04_최종_파이프라인.svg",
+        "sha256": "9325536932e2569e56acb0e6937c366e18527aae842fe7c145fffeb4427d1166"
+      },
+      {
+        "file": "05_1차검색_FAISS.svg",
+        "sha256": "d1e4a0936f7a344b12e782fcb1d432e0ce93f62780fe1f828f437a952f2fa439"
+      },
+      {
+        "file": "06_재정렬_검색거절.svg",
+        "sha256": "cd66ec30e23a27c7e28872da05ee20da9a475d5463b631b68a4776ad257c7097"
+      },
+      {
+        "file": "07_생성_Qwen3.svg",
+        "sha256": "15b8a0e11bef37de64d4d77213408d383158b660edbee2011825724b3a51bea5"
+      },
+      {
+        "file": "08_왜_DPO.svg",
+        "sha256": "966319324ec3eae0a5b7498feebed786f9a0f79515638c0b06e3e5ff2c83e1ed"
+      },
+      {
+        "file": "09_DPO_성능.svg",
+        "sha256": "6f0cc841d38618284ac77b2c1b679e90cf2fa883b4b10197169d70e473d9cf2f"
+      },
+      {
+        "file": "10_DPO_트레이드오프.svg",
+        "sha256": "0525ceafe2de2cc3795fb7162f1321e781739e83cc1c75be6c70dfeddced07d2"
+      },
+      {
+        "file": "11_지표_정의와_F1.svg",
+        "sha256": "9dcea43156fc8269876757e5fdd335dc3064dd33659d2a3d2a276e6942ae224c"
+      },
+      {
+        "file": "12_심판이란.svg",
+        "sha256": "87aa2c1c10f299676ee0791d35f6b3e2b47a0a2f5a487284648c8e46d076f8a2"
+      },
+      {
+        "file": "13_지표_신뢰성.svg",
+        "sha256": "db43ca7028c8ec252ff5c52a8848f430bb8c264af1b67472c7ccac0f735120a0"
+      },
+      {
+        "file": "14_테스트와_한계.svg",
+        "sha256": "ec5fbc3c11b0a108df24f3b2379149846b8653db5227660ce506b11bac0111f1"
+      },
+      {
+        "file": "15_결론.svg",
+        "sha256": "1f619380facc5b925ed7e0a423965c1184547944cf29b40fa4992380f2a7278e"
+      }
+    ]
+  },
+  "summary": {
+    "total": 15,
+    "passed": 0,
+    "warnings": 15,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 17,
+      "issues": [
+        {
+          "file": "01_표지.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "02_요약과_개선흐름.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "03_데이터셋.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): split-links:stroke None -> '#2A78D6'; split-links:stroke-width None -> '2'; line[27]:stroke '#2A78D6' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "03_데이터셋.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "04_최종_파이프라인.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "05_1차검색_FAISS.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "06_재정렬_검색거절.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "07_생성_Qwen3.svg",
+          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): prompt-rules:font-size None -> '18'; text[26]:font-size '18' -> None; g[27]:font-size '18' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+        },
+        {
+          "file": "07_생성_Qwen3.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "08_왜_DPO.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "09_DPO_성능.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "10_DPO_트레이드오프.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "11_지표_정의와_F1.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "12_심판이란.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "13_지표_신뢰성.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "14_테스트와_한계.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        },
+        {
+          "file": "15_결론.svg",
+          "message": "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+        }
+      ]
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {
+      "#9DBCE6": [
+        "01_표지.svg",
+        "15_결론.svg"
+      ],
+      "#C9DAF0": [
+        "01_표지.svg",
+        "15_결론.svg"
+      ],
+      "#FFFFFF": [
+        "01_표지.svg",
+        "02_요약과_개선흐름.svg",
+        "03_데이터셋.svg",
+        "04_최종_파이프라인.svg",
+        "05_1차검색_FAISS.svg",
+        "06_재정렬_검색거절.svg",
+        "07_생성_Qwen3.svg",
+        "08_왜_DPO.svg",
+        "09_DPO_성능.svg",
+        "10_DPO_트레이드오프.svg",
+        "11_지표_정의와_F1.svg",
+        "12_심판이란.svg",
+        "13_지표_신뢰성.svg",
+        "14_테스트와_한계.svg",
+        "15_결론.svg"
+      ]
+    },
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 15,
+    "totals": {
+      "text_elements": 446,
+      "image_placements": 9,
+      "icons": 6,
+      "svg_geometry_elements": 197,
+      "preset_shapes": 9,
+      "page_frame_elements": 17,
+      "marker_uses": 4,
+      "inline_emphasis_runs": 46,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 8,
+      "icons": 3,
+      "presets": 2,
+      "charts": 0,
+      "tables": 5,
+      "formulas": 0,
+      "inline_emphasis_runs": 14,
+      "gradient_uses": 0,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": 14,
+    "geometry_elements": {
+      "circle": 62,
+      "ellipse": 0,
+      "line": 44,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 91
+    },
+    "preset_names": {
+      "chevron": 8,
+      "rightArrow": 1
+    },
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 5
+    },
+    "image_page_max_frame_share_range": [
+      0.1588,
+      0.3125
+    ]
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_표지.svg",
+      "path": "svg_output/01_표지.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#9DBCE6",
+            "#C9DAF0",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "fdd6a9cfec4cb5356fd4ae25bf8912981840a2d2a93b3c9133d9770c3958317d"
+    },
+    {
+      "file": "02_요약과_개선흐름.svg",
+      "path": "svg_output/02_요약과_개선흐름.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 18,
+          "images": {
+            "placements": 1,
+            "files": [
+              "01_progress.png"
+            ],
+            "max_frame_share": 0.2812
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 2,
+              "circle": 4,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 18,
+        "tspan_elements": 4,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "c671278561b4b01cfc1a1898703cc8d6d5e62d63b456e656c5d5209fd9b7888f"
+    },
+    {
+      "file": "03_데이터셋.svg",
+      "path": "svg_output/03_데이터셋.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): split-links:stroke None -> '#2A78D6'; split-links:stroke-width None -> '2'; line[27]:stroke '#2A78D6' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 35,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 6,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 2
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 35,
+        "tspan_elements": 9,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "cc08bbd750591f785fdb42acaeec1c69d74e9b314763ceb3439aeb1d56b4cf71"
+    },
+    {
+      "file": "04_최종_파이프라인.svg",
+      "path": "svg_output/04_최종_파이프라인.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 40,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 1,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 13,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 3,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 5,
+            "preset_names": {
+              "chevron": 5
+            },
+            "page_frame_elements": 3,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 2
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 40,
+        "tspan_elements": 3,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "9325536932e2569e56acb0e6937c366e18527aae842fe7c145fffeb4427d1166"
+    },
+    {
+      "file": "05_1차검색_FAISS.svg",
+      "path": "svg_output/05_1차검색_FAISS.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 47,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 8,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 47,
+        "tspan_elements": 8,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "d1e4a0936f7a344b12e782fcb1d432e0ce93f62780fe1f828f437a952f2fa439"
+    },
+    {
+      "file": "06_재정렬_검색거절.svg",
+      "path": "svg_output/06_재정렬_검색거절.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 26,
+          "images": {
+            "placements": 1,
+            "files": [
+              "02_retrieval.png"
+            ],
+            "max_frame_share": 0.2222
+          },
+          "icons": 2,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 26,
+        "tspan_elements": 3,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "cd66ec30e23a27c7e28872da05ee20da9a475d5463b631b68a4776ad257c7097"
+    },
+    {
+      "file": "07_생성_Qwen3.svg",
+      "path": "svg_output/07_생성_Qwen3.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (3 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): prompt-rules:font-size None -> '18'; text[26]:font-size '18' -> None; g[27]:font-size '18' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)",
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 22,
+          "images": {
+            "placements": 1,
+            "files": [
+              "03_generator_ci.png"
+            ],
+            "max_frame_share": 0.3125
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 22,
+        "tspan_elements": 7,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "15b8a0e11bef37de64d4d77213408d383158b660edbee2011825724b3a51bea5"
+    },
+    {
+      "file": "08_왜_DPO.svg",
+      "path": "svg_output/08_왜_DPO.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 49,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 4,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 7,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 4,
+            "preset_names": {
+              "chevron": 3,
+              "rightArrow": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 49,
+        "tspan_elements": 4,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "966319324ec3eae0a5b7498feebed786f9a0f79515638c0b06e3e5ff2c83e1ed"
+    },
+    {
+      "file": "09_DPO_성능.svg",
+      "path": "svg_output/09_DPO_성능.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 21,
+          "images": {
+            "placements": 1,
+            "files": [
+              "04_dpo.png"
+            ],
+            "max_frame_share": 0.2812
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 8,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 21,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "6f0cc841d38618284ac77b2c1b679e90cf2fa883b4b10197169d70e473d9cf2f"
+    },
+    {
+      "file": "10_DPO_트레이드오프.svg",
+      "path": "svg_output/10_DPO_트레이드오프.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 41,
+          "images": {
+            "placements": 1,
+            "files": [
+              "05_tradeoff.png"
+            ],
+            "max_frame_share": 0.1872
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 41,
+        "tspan_elements": 5,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "0525ceafe2de2cc3795fb7162f1321e781739e83cc1c75be6c70dfeddced07d2"
+    },
+    {
+      "file": "11_지표_정의와_F1.svg",
+      "path": "svg_output/11_지표_정의와_F1.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 33,
+          "images": {
+            "placements": 1,
+            "files": [
+              "06_f1_vs_judge.png"
+            ],
+            "max_frame_share": 0.1588
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 3,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 7,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 33,
+        "tspan_elements": 7,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "9dcea43156fc8269876757e5fdd335dc3064dd33659d2a3d2a276e6942ae224c"
+    },
+    {
+      "file": "12_심판이란.svg",
+      "path": "svg_output/12_심판이란.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 24,
+          "images": {
+            "placements": 1,
+            "files": [
+              "08_judge_flow.png"
+            ],
+            "max_frame_share": 0.2918
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 24,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "87aa2c1c10f299676ee0791d35f6b3e2b47a0a2f5a487284648c8e46d076f8a2"
+    },
+    {
+      "file": "13_지표_신뢰성.svg",
+      "path": "svg_output/13_지표_신뢰성.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 21,
+          "images": {
+            "placements": 2,
+            "files": [
+              "07_cross_judge.png",
+              "09_judge_vs_human.png"
+            ],
+            "max_frame_share": 0.1638
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 5,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 21,
+        "tspan_elements": 8,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "db43ca7028c8ec252ff5c52a8848f430bb8c264af1b67472c7ccac0f735120a0"
+    },
+    {
+      "file": "14_테스트와_한계.svg",
+      "path": "svg_output/14_테스트와_한계.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 42,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 5,
+              "ellipse": 0,
+              "line": 8,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 42,
+        "tspan_elements": 7,
+        "contextual_values": {
+          "colors": [
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "ec5fbc3c11b0a108df24f3b2379149846b8653db5227660ce506b11bac0111f1"
+    },
+    {
+      "file": "15_결론.svg",
+      "path": "svg_output/15_결론.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Pretendard): Pretendard, sans-serif"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 12,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 5,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 7,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Pretendard, sans-serif"
+        ],
+        "text_elements": 12,
+        "tspan_elements": 6,
+        "contextual_values": {
+          "colors": [
+            "#9DBCE6",
+            "#C9DAF0",
+            "#FFFFFF"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "1f619380facc5b925ed7e0a423965c1184547944cf29b40fa4992380f2a7278e"
+    }
+  ]
+}
