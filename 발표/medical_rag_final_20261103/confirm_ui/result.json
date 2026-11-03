@@ -1,58 +1,59 @@
 {
   "primary_language": "ko-KR",
   "canvas": "ppt169",
-  "audience": "멋사 NLP 6기 수강생·멘토·강사. RAG와 LLM 기초는 알지만 이 프로젝트의 세부 실험(01~19)은 처음 보는 사람들",
-  "communication_intent": "최종 결과를 먼저 보고하고, 어떤 판단과 실패를 거쳐 그 결과에 이르렀는지(평가 방식 교체, 검색 앙상블, 생성 모델 교체, DPO) 설명한 뒤, 남은 한계와 다음 단계를 공유한다",
-  "audience_outcome": "청중이 최종 챗봇 구성과 성능(시험 정답률 .770, 진짜 답 없는 질문 거절률 .804)을 이해하고, F1 대신 LLM 심판을 쓴 이유와 DPO를 채택한 근거를 납득하며, 남은 병목이 검색이라는 점에 동의한다",
-  "core_message": "근거로만 답하고 모르면 거절하는 의료 챗봇: 검색 앙상블 + Qwen3-8B + DPO로 정답률을 지키면서(.736 → .770) 지어낸 답을 35%에서 20%로 줄였다. 남은 오답의 주원인은 검색이다",
-  "delivery_context": "주: 발표자가 진행하는 최종 프로젝트 발표(약 15~20분)와 챗봇 데모. 부: 발표 후 팀 저장소·공유 자료로 따로 읽힘",
-  "artifact_afterlife": "팀 프로젝트 결과 기록과 개인 포트폴리오 자료",
+  "audience": "멋사 NLP 6기 강사·멘토와 동료 수강생. RAG·임베딩·LLM 기본 개념은 알지만 이 프로젝트의 세부 실험과 지표 설계는 처음 봄",
+  "communication_intent": "MS MARCO 건강 분야 RAG 챗봇의 최종 파이프라인을 검색 단계와 생성 단계로 나눠 설명하고, 지표를 어떻게 세우고(LLM 심판) 그 지표로 각 개선을 어떻게 증명했는지 보고한다. 직접 학습한 DPO가 왜 필요했고 무엇을 개선했는지를 강조하며, 남은 한계를 솔직하게 밝힌다.",
+  "audience_outcome": "청중이 파이프라인의 각 단계와 그 근거 지표를 이해하고, 정답률 .618 → .770과 지어낸 답 35% → 20%가 믿을 만한 숫자라고 납득한다",
+  "core_message": "믿을 수 있는 지표(LLM 심판, 검증-시험 분리, 신뢰구간)를 먼저 세웠기 때문에, 근거 안에서만 답하는 의료 챗봇을 정답률을 지키면서 더 안전하게(DPO) 만들 수 있었다",
+  "delivery_context": "주 용도: 발표자가 진행하는 15분 프로젝트 최종 발표 (현장 프로젝션). 부 용도: 발표 후 공유되는 결과 자료",
+  "artifact_afterlife": "프로젝트 결과 기록과 포트폴리오 자료로 보관",
   "content_divergence": "",
-  "delivery_purpose": "presentation",
-  "page_count": "13-15",
-  "mode": "showcase",
+  "delivery_purpose": "balanced",
+  "page_count": "13-14",
+  "mode": "custom",
+  "mode_behavior": "파이프라인을 앞에서 뒤로 걸어가며 설명하는 교육형 흐름에, 각 단계 슬라이드는 결론형 제목을 붙입니다. 표지 → 결과 요약 → 데이터 → 전체 도식 다음, 검색 단계(①1차 검색 ②재정렬 ③검색 거절)와 생성 단계(④생성 ⑤DPO)를 순서대로 다루고, 지표 파트에서는 '심판이란 무엇인가'를 먼저 정의한 뒤 신뢰성 근거를 보입니다. 단계마다 '무엇을 했나 → 어떤 지표로 쟀나 → 얼마나 좋아졌나'를 같은 순서로 반복해 청중이 비교하기 쉽게 합니다.",
   "visual_style": "soft-rounded",
   "color": {
-    "name": "청록 + 신호 주황",
+    "name": "그래프 매칭 블루",
     "palette": {
-      "background": "#FFFFFF",
-      "secondary_bg": "#F2F5F7",
-      "primary": "#0B4F6C",
-      "accent": "#E4572E",
-      "secondary_accent": "#7B97AB",
-      "body_text": "#1C2630"
+      "background": "#FCFCFB",
+      "secondary_bg": "#EEF4FC",
+      "primary": "#12355B",
+      "accent": "#2A78D6",
+      "secondary_accent": "#EB6834",
+      "body_text": "#1F2328"
     }
   },
-  "icons": "tabler-outline",
+  "icons": "tabler-filled",
   "typography": {
     "name": "custom",
     "heading": {
       "css": "sans-serif",
-      "english": "Arial",
-      "primary": "Malgun Gothic",
+      "english": "Pretendard",
+      "primary": "Pretendard",
       "sample_primary": "",
       "sample_english": ""
     },
     "body": {
       "css": "sans-serif",
-      "english": "Arial",
-      "primary": "Malgun Gothic",
+      "english": "Pretendard",
+      "primary": "Pretendard",
       "sample_primary": "",
       "sample_english": ""
     },
-    "body_size": 32,
+    "body_size": 24,
     "sizes": {
-      "title": 56,
-      "subtitle": 44,
-      "annotation": 24
+      "title": 42,
+      "subtitle": 32,
+      "annotation": 18
     },
     "note": "",
     "body_size_unit": "px"
   },
   "image_usage": [
-    "none"
+    "provided"
   ],
-  "image_notes": "실물로 보여 줄 대상(제품·장소·인물)이 없고, 핵심 증거는 숫자·표·파이프라인 구조라서 사진이나 AI 이미지 없이 도형·차트·표로 그립니다. 챗봇 데모는 발표 중 실제로 시연합니다. Gradio 챗봇 화면 캡처가 있으면 '제공 이미지'로 바꿔 데모 페이지에 넣을 수 있습니다.",
+  "image_notes": "제공된 지표 그래프 9장(단계별 정답률, 검색 지표, 생성 모델 CI, DPO 전후, 안전성-정답률 교환, F1 vs 심판, 교차 심판, 심판 채점 과정, 심판 vs 사람)을 해당 슬라이드의 주 증거로 그대로 사용합니다. 그래프 안의 숫자와 라벨은 자르지 않습니다. AI 이미지와 웹 이미지는 쓰지 않고, 파이프라인 도식·거절 흐름·DPO 선호 쌍 같은 구조는 PPT 도형으로 직접 그립니다.",
   "proactive_speaker_notes": true,
   "proactive_custom_animations": false,
   "proactive_narration_audio": false,
@@ -61,7 +62,7 @@
   "design_spec_depth": "brief",
   "stage": "final",
   "status": "confirmed",
-  "stage1_sha256": "16ea2ff488210c3379ef75082d0aad1737f8bbf0f63e20ac8603492669050d4a",
-  "selection_sha256": "802b2ce216d5673596eb8952aaaf3253b3f618db3616ff81ed7f88546fee464d",
-  "confirmed_at": "2026-11-03T11:13:23"
+  "stage1_sha256": "9065d413ce3d354ad6277bafdf862f7d0f3f75d024e7238ca689c3c8c6c24fee",
+  "selection_sha256": "dd61ae5e5f672740b9747f326f6550e5cbefda187b8aae3ecb3ff28ef16a028d",
+  "confirmed_at": "2026-11-03T20:42:14"
 }
