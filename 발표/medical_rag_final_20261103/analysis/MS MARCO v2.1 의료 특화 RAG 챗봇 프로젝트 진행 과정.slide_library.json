@@ -1,0 +1,3971 @@
+{
+  "schema": "pptx_intake_slide_library.v1",
+  "source_pptx": "/Users/kiseon/Documents/Dev/RAG-Chat/발표/medical_rag_final_20261103/sources/MS MARCO v2.1 의료 특화 RAG 챗봇 프로젝트 진행 과정.pptx",
+  "slide_count": 12,
+  "canvas_px": {
+    "width": 960,
+    "height": 540
+  },
+  "slides": [
+    {
+      "slide_index": 1,
+      "page_type": "cover_candidate",
+      "text_summary": "MS MARCO v2.1 · 의료 특화 RAG\n근거로만 답하고,\n모르면 거절하는 의료 챗봇\n파이프라인보다 \"어떻게 여기까지 왔는지\"를 중심으로\n[팀명]\n·\n[발표자]\n·\n2026.11.[__]\n01",
+      "slots": [
+        {
+          "slot_id": "s01_sh4",
+          "role": "title_candidate",
+          "text": "MS MARCO v2.1 · 의료 특화 RAG",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh5",
+          "role": "label_candidate",
+          "text": "근거로만 답하고,\n모르면 거절하는 의료 챗봇",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 241,
+            "y": 232,
+            "width": 477,
+            "height": 115
+          },
+          "text_metrics": {
+            "font_size_px": 44.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh6",
+          "role": "label_candidate",
+          "text": "파이프라인보다 \"어떻게 여기까지 왔는지\"를 중심으로",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 241,
+            "y": 365,
+            "width": 477,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 20.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh7",
+          "role": "label_candidate",
+          "text": "[팀명]",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 475,
+            "width": 32,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh8",
+          "role": "label_candidate",
+          "text": "·",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 107,
+            "y": 475,
+            "width": 3,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh9",
+          "role": "label_candidate",
+          "text": "[발표자]",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 126,
+            "y": 475,
+            "width": 44,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh10",
+          "role": "label_candidate",
+          "text": "·",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 185,
+            "y": 475,
+            "width": 3,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh11",
+          "role": "label_candidate",
+          "text": "2026.11.[__]",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 203,
+            "y": 475,
+            "width": 69,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s01_sh12",
+          "role": "label_candidate",
+          "text": "01",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 890,
+            "y": 480,
+            "width": 11,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 2,
+      "page_type": "content_candidate",
+      "text_summary": "Project Goal\n의료 질문에는 근거 문서 안에서만 답하고, 근거가 약하면 답하지 않는다\n근거로 답하기\n검색한 문단 [1]~[5]의 내용만 쓰고, 문장마다 [번호]로 출처 표시\n모르면 거절\n답 없는 건강 질문, 의료와 무관한 질문에는 \"답할 수 없다\"\n완전한 문장\n짧은 단어 대신 사람이 읽기 좋은 문장형 답변\n의료 분야 RAG의 핵심: 정확성과 안전성\n02",
+      "slots": [
+        {
+          "slot_id": "s02_sh4",
+          "role": "title_candidate",
+          "text": "Project Goal",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh5",
+          "role": "title_candidate",
+          "text": "의료 질문에는 근거 문서 안에서만 답하고, 근거가 약하면 답하지 않는다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 675,
+            "height": 78
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh7",
+          "role": "label_candidate",
+          "text": "근거로 답하기",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 222,
+            "width": 204,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh8",
+          "role": "label_candidate",
+          "text": "검색한 문단 [1]~[5]의 내용만 쓰고, 문장마다 [번호]로 출처 표시",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 90,
+            "y": 264,
+            "width": 204,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh10",
+          "role": "label_candidate",
+          "text": "모르면 거절",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 378,
+            "y": 222,
+            "width": 204,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh11",
+          "role": "label_candidate",
+          "text": "답 없는 건강 질문, 의료와 무관한 질문에는 \"답할 수 없다\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 378,
+            "y": 264,
+            "width": 204,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh13",
+          "role": "label_candidate",
+          "text": "완전한 문장",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 666,
+            "y": 222,
+            "width": 204,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh14",
+          "role": "label_candidate",
+          "text": "짧은 단어 대신 사람이 읽기 좋은 문장형 답변",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 666,
+            "y": 264,
+            "width": 204,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh15",
+          "role": "label_candidate",
+          "text": "의료 분야 RAG의 핵심: 정확성과 안전성",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 162,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s02_sh16",
+          "role": "label_candidate",
+          "text": "02",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 888,
+            "y": 479,
+            "width": 12,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 3,
+      "page_type": "content_candidate",
+      "text_summary": "Pipeline Overview\nRetriever → Reranker → 거절 판단 → Generator\n① 인덱싱 (사전 구축)\nMS MARCO v2.1\n건강 질문 선별\n코퍼스 구축\n459,067개\n임베딩\nbge-base\n벡터 인덱스\nFAISS FlatIP\n② 검색·생성 (질문마다)\n쿼리\nRetriever\nDense (Top-100)\nReranker\nMiniLM (Top-5)\n거절 판단\nScore < 4.92\nGenerator\nQwen2.5-7B + LoRA\n답변 + 인용\nRetriever는 Dense 기반. 쿼리와 문단을 같은 bge 모델로 임베딩해 FAISS에서 찾고, Reranker(cross-encoder)로 다시 정렬한다. 근거가 약하면 Generator를 부르지 않는다.\n전체 파이프라인 구성 및 주요 모듈\n03",
+      "slots": [
+        {
+          "slot_id": "s03_sh4",
+          "role": "title_candidate",
+          "text": "Pipeline Overview",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh5",
+          "role": "title_candidate",
+          "text": "Retriever → Reranker → 거절 판단 → Generator",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh6",
+          "role": "title_candidate",
+          "text": "① 인덱싱 (사전 구축)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 153,
+            "width": 840,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh8",
+          "role": "label_candidate",
+          "text": "MS MARCO v2.1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 180,
+            "width": 123,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh11",
+          "role": "label_candidate",
+          "text": "건강 질문 선별",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 239,
+            "y": 189,
+            "width": 123,
+            "height": 48
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh14",
+          "role": "label_candidate",
+          "text": "코퍼스 구축\n459,067개",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 419,
+            "y": 180,
+            "width": 123,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh17",
+          "role": "label_candidate",
+          "text": "임베딩\nbge-base",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 598,
+            "y": 180,
+            "width": 123,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh20",
+          "role": "label_candidate",
+          "text": "벡터 인덱스\nFAISS FlatIP",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 777,
+            "y": 180,
+            "width": 123,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh21",
+          "role": "label_candidate",
+          "text": "② 검색·생성 (질문마다)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 291,
+            "width": 840,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh23",
+          "role": "label_candidate",
+          "text": "쿼리",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 336,
+            "width": 99,
+            "height": 48
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh26",
+          "role": "body_candidate",
+          "text": "Retriever\nDense (Top-100)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 208,
+            "y": 318,
+            "width": 99,
+            "height": 84
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh29",
+          "role": "label_candidate",
+          "text": "Reranker\nMiniLM (Top-5)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 356,
+            "y": 327,
+            "width": 99,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh32",
+          "role": "label_candidate",
+          "text": "거절 판단\nScore < 4.92",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 505,
+            "y": 327,
+            "width": 99,
+            "height": 66
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh35",
+          "role": "body_candidate",
+          "text": "Generator\nQwen2.5-7B + LoRA",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 653,
+            "y": 318,
+            "width": 99,
+            "height": 84
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh38",
+          "role": "label_candidate",
+          "text": "답변 + 인용",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 801,
+            "y": 336,
+            "width": 99,
+            "height": 48
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh39",
+          "role": "label_candidate",
+          "text": "Retriever는 Dense 기반. 쿼리와 문단을 같은 bge 모델로 임베딩해 FAISS에서 찾고, Reranker(cross-encoder)로 다시 정렬한다. 근거가 약하면 Generator를 부르지 않는다.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 464,
+            "width": 840,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh40",
+          "role": "label_candidate",
+          "text": "전체 파이프라인 구성 및 주요 모듈",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 139,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s03_sh41",
+          "role": "label_candidate",
+          "text": "03",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 888,
+            "y": 479,
+            "width": 12,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 4,
+      "page_type": "content_candidate",
+      "text_summary": "Dataset: MS MARCO QnA v2.1\n질문 하나 = 문단 10개 + 정답 + 문장형 정답\n// dev 질문 데이터 예시 (오타 포함)\nquery: \"what kind of bacteria is in a kindey infection\"\npassages: 10개\n{ is_selected: 1, url: ...,\npassage_text: \"Causes of kidney infection. ... E. coli ...\" }\nis_selected: 0 인 문단 × 9\nanswers: [\"E.coli bacteria\"]\nwellFormedAnswers: [일부 질문에만 있음]\nv2.1의 추가 필드 활용을 위해 v1.1 대신 v2.1 사용\n필드\n프로젝트 활용\nquery\n쿼리 · 평가 질문\npassages\n코퍼스 · 사이트 판별\nis_selected\nRecall·MRR 채점\nanswers\nF1·정답 포함률\nNo Answer...\n거절 평가\nwellFormed...\n문장형 LoRA 학습\n",
+      "slots": [
+        {
+          "slot_id": "s04_sh4",
+          "role": "title_candidate",
+          "text": "Dataset: MS MARCO QnA v2.1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh5",
+          "role": "title_candidate",
+          "text": "질문 하나 = 문단 10개 + 정답 + 문장형 정답",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh7",
+          "role": "label_candidate",
+          "text": "// dev 질문 데이터 예시 (오타 포함)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 162,
+            "width": 394,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh8",
+          "role": "label_candidate",
+          "text": "query: \"what kind of bacteria is in a kindey infection\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 191,
+            "width": 351,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh9",
+          "role": "label_candidate",
+          "text": "passages: 10개",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 206,
+            "width": 87,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh10",
+          "role": "label_candidate",
+          "text": "{ is_selected: 1, url: ...,",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 222,
+            "width": 172,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh11",
+          "role": "label_candidate",
+          "text": "passage_text: \"Causes of kidney infection. ... E. coli ...\" }",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 238,
+            "width": 389,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh12",
+          "role": "label_candidate",
+          "text": "is_selected: 0 인 문단 × 9",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 254,
+            "width": 159,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh13",
+          "role": "label_candidate",
+          "text": "answers: [\"E.coli bacteria\"]",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 269,
+            "width": 179,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh14",
+          "role": "label_candidate",
+          "text": "wellFormedAnswers: [일부 질문에만 있음]",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 285,
+            "width": 231,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh15",
+          "role": "title_candidate",
+          "text": "v2.1의 추가 필드 활용을 위해 v1.1 대신 v2.1 사용",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 138,
+            "width": 368,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh18",
+          "role": "label_candidate",
+          "text": "필드",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 165,
+            "width": 162,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh21",
+          "role": "label_candidate",
+          "text": "프로젝트 활용",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 165,
+            "width": 206,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh22",
+          "role": "label_candidate",
+          "text": "query",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 207,
+            "width": 162,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh23",
+          "role": "label_candidate",
+          "text": "쿼리 · 평가 질문",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 207,
+            "width": 206,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh24",
+          "role": "label_candidate",
+          "text": "passages",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 249,
+            "width": 162,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh25",
+          "role": "label_candidate",
+          "text": "코퍼스 · 사이트 판별",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 249,
+            "width": 206,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh26",
+          "role": "label_candidate",
+          "text": "is_selected",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 292,
+            "width": 162,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh27",
+          "role": "label_candidate",
+          "text": "Recall·MRR 채점",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 292,
+            "width": 206,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh28",
+          "role": "label_candidate",
+          "text": "answers",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 335,
+            "width": 162,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh29",
+          "role": "label_candidate",
+          "text": "F1·정답 포함률",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 335,
+            "width": 206,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh30",
+          "role": "label_candidate",
+          "text": "No Answer...",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 378,
+            "width": 162,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh31",
+          "role": "label_candidate",
+          "text": "거절 평가",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 378,
+            "width": 206,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh32",
+          "role": "label_candidate",
+          "text": "wellFormed...",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 532,
+            "y": 420,
+            "width": 162,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh33",
+          "role": "label_candidate",
+          "text": "문장형 LoRA 학습",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 694,
+            "y": 420,
+            "width": 206,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh34",
+          "role": "label_candidate",
+          "text": "실제 Bing 검색 질문 및 정답 구성 (train 808,731 / dev 101,093)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 270,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s04_sh35",
+          "role": "label_candidate",
+          "text": "04",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 888,
+            "y": 479,
+            "width": 12,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 5,
+      "page_type": "content_candidate",
+      "text_summary": "Data Processing\n의료 사이트 33개로 질문을 고르고, 방해 문단을 일부러 섞었다\n코퍼스 구성 (총 459,067개)\n출처\n문단 수\n역할\ndev 건강 질문\n131,143\n평가 정답지\ntrain 건강 질문\n229,697\n검색 난이도 상승\ndev 일반 질문\n98,227\n분야 밖 방해 문단\n평가셋 650문항\n• 건강·답 있음: 500\n• 건강·답 없음: 100\n• 분야 밖 질문: 50\n• 검증용(방법 선택): 200\n결정: 코퍼스를 의료 사이트 문단으로 제한하지 않음. 평가 정답 문단 중 의료 사이트 출처가 40%뿐이라 제한하면 평가가 무너짐\n질문 선별 규칙: 문단 10개 중 2개 이상이 의료 사이트 출처인 경우\n05",
+      "slots": [
+        {
+          "slot_id": "s05_sh4",
+          "role": "title_candidate",
+          "text": "Data Processing",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh5",
+          "role": "title_candidate",
+          "text": "의료 사이트 33개로 질문을 고르고, 방해 문단을 일부러 섞었다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh6",
+          "role": "title_candidate",
+          "text": "코퍼스 구성 (총 459,067개)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 138,
+            "width": 405,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh9",
+          "role": "label_candidate",
+          "text": "출처",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 165,
+            "width": 143,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh12",
+          "role": "label_candidate",
+          "text": "문단 수",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 203,
+            "y": 165,
+            "width": 103,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh15",
+          "role": "label_candidate",
+          "text": "역할",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 307,
+            "y": 165,
+            "width": 158,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh16",
+          "role": "label_candidate",
+          "text": "dev 건강 질문",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 207,
+            "width": 143,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh17",
+          "role": "label_candidate",
+          "text": "131,143",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 203,
+            "y": 207,
+            "width": 103,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh18",
+          "role": "label_candidate",
+          "text": "평가 정답지",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 307,
+            "y": 207,
+            "width": 158,
+            "height": 42
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh19",
+          "role": "label_candidate",
+          "text": "train 건강 질문",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 249,
+            "width": 143,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh20",
+          "role": "label_candidate",
+          "text": "229,697",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 203,
+            "y": 249,
+            "width": 103,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh21",
+          "role": "label_candidate",
+          "text": "검색 난이도 상승",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 307,
+            "y": 249,
+            "width": 158,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh22",
+          "role": "label_candidate",
+          "text": "dev 일반 질문",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 292,
+            "width": 143,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh23",
+          "role": "label_candidate",
+          "text": "98,227",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 203,
+            "y": 292,
+            "width": 103,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh24",
+          "role": "label_candidate",
+          "text": "분야 밖 방해 문단",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 307,
+            "y": 292,
+            "width": 158,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh26",
+          "role": "label_candidate",
+          "text": "평가셋 650문항",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 519,
+            "y": 162,
+            "width": 357,
+            "height": 21
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh27",
+          "role": "label_candidate",
+          "text": "• 건강·답 있음: 500",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 519,
+            "y": 201,
+            "width": 357,
+            "height": 21
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh28",
+          "role": "label_candidate",
+          "text": "• 건강·답 없음: 100",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 519,
+            "y": 234,
+            "width": 357,
+            "height": 21
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh29",
+          "role": "label_candidate",
+          "text": "• 분야 밖 질문: 50",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 519,
+            "y": 267,
+            "width": 357,
+            "height": 21
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh30",
+          "role": "label_candidate",
+          "text": "• 검증용(방법 선택): 200",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 519,
+            "y": 300,
+            "width": 357,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh31",
+          "role": "label_candidate",
+          "text": "결정: 코퍼스를 의료 사이트 문단으로 제한하지 않음. 평가 정답 문단 중 의료 사이트 출처가 40%뿐이라 제한하면 평가가 무너짐",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 464,
+            "width": 840,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh32",
+          "role": "label_candidate",
+          "text": "질문 선별 규칙: 문단 10개 중 2개 이상이 의료 사이트 출처인 경우",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 265,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s05_sh33",
+          "role": "label_candidate",
+          "text": "05",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 888,
+            "y": 479,
+            "width": 12,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 6,
+      "page_type": "content_candidate",
+      "text_summary": "Step ① Retriever & Reranker\nDense 검색이 BM25의 두 배, Reranker로 한 번 더\n방법 (시험 500문항)\nRecall@10\nRecall@100\nMRR@10\nBM25\n0.406\n0.710\n0.202\nDense (bge-base)\n0.688\n0.938\n0.401\nHybrid (Dense + BM25, RRF)\n0.608\n-\n-\nDense → MiniLM-L-6 Reranker (채택)\n0.760\n-\n0.445\nDense → bge-reranker-base\n0.758\n-\n0.448\n뺌 · HYBRID\nBM25가 섞이며 오히려 Dense 단독보다 낮아짐\n채택 · MINILM-L-6\nbge-reranker와 점수는 거의 같고, 더 작고 빠름\n참고 · 정답 문장으로 검색\nRecall@10 0.890 — 표현 차이가 큰 원인\n방법은 검증 200으로 선택, 시험 500은 마지막에 한 번만 채점 (치팅 방지)\n06",
+      "slots": [
+        {
+          "slot_id": "s06_sh4",
+          "role": "title_candidate",
+          "text": "Step ① Retriever & Reranker",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 27,
+            "width": 876,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh5",
+          "role": "title_candidate",
+          "text": "Dense 검색이 BM25의 두 배, Reranker로 한 번 더",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 47,
+            "width": 876,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 22.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh8",
+          "role": "title_candidate",
+          "text": "방법 (시험 500문항)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 94,
+            "width": 429,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh11",
+          "role": "title_candidate",
+          "text": "Recall@10",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 94,
+            "width": 150,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh14",
+          "role": "title_candidate",
+          "text": "Recall@100",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 620,
+            "y": 94,
+            "width": 164,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh17",
+          "role": "title_candidate",
+          "text": "MRR@10",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 784,
+            "y": 94,
+            "width": 134,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh18",
+          "role": "title_candidate",
+          "text": "BM25",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 126,
+            "width": 429,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh19",
+          "role": "title_candidate",
+          "text": "0.406",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 126,
+            "width": 150,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh20",
+          "role": "title_candidate",
+          "text": "0.710",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 620,
+            "y": 126,
+            "width": 164,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh21",
+          "role": "title_candidate",
+          "text": "0.202",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 784,
+            "y": 126,
+            "width": 134,
+            "height": 32
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh22",
+          "role": "title_candidate",
+          "text": "Dense (bge-base)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 158,
+            "width": 429,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh23",
+          "role": "title_candidate",
+          "text": "0.688",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 158,
+            "width": 150,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh24",
+          "role": "title_candidate",
+          "text": "0.938",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 620,
+            "y": 158,
+            "width": 164,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh25",
+          "role": "title_candidate",
+          "text": "0.401",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 784,
+            "y": 158,
+            "width": 134,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh26",
+          "role": "label_candidate",
+          "text": "Hybrid (Dense + BM25, RRF)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 191,
+            "width": 429,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh27",
+          "role": "label_candidate",
+          "text": "0.608",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 191,
+            "width": 150,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh28",
+          "role": "label_candidate",
+          "text": "-",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 620,
+            "y": 191,
+            "width": 164,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh29",
+          "role": "label_candidate",
+          "text": "-",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 784,
+            "y": 191,
+            "width": 134,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh31",
+          "role": "label_candidate",
+          "text": "Dense → MiniLM-L-6 Reranker (채택)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 224,
+            "width": 429,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh32",
+          "role": "label_candidate",
+          "text": "0.760",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 224,
+            "width": 150,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh33",
+          "role": "label_candidate",
+          "text": "-",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 620,
+            "y": 224,
+            "width": 164,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh34",
+          "role": "label_candidate",
+          "text": "0.445",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 784,
+            "y": 224,
+            "width": 134,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh35",
+          "role": "label_candidate",
+          "text": "Dense → bge-reranker-base",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 256,
+            "width": 429,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh36",
+          "role": "label_candidate",
+          "text": "0.758",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 471,
+            "y": 256,
+            "width": 150,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh37",
+          "role": "label_candidate",
+          "text": "-",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 620,
+            "y": 256,
+            "width": 164,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh38",
+          "role": "label_candidate",
+          "text": "0.448",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 784,
+            "y": 256,
+            "width": 134,
+            "height": 33
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh40",
+          "role": "label_candidate",
+          "text": "뺌 · HYBRID",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 53,
+            "y": 323,
+            "width": 263,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh41",
+          "role": "label_candidate",
+          "text": "BM25가 섞이며 오히려 Dense 단독보다 낮아짐",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 53,
+            "y": 335,
+            "width": 263,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh43",
+          "role": "label_candidate",
+          "text": "채택 · MINILM-L-6",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 348,
+            "y": 323,
+            "width": 263,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh44",
+          "role": "label_candidate",
+          "text": "bge-reranker와 점수는 거의 같고, 더 작고 빠름",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 348,
+            "y": 335,
+            "width": 263,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh46",
+          "role": "label_candidate",
+          "text": "참고 · 정답 문장으로 검색",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 644,
+            "y": 323,
+            "width": 263,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh47",
+          "role": "label_candidate",
+          "text": "Recall@10 0.890 — 표현 차이가 큰 원인",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 644,
+            "y": 335,
+            "width": 263,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh48",
+          "role": "label_candidate",
+          "text": "방법은 검증 200으로 선택, 시험 500은 마지막에 한 번만 채점 (치팅 방지)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 42,
+            "y": 498,
+            "width": 279,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s06_sh49",
+          "role": "label_candidate",
+          "text": "06",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 907,
+            "y": 498,
+            "width": 11,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 7,
+      "page_type": "content_candidate",
+      "text_summary": "Step ② Rejection & Comparison\n점수로 먼저 거르고, RAG의 정확도와 안전을 함께 본다\n4.92\nReranker 최고 점수 기준선\n검증 200문항의 최고 점수 하위 5% 기준. 이보다 낮으면 Generator를 부르지 않고 바로 거절. 잘못 거절 비율을 5% 내외로 통제.\n지표 (650문항)\nLLM 단독\nRAG 기본\nRAG 개선\nF1 (짧은 정답)\n0.226\n0.286\n0.282\nROUGE-L 문장형\n0.286\n0.337\n0.330\n정답 포함률\n0.370\n0.506\n0.495\n잘못 거절 (낮을수록 좋음)\n0.012\n0.028\n0.056\n답 없음 거절률\n0.02\n0.17\n0.44\n분야 밖 거절률\n0.50\n0.58\n0.82\nRAG 개선: 기본 + 중복 제거 + 거절 기준 적용 (생성 모델: Qwen 원본)\n07",
+      "slots": [
+        {
+          "slot_id": "s07_sh4",
+          "role": "title_candidate",
+          "text": "Step ② Rejection & Comparison",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 21,
+            "width": 894,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh5",
+          "role": "title_candidate",
+          "text": "점수로 먼저 거르고, RAG의 정확도와 안전을 함께 본다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 50,
+            "width": 894,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 21.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh7",
+          "role": "title_candidate",
+          "text": "4.92",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 50,
+            "y": 116,
+            "width": 106,
+            "height": 48
+          },
+          "text_metrics": {
+            "font_size_px": 44.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh8",
+          "role": "title_candidate",
+          "text": "Reranker 최고 점수 기준선",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 170,
+            "y": 123,
+            "width": 487,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh9",
+          "role": "title_candidate",
+          "text": "검증 200문항의 최고 점수 하위 5% 기준. 이보다 낮으면 Generator를 부르지 않고 바로 거절. 잘못 거절 비율을 5% 내외로 통제.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 170,
+            "y": 145,
+            "width": 487,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh12",
+          "role": "label_candidate",
+          "text": "지표 (650문항)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 203,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh15",
+          "role": "label_candidate",
+          "text": "LLM 단독",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 203,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh18",
+          "role": "label_candidate",
+          "text": "RAG 기본",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 203,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh21",
+          "role": "label_candidate",
+          "text": "RAG 개선",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 203,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh22",
+          "role": "label_candidate",
+          "text": "F1 (짧은 정답)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 233,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh23",
+          "role": "label_candidate",
+          "text": "0.226",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 233,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh24",
+          "role": "label_candidate",
+          "text": "0.286",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 233,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh25",
+          "role": "label_candidate",
+          "text": "0.282",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 233,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh26",
+          "role": "label_candidate",
+          "text": "ROUGE-L 문장형",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 263,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh27",
+          "role": "label_candidate",
+          "text": "0.286",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 263,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh28",
+          "role": "label_candidate",
+          "text": "0.337",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 263,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh29",
+          "role": "label_candidate",
+          "text": "0.330",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 263,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh30",
+          "role": "label_candidate",
+          "text": "정답 포함률",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 293,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh31",
+          "role": "label_candidate",
+          "text": "0.370",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 293,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh32",
+          "role": "label_candidate",
+          "text": "0.506",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 293,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh33",
+          "role": "label_candidate",
+          "text": "0.495",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 293,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh35",
+          "role": "label_candidate",
+          "text": "잘못 거절 (낮을수록 좋음)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 324,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh36",
+          "role": "label_candidate",
+          "text": "0.012",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 324,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh37",
+          "role": "label_candidate",
+          "text": "0.028",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 324,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh38",
+          "role": "label_candidate",
+          "text": "0.056",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 324,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh40",
+          "role": "label_candidate",
+          "text": "답 없음 거절률",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 354,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh41",
+          "role": "label_candidate",
+          "text": "0.02",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 354,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh42",
+          "role": "label_candidate",
+          "text": "0.17",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 354,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh43",
+          "role": "label_candidate",
+          "text": "0.44",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 354,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh45",
+          "role": "label_candidate",
+          "text": "분야 밖 거절률",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 384,
+            "width": 358,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh46",
+          "role": "label_candidate",
+          "text": "0.50",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 391,
+            "y": 384,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh47",
+          "role": "label_candidate",
+          "text": "0.58",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 569,
+            "y": 384,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh48",
+          "role": "label_candidate",
+          "text": "0.82",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 748,
+            "y": 384,
+            "width": 179,
+            "height": 30
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh49",
+          "role": "label_candidate",
+          "text": "RAG 개선: 기본 + 중복 제거 + 거절 기준 적용 (생성 모델: Qwen 원본)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 33,
+            "y": 504,
+            "width": 267,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s07_sh50",
+          "role": "label_candidate",
+          "text": "07",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 917,
+            "y": 504,
+            "width": 11,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 8,
+      "page_type": "content_candidate",
+      "text_summary": "Step ③ Generator Prompt\n문서 안에서만 답하고, 문장마다 출처를 단다\nSYSTEM PROMPT\nYou are a careful medical information assistant.\nRules:\n1. Answer ONLY with facts stated in the numbered documents. Do not\nadd outside knowledge.\n2. After each sentence, cite the supporting document numbers like\n[1] or [2][4].\n3. If the question is not about health or medicine, or the\ndocuments do not contain the answer, reply with exactly this\nsentence: \"Sorry, I can't answer that from the medical documents I\nhave.\"\n4. Answer in 2-4",
+      "slots": [
+        {
+          "slot_id": "s08_sh4",
+          "role": "title_candidate",
+          "text": "Step ③ Generator Prompt",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh5",
+          "role": "title_candidate",
+          "text": "문서 안에서만 답하고, 문장마다 출처를 단다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh7",
+          "role": "title_candidate",
+          "text": "SYSTEM PROMPT",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 159,
+            "width": 403,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh8",
+          "role": "label_candidate",
+          "text": "You are a careful medical information assistant.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 181,
+            "width": 288,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh9",
+          "role": "label_candidate",
+          "text": "Rules:",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 194,
+            "width": 36,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh10",
+          "role": "label_candidate",
+          "text": "1. Answer ONLY with facts stated in the numbered documents. Do not",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 208,
+            "width": 396,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh11",
+          "role": "label_candidate",
+          "text": "add outside knowledge.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 222,
+            "width": 132,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh12",
+          "role": "label_candidate",
+          "text": "2. After each sentence, cite the supporting document numbers like",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 235,
+            "width": 390,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh13",
+          "role": "label_candidate",
+          "text": "[1] or [2][4].",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 249,
+            "width": 84,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh14",
+          "role": "label_candidate",
+          "text": "3. If the question is not about health or medicine, or the",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 262,
+            "width": 348,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh15",
+          "role": "label_candidate",
+          "text": "documents do not contain the answer, reply with exactly this",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 276,
+            "width": 360,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh16",
+          "role": "label_candidate",
+          "text": "sentence: \"Sorry, I can't answer that from the medical documents I",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 290,
+            "width": 396,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh17",
+          "role": "label_candidate",
+          "text": "have.\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 303,
+            "width": 36,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh18",
+          "role": "label_candidate",
+          "text": "4. Answer in 2-4 short sentences.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 81,
+            "y": 317,
+            "width": 198,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh20",
+          "role": "title_candidate",
+          "text": "USER PROMPT",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 159,
+            "width": 329,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh21",
+          "role": "label_candidate",
+          "text": "Documents:",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 181,
+            "width": 60,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh22",
+          "role": "label_candidate",
+          "text": "[1] (사이트) 문단",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 194,
+            "width": 91,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh23",
+          "role": "label_candidate",
+          "text": "...",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 208,
+            "width": 18,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh24",
+          "role": "label_candidate",
+          "text": "[5] (사이트) 문단",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 222,
+            "width": 91,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh25",
+          "role": "label_candidate",
+          "text": "Question: 질문",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 550,
+            "y": 249,
+            "width": 80,
+            "height": 13
+          },
+          "text_metrics": {
+            "font_size_px": 8.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh27",
+          "role": "label_candidate",
+          "text": "• Reranker Top-5 문단에 번호와 사이트 등급 부여",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 541,
+            "y": 313,
+            "width": 347,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh28",
+          "role": "label_candidate",
+          "text": "• 거절 문장 고정으로 자동 채점 신뢰도 확보",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 541,
+            "y": 328,
+            "width": 347,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh29",
+          "role": "label_candidate",
+          "text": "• LoRA 학습도 동일 프롬프트 형식 적용",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 541,
+            "y": 343,
+            "width": 347,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh30",
+          "role": "label_candidate",
+          "text": "의료 RAG 가드레일: 외부 지식 배제 및 출처 표기 강제",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 218,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s08_sh31",
+          "role": "label_candidate",
+          "text": "08",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 888,
+            "y": 479,
+            "width": 12,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 9,
+      "page_type": "content_candidate",
+      "text_summary": "Step ③ Generator fine-tuning\n짧은 답에서 문장형 답으로, 학습 데이터부터 바꿨다\n이전 모델 (V1.1 LORA)\n짧은 정답 구절 중심 학습\n짧은 정답(answers) 구절로 학습하여 답변이 약 14단어로 매우 간결하게 출력됨\n출력 예시:\n\"E.coli bacteria [1]\"\n이번 모델 (V2.1 문장형 LORA)\nwellFormedAnswers 기반 학습\n건강 질문의 문장형 정답 + 검색 문단 5개를 활용. \"문장 [번호]\" 형식 강조, 15% 거절 예시 포함\n출력 예시:\n\"신장 감염은 대개 E. coli라고 불리는 박테리아에 의해 발생합니다 [1]. 이 박테리아는 주로 하부 요로를 통해 체내로 유입됩니다 [2].\"\nQwen2.5-7B-Instruct · bf16 LoRA r=16 · 1 epoch · 답변 부분만 손실 계산 · 정답 문단이 Top-5에 있는 질문만 학습\nLoRA 학습 구성 및 데이터 전략\n09",
+      "slots": [
+        {
+          "slot_id": "s09_sh4",
+          "role": "title_candidate",
+          "text": "Step ③ Generator fine-tuning",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh5",
+          "role": "title_candidate",
+          "text": "짧은 답에서 문장형 답으로, 학습 데이터부터 바꿨다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh7",
+          "role": "label_candidate",
+          "text": "이전 모델 (V1.1 LORA)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 162,
+            "width": 360,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh8",
+          "role": "label_candidate",
+          "text": "짧은 정답 구절 중심 학습",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 188,
+            "width": 360,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh9",
+          "role": "label_candidate",
+          "text": "짧은 정답(answers) 구절로 학습하여 답변이 약 14단어로 매우 간결하게 출력됨",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 222,
+            "width": 360,
+            "height": 38
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh11",
+          "role": "label_candidate",
+          "text": "출력 예시:\n\"E.coli bacteria [1]\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 275,
+            "width": 360,
+            "height": 57
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh13",
+          "role": "label_candidate",
+          "text": "이번 모델 (V2.1 문장형 LORA)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 516,
+            "y": 162,
+            "width": 360,
+            "height": 14
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh14",
+          "role": "label_candidate",
+          "text": "wellFormedAnswers 기반 학습",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 516,
+            "y": 188,
+            "width": 360,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh15",
+          "role": "label_candidate",
+          "text": "건강 질문의 문장형 정답 + 검색 문단 5개를 활용. \"문장 [번호]\" 형식 강조, 15% 거절 예시 포함",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 516,
+            "y": 222,
+            "width": 360,
+            "height": 38
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh17",
+          "role": "body_candidate",
+          "text": "출력 예시:\n\"신장 감염은 대개 E. coli라고 불리는 박테리아에 의해 발생합니다 [1]. 이 박테리아는 주로 하부 요로를 통해 체내로 유입됩니다 [2].\"",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 516,
+            "y": 275,
+            "width": 360,
+            "height": 73
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh18",
+          "role": "label_candidate",
+          "text": "Qwen2.5-7B-Instruct · bf16 LoRA r=16 · 1 epoch · 답변 부분만 손실 계산 · 정답 문단이 Top-5에 있는 질문만 학습",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 467,
+            "width": 840,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh19",
+          "role": "label_candidate",
+          "text": "LoRA 학습 구성 및 데이터 전략",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 128,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s09_sh20",
+          "role": "label_candidate",
+          "text": "09",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 887,
+            "y": 479,
+            "width": 13,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 10,
+      "page_type": "content_candidate",
+      "text_summary": "Analysis: Trade-off\n문장은 좋아졌지만, 정답 내용은 덜 담겼다\nROUGE-L 문장형\n0.56\n↑ 0.33에서 상승\n정답 포함률\n0.40\n↓ 0.50에서 하락\n• 원인: 한 문장에 문서 하나의 사실만 담으며, 정답 문서를 인용한 답은 39% (28/71)에 불과\n• 데이터: 학습용 문장형 정답 중 짧은 정답 내용이 누락된 \"엉터리 정답\" 혼입\n• 잘못 거절: 5.6% → 10.2%로 증가\n• 결정: 팀 목표인 '사람이 읽기 좋은 문장형 답변'을 위해 정답 포함률 일부 포기\n지표의 이면: 문장 품질과 정보 충실도 간의 균형점 확인\n10",
+      "slots": [
+        {
+          "slot_id": "s10_sh4",
+          "role": "title_candidate",
+          "text": "Analysis: Trade-off",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh5",
+          "role": "title_candidate",
+          "text": "문장은 좋아졌지만, 정답 내용은 덜 담겼다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh6",
+          "role": "label_candidate",
+          "text": "ROUGE-L 문장형",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 189,
+            "y": 185,
+            "width": 160,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 14.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh7",
+          "role": "label_candidate",
+          "text": "0.56",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 189,
+            "y": 226,
+            "width": 160,
+            "height": 72
+          },
+          "text_metrics": {
+            "font_size_px": 66.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh8",
+          "role": "label_candidate",
+          "text": "↑ 0.33에서 상승",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 189,
+            "y": 310,
+            "width": 160,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh9",
+          "role": "label_candidate",
+          "text": "정답 포함률",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 606,
+            "y": 185,
+            "width": 165,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 14.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh10",
+          "role": "label_candidate",
+          "text": "0.40",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 606,
+            "y": 226,
+            "width": 165,
+            "height": 72
+          },
+          "text_metrics": {
+            "font_size_px": 66.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh11",
+          "role": "label_candidate",
+          "text": "↓ 0.50에서 하락",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 606,
+            "y": 310,
+            "width": 165,
+            "height": 27
+          },
+          "text_metrics": {
+            "font_size_px": 16.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh12",
+          "role": "label_candidate",
+          "text": "• 원인: 한 문장에 문서 하나의 사실만 담으며, 정답 문서를 인용한 답은 39% (28/71)에 불과",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 414,
+            "width": 434,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh13",
+          "role": "label_candidate",
+          "text": "• 데이터: 학습용 문장형 정답 중 짧은 정답 내용이 누락된 \"엉터리 정답\" 혼입",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 458,
+            "width": 434,
+            "height": 22
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh14",
+          "role": "label_candidate",
+          "text": "• 잘못 거절: 5.6% → 10.2%로 증가",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 539,
+            "y": 414,
+            "width": 361,
+            "height": 22
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh15",
+          "role": "label_candidate",
+          "text": "• 결정: 팀 목표인 '사람이 읽기 좋은 문장형 답변'을 위해 정답 포함률 일부 포기",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 539,
+            "y": 436,
+            "width": 361,
+            "height": 43
+          },
+          "text_metrics": {
+            "font_size_px": 12.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh16",
+          "role": "label_candidate",
+          "text": "지표의 이면: 문장 품질과 정보 충실도 간의 균형점 확인",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 222,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s10_sh17",
+          "role": "label_candidate",
+          "text": "10",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 890,
+            "y": 479,
+            "width": 11,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 11,
+      "page_type": "content_candidate",
+      "text_summary": "Next Steps: Limitations & Planning\n정답 문단을 못 찾으면, Generator가 좋아도 소용없다\nCURRENT BOTTLENECK\n정답 문단 Top-5 포함 시 F1\n0.415\n정답 문단 Top-5 미포함 시 F1\n0.237\n근거 Recall@5는 0.628. 질문 10개 중 4개는 Generator가 정답을 보지도 못함. Retriever 개선이 최우선 과제.\n미실행 개선안 07\nReranker 파인튜닝\n건강 질문 8,000개로 MiniLM 추가 학습. 정답 문단 1개 + 오답 7개 구성. 검증 MRR 향상 시 교체.\n미실행 개선안 07\n학습 데이터 필터링\n짧은 정답 포함률 50% 미만 데이터 제외. 새 Reranker로 추출한 문단으로 실제 환경 재구축.\n그 밖의 단계: 입력 문단 확대 (5→10), 틀린 사례 분석, LLM-as-a-judge 평가 도입\n08 RAG 개선 + LoRA 기준 (정답 문단 있음 314/500)\n11",
+      "slots": [
+        {
+          "slot_id": "s11_sh4",
+          "role": "title_candidate",
+          "text": "Next Steps: Limitations & Planning",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh5",
+          "role": "title_candidate",
+          "text": "정답 문단을 못 찾으면, Generator가 좋아도 소용없다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh7",
+          "role": "label_candidate",
+          "text": "CURRENT BOTTLENECK",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 162,
+            "width": 320,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 9.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh8",
+          "role": "label_candidate",
+          "text": "정답 문단 Top-5 포함 시 F1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 195,
+            "width": 320,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh9",
+          "role": "label_candidate",
+          "text": "0.415",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 213,
+            "width": 320,
+            "height": 54
+          },
+          "text_metrics": {
+            "font_size_px": 32.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh10",
+          "role": "label_candidate",
+          "text": "정답 문단 Top-5 미포함 시 F1",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 291,
+            "width": 320,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh11",
+          "role": "label_candidate",
+          "text": "0.237",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 309,
+            "width": 320,
+            "height": 54
+          },
+          "text_metrics": {
+            "font_size_px": 32.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh12",
+          "role": "label_candidate",
+          "text": "근거 Recall@5는 0.628. 질문 10개 중 4개는 Generator가 정답을 보지도 못함. Retriever 개선이 최우선 과제.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 387,
+            "width": 320,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh14",
+          "role": "title_candidate",
+          "text": "미실행 개선안 07",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 476,
+            "y": 138,
+            "width": 75,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh15",
+          "role": "label_candidate",
+          "text": "Reranker 파인튜닝",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 476,
+            "y": 167,
+            "width": 424,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh16",
+          "role": "label_candidate",
+          "text": "건강 질문 8,000개로 MiniLM 추가 학습. 정답 문단 1개 + 오답 7개 구성. 검증 MRR 향상 시 교체.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 476,
+            "y": 195,
+            "width": 424,
+            "height": 34
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh18",
+          "role": "label_candidate",
+          "text": "미실행 개선안 07",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 476,
+            "y": 254,
+            "width": 75,
+            "height": 20
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh19",
+          "role": "label_candidate",
+          "text": "학습 데이터 필터링",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 476,
+            "y": 282,
+            "width": 424,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh20",
+          "role": "label_candidate",
+          "text": "짧은 정답 포함률 50% 미만 데이터 제외. 새 Reranker로 추출한 문단으로 실제 환경 재구축.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 476,
+            "y": 311,
+            "width": 424,
+            "height": 17
+          },
+          "text_metrics": {
+            "font_size_px": 10.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh21",
+          "role": "label_candidate",
+          "text": "그 밖의 단계: 입력 문단 확대 (5→10), 틀린 사례 분석, LLM-as-a-judge 평가 도입",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 458,
+            "y": 351,
+            "width": 442,
+            "height": 12
+          },
+          "text_metrics": {
+            "font_size_px": 8.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh22",
+          "role": "label_candidate",
+          "text": "08 RAG 개선 + LoRA 기준 (정답 문단 있음 314/500)",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 223,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s11_sh23",
+          "role": "label_candidate",
+          "text": "11",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 891,
+            "y": 479,
+            "width": 9,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    },
+    {
+      "slide_index": 12,
+      "page_type": "ending_candidate",
+      "text_summary": "Closing: Key Takeaways\n직접 비교해 보기 전에는 알 수 없었던 것들\n데이터를 좁히면 평가가 무너진다\n의료 사이트 문단만 남기면 정답 문단 대부분이 사라져 정상적인 평가가 불가능했습니다.\n알려진 좋은 방법도 예외가 있다\n일반적으로 성능 향상을 기대하는 Hybrid 방식이 Dense 단독보다 낮은 성능을 보였습니다.\n거절은 점수 기준이 확실하다\n프롬프트 제어보다 임계치 기반 거절이 효과적이었으나, 잘못된 거절의 증가라는 대가가 따랐습니다.\n지표 하나만 보면 속기 쉽다\n문장의 유창성(ROUGE-L)이 개선될 때 정보 포함률은 오히려 감소하는 트레이드오프를 확인했습니다.\n데모: Gradio 챗봇\n대화 흐름, 근거 문단, 출처 등급 확인 가능 · 정보 제공용\nThank You\nMS MARCO v2.1 기반 의료 특화 RAG 프로젝트 프로젝트 종료 및 제언\n12",
+      "slots": [
+        {
+          "slot_id": "s12_sh4",
+          "role": "title_candidate",
+          "text": "Closing: Key Takeaways",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 45,
+            "width": 840,
+            "height": 18
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh5",
+          "role": "title_candidate",
+          "text": "직접 비교해 보기 전에는 알 수 없었던 것들",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 69,
+            "width": 840,
+            "height": 39
+          },
+          "text_metrics": {
+            "font_size_px": 26.67,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh6",
+          "role": "label_candidate",
+          "text": "데이터를 좁히면 평가가 무너진다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 164,
+            "width": 405,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh7",
+          "role": "label_candidate",
+          "text": "의료 사이트 문단만 남기면 정답 문단 대부분이 사라져 정상적인 평가가 불가능했습니다.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 196,
+            "width": 405,
+            "height": 38
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh8",
+          "role": "label_candidate",
+          "text": "알려진 좋은 방법도 예외가 있다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 495,
+            "y": 164,
+            "width": 405,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh9",
+          "role": "label_candidate",
+          "text": "일반적으로 성능 향상을 기대하는 Hybrid 방식이 Dense 단독보다 낮은 성능을 보였습니다.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 495,
+            "y": 196,
+            "width": 405,
+            "height": 38
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh10",
+          "role": "label_candidate",
+          "text": "거절은 점수 기준이 확실하다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 288,
+            "width": 405,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh11",
+          "role": "label_candidate",
+          "text": "프롬프트 제어보다 임계치 기반 거절이 효과적이었으나, 잘못된 거절의 증가라는 대가가 따랐습니다.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 320,
+            "width": 405,
+            "height": 38
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh12",
+          "role": "label_candidate",
+          "text": "지표 하나만 보면 속기 쉽다",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 495,
+            "y": 288,
+            "width": 405,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh13",
+          "role": "label_candidate",
+          "text": "문장의 유창성(ROUGE-L)이 개선될 때 정보 포함률은 오히려 감소하는 트레이드오프를 확인했습니다.",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 495,
+            "y": 320,
+            "width": 405,
+            "height": 38
+          },
+          "text_metrics": {
+            "font_size_px": 11.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh15",
+          "role": "label_candidate",
+          "text": "데모: Gradio 챗봇",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 418,
+            "width": 224,
+            "height": 23
+          },
+          "text_metrics": {
+            "font_size_px": 13.33,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh16",
+          "role": "label_candidate",
+          "text": "대화 흐름, 근거 문단, 출처 등급 확인 가능 · 정보 제공용",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 84,
+            "y": 440,
+            "width": 224,
+            "height": 15
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh17",
+          "role": "label_candidate",
+          "text": "Thank You",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 810,
+            "y": 426,
+            "width": 66,
+            "height": 21
+          },
+          "text_metrics": {
+            "font_size_px": 12.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh18",
+          "role": "label_candidate",
+          "text": "MS MARCO v2.1 기반 의료 특화 RAG 프로젝트 프로젝트 종료 및 제언",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 60,
+            "y": 479,
+            "width": 291,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        },
+        {
+          "slot_id": "s12_sh19",
+          "role": "label_candidate",
+          "text": "12",
+          "paragraph_count": 1,
+          "geometry": {
+            "x": 889,
+            "y": 479,
+            "width": 11,
+            "height": 16
+          },
+          "text_metrics": {
+            "font_size_px": 10.0,
+            "paragraph_count": 1
+          }
+        }
+      ],
+      "tables": [],
+      "charts": [],
+      "diagrams": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <g id="title" data-pptx-bounds="64 58 1152 80">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">남은 오답의 주원인은 Retriever</text>
+  </g>
+  <g id="limit-retrieval" data-pptx-bounds="60 152 568 460">
+    <rect x="64" y="156" width="560" height="452" rx="20" fill="#0B4F6C"/>
+    <use data-icon="tabler-outline/search" x="100" y="192" width="48" height="48" fill="#FFFFFF" stroke-width="2"/>
+    <text x="164" y="228" font-size="32" font-weight="bold" fill="#FFFFFF">Retriever 병목</text>
+    <text x="96" y="410" font-size="128" font-weight="bold" fill="#FFFFFF">.776</text>
+    <text x="100" y="466" font-size="32" font-weight="bold" fill="#FFFFFF">Recall@10</text>
+    <text x="100" y="504" font-size="24" fill="#FFFFFF" fill-opacity="0.85">정답 Passage가 Top-10 안에 들어온 비율</text>
+    <text x="100" y="570" font-size="24" font-weight="bold" fill="#FFFFFF">→ 구어체·multi-hop 평가셋으로 개선</text>
+  </g>
+  <g id="limit-colloquial" data-pptx-bounds="652 152 564 148">
+    <rect x="656" y="156" width="560" height="140" rx="20" fill="#F2F5F7"/>
+    <use data-icon="tabler-outline/alert-triangle" x="684" y="180" width="36" height="36" fill="#E4572E" stroke-width="2"/>
+    <text x="736" y="210" font-size="32" font-weight="bold" fill="#1C2630">짧은 구어 질문 오거절</text>
+    <text x="736" y="250" font-size="24" fill="#5B6B78">"녹슨 못 주사" → 바로 거절됨<tspan x="736" dy="32">→ Query Expansion으로 의학 용어 연결</tspan></text>
+  </g>
+  <g id="limit-offdomain" data-pptx-bounds="652 308 564 148">
+    <rect x="656" y="312" width="560" height="140" rx="20" fill="#F2F5F7"/>
+    <use data-icon="tabler-outline/filter" x="684" y="336" width="36" height="36" fill="#E4572E" stroke-width="2"/>
+    <text x="736" y="366" font-size="32" font-weight="bold" fill="#1C2630">OOD 질문에도 답함</text>
+    <text x="736" y="406" font-size="24" fill="#5B6B78">코퍼스에 건강 외 Passage 약 9.8만 개<tspan x="736" dy="32">"호주 수도"에 답함 · OOD 거절률 .84</tspan></text>
+  </g>
+  <g id="limit-coverage" data-pptx-bounds="652 464 564 148">
+    <rect x="656" y="468" width="560" height="140" rx="20" fill="#F2F5F7"/>
+    <use data-icon="tabler-outline/database" x="684" y="492" width="36" height="36" fill="#0B4F6C" stroke-width="2"/>
+    <text x="736" y="522" font-size="32" font-weight="bold" fill="#1C2630">코퍼스에 없는 내용은 못 답함</text>
+    <text x="736" y="562" font-size="24" fill="#5B6B78">MS MARCO Passage뿐<tspan x="736" dy="32">→ MedQuAD 등으로 코퍼스 확장</tspan></text>
+  </g>
+  <g id="source" data-pptx-bounds="64 640 1152 40">
+    <text x="64" y="664" font-size="18" fill="#5B6B78">Domain Filter는 정답 손실이 커서 뺌 · Recall@10은 Reranker 앙상블 기준</text>
+  </g>
+</svg>

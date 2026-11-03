@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Malgun Gothic, Arial, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#5B6B78"/>
+    </marker>
+    <marker id="arrowHeadAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#E4572E"/>
+    </marker>
+  </defs>
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <g id="title" data-pptx-bounds="64 48 1152 84">
+    <text x="64" y="110" font-size="56" font-weight="bold" fill="#0B4F6C">넓게 찾고, 먼저 거르고, 마지막에 답한다</text>
+  </g>
+  <g id="step-query" data-pptx-bounds="64 186 140 190">
+    <text x="64" y="214" font-size="24" fill="#5B6B78">한국어는<tspan x="64" dy="32">영어로 번역</tspan></text>
+    <rect x="64" y="270" width="110" height="96" rx="20" fill="#7B97AB"/>
+    <text x="119" y="330" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Query</text>
+    <line x1="178" y1="318" x2="200" y2="318" stroke="#5B6B78" stroke-width="2" marker-end="url(#arrowHead)"/>
+  </g>
+  <g id="step-retriever" data-pptx-bounds="204 186 210 190">
+    <text x="204" y="214" font-size="24" fill="#5B6B78">bge-base<tspan x="204" dy="32">Top-100</tspan></text>
+    <rect x="204" y="270" width="180" height="96" rx="20" fill="#0B4F6C"/>
+    <text x="294" y="330" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Retriever</text>
+    <line x1="388" y1="318" x2="410" y2="318" stroke="#5B6B78" stroke-width="2" marker-end="url(#arrowHead)"/>
+  </g>
+  <g id="step-reranker" data-pptx-bounds="414 186 250 190">
+    <text x="414" y="214" font-size="24" fill="#5B6B78">bge-reranker-large<tspan x="414" dy="32">+ v2-m3 → Top-10</tspan></text>
+    <rect x="414" y="270" width="170" height="96" rx="20" fill="#0B4F6C"/>
+    <text x="499" y="330" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Reranker</text>
+    <line x1="588" y1="318" x2="660" y2="318" stroke="#5B6B78" stroke-width="2" marker-end="url(#arrowHead)"/>
+  </g>
+  <g id="step-threshold" data-pptx-bounds="664 186 210 376">
+    <text x="664" y="214" font-size="24" fill="#5B6B78">MiniLM 점수<tspan x="664" dy="32">4.92 미만 → 거절</tspan></text>
+    <rect x="664" y="270" width="176" height="96" rx="20" fill="#FFFFFF" stroke="#E4572E" stroke-width="3"/>
+    <text x="752" y="330" font-size="32" font-weight="bold" fill="#E4572E" text-anchor="middle">Threshold</text>
+    <line x1="844" y1="318" x2="870" y2="318" stroke="#5B6B78" stroke-width="2" marker-end="url(#arrowHead)"/>
+    <line x1="752" y1="370" x2="752" y2="446" stroke="#E4572E" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrowHeadAccent)"/>
+    <rect x="664" y="450" width="176" height="60" rx="30" fill="#E4572E" fill-opacity="0.12"/>
+    <text x="752" y="491" font-size="32" font-weight="bold" fill="#E4572E" text-anchor="middle">바로 거절</text>
+    <text x="752" y="548" font-size="24" fill="#5B6B78" text-anchor="middle">LLM 호출 없이</text>
+  </g>
+  <g id="step-generator" data-pptx-bounds="874 186 212 190">
+    <text x="874" y="214" font-size="24" fill="#5B6B78">Qwen3-8B<tspan x="874" dy="32">+ DPO LoRA</tspan></text>
+    <rect x="874" y="270" width="184" height="96" rx="20" fill="#0B4F6C"/>
+    <text x="966" y="330" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Generator</text>
+    <line x1="1062" y1="318" x2="1082" y2="318" stroke="#5B6B78" stroke-width="2" marker-end="url(#arrowHead)"/>
+  </g>
+  <g id="step-answer" data-pptx-bounds="1086 186 130 190">
+    <text x="1086" y="214" font-size="24" fill="#5B6B78">문장마다<tspan x="1086" dy="32">[번호]</tspan></text>
+    <rect x="1086" y="270" width="130" height="96" rx="20" fill="#E4572E"/>
+    <text x="1151" y="330" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">답변</text>
+  </g>
+  <g id="takeaway" data-pptx-bounds="64 600 1152 60">
+    <text x="64" y="640" font-size="32" fill="#1C2630">근거가 약하면 <tspan fill="#E4572E" font-weight="bold">LLM 부르기 전에 거절</tspan>, 답에는 <tspan fill="#0B4F6C" font-weight="bold">[번호] 인용</tspan>을 단다</text>
+  </g>
+</svg>
