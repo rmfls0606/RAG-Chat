@@ -1,0 +1,7 @@
+,url,url,url,url,url,url,aug,aug,aug,aug
+,url_med_test,url_med_test,lab_med_test,lab_med_test,lab_b_test,lab_b_test,lab_med_test,lab_med_test,lab_b_test,lab_b_test
+,Recall@10,MRR@10,Recall@10,MRR@10,Recall@10,MRR@10,Recall@10,MRR@10,Recall@10,MRR@10
+BM25,0.6029,0.3064,0.5768,0.2871,0.6469,0.3232,0.5353,0.2642,0.5769,0.283
+Dense,0.8361,0.5042,0.8253,0.487,0.8497,0.5018,0.7747,0.4473,0.7762,0.4323
+Hybrid,0.7743,0.441,0.7532,0.4152,0.7762,0.4686,0.7022,0.3792,0.7098,0.3973
+Hybrid+Rerank,0.8687,0.5507,0.8618,0.5292,0.8636,0.5578,0.8232,0.4993,0.7937,0.4954
