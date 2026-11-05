@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <marker id="rejectHead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#EB6834"/>
+    </marker>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="header" data-pptx-bounds="64 36 1152 140">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">개요 · 최종 파이프라인</text>
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">검색 3단계 + 생성 2단계, 거절 관문은 두 곳</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">관련 문단이 없으면 ③에서 LLM 전에, 문단에 답이 없으면 ⑤에서 생성 단계가 거절</text>
+  </g>
+  <rect id="zone-search-band" data-pptx-role="decoration" x="164" y="196" width="576" height="160" rx="12" fill="#EEF4FC"/>
+  <rect id="zone-generate-band" data-pptx-role="decoration" x="744" y="196" width="376" height="160" rx="12" fill="#12355B" fill-opacity="0.07"/>
+  <g id="question" data-pptx-bounds="56 236 116 120">
+    <rect x="64" y="236" width="96" height="80" rx="12" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+    <text x="112" y="283" font-size="18" font-weight="bold" fill="#12355B" text-anchor="middle">질문</text>
+    <text x="112" y="342" font-size="15" fill="#52514E" text-anchor="middle">한국어면 번역</text>
+  </g>
+<g id="p04-stage-1" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="172 236 204 80" data-pptx-av-adj="val 30000" fill="#2A78D6" stroke="none">
+<path d="M 172 236 L 352 236 L 376 276 L 352 316 L 172 316 L 196 276 Z"/>
+</g>
+<g id="p04-stage-2" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="356 236 204 80" data-pptx-av-adj="val 30000" fill="#2A78D6" stroke="none">
+<path d="M 356 236 L 536 236 L 560 276 L 536 316 L 356 316 L 380 276 Z"/>
+</g>
+<g id="p04-stage-3" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="540 236 204 80" data-pptx-av-adj="val 30000" fill="#2A78D6" stroke="none">
+<path d="M 540 236 L 720 236 L 744 276 L 720 316 L 540 316 L 564 276 Z"/>
+</g>
+<g id="p04-stage-4" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="724 236 204 80" data-pptx-av-adj="val 30000" fill="#12355B" stroke="none">
+<path d="M 724 236 L 904 236 L 928 276 L 904 316 L 724 316 L 748 276 Z"/>
+</g>
+<g id="p04-stage-5" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="908 236 204 80" data-pptx-av-adj="val 30000" fill="#12355B" stroke="none">
+<path d="M 908 236 L 1088 236 L 1112 276 L 1088 316 L 908 316 L 932 276 Z"/>
+</g>
+  <g id="stage-labels" data-pptx-bounds="176 204 924 104">
+    <text x="184" y="224" font-size="18" font-weight="bold" fill="#2A78D6">검색 단계</text>
+    <text x="764" y="224" font-size="18" font-weight="bold" fill="#12355B">생성 단계</text>
+    <g fill="#FFFFFF" text-anchor="middle">
+    <text x="276" y="272" font-size="18" font-weight="bold">① 1차 검색</text>
+    <text x="276" y="296" font-size="15">FAISS · 후보 100</text>
+    <text x="460" y="272" font-size="18" font-weight="bold">② 재정렬</text>
+    <text x="460" y="296" font-size="15">앙상블 · 상위 10</text>
+    <text x="644" y="272" font-size="18" font-weight="bold">③ 검색 거절</text>
+    <text x="644" y="296" font-size="15">MiniLM &lt; 4.92</text>
+    <text x="828" y="272" font-size="18" font-weight="bold">④ 생성</text>
+    <text x="828" y="296" font-size="15">Qwen3-8B + DPO</text>
+    <text x="1012" y="272" font-size="18" font-weight="bold">⑤ 생성 거절</text>
+    <text x="1012" y="296" font-size="15">정해진 거절 문장</text>
+    </g>
+  </g>
+  <g id="answer" data-pptx-bounds="1112 236 112 120">
+    <rect x="1124" y="236" width="92" height="80" rx="12" fill="#2A78D6"/>
+    <text x="1170" y="283" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">답변</text>
+    <text x="1170" y="342" font-size="15" fill="#52514E" text-anchor="middle">문장마다 [n]</text>
+  </g>
+  <g id="reject-search" data-pptx-bounds="512 316 264 112">
+    <line x1="644" y1="318" x2="644" y2="380" stroke="#EB6834" stroke-width="2" marker-end="url(#rejectHead)"/>
+    <rect x="532" y="384" width="224" height="40" rx="20" fill="#FFFFFF" stroke="#EB6834" stroke-width="2"/>
+    <text x="644" y="410" font-size="15" fill="#1F2328" text-anchor="middle"><tspan font-weight="bold">거절</tspan> · LLM 호출 안 함 (1초 안쪽)</text>
+  </g>
+  <g id="reject-generate" data-pptx-bounds="900 316 212 112">
+    <line x1="1007" y1="318" x2="1007" y2="380" stroke="#EB6834" stroke-width="2" marker-end="url(#rejectHead)"/>
+    <rect x="904" y="384" width="206" height="40" rx="20" fill="#FFFFFF" stroke="#EB6834" stroke-width="2"/>
+    <text x="1007" y="410" font-size="15" fill="#1F2328" text-anchor="middle"><tspan font-weight="bold">거절</tspan> · 문단에 답이 없을 때</text>
+  </g>
+  <g id="models" data-pptx-bounds="64 452 1152 112">
+    <line x1="64" y1="456" x2="1216" y2="456" stroke="#E2E1DC" stroke-width="1"/>
+    <text x="64" y="492" font-size="18" font-weight="bold" fill="#12355B">모델</text>
+    <g text-anchor="middle" font-size="18" fill="#1F2328">
+      <text x="276" y="492" font-weight="bold">bge-base-en-v1.5</text>
+      <text x="276" y="518" font-size="15" fill="#52514E">+ FAISS FlatIP</text>
+      <text x="460" y="492" font-weight="bold">bge-reranker-large</text>
+      <text x="460" y="518" font-size="15" fill="#52514E">+ bge-reranker-v2-m3</text>
+      <text x="644" y="492" font-weight="bold">MiniLM-L-6</text>
+      <text x="644" y="518" font-size="15" fill="#52514E">cross-encoder</text>
+      <text x="828" y="492" font-weight="bold">Qwen3-8B</text>
+      <text x="828" y="518" font-size="15" fill="#52514E">생성 LLM</text>
+      <text x="1012" y="492" font-weight="bold" fill="#2A78D6">DPO LoRA</text>
+      <text x="1012" y="518" font-size="15" fill="#52514E">r16 · 선호 쌍 224</text>
+    </g>
+    <g font-size="15" text-anchor="middle">
+      <rect x="236" y="530" width="80" height="26" rx="13" fill="#EEF4FC"/>
+      <text x="276" y="548" fill="#52514E">사전학습</text>
+      <rect x="420" y="530" width="80" height="26" rx="13" fill="#EEF4FC"/>
+      <text x="460" y="548" fill="#52514E">사전학습</text>
+      <rect x="604" y="530" width="80" height="26" rx="13" fill="#EEF4FC"/>
+      <text x="644" y="548" fill="#52514E">사전학습</text>
+      <rect x="788" y="530" width="80" height="26" rx="13" fill="#EEF4FC"/>
+      <text x="828" y="548" fill="#52514E">사전학습</text>
+      <rect x="964" y="530" width="96" height="26" rx="13" fill="#2A78D6"/>
+      <text x="1012" y="548" font-weight="bold" fill="#FFFFFF">직접 학습</text>
+    </g>
+  </g>
+  <g id="judge-note" data-pptx-bounds="64 584 1152 56">
+    <rect x="64" y="584" width="1152" height="56" rx="12" fill="#EEF4FC"/>
+    <use data-icon="tabler-filled/scale" x="88" y="598" width="28" height="28" fill="#12355B"/>
+    <text x="128" y="618" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#12355B">평가 심판 Qwen2.5-14B</tspan> — 답을 채점하는 데만 쓰고 챗봇에는 넣지 않음 (지표 파트에서 설명)</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: docs/refusal_flow_dpo.md · results/final/final_config.json</text>
+    <text x="1216" y="694" text-anchor="end">04 / 14</text>
+  </g>
+</svg>

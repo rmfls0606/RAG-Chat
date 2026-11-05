@@ -1,0 +1,10 @@
+No,Filename,Width,Height,AspectRatio,PixelAspectRatio,SourceDisplayRatio,RatioSource,Format,HasTransparentPixels,UsageCount,DisplayRatioVariants,AssetKind,SvgRenderable,PptxNativeSupported,SizeKB,Category
+1,01_progress.png,2000,1000,2.00,2.00,,native,PNG,False,1,,bitmap,True,True,71.1,Wide landscape
+2,02_retrieval.png,2000,1000,2.00,2.00,,native,PNG,False,1,,bitmap,True,True,66.6,Wide landscape
+3,03_generator_ci.png,2000,900,2.22,2.22,,native,PNG,False,1,,bitmap,True,True,79.4,Ultra-wide
+4,04_dpo.png,2000,1000,2.00,2.00,,native,PNG,False,1,,bitmap,True,True,70.7,Wide landscape
+5,05_tradeoff.png,2000,1100,1.82,1.82,,native,PNG,False,1,,bitmap,True,True,107.9,Wide landscape
+6,06_f1_vs_judge.png,2000,840,2.38,2.38,,native,PNG,False,1,,bitmap,True,True,48.3,Ultra-wide
+7,07_cross_judge.png,2000,1100,1.82,1.82,,native,PNG,False,1,,bitmap,True,True,92.1,Wide landscape
+8,08_judge_flow.png,2600,1040,2.50,2.50,,native,PNG,False,1,,bitmap,True,True,150.0,Ultra-wide
+9,09_judge_vs_human.png,1500,1200,1.25,1.25,,native,PNG,False,1,,bitmap,True,True,49.4,Standard landscape

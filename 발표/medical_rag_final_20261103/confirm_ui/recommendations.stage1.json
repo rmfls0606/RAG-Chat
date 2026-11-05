@@ -1,0 +1,21 @@
+{
+  "stage": "stage1",
+  "lang": "ko",
+  "primary_language": "ko-KR",
+  "revision": 1,
+  "recommend": { "canvas": "ppt169" },
+  "audience": { "value": "멋사 NLP 6기 강사·멘토와 동료 수강생. RAG·임베딩·LLM 기본 개념은 알지만 이 프로젝트의 세부 실험과 지표 설계는 처음 봄" },
+  "communication_intent": { "value": "MS MARCO 건강 분야 RAG 챗봇의 최종 파이프라인을 검색 단계와 생성 단계로 나눠 설명하고, 지표를 어떻게 세우고(LLM 심판) 그 지표로 각 개선을 어떻게 증명했는지 보고한다. 직접 학습한 DPO가 왜 필요했고 무엇을 개선했는지를 강조하며, 남은 한계를 솔직하게 밝힌다." },
+  "audience_outcome": { "value": "청중이 파이프라인의 각 단계와 그 근거 지표를 이해하고, 정답률 .618 → .770과 지어낸 답 35% → 20%가 믿을 만한 숫자라고 납득한다" },
+  "core_message": { "value": "믿을 수 있는 지표(LLM 심판, 검증-시험 분리, 신뢰구간)를 먼저 세웠기 때문에, 근거 안에서만 답하는 의료 챗봇을 정답률을 지키면서 더 안전하게(DPO) 만들 수 있었다" },
+  "delivery_context": { "value": "주 용도: 발표자가 진행하는 15분 프로젝트 최종 발표 (현장 프로젝션). 부 용도: 발표 후 공유되는 결과 자료" },
+  "artifact_afterlife": { "value": "프로젝트 결과 기록과 포트폴리오 자료로 보관" },
+  "content_divergence": { "value": "" },
+  "template_options": {
+    "schema_version": 1,
+    "phase": "template",
+    "lang": "ko",
+    "default_mode": "free_design",
+    "explicit_workspace_roots": []
+  }
+}

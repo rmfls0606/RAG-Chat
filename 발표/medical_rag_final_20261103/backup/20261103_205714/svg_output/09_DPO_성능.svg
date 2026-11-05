@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#12355B">생성 단계 · ⑤ DPO로 좋아진 성능</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#12355B"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#FFFFFF">5</text>
+      <text x="1036" y="51" fill="#52514E">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" fill="#12355B">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">정답률은 지키고, 지어낸 답은 35% → 20%</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">같은 안전성을 검색 기준을 올려 얻으면 정답률 .678, DPO로 얻으면 .770</text>
+  </g>
+  <g id="dpo-chart" data-pptx-bounds="64 196 560 312">
+    <image href="../images/04_dpo.png" x="64" y="196" width="560" height="280" preserveAspectRatio="xMidYMid meet"/>
+    <text x="64" y="496" font-size="15" fill="#52514E">시험 650 · 검색 단계 거절 기준은 그대로(MiniLM &lt; 4.92)</text>
+  </g>
+  <g id="tradeoff-chart" data-pptx-bounds="656 196 560 312">
+    <image href="../images/05_tradeoff.png" x="656" y="196" width="560" height="308" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="gain-card" data-pptx-bounds="64 528 368 116">
+    <rect x="64" y="528" width="368" height="116" rx="12" fill="#EEF4FC"/>
+    <rect x="64" y="528" width="6" height="116" fill="#2A78D6"/>
+    <text x="88" y="560" font-size="18" font-weight="bold" fill="#2A78D6">좋아짐</text>
+    <text x="88" y="592" font-size="18" fill="#1F2328">진짜 답 없음 거절 <tspan font-weight="bold">.652 → .804</tspan><tspan x="88" dy="28">근거 충실도 .919 → .933</tspan></text>
+  </g>
+  <g id="keep-card" data-pptx-bounds="456 528 368 116">
+    <rect x="456" y="528" width="368" height="116" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <rect x="456" y="528" width="6" height="116" fill="#12355B"/>
+    <text x="480" y="560" font-size="18" font-weight="bold" fill="#12355B">지킴</text>
+    <text x="480" y="592" font-size="18" fill="#1F2328">정답률 <tspan font-weight="bold">.782 → .770</tspan> (−1.2점)<tspan x="480" dy="28" fill="#52514E">95% CI −3.8 ~ +1.4 → 유의하지 않음</tspan></text>
+  </g>
+  <g id="cost-card" data-pptx-bounds="848 528 368 116">
+    <rect x="848" y="528" width="368" height="116" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <rect x="848" y="528" width="6" height="116" fill="#EB6834"/>
+    <text x="872" y="560" font-size="18" font-weight="bold" fill="#EB6834">대가</text>
+    <text x="872" y="592" font-size="18" fill="#1F2328">잘못 거절 <tspan font-weight="bold">.046 → .078</tspan> (+3.2점)<tspan x="872" dy="28" fill="#52514E">실제론 답 있는 54개 답변률 .830 유지</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: docs/refusal_flow_dpo.md · results/generation/17_dpo_summary.md · 진짜 답 없음 = 심판도 "문단에 답 없음"으로 본 46개</text>
+    <text x="1216" y="694" text-anchor="end">09 / 14</text>
+  </g>
+</svg>

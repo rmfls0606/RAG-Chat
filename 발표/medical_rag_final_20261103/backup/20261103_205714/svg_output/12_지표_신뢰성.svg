@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">지표 · 이 숫자를 믿을 수 있는 이유</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#2A78D6"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#52514E">5</text>
+      <text x="1036" y="51" fill="#FFFFFF">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" font-weight="normal" fill="#52514E">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">심판은 깐깐하게만 틀린다 — 정답률은 부풀려지지 않는다</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">사람 판정 40개와 비교하고, 다른 계열 심판(Phi-4)으로 다시 채점했다</text>
+  </g>
+  <g id="human-check" data-pptx-bounds="64 196 368 376">
+    <image href="../images/09_judge_vs_human.png" x="64" y="196" width="360" height="288" preserveAspectRatio="xMidYMid meet"/>
+    <text x="64" y="508" font-size="18" fill="#1F2328">심판이 정답이라 한 12개는 사람도 정답<tspan x="64" dy="24" fill="#52514E">틀릴 때는 늘 깐깐한 쪽</tspan><tspan x="64" dy="24" fill="#52514E">(사람 정답 24개 중 12개를 부분으로)</tspan></text>
+  </g>
+  <g id="cross-judge" data-pptx-bounds="448 196 532 376">
+    <image href="../images/07_cross_judge.png" x="456" y="196" width="524" height="288" preserveAspectRatio="xMidYMid meet"/>
+    <text x="456" y="508" font-size="18" fill="#1F2328">Phi-4로 다시 채점해도 검증 정답률 순위 동일<tspan x="456" dy="26" fill="#52514E">결론이 특정 심판에 기대지 않음</tspan></text>
+  </g>
+  <g id="agreement-kpi" data-pptx-bounds="1004 196 212 376">
+    <rect x="1004" y="196" width="212" height="288" rx="12" fill="#EEF4FC"/>
+    <text x="1028" y="236" font-size="18" fill="#52514E">사람 vs 심판 일치</text>
+    <text x="1028" y="318" font-size="72" font-weight="bold" fill="#2A78D6">.88</text>
+    <text x="1028" y="360" font-size="18" fill="#1F2328">오답 vs 부분 이상<tspan x="1028" dy="26">40개 중 35개 일치</tspan></text>
+    <text x="1028" y="444" font-size="15" fill="#52514E">세부 3단계 일치는 .57</text>
+  </g>
+  <g id="other-devices" data-pptx-bounds="64 576 564 72">
+    <rect x="64" y="576" width="564" height="68" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <text x="84" y="604" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#12355B">그 밖의 장치 </tspan>검증으로 고르고 시험은 보고만<tspan x="84" dy="26" fill="#52514E">부트스트랩 95% CI · 같은 질문·후보·심판 캐시</tspan></text>
+  </g>
+  <g id="limits" data-pptx-bounds="652 576 564 72">
+    <rect x="652" y="576" width="564" height="68" rx="12" fill="#FFFFFF" stroke="#EB6834" stroke-width="1"/>
+    <text x="672" y="604" font-size="18" fill="#1F2328"><tspan font-weight="bold" fill="#EB6834">한계 </tspan>1점 vs 2점은 맞음/틀림 수준으로만 신뢰<tspan x="672" dy="26" fill="#52514E">사람 표본 40개 · DPO 선택은 시험 결과(.678)를 보고 바꿈</tspan></text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: results/generation/14·16·17 요약 · docs/refusal_flow_dpo.md · 사람 판정 = F1 &lt; 0.4로 낮게 나온 답 40개</text>
+    <text x="1216" y="694" text-anchor="end">12 / 14</text>
+  </g>
+</svg>

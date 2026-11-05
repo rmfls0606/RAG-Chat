@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="cover">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#12355B"/>
+  <g id="cover-kicker" data-pptx-bounds="64 60 720 40">
+    <text x="64" y="88" font-size="18" fill="#9DBCE6">멋사 NLP 6기 · 프로젝트 02 지식 기반 QA</text>
+  </g>
+  <g id="cover-title" data-pptx-bounds="64 196 720 180" font-weight="bold">
+    <text x="64" y="262" font-size="64" fill="#FFFFFF">근거 안에서만 답하는<tspan x="64" dy="80">의료 RAG 챗봇</tspan></text>
+  </g>
+  <g id="cover-subtitle" data-pptx-bounds="64 384 720 116">
+    <text x="64" y="420" font-size="28" fill="#C9DAF0">MS MARCO v2.1 건강 분야 · 최종 파이프라인과 지표</text>
+    <text x="64" y="476" font-size="24" font-weight="bold" fill="#FFFFFF">지표를 먼저 세우고 그 지표로 개선을 증명했다</text>
+  </g>
+  <g id="cover-metrics" data-pptx-bounds="808 196 408 304">
+    <rect x="808" y="196" width="408" height="304" rx="12" fill="#FFFFFF" fill-opacity="0.07"/>
+    <rect x="808" y="196" width="6" height="304" fill="#2A78D6"/>
+    <text x="848" y="246" font-size="18" fill="#9DBCE6">시험 정답률 (답 있는 건강 질문 500)</text>
+    <text x="848" y="316" font-weight="bold" fill="#FFFFFF"><tspan font-size="32" fill="#9DBCE6">.618 → </tspan><tspan font-size="64">.770</tspan></text>
+    <line x1="848" y1="350" x2="1176" y2="350" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1"/>
+    <text x="848" y="394" font-size="18" fill="#9DBCE6">지어낸 답 (진짜 답 없는 질문)</text>
+    <text x="848" y="464" font-weight="bold" fill="#FFFFFF"><tspan font-size="32" fill="#9DBCE6">35% → </tspan><tspan font-size="64">20%</tspan></text>
+  </g>
+  <g id="cover-rail" data-pptx-bounds="64 568 1152 72">
+    <line x1="64" y1="596" x2="1216" y2="596" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2"/>
+    <circle cx="200" cy="596" r="12" fill="#2A78D6"/>
+    <circle cx="360" cy="596" r="12" fill="#2A78D6"/>
+    <circle cx="520" cy="596" r="12" fill="#2A78D6"/>
+    <circle cx="760" cy="596" r="12" fill="#FFFFFF"/>
+    <circle cx="920" cy="596" r="12" fill="#FFFFFF"/>
+    <rect x="1088" y="582" width="96" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.15"/>
+    <g font-size="15" fill="#C9DAF0" text-anchor="middle">
+      <text x="200" y="632">① 1차 검색</text>
+      <text x="360" y="632">② 재정렬</text>
+      <text x="520" y="632">③ 검색 거절</text>
+      <text x="760" y="632">④ 생성</text>
+      <text x="920" y="632">⑤ DPO</text>
+    </g>
+    <text x="1136" y="601" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">지표</text>
+  </g>
+  <g id="cover-date" data-pptx-bounds="64 656 400 30">
+    <text x="64" y="676" font-size="15" fill="#9DBCE6">2026-11-03</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="ending">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#12355B" />
+  <g id="closing-kicker" data-pptx-bounds="64 60 720 40">
+    <text x="64" y="88" font-size="18" fill="#9DBCE6">결론</text>
+  </g>
+  <g id="closing-title" data-pptx-bounds="64 140 1152 200" font-weight="bold" fill="#FFFFFF">
+    <text font-size="64" x="64" y="206">지표를 먼저 세웠기에</text><text font-size="64" x="64" y="290">더 안전한 챗봇을 증명했다</text></g>
+  <g id="closing-judge" data-pptx-bounds="64 384 368 168">
+    <rect x="64" y="384" width="368" height="168" rx="12" fill="#FFFFFF" fill-opacity="0.07" />
+    <rect x="64" y="384" width="6" height="168" fill="#2A78D6" />
+    <text x="96" y="424" font-size="18" fill="#9DBCE6">① 믿을 수 있는 지표</text>
+    <text x="96" y="494" font-size="64" font-weight="bold" fill="#FFFFFF">.88</text>
+    <text x="96" y="530" font-size="18" fill="#C9DAF0">심판 ↔ 사람 판정 일치</text>
+  </g>
+  <g id="closing-accuracy" data-pptx-bounds="456 384 368 168">
+    <rect x="456" y="384" width="368" height="168" rx="12" fill="#FFFFFF" fill-opacity="0.07" />
+    <rect x="456" y="384" width="6" height="168" fill="#2A78D6" />
+    <text x="488" y="424" font-size="18" fill="#9DBCE6">② 검색·생성 개선</text>
+    <text x="488" y="494" font-weight="bold" fill="#FFFFFF"><tspan font-size="32" fill="#9DBCE6">.618 → </tspan><tspan font-size="64">.770</tspan></text>
+    <text x="488" y="530" font-size="18" fill="#C9DAF0">시험 정답률</text>
+  </g>
+  <g id="closing-safety" data-pptx-bounds="848 384 368 168">
+    <rect x="848" y="384" width="368" height="168" rx="12" fill="#FFFFFF" fill-opacity="0.07" />
+    <rect x="848" y="384" width="6" height="168" fill="#EB6834" />
+    <text x="880" y="424" font-size="18" fill="#9DBCE6">③ DPO로 더 안전하게</text>
+    <text x="880" y="494" font-weight="bold" fill="#FFFFFF"><tspan font-size="32" fill="#9DBCE6">35% → </tspan><tspan font-size="64">20%</tspan></text>
+    <text x="880" y="530" font-size="18" fill="#C9DAF0">지어낸 답 (진짜 답 없는 질문)</text>
+  </g>
+  <g id="closing-next" data-pptx-bounds="64 592 1152 48">
+    <line x1="64" y1="596" x2="1216" y2="596" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1" />
+    <text x="64" y="630" font-size="18" fill="#C9DAF0"><tspan font-weight="bold" fill="#FFFFFF">다음 단계  </tspan>구어체 질문에 강한 검색 · MedQuAD 등 DB 확장 · 사람 판정 표본 확대</text>
+  </g>
+</svg>

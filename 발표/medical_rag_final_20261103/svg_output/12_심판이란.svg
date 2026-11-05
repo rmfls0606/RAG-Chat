@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Pretendard, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FCFCFB"/>
+  <g id="kicker" data-pptx-bounds="64 40 640 32">
+    <text x="64" y="64" font-size="18" font-weight="bold" fill="#2A78D6">지표 · 심판(LLM-as-a-Judge)이란</text>
+  </g>
+  <g id="rail" data-pptx-role="chrome" data-pptx-bounds="752 28 328 56">
+    <line x1="768" y1="46" x2="1036" y2="46" stroke="#E2E1DC" stroke-width="2"/>
+    <circle cx="768" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="808" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="848" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="920" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <circle cx="960" cy="46" r="11" fill="#FCFCFB" stroke="#C3C2B7" stroke-width="2"/>
+    <rect x="1004" y="34" width="64" height="24" rx="12" fill="#2A78D6"/>
+    <g font-size="15" font-weight="bold" text-anchor="middle">
+      <text x="768" y="51" fill="#52514E">1</text>
+      <text x="808" y="51" fill="#52514E">2</text>
+      <text x="848" y="51" fill="#52514E">3</text>
+      <text x="920" y="51" fill="#52514E">4</text>
+      <text x="960" y="51" fill="#52514E">5</text>
+      <text x="1036" y="51" fill="#FFFFFF">지표</text>
+      <text x="808" y="78" font-weight="normal" fill="#52514E">검색</text>
+      <text x="940" y="78" font-weight="normal" fill="#52514E">생성</text>
+    </g>
+  </g>
+  <g id="header" data-pptx-bounds="64 80 1152 96">
+    <text x="64" y="120" font-size="42" font-weight="bold" fill="#12355B">심판 = 챗봇의 답을 채점하는 별도 LLM</text>
+    <text x="64" y="162" font-size="24" fill="#52514E">Qwen2.5-14B — 챗봇(Qwen3-8B)과 다른 더 큰 모델, 평가에만 쓰고 챗봇에는 넣지 않음</text>
+  </g>
+  <g id="score-correct" data-pptx-bounds="64 196 368 116">
+    <rect x="64" y="196" width="368" height="116" rx="12" fill="#EEF4FC"/>
+    <text x="88" y="230" font-size="22" font-weight="bold" fill="#12355B">정답 점수 0 / 1 / 2</text>
+    <text x="88" y="262" font-size="18" fill="#1F2328">질문 + 참고 정답 + 챗봇 답<tspan x="88" dy="28" fill="#52514E">2 핵심 사실 맞음 · 1 일부 · 0 틀림</tspan></text>
+  </g>
+  <g id="score-faith" data-pptx-bounds="456 196 368 116">
+    <rect x="456" y="196" width="368" height="116" rx="12" fill="#EEF4FC"/>
+    <text x="480" y="230" font-size="22" font-weight="bold" fill="#12355B">근거 충실도 0 / 1</text>
+    <text x="480" y="262" font-size="18" fill="#1F2328">문단 + 챗봇 답 (참고 정답 없음)<tspan x="480" dy="28" fill="#52514E">1 모든 사실이 문단에 · 0 지어냄</tspan></text>
+  </g>
+  <g id="why-judge" data-pptx-bounds="848 196 368 116">
+    <rect x="848" y="196" width="368" height="116" rx="12" fill="#FFFFFF" stroke="#E2E1DC" stroke-width="1"/>
+    <text x="872" y="230" font-size="22" font-weight="bold" fill="#12355B">왜 필요한가</text>
+    <text x="872" y="262" font-size="18" fill="#1F2328">표현이 달라도 핵심 사실이 같으면<tspan x="872" dy="28">맞는 답 → F1로는 못 잰다</tspan></text>
+  </g>
+  <g id="judge-flow" data-pptx-bounds="64 332 820 332">
+    <image href="../images/08_judge_flow.png" x="64" y="332" width="820" height="328" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="judge-readout" data-pptx-bounds="908 332 308 312">
+    <text x="908" y="362" font-size="18" font-weight="bold" fill="#12355B">점수 읽는 법</text>
+    <text x="908" y="396" font-size="18" fill="#1F2328">첫 토큰이 0·1·2일 확률만 읽음<tspan x="908" dy="28" fill="#52514E">→ 같은 답은 언제나 같은 점수</tspan></text>
+    <text x="908" y="470" font-size="18" fill="#1F2328">정답 점수 = P(1) + 2·P(2)<tspan x="908" dy="28" font-weight="bold" fill="#2A78D6">1.5 이상이면 정답</tspan></text>
+    <text x="908" y="544" font-size="18" fill="#1F2328">(질문, 답) 단위로 캐시<tspan x="908" dy="28" fill="#52514E">→ 모든 실험이 같은 채점 공유</tspan></text>
+    <text x="908" y="624" font-size="15" fill="#52514E">그림의 챗봇 답과 확률 값은 설명용 예시</text>
+  </g>
+  <g id="footer" data-pptx-role="footer" data-pptx-bounds="64 676 1152 26" font-size="15" fill="#52514E">
+    <text x="64" y="694">출처: final_v21/05_LLM심판 노트북 · results/generation/14_judge_eval_summary.md</text>
+    <text x="1216" y="694" text-anchor="end">12 / 15</text>
+  </g>
+</svg>

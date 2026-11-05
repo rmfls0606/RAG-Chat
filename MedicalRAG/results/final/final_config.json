@@ -1,0 +1,16 @@
+{
+ "generator": "Qwen/Qwen3-8B",
+ "adapter": "rag_msmarco/health/dpo/adapter",
+ "retrieval": "E10",
+ "top_n": 10,
+ "rerankers": [
+  "BAAI/bge-reranker-large",
+  "BAAI/bge-reranker-v2-m3"
+ ],
+ "prompt": "P0",
+ "system_prompt": "You are a careful medical information assistant.\nRules:\n1. Answer ONLY with facts stated in the numbered documents. Do not add outside knowledge.\n2. After each sentence, cite the supporting document numbers like [1] or [2][4].\n3. If the question is not about health or medicine, or the documents do not contain the answer, reply with exactly this sentence: \"Sorry, I can't answer that from the medical documents I have.\"\n4. Answer in 2-4 short sentences.",
+ "refusal_rule": "08 규칙 (MiniLM < 4.92)",
+ "refusal_signal": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+ "refusal_threshold": 4.921875,
+ "note": "2026-11-03 03:30 수동 선택: 18 자동 선택(MiniLM<6.80)은 시험 정답률 .678로 과도한 거절 → 17 DPO(시험 정답 .770, 진짜 답없음 거절 .804) 사용. 아침에 사용자 확인 필요. 18 결과는 final_config_18.json"
+}
