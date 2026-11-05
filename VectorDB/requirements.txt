@@ -1,0 +1,4 @@
+psycopg[binary]==3.2.3
+pgvector==0.3.6
+numpy
+sentence-transformers   # check_dense.py에서 질문 임베딩용
